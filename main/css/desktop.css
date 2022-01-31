@@ -169,7 +169,7 @@ div.windows {
     height: 31%;
 }
 
-div.chromewindow {
+iframe.chromewindow {
     z-index: 1;
     position: absolute;
     display: block;
