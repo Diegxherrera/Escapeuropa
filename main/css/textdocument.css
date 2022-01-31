@@ -1,0 +1,50 @@
+div.np-head {
+    display: grid;
+    grid-template-columns: 6% 70% 30%;
+    width: cover;
+    background-color: white;
+    border-top-color: 1px solid rgb(0, 95, 238);
+    color: white;
+}
+
+img.np-icon {
+    height: 2em;
+    width: 2em;
+    padding-left: 15%;
+}
+
+p.np-title {
+    text-align: left;
+}
+
+img.np-minimizebtn {
+    height: 1.7em;
+    width: 1.7em;
+}
+
+img.np-fullscreenbtn-disabled {
+    height: 1.7em;
+    width: 1.7em;
+    margin-top: 4px;
+}
+
+img.np-closebtn {
+    height: 1.3em;
+    width: 1.3em;
+    margin-bottom: 3.5px;
+}
+
+div.np-head-col2 {
+    margin-left: 15%;
+    line-height: 2em;
+    font-size: 19px;
+}
+
+div.np-head-col3 {
+    position: sticky;
+    right: 0;
+}
+
+div.np-head-col3>img {
+    margin-right: 10px;
+}

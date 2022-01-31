@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/uac.css">
+    <title>Iniciar Sesión</title>
+    <script>
+        function onclick1() {
+            document.getElementById("password_button").style.background = "grey";
+        }
+
+        function onclick2() {
+            document.getElementById("password_text").style.background = "darkgrey";
+            document.getElementById("email_text").style.background = "white"
+        }
+
+        function onclick3() {
+            document.getElementById("email_text").style.background = "darkgrey";
+            document.getElementById("password_text").style.background = "white"
+        }
+    </script>
+</head>
+
+<body background="img/fondo.png">
+    <div class="container">
+
+        <div class="user_icon">
+            <img src="img/usericon.png" alt="logo" width="200px" height="200px">
+        </div>
+
+        <div class="user_text">
+            User
+        </div>
+
+        <div class="email_text">
+            <input type="email" id="email_text" onclick="onclick3()" placeholder="Nombre de usuario"><br>
+        </div>
+
+        <div class="password">
+            <input type="password" class="password_text" id="password_text" onclick="onclick2()" placeholder="Contraseña">
+            <input id="password_button" type="button" value=" ➔ " onmousedown="onclick1()" onclick="comprobar()">
+        </div>
+
+
+        <div class="login_options">
+            <a href="uac_alt.html">Opciones de inicio de sesión</a>
+        </div>
+
+        <div class="login_pinkey">
+            <a href="#"><img id="numeric_keyboard" src="img/numeric_keyboard.png" width="30px" height="40px"></a>
+            <a href="#"><img id="key_icon" src="img/key.png" width="48px" height="48px"></a>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(51, 117, 209);
+    color: white;
+    margin-left: 20%;
+    margin-top: 8em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+div.g-ov-title {
+    font-size: 6em;
+}
+
+p.g-ov-bd-txt {
+    flex-wrap: break-word;
+    font-size: 2.5em;
+    margin-top: 0.8em;
+    width: 70%;
+}

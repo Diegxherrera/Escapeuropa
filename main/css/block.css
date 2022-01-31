@@ -1,0 +1,26 @@
+.imagen{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+#carga{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20%;
+    width:5%;
+    height: 5%;
+}
+.carpetadiv{
+    display: flex;
+    margin-top: 20px;
+    border: black 1px;
+    width: 15%;
+    height: 15%;
+}
+.carpeta{
+    width: 20%;
+    height: 20%;
+}

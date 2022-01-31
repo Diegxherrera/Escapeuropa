@@ -1,0 +1,95 @@
+body {
+    background-image: url('../img/thumbnail_F1A48572-2C95-4F0D-BE2A-DB1BBB18027A.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.noshow {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    z-index: 20;
+    font-size: larger;
+    justify-content: center;
+    align-items: center;
+}
+
+.roberto {
+    margin-bottom: 5vh;
+}
+
+.roberto img {
+    height: 400px;
+    width: auto;
+}
+
+.ilumination {
+    height: 300px;
+    width: 500px;
+    border-radius: 90%;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    transform: rotate3d(1, 0, 0, 100deg);
+    left: auto;
+    top: 50%;
+    -webkit-transform: rotate3d(1, 0, 0, 100deg);
+    -moz-transform: rotate3d(1, 0, 0, 100deg);
+    -ms-transform: rotate3d(1, 0, 0, 100deg);
+    -o-transform: rotate3d(1, 0, 0, 100deg);
+}
+
+#img2 {
+    display: none;
+}
+
+#img3 {
+    display: none;
+}
+
+#img4 {
+    display: none;
+}
+
+#img5 {
+    display: none;
+    height: 300px;
+}
+
+.img5rt {
+    transform: rotate3d(0, 0, 1, 90deg);
+    -webkit-transform: rotate3d(0, 0, 1, 90deg);
+    -moz-transform: rotate3d(0, 0, 1, 90deg);
+    -ms-transform: rotate3d(0, 0, 1, 90deg);
+    -o-transform: rotate3d(0, 0, 1, 90deg);
+    justify-self: center;
+    margin-top: 34%;
+}
+
+@media screen and (max-height:650px) {
+    .noshow {
+        display: flex;
+    }
+}
+
+.temblor {
+    animation: tmbl 0.1s infinite;
+    -webkit-animation: tmbl 0.1s infinite;
+}
+
+@keyframes tmbl {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 90%;
+    }
+}

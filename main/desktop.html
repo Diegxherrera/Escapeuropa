@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 10 - Desktop</title>
+    <script type="text/javascript" src="js/2bleclick.js"></script>
+    <script type="text/javascript" src="js/block.js"></script>
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/windows-logo.png" />
+    <link rel="stylesheet" href="css/textdocument.css">
+</head>
+
+<body class="body" id="body">
+    <main>
+        <div class="reticuleindex" id="reticuleindex">
+            <table class="appsreticule" id="appsreticule">
+                <tr>
+                    <td id="app-1 trash" onclick="unclick('app-1 trash')" ondblclick="dblclick('app-1')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/trash.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Trash</p>
+                    </td>
+                    <td id="app-2 chrome" onclick="unclick('app-2 chrome')" ondblclick="dblclick('app-2')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/chrome.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Google Chrome</p>
+                    </td>
+                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('app-3')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/filesexplorer.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Files Explorer</p>
+                    </td>
+                    <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')" ondblclick="blockedapp('app-4 blocked')">
+                        <div class="appicon-1" id="appicon-1 blocked">
+                            <img src="img/blocked.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">[1/^*Jw?¡'2:&</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="centered-windows" id="centered-windows">
+            <div class="blocked-alert" id="blocked-alert">
+                <div class="blocked-alert-header">
+                    <table class="alert-header-columns">
+                        <tr></tr>Windows Security
+                        <div class="blocked-alert-top-buttons">
+                            <img src="img/window-minimize-svgrepo-com.svg" class="blocked-alert-minimizebtn"></img>
+                            <img src="img/window-maximize-svgrepo-com.svg" class="blocked-alert-fullscreenbtn-disabled"></img>
+                            <img src="img/close-svgrepo-com.svg " class="blocked-alert-closebtn"></img>
+                        </div>
+                    </table>
+                </div>
+                <div class="blocked-alert-body ">
+                    <img src=img/blocked.png " class="prohibited-mini-icon ">
+                    <p class="alert-text ">This file is corrupted. Plese try to </p>
+                </div>
+                </div>
+            </div>
+            <div class="windows " id="windows ">
+                <div class="chromewindow " id="chromewindow ">
+                    <div id="np-head " class="np-head ">
+                        <div id="np-head-col1 " class="np-head-col1 ">
+                            <img class="np-icon " src="../img/notepad-icon.webp ">
+                        </div>
+                        <div id="np-head-col2 " class="np-head-col2 ">
+                            <p class="np-title ">Note X - Notepad</p>
+                        </div>
+                        <div id="np-head-col3 " class="np-head-col3 ">
+                            <img src="../img/window-minimize-svgrepo-com.svg " class="np-minimizebtn " id="np-minimizebtn ">
+                            <img src="../img/window-maximize-svgrepo-com.svg " class="np-fullscreenbtn-disabled ">
+                            <img src="../img/close-svgrepo-com.svg " class="np-closebtn " id="np-closebtn ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leftmenu " id="leftmenu ">
+                <div class="left-menu01 " id="left-menu01 ">
+                    Hola
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="bottombar " id="bottombar ">
+            <div class="lefticons-bttmbar ">
+                <img class="windowslogo " src="img/white-logo.png " onclick=" ">
+                <input type="text " class="srch-br " id="srch-br " placeholder=" 🔎 Type here to search ">
+                <img class="cortanalogo " src="img/cortana-white-icon.png ">
+            </div>
+            <div class="righticons-bttmbar ">
+                <p>20:00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
