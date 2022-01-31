@@ -9,6 +9,7 @@ let contador = 1
 
 
 function cerrar(){
+    textbox.css({"border":"2px solid white"})
     textbox.animate(
         {
         "font-size": "0",
@@ -64,6 +65,7 @@ function chimg(){
     }
     if (contador==9){
         cerrar()
+        
     }
     contador++
 }
