@@ -1,3 +1,3 @@
-# ER-Puenteuropa
+# Escape Room Puenteuropa
 
-## This repository is the homework of 5 students of Web Developing.
+ This repository is the homework of 6 students of Web Developing.
