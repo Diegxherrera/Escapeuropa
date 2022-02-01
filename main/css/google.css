@@ -295,3 +295,34 @@ a:hover{
     text-decoration: underline;
 }
 
+@media screen and (max-width:500px){
+    .resolution{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        color: black;
+        font-size: larger;
+        font-family: "Helvetica","Arial";
+        z-index: 10;
+    }
+}
+
+@media screen and (max-height:500px){
+    .resolution{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        color: black;
+        font-size: larger;
+        font-family: "Helvetica","Arial";
+        z-index: 10;
+    }
+}
