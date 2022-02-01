@@ -1,12 +1,3 @@
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
 .resolution{
     width: 100%;
     height: 100%;
@@ -18,14 +9,11 @@ body{
     font-size: large;
     font-family: Helvetica, Arial, sans-serif;
 }
-.grid{
-    display: none;
-}
 .estanteria{
     width: 100%;
     height: 100%;
     background-color: rgb(59, 32, 10);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
