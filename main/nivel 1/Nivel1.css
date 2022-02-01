@@ -7,6 +7,17 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+.resolution{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    font-size: large;
+    font-family: Helvetica, Arial, sans-serif;
+}
 .grid{
     display: none;
 }
@@ -23,7 +34,7 @@ body{
     height: 95%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 10% 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 10% 30% 30% 30%;
     background-color: rgb(194, 136, 69)
 }
 .celdah{
@@ -32,7 +43,66 @@ body{
     align-items: center;
     border: 3px solid rgb(59, 32, 10);
     font-size: 1rem;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
 }
 .celda{
     border: 3px solid rgb(59, 32, 10);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.celda div{
+    background-color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.celda img, .celda div{
+    height: 10em;
+    width: 10em;
+    border: 3px solid black;
+    border-radius: 15%;
+    -webkit-border-radius: 15%;
+    -moz-border-radius: 15%;
+    -ms-border-radius: 15%;
+    -o-border-radius: 15%;
+}
+.celda img:hover, .celda div:hover{
+    cursor: pointer;
+    border: 3px solid rgba(21, 255, 0, 0.623);
+}
+@media screen and (max-height:440px){
+    .resolution{
+        display: flex;
+    }
+}
+/*responsive img*/
+@media screen and (max-height:590px){
+    .celda img, .celda div{
+        height:7.5em;
+        width: 7.5em;
+    }
+}
+@media screen and (max-height:490px){
+    .celda img, .celda div{
+        height:5em;
+        width: 5em;
+    }
+}
+@media screen and (max-width:870px){
+    .celda img, .celda div{
+        height:7.5em;
+        width: 7.5em;
+    }
+}
+@media screen and (max-width:650px){
+    .celda img, .celda div{
+        height:5em;
+        width: 7.5em;
+    }
 }
