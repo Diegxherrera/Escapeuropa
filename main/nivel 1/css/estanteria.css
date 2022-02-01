@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
     background-color: rgb(59, 32, 10);
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -64,6 +64,16 @@
 .celda img:hover, .celda div:hover{
     cursor: pointer;
     border: 3px solid rgba(21, 255, 0, 0.623);
+}
+.backicon{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 80px;
+    z-index: 1;
+}
+.backicon:hover{
+    cursor: pointer;
 }
 @media screen and (max-height:440px){
     .resolution{

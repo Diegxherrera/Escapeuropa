@@ -22,22 +22,28 @@ body{
 .blackleft{
     grid-column: 1;
     grid-row: 1/4;
-    background: linear-gradient(to right,rgb(59, 59, 59) 10%, black 90%);
+    background-color: black;
 }
 .blackright{
     background-color: black;
     grid-row: 1/4;
     grid-column: 3;
-    background: linear-gradient(to left,rgb(59, 59, 59) 10%, black 90%);
 }
 .estanteria-esc{
-    grid-column: 2;
+    grid-column: 3;
     grid-row:2;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
 }
 .estanteria-esc img{
-    height: 10em;
+    height: 55%;
+}
+.estanteria-esc span{
+    font-size: 1em;
+    font-family:  Helvetica, Arial, sans-serif;
+    color: white;
 }
 .estanteria-esc img:hover{
     cursor: pointer;
