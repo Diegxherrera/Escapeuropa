@@ -1,5 +1,6 @@
 var usuario;
 var pass;
+var clase = document.getElementById('error');
 
 function comprobar(){
     var usuario = document.getElementById('email_text').value;
@@ -12,7 +13,7 @@ function comprobar(){
             window.location.href="cargainicio.html";
         }, 2000);
     }else{
-        document.write('Inicio de sesion fallido')
+        document.getElementById("error").style.display = "block";
         var correcto = false;
         console.log(correcto);
     }
