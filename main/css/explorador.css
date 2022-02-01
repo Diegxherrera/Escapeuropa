@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    max-width: 100vw;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+}
+
+.explorador {
+    margin-top: 0;
+    width: 100%;
+    height: 3%;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    max-height: 5vh;
+    margin-top: 0.1%;
+    margin-left: 0;
+
+}
+
+.frase1 {
+    margin-left: 0.5em;
+    margin-top: 0px;
+    width: 100%;
+}
+
+.opciones {
+    width: 100%;
+    height: 3%;
+    justify-content: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.minimizar {
+    animation: all ease-in 1s;
+    width: 30px;
+    text-align: center;
+}
+
+.minimizar:hover {
+    animation: all ease-out 1s;
+    background-color: rgb(100, 100, 100);
+    width: 30px;
+}
+
+.cerrar {
+    animation: all ease-in 1s;
+    width: 30px;
+    text-align: center;
+}
+
+.cerrar:hover {
+    animation: all ease-out 1s;
+    background-color: rgb(255, 0, 0);
+    width: 30px;
+}
+
+.botones {
+    color: white;
+    width: 100vw;
+    height: 3vh;
+    display: inline-flex;
+    flex-direction: row;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 2px;
+    margin-top: -1%;
+    font-size: small;
+}
+
+.Archivo, .Inicio, .Compartir, .Vista {
+    width: 75px;
+    margin-bottom: 0.3%;
+    text-align: center;
+    margin-top: 1px
+}
+
+.Archivo {
+    background-color: rgb(255, 108, 108)
+}
+
+.Inicio {
+    background-color: rgb(100, 100, 100);
+}
+
+
+.Archivo:hover {
+    background-color: rgb(255, 0, 0);
+    width: 75px;
+    margin-bottom: 0.3%;
+
+}
+
+.Inicio:hover, .Compartir:hover, .Vista:hover{
+    background-color: rgb(100, 100, 100);
+    width: 75px;
+    margin-bottom: 0.3%;
+}
+
+.barra {
+    width: 100%;
+    margin-left: 0;
+    height: 20%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    border: solid 1px rgb(100, 100, 100);
+    background-color: rgb(32, 32, 32);
+    margin-top: -0.3%;
+    padding-bottom: 0.2%;
+}
+
+.menu {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    color: white;
+    gap: 0.1%;
+    text-align: center;
+}
+
+.Anclar, .Copiar, .Pegar {
+    width: 70px;
+    margin-top: 0.2%;
+}
+
+.Anclar:hover, .Copiar:hover, .Pegar:hover {
+    width: 70px;
+    background-color: rgb(100, 100, 100);
+}
+
+.opciones2 {
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    gap: 1em;
+    margin-left: 1%;
+    margin-top: 0.3% ;
+}
+
+.Copiarruta {
+    width: 130px;
+    text-align: center;
+    
+}
+
+.Pegaracceso {
+    width: 125px;
+    text-align: center;
+    
+}
+
+.Cortar {
+    width: 45px;
+}
+
+.Copiarruta:hover, .Pegaracceso:hover {
+    background-color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+.Cortar:hover {
+    width: 45px;
+    background-color: rgb(100, 100, 100);
+}
+
+.linea1 {
+    width: 3%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1%;
+}
+
+.movera, .copiara {
+    max-width: 3%;
+    gap: 1%;
+    display: inline-flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    align-items: center;
+    align-content: center;
+}
+
+.movera:hover, .copiara:hover {
+    background-color: rgb(100, 100, 100) ;
+}
+
+.linea2 {
+    width: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1.8%;
+}
+
+.eliminar, .cambiarnombre {
+    max-width: 6%;
+    gap: 1%;
+    display: inline-flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    align-items: center;
+    align-content: center;
+}
+
+.eliminar:hover, .cambiarnombre:hover {
+    background-color: rgb(100, 100, 100) ;
+}
+
+.linea3 {
+    width: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1%;
+}
+
+.nuevacarpeta {
+    text-align: center;
+    width: 70px;
+    margin-top: 1%;
+}
+
+.nuevacarpeta:hover {
+    background-color: rgb(100, 100, 100) ;
+}
+
+.textos1 {
+    margin-top: 1%;
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 7%;
+}
+
+.nuevoelemento {
+    width: 96%;
+}
+
+.facilacceso {
+    width: 70%;
+}
+
+.nuevoelemento:hover, .facilacceso:hover {
+    background-color: rgb(100, 100, 100) ;
+}
+
+.linea4 {
+    width: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1%;
+}
+
+.propiedades {
+    text-align: center;
+    width: 7%;
+    margin-top: 1%;
+}
+
+.propiedades:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.textos2 {
+    margin-top: 1%;
+    gap: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 5%;
+}
+
+.Abrir {
+    width: 32%;
+}
+
+.Modificar {
+    width: 59%;
+}
+
+.Historial {
+    width: 52%;
+}
+
+.Abrir:hover, .Modificar:hover, .Historial:hover {
+    background-color: rgb(100, 100, 100) ;
+}
+
+.linea5 {
+    width: 2%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textos3 {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.portapapeles {
+    width: 20%;  
+    text-align: center;
+}
+
+.organizar {
+    width: 18%; 
+    text-align: center;
+}
+
+.nuevo {
+    width: 14%; 
+    text-align: center;
+}
+
+.abrir {
+    width: 14%; 
+    text-align: center;
+}
+
+
+
+
+
