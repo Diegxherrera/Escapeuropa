@@ -85,3 +85,14 @@ p{
     padding-top: 5%;
 }
 
+/* Incorrecto */
+.incorrecto{
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    display: none;
+    left: 35%;
+    right: 50%;
+}
+
