@@ -109,7 +109,7 @@ if(vida2 == 0){
     restart()
 }
 if(vida1 == 0){
-    alert("pierdes") //reeemplazar por Roberto
+    alert("pierdes") //reeemplazar por Roberto.
     restart()
 }
 
