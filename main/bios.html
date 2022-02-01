@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>BIOS</title>
+        
+        <script src="js/jquery-3.6.0.js"></script>
+        <link rel="stylesheet" href="css/bios.css">
+
+    </head>
+
+    <body>
+
+        <div class="main_page_show" id="Main">
+
+            <div class="header">BIOS SETUP UTILITY</div>
+
+            <diV class="contenedor1">
+                <div class="main" onclick="cambiarMain()">Main</div>
+                <div class="advanced" onclick="cambiarAdvanced()">Advanced</div>
+            </diV>
+
+            <div class="espaciado">
+
+                <div class="bloque">
+
+                    <div class="contenido1">
+
+                        <div class="fecha">Fecha</div>
+                        <div class="hora">Hora</div>
+
+
+                    </div>
+
+                    <div class="contenido2">
+
+                        <div id="date" class="date"></div>
+                        <div id="time" class="time"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
+
+        </div>
+
+        <div class="advanced_page_show" id="Advanced">
+
+            <div class="header">BIOS SETUP UTILITY</div>
+
+            <diV class="contenedor1">
+                <div class="main2" onclick="cambiarMain()">Main</div>
+                <div class="advanced2" onclick="cambiarAdvanced()">Advanced</div>
+            </diV>
+
+            <div class="espaciado2">
+
+                <div class="bloque2">
+                    
+                </div>
+
+            </div>
+
+            <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
+
+
+
+        </div>
+
+        <script src="js/bios.js"></script>
+        <script src="js/date.js"></script>
+
+
+    </body>
+
+</html>

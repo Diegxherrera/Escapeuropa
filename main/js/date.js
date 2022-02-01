@@ -7,7 +7,7 @@ function getTime(){
         document.getElementById('date').innerHTML=date;
         document.getElementById('time').innerHTML=time;
         getTime();
-    }, 1000);
+    }, 100);
 }
 getTime();
 window.onload = getTime();
