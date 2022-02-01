@@ -43,6 +43,7 @@ body{
     align-items: center;
     border: 3px solid rgb(59, 32, 10);
     font-size: 1rem;
+    font-weight: bolder;
     font-family: Helvetica, Arial, sans-serif;
     height: 100%;
     width: 100%;
