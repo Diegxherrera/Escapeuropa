@@ -33,7 +33,7 @@ body::-webkit-scrollbar {
 }
 
 body.body {
-    background-image: url('./img/defaultbg-2.jpeg');
+    background-image: url('../img/defaultbg-2.jpeg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
