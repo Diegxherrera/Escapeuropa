@@ -1,23 +1,23 @@
-body{
-    background-image: url('/./Principal/img/fondo.png');    
+body {
+    background-image: url('/../Principal/img/fondo.png');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
-    }
+}
 
-
-.imagen{
+.imagen {
     display: flex;
     justify-content: center;
     justify-items: center;
     width: 100%;
     height: 100%;
 }
-#carga{
+
+#carga {
     display: flex;
     justify-content: center;
     justify-items: center;
     margin-top: 20%;
-    width:5%;
+    width: 5%;
     height: 5%;
 }
