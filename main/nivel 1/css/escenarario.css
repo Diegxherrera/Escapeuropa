@@ -15,17 +15,14 @@ body{
     grid-template-rows: 33.3333% 33.3333% 33.3333%;
 }
 .blackcenter{
-    background-color: black;
     grid-row: 1/4;
     grid-column: 2;
 }
 .blackleft{
     grid-column: 1;
     grid-row: 1/4;
-    background-color: black;
 }
 .blackright{
-    background-color: black;
     grid-row: 1/4;
     grid-column: 3;
 }
@@ -37,15 +34,41 @@ body{
     flex-direction: column;
     gap: 1em;
 }
-.estanteria-esc img{
-    height: 55%;
+.repair{
+    grid-column: 2;
+    grid-row:2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
 }
-.estanteria-esc span{
+.lista{
+    grid-column: 1;
+    grid-row:2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+.estanteria-esc img , .repair img , .lista img{
+    height: 55%;
+    width: 55%;
+}
+.estanteria-esc span, .repair span , .lista span{
     font-size: 1em;
     font-family:  Helvetica, Arial, sans-serif;
     color: white;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
 }
-.estanteria-esc img:hover{
+.estanteria-esc img:hover , .repair img:hover , .lista img:hover{
     cursor: pointer;
     border: 3px solid rgba(21, 255, 0, 0.623);
+}
+@media screen and (max-width:600px) {
+    .estanteria-esc span, .repair span , .lista span{
+    font-size: 12px;
+    }
 }

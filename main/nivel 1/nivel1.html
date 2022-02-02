@@ -11,15 +11,26 @@
     <script src="js/jquery-3.6.0.js"></script>
 </head>
 
-<body>
+<body background="img/background.jpg">
     <div class="resolution">Resolución no soportada</div>
     <div class="grid_escenario">
         <div class="blackleft"></div>
         <div class="blackright"></div>
         <div class="blackcenter"></div>
+
         <div class="estanteria-esc">
-            <img src="img/estanteria.png" alt="estanteria" onclick="openestanteria()">
+            <img src="img/estanteria.jpg" alt="estanteria" onclick="openestanteria()">
             <span>SELECCIÓN DE COMPONENTES</span>
+        </div>
+
+        <div class="repair">
+            <img src="img/computericon.jpg" alt="repair" onclick="openrepair()">
+            <span>REPARACIÓN</span>
+        </div>
+
+        <div class="lista">
+            <img src="img/lista.jpg" alt="lista" onclick="openestanteria()">
+            <span>LISTA DE COMPONENTES</span>
         </div>
     </div>
 
@@ -29,7 +40,7 @@
             <div class="celdah" id="celda1">TARJETA GRAFICA</div>
             <div class="celdah" id="celda3">RAM</div>
             <div class="celdah" id="celda4">DISCO DURO</div>
-            <div class="celdah" id="celda5">PLACA BAE</div>
+            <div class="celdah" id="celda5">PLACA BASE</div>
 
             <div class="celda" id="celda6">
                 <img src="img/cpulow.jpg" alt="cpulow" id="cpulow">
@@ -81,6 +92,10 @@
 
         </div>
 
+
+    </div>
+
+    <div class="repair">
 
     </div>
     <script src="js/cambio_de_escenario.js"></script>
