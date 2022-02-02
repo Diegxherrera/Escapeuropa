@@ -8,65 +8,63 @@ const ilumination = $('.ilumination')
 let contador = 1
 
 
-function cerrar(){
-    textbox.css({"border":"2px solid white"})
-    textbox.animate(
-        {
-        "font-size": "0",
-        "height":"0"
+function cerrar() {
+    textbox.css({ "border": "2px solid white" })
+    textbox.animate({
+            "font-size": "0",
+            "height": "0"
 
         }, 2000
-        
-        );
 
-    setTimeout("textbox.hide(1000)","2000")
+    );
+
+    setTimeout("textbox.hide(1000)", "2000")
 
     ilumination.hide()
     img4.hide()
 
-        
+
 }
 
-function chimg(){
-    if (contador==1){
+function chimg() {
+    if (contador == 1) {
         img1.hide()
         console.log("hide")
         img2.show()
     }
-    if (contador==2){
+    if (contador == 2) {
         img2.hide()
         console.log("hide")
         img3.show()
     }
-    if (contador==3){
+    if (contador == 3) {
         img3.hide()
         console.log("hide")
         img2.show()
     }
-    if (contador==4){
+    if (contador == 4) {
         img2.hide()
         console.log("hide")
         img5.show()
     }
-    if (contador==5){
+    if (contador == 5) {
         img5.hide()
         $('body').addClass("temblor")
-        setTimeout("$('body').removeClass('temblor')",500)
+        setTimeout("$('body').removeClass('temblor')", 500)
         console.log("hide")
     }
-    if (contador==6){
+    if (contador == 6) {
         img5.addClass("img5rt")
         img5.show()
     }
-    if (contador==8){
+    if (contador == 8) {
         img5.hide()
         console.log("hide")
         img4.show()
     }
-    if (contador==9){
+    if (contador == 9) {
         cerrar()
-        
+
     }
     contador++
 }
-
