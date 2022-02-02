@@ -1,0 +1,22 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.res-titulo {
+    text-align: center;
+    background-color: rgb(0, 14, 95);
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+div.res-cuerpo-2 {
+    color: rgb(0, 14, 95);
+}
+
+div.res-cuerpo-3 {
+    color: rgb(0, 14, 95);
+}
+
+span {
+    color: #740000
+}

@@ -311,6 +311,9 @@ a:hover {
         font-family: "Helvetica", "Arial";
         z-index: 10;
     }
+    .resolution a {
+        cursor: help;
+    }
 }
 
 @media screen and (max-height:500px) {
@@ -326,5 +329,8 @@ a:hover {
         font-size: larger;
         font-family: "Helvetica", "Arial";
         z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
     }
 }

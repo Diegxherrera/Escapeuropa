@@ -169,7 +169,7 @@ div.windows {
     height: 31%;
 }
 
-iframe.chromewindow {
+iframe {
     z-index: 1;
     position: absolute;
     display: block;
@@ -184,34 +184,16 @@ iframe.chromewindow {
     margin-left: 30%;
 }
 
-iframe.filesexplorer {
-    z-index: 1;
-    position: absolute;
-    display: block;
-    width: 60%;
-    height: 70%;
-    color: black;
-    border: 1px solid inherit;
-    background-color: rgba(255, 255, 255, 0.979);
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    margin-top: 7.5%;
-    margin-left: 30%;
+.notepad {
+    visibility: hidden;
 }
 
-iframe.notepad {
-    z-index: 1;
-    position: absolute;
-    display: block;
-    width: 60%;
-    height: 70%;
-    color: black;
-    border: 1px solid inherit;
-    background-color: rgba(255, 255, 255, 0.979);
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    margin-top: 7.5%;
-    margin-left: 30%;
+.chromewindow {
+    visibility: visible;
+}
+
+.google {
+    visibility: hidden;
 }
 
 div.leftmenu {
@@ -306,6 +288,9 @@ img.cortanalogo {
         font-family: "Helvetica", "Arial";
         z-index: 10;
     }
+    .resolution a {
+        cursor: help;
+    }
 }
 
 @media screen and (max-height:500px) {
@@ -321,5 +306,8 @@ img.cortanalogo {
         font-size: larger;
         font-family: "Helvetica", "Arial";
         z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
     }
 }

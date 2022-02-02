@@ -1,4 +1,4 @@
-.resolution{
+.resolution {
     width: 100%;
     height: 100%;
     display: none;
@@ -9,7 +9,8 @@
     font-size: large;
     font-family: Helvetica, Arial, sans-serif;
 }
-.estanteria{
+
+.estanteria {
     width: 100%;
     height: 100%;
     background-color: rgb(59, 32, 10);
@@ -17,7 +18,8 @@
     justify-content: center;
     align-items: center;
 }
-.grid_estanteria{
+
+.grid_estanteria {
     width: 95%;
     height: 95%;
     display: grid;
@@ -25,7 +27,8 @@
     grid-template-rows: 10% 30% 30% 30%;
     background-color: rgb(194, 136, 69)
 }
-.celdah{
+
+.celdah {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +39,8 @@
     height: 100%;
     width: 100%;
 }
-.celda{
+
+.celda {
     border: 3px solid rgb(59, 32, 10);
     height: 100%;
     width: 100%;
@@ -44,14 +48,17 @@
     justify-content: center;
     align-items: center;
 }
-.celda div{
+
+.celda div {
     background-color: white;
     font-family: Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.celda img, .celda div{
+
+.celda img,
+.celda div {
     height: 10em;
     width: 10em;
     border: 3px solid black;
@@ -61,47 +68,65 @@
     -ms-border-radius: 15%;
     -o-border-radius: 15%;
 }
-.celda img:hover, .celda div:hover{
+
+.celda img:hover,
+.celda div:hover {
     cursor: pointer;
     border: 3px solid rgba(21, 255, 0, 0.623);
 }
-.backicon{
+
+.backicon {
     position: absolute;
     top: 0%;
     right: 0%;
     height: 80px;
     z-index: 1;
 }
-.backicon:hover{
+
+.backicon:hover {
     cursor: pointer;
 }
-@media screen and (max-height:440px){
-    .resolution{
+
+@media screen and (max-height:440px) {
+    .resolution {
         display: flex;
     }
+    .resolution a {
+        cursor: help;
+    }
 }
+
+
 /*responsive img*/
-@media screen and (max-height:590px){
-    .celda img, .celda div{
-        height:7.5em;
+
+@media screen and (max-height:590px) {
+    .celda img,
+    .celda div {
+        height: 7.5em;
         width: 7.5em;
     }
 }
-@media screen and (max-height:490px){
-    .celda img, .celda div{
-        height:5em;
+
+@media screen and (max-height:490px) {
+    .celda img,
+    .celda div {
+        height: 5em;
         width: 5em;
     }
 }
-@media screen and (max-width:870px){
-    .celda img, .celda div{
-        height:7.5em;
+
+@media screen and (max-width:870px) {
+    .celda img,
+    .celda div {
+        height: 7.5em;
         width: 7.5em;
     }
 }
-@media screen and (max-width:650px){
-    .celda img, .celda div{
-        height:5em;
+
+@media screen and (max-width:650px) {
+    .celda img,
+    .celda div {
+        height: 5em;
         width: 7.5em;
     }
 }
