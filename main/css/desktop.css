@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    height: 60em;
+    height: 45em;
 }
 
 footer {
@@ -257,12 +257,13 @@ img.cortanalogo {
     margin-top: 6.75px;
     margin-right: 7.5px;
 }
-.resolution{
+
+.resolution {
     display: none;
 }
 
-@media screen and (max-width:500px){
-    .resolution{
+@media screen and (max-width:500px) {
+    .resolution {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -272,12 +273,13 @@ img.cortanalogo {
         background-color: white;
         color: black;
         font-size: larger;
-        font-family: "Helvetica","Arial";
+        font-family: "Helvetica", "Arial";
         z-index: 10;
     }
 }
-@media screen and (max-height:500px){
-    .resolution{
+
+@media screen and (max-height:500px) {
+    .resolution {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -287,7 +289,7 @@ img.cortanalogo {
         background-color: white;
         color: black;
         font-size: larger;
-        font-family: "Helvetica","Arial";
+        font-family: "Helvetica", "Arial";
         z-index: 10;
     }
 }

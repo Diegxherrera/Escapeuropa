@@ -18,7 +18,7 @@ header {
     width: 100%;
     height: 3%;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: row;
 }
@@ -27,7 +27,6 @@ header {
     max-height: 5vh;
     margin-top: 0.1%;
     margin-left: 0;
-
 }
 
 .frase1 {
@@ -74,13 +73,16 @@ header {
     height: 3vh;
     display: inline-flex;
     flex-direction: row;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     gap: 2px;
     margin-top: -1%;
     font-size: small;
 }
 
-.Archivo, .Inicio, .Compartir, .Vista {
+.Archivo,
+.Inicio,
+.Compartir,
+.Vista {
     width: 75px;
     margin-bottom: 0.3%;
     text-align: center;
@@ -95,15 +97,15 @@ header {
     background-color: rgb(100, 100, 100);
 }
 
-
 .Archivo:hover {
     background-color: rgb(255, 0, 0);
     width: 75px;
     margin-bottom: 0.3%;
-
 }
 
-.Inicio:hover, .Compartir:hover, .Vista:hover{
+.Inicio:hover,
+.Compartir:hover,
+.Vista:hover {
     background-color: rgb(100, 100, 100);
     width: 75px;
     margin-bottom: 0.3%;
@@ -113,7 +115,7 @@ header {
     width: 100%;
     margin-left: 0;
     height: 20%;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
     border: solid 1px rgb(100, 100, 100);
     background-color: rgb(32, 32, 32);
@@ -130,12 +132,16 @@ header {
     text-align: center;
 }
 
-.Anclar, .Copiar, .Pegar {
+.Anclar,
+.Copiar,
+.Pegar {
     width: 70px;
     margin-top: 0.2%;
 }
 
-.Anclar:hover, .Copiar:hover, .Pegar:hover {
+.Anclar:hover,
+.Copiar:hover,
+.Pegar:hover {
     width: 70px;
     background-color: rgb(100, 100, 100);
 }
@@ -147,26 +153,25 @@ header {
     color: white;
     gap: 1em;
     margin-left: 1%;
-    margin-top: 0.3% ;
+    margin-top: 0.3%;
 }
 
 .Copiarruta {
     width: 130px;
     text-align: center;
-    
 }
 
 .Pegaracceso {
     width: 125px;
     text-align: center;
-    
 }
 
 .Cortar {
     width: 45px;
 }
 
-.Copiarruta:hover, .Pegaracceso:hover {
+.Copiarruta:hover,
+.Pegaracceso:hover {
     background-color: rgb(100, 100, 100);
     text-align: center;
 }
@@ -184,7 +189,8 @@ header {
     margin-top: 1%;
 }
 
-.movera, .copiara {
+.movera,
+.copiara {
     max-width: 3%;
     gap: 1%;
     display: inline-flex;
@@ -196,8 +202,9 @@ header {
     align-content: center;
 }
 
-.movera:hover, .copiara:hover {
-    background-color: rgb(100, 100, 100) ;
+.movera:hover,
+.copiara:hover {
+    background-color: rgb(100, 100, 100);
 }
 
 .linea2 {
@@ -208,7 +215,8 @@ header {
     margin-top: 1.8%;
 }
 
-.eliminar, .cambiarnombre {
+.eliminar,
+.cambiarnombre {
     max-width: 6%;
     gap: 1%;
     display: inline-flex;
@@ -220,8 +228,9 @@ header {
     align-content: center;
 }
 
-.eliminar:hover, .cambiarnombre:hover {
-    background-color: rgb(100, 100, 100) ;
+.eliminar:hover,
+.cambiarnombre:hover {
+    background-color: rgb(100, 100, 100);
 }
 
 .linea3 {
@@ -239,7 +248,7 @@ header {
 }
 
 .nuevacarpeta:hover {
-    background-color: rgb(100, 100, 100) ;
+    background-color: rgb(100, 100, 100);
 }
 
 .textos1 {
@@ -259,8 +268,9 @@ header {
     width: 70%;
 }
 
-.nuevoelemento:hover, .facilacceso:hover {
-    background-color: rgb(100, 100, 100) ;
+.nuevoelemento:hover,
+.facilacceso:hover {
+    background-color: rgb(100, 100, 100);
 }
 
 .linea4 {
@@ -302,8 +312,10 @@ header {
     width: 52%;
 }
 
-.Abrir:hover, .Modificar:hover, .Historial:hover {
-    background-color: rgb(100, 100, 100) ;
+.Abrir:hover,
+.Modificar:hover,
+.Historial:hover {
+    background-color: rgb(100, 100, 100);
 }
 
 .linea5 {
@@ -314,54 +326,31 @@ header {
     margin-top: 1%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .textos3 {
     width: 100%;
     display: inline-flex;
     flex-direction: row;
     color: white;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: small;
 }
 
 .portapapeles {
-    width: 20%;  
+    width: 20%;
     text-align: center;
 }
 
 .organizar {
-    width: 18%; 
+    width: 18%;
     text-align: center;
 }
 
 .nuevo {
-    width: 14%; 
+    width: 14%;
     text-align: center;
 }
 
 .abrir {
-    width: 14%; 
+    width: 14%;
     text-align: center;
 }
-
-
-
-
-
