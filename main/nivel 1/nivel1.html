@@ -29,7 +29,7 @@
         </div>
 
         <div class="lista">
-            <img src="img/lista.jpg" alt="lista" onclick="openestanteria()">
+            <img src="img/lista.jpg" alt="lista" onclick="">
             <span>LISTA DE COMPONENTES</span>
         </div>
     </div>
@@ -43,49 +43,49 @@
             <div class="celdah" id="celda5">PLACA BASE</div>
 
             <div class="celda" id="celda6">
-                <img src="img/cpulow.jpg" alt="cpulow" id="cpulow">
+                <img src="img/cpulow.jpg" alt="cpulow" id="cpulow" onclick="cpuclick('cpulow')">
             </div>
             <div class="celda" id="celda7">
-                <img src="img/hightgrafica.png" alt="grafhight" id="gpuhig">
+                <img src="img/hightgrafica.png" alt="grafhight" id="gpuhig" onclick="gpuclick('gpuhig')">
             </div>
             <div class="celda" id="celda8">
-                <div id="ramlow">4GB</div>
+                <div id="ramlow" onclick="ramclick('ramlow')">4GB</div>
             </div>
             <div class="celda" id="celda9">
-                <img src="img/Discomid.jpg" alt="Discomid" id="dismid">
+                <img src="img/Discomid.jpg" alt="Discomid" id="dismid" onclick="disclick('dismid')">
             </div>
             <div class="celda" id="celda10">
-                <img src="img/mothermid.jpg" alt="mothermid" id="motmid">
+                <img src="img/mothermid.jpg" alt="mothermid" id="motmid" onclick="motclick('motmid')">
             </div>
             <div class="celda" id="celda11">
-                <img src="img/cpu_medium.jpg" alt="cpumid" id="cpumid">
+                <img src="img/cpu_medium.jpg" alt="cpumid" id="cpumid" onclick="cpuclick('cpumid')">
             </div>
             <div class="celda" id="celda12">
-                <img src="img/tarjeta-mid.jpeg" alt="grafmid" id="gpumid">
+                <img src="img/tarjeta-mid.jpeg" alt="grafmid" id="gpumid"  onclick="gpuclick('gpumid')">
             </div>
             <div class="celda" id="celda13">
-                <div id="ramlow">8GB</div>
+                <div id="rammid" onclick="ramclick('rammid')">8GB</div>
             </div>
             <div class="celda" id="celda14">
-                <img src="img/diskhight.jpg" alt="Discohight" id="dishig">
+                <img src="img/diskhight.jpg" alt="Discohight" id="dishig" onclick="disclick('dishig')">
             </div>
             <div class="celda" id="celda15">
-                <img src="img/motherlow.jpg" alt="motherlow" id="motlow">
+                <img src="img/motherlow.jpg" alt="motherlow" id="motlow" onclick="motclick('motlow')">
             </div>
             <div class="celda" id="celda16">
-                <img src="img/cpuhight.jpg" alt="cpuhight" id="cpuhig">
+                <img src="img/cpuhight.jpg" alt="cpuhight" id="cpuhig" onclick="cpuclick('cpuhig')">
             </div>
             <div class="celda" id="celda17">
-                <img src="img/tarjeta-low.jpg" alt="graflow" id="gpulow">
+                <img src="img/tarjeta-low.jpg" alt="graflow" id="gpulow" onclick="gpuclick('gpulow')">
             </div>
             <div class="celda" id="celda18">
-                <div id="ramlow">16GB</div>
+                <div id="ramhig" onclick="ramclick('ramhig')">16GB</div>
             </div>
             <div class="celda" id="celda19">
-                <img src="img/Discolow.jpg" alt="Discolow" id="dislow">
+                <img src="img/Discolow.jpg" alt="Discolow" id="dislow" onclick="disclick('dislow')">
             </div>
             <div class="celda" id="celda20">
-                <img src="img/motherhight.jpg" alt="motherhight" id="mothig">
+                <img src="img/motherhight.jpg" alt="motherhight" id="mothig" onclick="motclick('mothig')">
             </div>
 
             <img class="backicon" src="img/icon.png" alt="back" onclick="estanteriaback()">
@@ -99,6 +99,7 @@
 
     </div>
     <script src="js/cambio_de_escenario.js"></script>
+    <script src="js/estanteria.js"></script>
 </body>
 
 </html>
