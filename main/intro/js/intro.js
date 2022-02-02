@@ -68,3 +68,10 @@ function chimg() {
     }
     contador++
 }
+    document.addEventListener("keyup", next)
+
+    function next(tecla){
+        if(tecla.key == "Enter" || tecla.key == " "){
+            indice()
+        }
+    }
