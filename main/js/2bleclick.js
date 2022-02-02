@@ -20,8 +20,6 @@ function unclick(id) {
         elemento.style.cssText = "background-color: rgba(255, 0, 0, 0.199); border: 1px dotted red;"
     }
     setTimeout("reset()", 100)
-
-
 }
 
 function reset() {
