@@ -92,7 +92,7 @@ body {
 .button {
     grid-column: 1 / span 7;
     grid-row: 2;
-    background-image: url(./KOMBAT.es/background1.png);
+    background-image: url(../KOMBAT.es/background1.png);
 }
 
 .button1 {

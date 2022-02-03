@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     border: 0;
 }
 
 body {
-    background-color:  #212121 ;
+    background-color: #212121;
     width: 100vw;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -54,8 +54,8 @@ body {
     height: 100%;
 }
 
-.gmail{
-    color:  #bebbbd;
+.gmail {
+    color: #bebbbd;
     height: 5%;
     width: 100%;
     display: inline-flex;
@@ -103,7 +103,7 @@ body {
 }
 
 .texto {
-    color:  #bebbbd;
+    color: #bebbbd;
     text-decoration: none;
 }
 
@@ -122,7 +122,7 @@ body {
 
 svg.apps-ggl-icons {
     height: 70%;
-    width:auto;
+    width: auto;
     color: white;
 }
 
@@ -139,10 +139,10 @@ svg.apps-ggl-icons {
     align-items: center;
 }
 
-.search_text{
+.search_text {
     color: white;
-    background-color:  #272727;
-    border: 1px solid  #bebbbd;
+    background-color: #272727;
+    border: 1px solid #bebbbd;
     border-radius: 5em;
     width: 35%;
     height: 50%;
@@ -150,9 +150,9 @@ svg.apps-ggl-icons {
     font-size: small;
 }
 
-.search_text:hover{
+.search_text:hover {
     color: white;
-    background-color:  #696969;
+    background-color: #696969;
     border: #696969 1px solid;
 }
 
@@ -166,14 +166,15 @@ svg.apps-ggl-icons {
     gap: 3%;
 }
 
-.texto2, .texto3 {
+.texto2,
+.texto3 {
     text-decoration: none;
     color: #ffffff;
 }
 
 .texto2 {
-    height: 45%;
-    width: 8%;
+    height: 42.5%;
+    width: 10%;
     background-color: #3b3b3b;
     border: #3b3b3b 1px solid;
     border-radius: 0.5em;
@@ -184,8 +185,8 @@ svg.apps-ggl-icons {
 }
 
 .texto3 {
-    height: 45%;
-    width: 8%;
+    height: 42.5%;
+    width: 10%;
     background-color: #3b3b3b;
     border: #3b3b3b 1px solid;
     border-radius: 0.5em;
@@ -195,7 +196,8 @@ svg.apps-ggl-icons {
     transition: all 0.2s ease-in;
 }
 
-.texto2:hover, .texto3:hover {
+.texto2:hover,
+.texto3:hover {
     border: #bebbbd 1px solid;
     transition: all 0.2s ease-out;
     color: #ffffff;
@@ -221,6 +223,7 @@ svg.apps-ggl-icons {
 .idiomas div:hover {
     text-decoration: underline;
     color: rgb(31, 140, 241);
+    cursor: pointer;
 }
 
 .contenedor3 {
@@ -229,10 +232,9 @@ svg.apps-ggl-icons {
     height: 5%;
     display: flex;
     color: #bebbbd;
-    background-color: #181818 ;
+    background-color: #181818;
     align-items: center;
     font-size: medium;
-
 }
 
 .contenedor3 p {
@@ -246,7 +248,7 @@ svg.apps-ggl-icons {
     height: 5%;
     display: flex;
     color: #bebbbd;
-    background-color: #181818 ;
+    background-color: #181818;
     align-items: center;
     font-size: medium;
 }
@@ -289,14 +291,14 @@ svg.apps-ggl-icons {
     justify-content: right;
 }
 
-a:hover{
+a:hover {
     color: #bebbbd;
     text-decoration: #bebbbd;
     text-decoration: underline;
 }
 
-@media screen and (max-width:500px){
-    .resolution{
+@media screen and (max-width:500px) {
+    .resolution {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -306,13 +308,16 @@ a:hover{
         background-color: white;
         color: black;
         font-size: larger;
-        font-family: "Helvetica","Arial";
+        font-family: "Helvetica", "Arial";
         z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
     }
 }
 
-@media screen and (max-height:500px){
-    .resolution{
+@media screen and (max-height:500px) {
+    .resolution {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -322,7 +327,10 @@ a:hover{
         background-color: white;
         color: black;
         font-size: larger;
-        font-family: "Helvetica","Arial";
+        font-family: "Helvetica", "Arial";
         z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
     }
 }

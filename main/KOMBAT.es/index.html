@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOMBAT</title>
+    <title>Kombat - Windows 10</title>
     <link rel="stylesheet" href="N3.css">
     <script src="jquery-3.6.0.js"></script>
 </head>
+
 <body>
-<div class="grid">
-    <div class="cielo">
-        <div class="tierra"></div>
-    </div>
-    <div class="p1">
-        <div class="daño" id="daño1">-25</div>
-        <img src="p1.png">
-        <div class="vida" id="vidap1">
-            <span id="vidan1"></span>
+    <div class="grid">
+        <div class="cielo">
+            <div class="tierra"></div>
         </div>
-        <div class="uso" id="uso1"></div>
-    </div>  
-    <div class="p2">
-        <div class="daño" id="daño2">-20</div>
-        <img src="p2.png">
-        <div class="vida" id="vidap2">
-            <span id="vidan2"></span>
+        <div class="p1">
+            <div class="daño" id="daño1">-25</div>
+            <img src="p1.png">
+            <div class="vida" id="vidap1">
+                <span id="vidan1"></span>
+            </div>
+            <div class="uso" id="uso1"></div>
         </div>
-        <div class="uso" id="uso2"></div>
-    </div>
-    <div class="button"></div>
+        <div class="p2">
+            <div class="daño" id="daño2">-20</div>
+            <img src="p2.png">
+            <div class="vida" id="vidap2">
+                <span id="vidan2"></span>
+            </div>
+            <div class="uso" id="uso2"></div>
+        </div>
+        <div class="button"></div>
         <div class="button1">
             <div class="button_a" onclick="combat(0)">
                 Fuerza bruta
@@ -45,7 +47,8 @@
                 Finta
             </div>
         </div>
-</div>
-        <script src="combat.js"></script>
+    </div>
+    <script src="combat.js"></script>
 </body>
+
 </html>
