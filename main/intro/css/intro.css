@@ -73,7 +73,6 @@ body{
     animation: tmbl 0.1s infinite;
     -webkit-animation: tmbl 0.1s infinite;
 }
-
 @keyframes tmbl{
     from{
         width: 100%;
