@@ -4,7 +4,22 @@ let dis = false
 let mot = false
 let ram = false
 
+let comprobador = ""
 let secuencia = ""
+let quality = parseInt(Math.random() * 10) + 1
+
+if (quality <= 6){
+    console.log("baja calidad")
+    comprobador = "aaaaa"
+}
+else if (quality <= 9){
+    console.log("media calidad")
+    comprobador = "bbbbb"
+}
+else if (quality <= 10){
+    console.log("alta calidad")
+    comprobador = "ccccc"
+}
 
 function cpuclick(id){
     if(cpu == false){
@@ -64,4 +79,11 @@ function motclick(id){
     console.log(secuencia)
     }
     mot = true
+}
+
+function comprobacion(){
+    if (comprobador == secuencia){
+        console.log("correcto") //animación de montaje del pc
+    }
+    else ("incorrecto") //si falla 3 veces restart desde into
 }

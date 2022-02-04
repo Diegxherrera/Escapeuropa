@@ -13,6 +13,12 @@ function estanteriaback(){
     escenario.show()
     estanteria.hide()
 }
+function openlist(){
+    escenario.hide()
+}
 function openrepair(){
     escenario.hide()
 }
+
+
+
