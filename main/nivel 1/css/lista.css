@@ -63,6 +63,7 @@
     line-height: 25px;
     display: flex;
     justify-content: left;
+    text-align: center;
 }
 .backicon2{
     position: absolute;

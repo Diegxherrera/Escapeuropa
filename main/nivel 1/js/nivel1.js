@@ -163,10 +163,14 @@ function motclick(id){
 }
 
 function comprobacion(){
-    if (comprobador == secuencia){
+    if (secuencia == ""){
+        $('.warning').css('display','flex')
+        setTimeout("$('.warning').css('display','none')",2500)
+    }
+    else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true){
         console.log("correcto") //animación de montaje del pc
     }
-    else ("incorrecto") //si falla 3 veces restart desde into
+    else{ console.log("incorrecto")} //si falla 3 veces restart desde intro
 }
 
 
