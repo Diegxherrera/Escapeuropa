@@ -13,6 +13,8 @@ let memoria = false
 let textquality = ""
 let comprobador = ""
 let secuencia = ""
+let correcto = false
+let vecescorrecto = 0
 let quality = parseInt(Math.random() * 10) + 1
 let componente1 = parseInt(Math.random() * 5 + 1)
 let componente2 = parseInt(Math.random() * 5 + 1)
@@ -61,7 +63,24 @@ else if (quality <= 10){
 }
 
 $('#listacontenido').text(textquality)
-$('#texto_lista').text("Es posible que haya componentes que seán ireparables, encuentra su reemplazo que sepas que los componentes deben ser de " + textquality)
+$('#texto_lista').text("Algunos componentes son ireparables, encuentra su reemplazo que sepas que los componentes deben ser de " + textquality)
+
+const componentes = document.getElementById('componentes')
+if(procesador == true){
+    componentes.innerHTML += "procesador <br>" 
+}
+if(disco == true){
+    componentes.innerHTML += "disco <br>"
+}
+if(grafica == true){
+    componentes.innerHTML += "gráfica <br>"
+}
+if(memoria == true){
+    componentes.innerHTML += "memoria <br>"
+}
+if(placa == true){
+    componentes.innerHTML += "placa <br>"
+}
 
 function cpuclick(id){
     if(cpu == false){
@@ -70,7 +89,11 @@ function cpuclick(id){
     if(id == "cpulow"){secuencia = secuencia + "A"}
     if(id == "cpumid"){secuencia = secuencia + "B"}
     if(id == "cpuhig"){secuencia = secuencia + "C"}
-    console.log(secuencia)
+    if(procesador == true){
+        correcto = true
+        vecescorrecto++
+    }
+    console.log(secuencia + "\n" + "procesador es " + procesador)
     }
     cpu = true
 }
@@ -82,7 +105,11 @@ function ramclick(id){
     if(id == "ramlow"){secuencia = secuencia + "A"}
     if(id == "rammid"){secuencia = secuencia + "B"}
     if(id == "ramhig"){secuencia = secuencia + "C"}
-    console.log(secuencia)
+    if(memoria == true){
+        correcto = true
+        vecescorrecto++
+    }
+    console.log(secuencia + "\n" + "ram es " + memoria)
     }
     ram = true
 }
@@ -94,7 +121,11 @@ function gpuclick(id){
     if(id == "gpulow"){secuencia = secuencia + "A"}
     if(id == "gpumid"){secuencia = secuencia + "B"}
     if(id == "gpuhig"){secuencia = secuencia + "C"}
-    console.log(secuencia)
+    if(grafica == true){
+        correcto = true
+        vecescorrecto++
+    }
+    console.log(secuencia + "\n" + "gpu es " + grafica)
     }
     gpu = true
 }
@@ -106,7 +137,11 @@ function disclick(id){
     if(id == "dislow"){secuencia = secuencia + "A"}
     if(id == "dismid"){secuencia = secuencia + "B"}
     if(id == "dishig"){secuencia = secuencia + "C"}
-    console.log(secuencia)
+    if(disco == true){
+        correcto = true
+        vecescorrecto++
+    }
+    console.log(secuencia + "\n" + "disco es " + disco)
     }
     dis = true
 }
@@ -118,7 +153,11 @@ function motclick(id){
     if(id == "motlow"){secuencia = secuencia + "A"}
     if(id == "motmid"){secuencia = secuencia + "B"}
     if(id == "mothig"){secuencia = secuencia + "C"}
-    console.log(secuencia)
+    if(placa == true){
+        correcto = true
+        vecescorrecto++
+    }
+    console.log(secuencia  + "\n" + "placa es " + placa)
     }
     mot = true
 }

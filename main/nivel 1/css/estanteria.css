@@ -87,7 +87,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-height:440px) {
+@media screen and (max-height:550px) {
     .resolution {
         display: flex;
         z-index: 10;
