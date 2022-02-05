@@ -8,10 +8,11 @@
     <title>Nivel 1</title>
     <link rel="stylesheet" href="css/escenarario.css">
     <link rel="stylesheet" href="css/estanteria.css">
+    <link rel="stylesheet" href="css/lista.css">
     <script src="js/jquery-3.6.0.js"></script>
 </head>
 
-<body background="img/background.jpg">
+<body>
     <div class="resolution">
         <a class="enlace" href="../extra/resolucion.html">RESOLUCIÓN NO SOPORTADA</a>
     </div>
@@ -30,7 +31,7 @@
             <span>REPARACIÓN</span>
         </div>
 
-        <div class="lista">
+        <div class="lista_icon">
             <img src="img/lista.jpg" alt="lista" onclick="openlist()">
             <span>LISTA DE COMPONENTES</span>
         </div>
@@ -97,9 +98,17 @@
 
     </div>
 
-    <div class="repair">
-    
+    <div class="lista">
+        <div class="listborder">
+            <div class="listcontent">
+                <span id="listacontenido"></span>
+                <p id="texto_lista"></p>
+            </div>
+        </div>
+        <img class="backicon2" alt="cerrar" src="img/icon.png" onclick="cerrarlista()">
     </div>
+
+
     <script src="js/cambio_de_escenario.js"></script>
     <script src="js/nivel1.js"></script>
 </body>

@@ -1,8 +1,10 @@
 const escenario = $('.grid_escenario')
 const estanteria = $('.estanteria')
+const lista = $('.lista')
 //x defecto
 escenario.show()
 estanteria.hide()
+lista.hide()
 
 //cambios
 function openestanteria(){
@@ -15,10 +17,14 @@ function estanteriaback(){
 }
 function openlist(){
     escenario.hide()
+    lista.show()
 }
 function openrepair(){
     escenario.hide()
 }
-
+function cerrarlista(){
+    lista.hide()
+    escenario.show()
+}
 
 

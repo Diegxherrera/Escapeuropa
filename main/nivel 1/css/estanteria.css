@@ -90,6 +90,7 @@
 @media screen and (max-height:440px) {
     .resolution {
         display: flex;
+        z-index: 10;
     }
     .resolution a {
         cursor: help;

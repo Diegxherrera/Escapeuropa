@@ -4,6 +4,7 @@ let dis = false
 let mot = false
 let ram = false
 
+let textquality = ""
 let comprobador = ""
 let secuencia = ""
 let quality = parseInt(Math.random() * 10) + 1
@@ -11,15 +12,21 @@ let quality = parseInt(Math.random() * 10) + 1
 if (quality <= 6){
     console.log("baja calidad")
     comprobador = "aaaaa"
+    textquality = "bajos recursos"
 }
 else if (quality <= 9){
     console.log("media calidad")
     comprobador = "bbbbb"
+    textquality = "medios recursos"
 }
 else if (quality <= 10){
     console.log("alta calidad")
     comprobador = "ccccc"
+    textquality = "altos recursos"
 }
+
+$('#listacontenido').text(textquality)
+$('#texto_lista').text("Es posible que haya componentes que seán ireparables, encuentra su reemplazo que sepas que los componentes deben ser de " + textquality)
 
 function cpuclick(id){
     if(cpu == false){
@@ -87,3 +94,5 @@ function comprobacion(){
     }
     else ("incorrecto") //si falla 3 veces restart desde into
 }
+
+
