@@ -1,21 +1,28 @@
+//variables/const globales 
+
+//Comprobación de selección
 let cpu = false
 let gpu = false
 let dis = false
 let mot = false
 let ram = false
 
+//Posibles componentes
 let disco = false
 let grafica = false
 let procesador = false
 let placa = false
 let memoria = false
 
+//comprobación de secuencia correcta
 let textquality = ""
 let comprobador = ""
 let secuencia = ""
 let correcto = false
 let vecescorrecto = 0
-let quality = parseInt(Math.random() * 10) + 1
+
+//declaración de secuencia
+const quality = parseInt(Math.random() * 10) + 1
 let componente1 = parseInt(Math.random() * 5 + 1)
 let componente2 = parseInt(Math.random() * 5 + 1)
 let componente3 = parseInt(Math.random() * 5 + 1)
@@ -168,9 +175,9 @@ function comprobacion(){
         setTimeout("$('.warning').css('display','none')",2500)
     }
     else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true){
-        console.log("correcto") //animación de montaje del pc
+        alert("correcto") //animación de montaje del pc
     }
-    else{ console.log("incorrecto")} //si falla 3 veces restart desde intro
+    else{ alert("incorrecto")} //si falla 3 veces restart desde intro
 }
 
 
