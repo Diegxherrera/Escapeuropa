@@ -57,92 +57,92 @@
 
             <div class="componentes">
                 <img src="img/cpu_medium.jpg" alt="cpu" height="300px" width="300px">
-                <span>Intel core i5 -6500 LGA 1151</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="cpumid">Intel core i5 -6500 LGA 1151</span>
+                <div class="comprar" onclick="cpuclick('cpumid')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/cpulow.jpg" alt="cpu" height="300px" width="300px">
-                <span>Intel core i3 7a generación</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="cpulow">Intel core i3 7a generación</span>
+                <div class="comprar" onclick="cpuclick('cpulow')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/cpuhight.jpg" alt="cpu" height="300px" width="300px">
-                <span>amd ryzen 9</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="cpuhig">amd ryzen 9</span>
+                <div class="comprar" onclick="cpuclick('cpuhig')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/Discolow.jpg" alt="disco" height="300px" width="300px">
-                <span>HDD 500GB</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="dislow">HDD 500GB</span>
+                <div class="comprar" onclick="disclick('dislow')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/diskhight.jpg" alt="disco" height="300px" width="300px">
-                <span>Samsung SSD 500GB</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="dishig">Samsung SSD 500GB</span>
+                <div class="comprar" onclick="disclick('dishig')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/Discomid.jpg" alt="disco" height="300px" width="300px">
-                <span>HDD 1TB</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="dismid">HDD 1TB</span>
+                <div class="comprar" onclick="disclick('dismid')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/hightgrafica.png" alt="Gpu" height="300px" width="300px">
-                <span>Nvidia RTX 3060 ti</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="gpuhig">Nvidia RTX 3060 ti</span>
+                <div class="comprar" onclick="gpuclick('gpuhig')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/tarjeta-mid.jpeg" alt="cpu" height="300px" width="300px">
-                <span>PowerColor Red Dragon Radeon RX 550</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="gpumid">PowerColor Red Dragon Radeon RX 550</span>
+                <div class="comprar" onclick="gpuclick('gpumid')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/tarjeta-low.jpg" alt="cpu" height="300px" width="300px">
-                <span>Geforce GT 710</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="gpulow">Geforce GT 710</span>
+                <div class="comprar" onclick="gpuclick('gpulow')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/ram-medium.jpg" alt="cpu" height="300px" width="300px">
-                <span>8gb ram</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="rammid">8gb ram</span>
+                <div class="comprar" onclick="ramclick('rammid')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/ramlow.jpg" alt="cpu" height="300px" width="300px">
-                <span>4gb ram</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="ramlow">4gb ram</span>
+                <div class="comprar" onclick="ramclick('ramlow')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/16GB.jpg" alt="cpu" height="300px" width="300px">
-                <span>16GB ram</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="ramhig">16GB ram</span>
+                <div class="comprar" onclick="ramclick('ramhig')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/motherlow.jpg" alt="cpu" height="300px" width="300px">
-                <span>B550M -A PRO</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="motlow">B550M -A PRO</span>
+                <div class="comprar" onclick="motclick('motlow')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/motherhight.jpg" alt="cpu" height="300px" width="300px">
-                <span>pro z690-A</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="mothig">pro z690-A</span>
+                <div class="comprar" onclick="motclick('mothig')">Añadir al carrito</div>
             </div>
 
             <div class="componentes">
                 <img src="img/mothermid.jpg" alt="cpu" height="300px" width="300px">
-                <span>TUFGAMING B150 PLUS II</span>
-                <div class="comprar">Añadir al carrito</div>
+                <span id="motmid">TUFGAMING B150 PLUS II</span>
+                <div class="comprar" onclick="motclick('motmid')">Añadir al carrito</div>
                 <div class="extra"></div>
             </div>
 
@@ -153,6 +153,7 @@
                     <div class="ctext" id="ctext">
 
                     </div>
+                    <div class="comprarlo" id="compra" onclick="compra()">Comprar</div>
                 </div>
             </div>
         </div>

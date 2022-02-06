@@ -20,6 +20,7 @@ let comprobador = ""
 let secuencia = ""
 let correcto = false
 let vecescorrecto = 0
+let comprado = false
 
 //declaración de secuencia
 const quality = parseInt(Math.random() * 10) + 1
@@ -92,10 +93,13 @@ if(placa == true){
 function cpuclick(id){
     if(cpu == false){
     const argid = document.getElementById(id)
-    argid.style.cssText = "border: 3px solid rgba(21, 255, 0, 0.623);"
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML += argid.innerHTML + "<br>"
+
     if(id == "cpulow"){secuencia = secuencia + "A"}
     if(id == "cpumid"){secuencia = secuencia + "B"}
     if(id == "cpuhig"){secuencia = secuencia + "C"}
+
     if(procesador == true){
         correcto = true
         vecescorrecto++
@@ -107,8 +111,11 @@ function cpuclick(id){
 
 function ramclick(id){
     if(ram == false){
+        
     const argid = document.getElementById(id)
-    argid.style.cssText = "border: 3px solid rgba(21, 255, 0, 0.623);"
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML += argid.innerHTML + "<br>"
+
     if(id == "ramlow"){secuencia = secuencia + "A"}
     if(id == "rammid"){secuencia = secuencia + "B"}
     if(id == "ramhig"){secuencia = secuencia + "C"}
@@ -124,7 +131,8 @@ function ramclick(id){
 function gpuclick(id){
     if(gpu == false){
     const argid = document.getElementById(id)
-    argid.style.cssText = "border: 3px solid rgba(21, 255, 0, 0.623);"
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML += argid.innerHTML + "<br>"
     if(id == "gpulow"){secuencia = secuencia + "A"}
     if(id == "gpumid"){secuencia = secuencia + "B"}
     if(id == "gpuhig"){secuencia = secuencia + "C"}
@@ -140,7 +148,8 @@ function gpuclick(id){
 function disclick(id){
     if(dis == false){
     const argid = document.getElementById(id)
-    argid.style.cssText = "border: 3px solid rgba(21, 255, 0, 0.623);"
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML += argid.innerHTML + "<br>"
     if(id == "dislow"){secuencia = secuencia + "A"}
     if(id == "dismid"){secuencia = secuencia + "B"}
     if(id == "dishig"){secuencia = secuencia + "C"}
@@ -156,7 +165,8 @@ function disclick(id){
 function motclick(id){
     if(mot == false){
     const argid = document.getElementById(id)
-    argid.style.cssText = "border: 3px solid rgba(21, 255, 0, 0.623);"
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML += argid.innerHTML + "<br>"
     if(id == "motlow"){secuencia = secuencia + "A"}
     if(id == "motmid"){secuencia = secuencia + "B"}
     if(id == "mothig"){secuencia = secuencia + "C"}
@@ -168,13 +178,15 @@ function motclick(id){
     }
     mot = true
 }
-
+function compra(){
+    comprado = true
+}
 function comprobacion(){
     if (secuencia == ""){
         $('.warning').css('display','flex')
         setTimeout("$('.warning').css('display','none')",2500)
     }
-    else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true){
+    else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true && comprado == true){
         alert("correcto") //animación de montaje del pc
     }
     else{ alert("incorrecto")} //si falla 3 veces restart desde intro
