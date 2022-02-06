@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nivel 1</title>
     <link rel="stylesheet" href="css/escenarario.css">
-    <link rel="stylesheet" href="css/estanteria.css">
+    <link rel="stylesheet" href="css/componentesPC.css">
     <link rel="stylesheet" href="css/lista.css">
     <script src="js/jquery-3.6.0.js"></script>
 </head>
@@ -16,14 +16,11 @@
     <div class="resolution">
         <a class="enlace" href="../extra/resolucion.html">RESOLUCIÓN NO SOPORTADA</a>
     </div>
-    <div class="warning">
-        DEBES SELECCIONAR ANTES LOS COMPONENTES
-    </div>
+    
     <div class="grid_escenario">
-        <div class="blackleft"></div>
-        <div class="blackright"></div>
-        <div class="blackcenter"></div>
-
+        <div class="warning">
+            DEBES SELECCIONAR ANTES LOS COMPONENTES
+        </div>
         <div class="estanteria-esc">
             <img src="img/estanteria.jpg" alt="estanteria" onclick="openestanteria()">
             <span>SELECCIÓN DE COMPONENTES</span>
@@ -40,65 +37,113 @@
         </div>
     </div>
 
-    <div class="estanteria">
-        <div class="grid_estanteria">
-            <div class="celdah" id="celda1">CPU</div>
-            <div class="celdah" id="celda1">TARJETA GRAFICA</div>
-            <div class="celdah" id="celda3">RAM</div>
-            <div class="celdah" id="celda4">DISCO DURO</div>
-            <div class="celdah" id="celda5">PLACA BASE</div>
+    <div class="componentesPC">
+        <div class="navclose">
+            <div class="whitecrossh" onclick="estanteriaback()">
+            <img class="whitecross" src="img/closecross.png" width="30px" height="30px" alt="closeicon">
+            </div>
+        </div>
+        <header>
+            <iframe src="img/COMPUTERICON.svg" width="100px" height="50px" style="border: none;"></iframe>
+            <span>COMPONENTES PC</span>
+            <img class="carrito" src="img/carrito.png" width="50px" height="50px">
+        </header>
+        <div class="componentescontenido">
 
-            <div class="celda" id="celda6">
-                <img src="img/cpulow.jpg" alt="cpulow" id="cpulow" onclick="cpuclick('cpulow')">
-            </div>
-            <div class="celda" id="celda7">
-                <img src="img/hightgrafica.png" alt="grafhight" id="gpuhig" onclick="gpuclick('gpuhig')">
-            </div>
-            <div class="celda" id="celda8">
-                <div id="ramlow" onclick="ramclick('ramlow')">4GB</div>
-            </div>
-            <div class="celda" id="celda9">
-                <img src="img/Discomid.jpg" alt="Discomid" id="dismid" onclick="disclick('dismid')">
-            </div>
-            <div class="celda" id="celda10">
-                <img src="img/mothermid.jpg" alt="mothermid" id="motmid" onclick="motclick('motmid')">
-            </div>
-            <div class="celda" id="celda11">
-                <img src="img/cpu_medium.jpg" alt="cpumid" id="cpumid" onclick="cpuclick('cpumid')">
-            </div>
-            <div class="celda" id="celda12">
-                <img src="img/tarjeta-mid.jpeg" alt="grafmid" id="gpumid" onclick="gpuclick('gpumid')">
-            </div>
-            <div class="celda" id="celda13">
-                <div id="rammid" onclick="ramclick('rammid')">8GB</div>
-            </div>
-            <div class="celda" id="celda14">
-                <img src="img/diskhight.jpg" alt="Discohight" id="dishig" onclick="disclick('dishig')">
-            </div>
-            <div class="celda" id="celda15">
-                <img src="img/motherlow.jpg" alt="motherlow" id="motlow" onclick="motclick('motlow')">
-            </div>
-            <div class="celda" id="celda16">
-                <img src="img/cpuhight.jpg" alt="cpuhight" id="cpuhig" onclick="cpuclick('cpuhig')">
-            </div>
-            <div class="celda" id="celda17">
-                <img src="img/tarjeta-low.jpg" alt="graflow" id="gpulow" onclick="gpuclick('gpulow')">
-            </div>
-            <div class="celda" id="celda18">
-                <div id="ramhig" onclick="ramclick('ramhig')">16GB</div>
-            </div>
-            <div class="celda" id="celda19">
-                <img src="img/Discolow.jpg" alt="Discolow" id="dislow" onclick="disclick('dislow')">
-            </div>
-            <div class="celda" id="celda20">
-                <img src="img/motherhight.jpg" alt="motherhight" id="mothig" onclick="motclick('mothig')">
+            <div class="comptitulo">Nuestras recomendaciones en hardware</div>
+
+            <div class="componentes">
+                <img src="img/cpu_medium.jpg" alt="cpu" height="300px" width="300px">
+                <span>Intel core i5 -6500 LGA 1151</span>
+                <div class="comprar">Añadir al carrito</div>
             </div>
 
-            <img class="backicon" src="img/icon.png" alt="back" onclick="estanteriaback()">
+            <div class="componentes">
+                <img src="img/cpulow.jpg" alt="cpu" height="300px" width="300px">
+                <span>Intel core i3 7a generación</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/cpuhight.jpg" alt="cpu" height="300px" width="300px">
+                <span>amd ryzen 9</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/Discolow.jpg" alt="disco" height="300px" width="300px">
+                <span>HDD 500GB</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/diskhight.jpg" alt="disco" height="300px" width="300px">
+                <span>Samsung SSD 500GB</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/Discomid.jpg" alt="disco" height="300px" width="300px">
+                <span>HDD 1TB</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/hightgrafica.png" alt="Gpu" height="300px" width="300px">
+                <span>Nvidia RTX 3060 ti</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/tarjeta-mid.jpeg" alt="cpu" height="300px" width="300px">
+                <span>PowerColor Red Dragon Radeon RX 550</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/tarjeta-low.jpg" alt="cpu" height="300px" width="300px">
+                <span>Geforce GT 710</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/ram-medium.jpg" alt="cpu" height="300px" width="300px">
+                <span>8gb ram</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/ramlow.jpg" alt="cpu" height="300px" width="300px">
+                <span>4gb ram</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/16GB.jpg" alt="cpu" height="300px" width="300px">
+                <span>16GB ram</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/motherlow.jpg" alt="cpu" height="300px" width="300px">
+                <span>B550M -A PRO</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/motherhight.jpg" alt="cpu" height="300px" width="300px">
+                <span>pro z690-A</span>
+                <div class="comprar">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/mothermid.jpg" alt="cpu" height="300px" width="300px">
+                <span>TUFGAMING B150 PLUS II</span>
+                <div class="comprar">Añadir al carrito</div>
+                <div class="extra"></div>
+            </div>
 
         </div>
-
-
     </div>
 
     <div class="lista">

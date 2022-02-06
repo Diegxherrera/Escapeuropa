@@ -1,9 +1,9 @@
 const escenario = $('.grid_escenario')
-const estanteria = $('.estanteria')
+const estanteria = $('.componentesPC')
 const lista = $('.lista')
 //x defecto
-escenario.show()
-estanteria.hide()
+escenario.hide()
+estanteria.show()
 lista.hide()
 
 //cambios
