@@ -182,7 +182,7 @@ function compra(){
     comprado = true
 }
 function comprobacion(){
-    if (secuencia == ""){
+    if (secuencia == "" || comprado == false){
         $('.warning').css('display','flex')
         setTimeout("$('.warning').css('display','none')",2500)
     }
