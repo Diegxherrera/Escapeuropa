@@ -71,17 +71,17 @@ body{
 }
 .warning{
     display: none;
-    width: 60%;
-    height: 40%;
+    width: 40%;
+    height: 20%;
     font-size: x-large;
     font-family: Helvetica, Arial, sans-serif;
     justify-content: center;
     align-items: center;
     position: absolute;
     font-weight: bold;
-    left: 20%;
-    top: 25%;
-    background-color: rgba(255, 238, 0, 0.719);
+    left: 30%;
+    top: 5%;
+    background-color: rgba(255, 255, 255, 0.719);
 }
 @media screen and (max-width:1100px){
     .estanteria-esc img , .repair img , .lista_icon img{
