@@ -71,6 +71,9 @@
     height: 70px;
     z-index: 1;
 }
+.backicon2:hover{
+    cursor: pointer;
+}
 @media screen and (max-height:700px){
     .listcontent{
         width: 100vw;

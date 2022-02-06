@@ -7,22 +7,22 @@ estanteria.hide()
 lista.hide()
 
 //cambios
-function openestanteria(){
+function openestanteria() {
     escenario.hide()
     estanteria.show()
 }
-function estanteriaback(){
+function estanteriaback() {
     escenario.show()
     estanteria.hide()
 }
-function openlist(){
+function openlist() {
     escenario.hide()
     lista.show()
 }
-function openrepair(){
+function openrepair() {
     escenario.hide()
 }
-function cerrarlista(){
+function cerrarlista() {
     lista.hide()
     escenario.show()
 }
