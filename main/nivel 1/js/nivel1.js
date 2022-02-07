@@ -180,6 +180,7 @@ function motclick(id) {
 }
 function compra() {
     comprado = true
+    vaciarcarritoparcial()
 }
 function comprobacion() {
     if (secuencia == "" || comprado == false) {
@@ -192,4 +193,28 @@ function comprobacion() {
     else { alert("incorrecto") } //si falla 3 veces restart desde intro
 }
 
+function vaciarcarritoparcial(){
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML = ""
+}
+function vaciarcarritototal(){
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML = ""
+    mot = false
+    dis = false
+    gpu = false
+    ram = false
+    cpu = false
 
+    disco = false
+    grafica = false
+    procesador = false
+    placa = false
+    memoria = false
+
+    secuencia = ""
+    correcto = false
+    vecescorrecto = 0
+
+    console.log('variables playerside seteadas a default')
+}

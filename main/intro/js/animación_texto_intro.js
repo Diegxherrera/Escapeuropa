@@ -52,4 +52,3 @@ let texto_siguiente6 = setInterval("comprobar_escribir('trrr trrr.... pum',6,tex
 let texto_siguiente7 = setInterval("comprobar_escribir('Miras al ordenador y sin nisiquiera darte tiempo a pestañear, roberto había tirado el ordenador al suelo....',7,texto_siguiente7)", 100)
 let texto_siguiente8 = setInterval("comprobar_escribir('ROBERTO: Debes arreglarlo, este es tu trabajo de hoy, no vas a poder salir hoy hasta que termines de arreglarlo, ...... no me mires con esa cara, tus padres ya estan al corriente, te aviso en cuanto me vaya no preguntes nada o tendrás un cero, ¿Tienes alguna duda antes de que me vaya?  ',8,texto_siguiente8)", 100)
 let texto_siguiente9 = setInterval("comprobar_escribir('ROBERTO: ¿ninguna verdad?, bien pues empieza. ',9,texto_siguiente9)", 100)
-

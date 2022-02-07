@@ -187,3 +187,20 @@ header span{
     cursor: pointer;
     background-color: rgba(248, 183, 63, 0.795);
 }
+.vaciarlo{
+    height: 50px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    margin-top: 30px;
+    color: white;
+    border: 3px solid rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.vaciarlo:hover{
+    cursor: pointer;
+    background-color: rgba(220, 20, 60, 0.582);
+}
