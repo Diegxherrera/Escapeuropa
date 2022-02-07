@@ -162,6 +162,10 @@ img.prohibited-mini-icon {
     margin-top: 5px;
 }
 
+p.apptitle {
+    word-wrap: break-word;
+}
+
 div.windows {
     align-items: center;
     justify-content: center;
