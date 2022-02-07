@@ -1,18 +1,30 @@
 const escenario = $('.grid_escenario')
-const estanteria = $('.estanteria')
+const estanteria = $('.componentesPC')
+const lista = $('.lista')
 //x defecto
 escenario.show()
 estanteria.hide()
+lista.hide()
 
 //cambios
-function openestanteria(){
+function openestanteria() {
     escenario.hide()
     estanteria.show()
 }
-function estanteriaback(){
+function estanteriaback() {
     escenario.show()
     estanteria.hide()
 }
-function openrepair(){
+function openlist() {
+    escenario.hide()
+    lista.show()
+}
+function openrepair() {
     escenario.hide()
 }
+function cerrarlista() {
+    lista.hide()
+    escenario.show()
+}
+
+
