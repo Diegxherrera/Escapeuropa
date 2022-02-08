@@ -1,9 +1,11 @@
 const carrito = $('#listacompra')
-carrito.hide()
 
 function hidec(){
-    carrito.hide()
+    carrito.addClass('hide')
+    carrito.removeClass('show')
+    setTimeout('carrito.removeClass("hide")',2000)
 }
 function showc(){
-    carrito.show()
+    carrito.addClass('show')
+    carrito.removeClass('hide')
 }
