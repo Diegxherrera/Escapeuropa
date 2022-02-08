@@ -19,7 +19,7 @@ body {
 }
 
 main {
-    height: 60em;
+    height: 45em;
 }
 
 footer {
@@ -162,6 +162,10 @@ img.prohibited-mini-icon {
     margin-top: 5px;
 }
 
+p.apptitle {
+    word-wrap: break-word;
+}
+
 div.windows {
     align-items: center;
     justify-content: center;
@@ -169,10 +173,9 @@ div.windows {
     height: 31%;
 }
 
-iframe.chromewindow {
+iframe {
     z-index: 1;
     position: absolute;
-    display: block;
     width: 60%;
     height: 70%;
     color: black;
@@ -181,7 +184,19 @@ iframe.chromewindow {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     margin-top: 7.5%;
-    margin-left: 30%;
+    margin-left: 300%;
+}
+
+.notepad {
+    visibility: hidden;
+}
+
+.google {
+    visibility: visible;
+}
+
+.google {
+    visibility: hidden;
 }
 
 div.leftmenu {
@@ -257,12 +272,13 @@ img.cortanalogo {
     margin-top: 6.75px;
     margin-right: 7.5px;
 }
-.resolution{
+
+.resolution {
     display: none;
 }
 
-@media screen and (max-width:500px){
-    .resolution{
+@media screen and (max-width:500px) {
+    .resolution {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -272,12 +288,16 @@ img.cortanalogo {
         background-color: white;
         color: black;
         font-size: larger;
-        font-family: "Helvetica","Arial";
+        font-family: "Helvetica", "Arial";
         z-index: 10;
     }
+    .resolution a {
+        cursor: help;
+    }
 }
-@media screen and (max-height:500px){
-    .resolution{
+
+@media screen and (max-height:500px) {
+    .resolution {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -287,7 +307,10 @@ img.cortanalogo {
         background-color: white;
         color: black;
         font-size: larger;
-        font-family: "Helvetica","Arial";
+        font-family: "Helvetica", "Arial";
         z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
     }
 }

@@ -1,25 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nivel 1</title>
-    <link rel="stylesheet" href="Nivel1.css">
+    <link rel="stylesheet" href="css/escenarario.css">
+    <link rel="stylesheet" href="css/componentesPC.css">
+    <link rel="stylesheet" href="css/lista.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
+
 <body>
-    <div class="grid">
-        Hola
+    <div class="resolution">
+        <a class="enlace" href="../extra/resolucion.html">RESOLUCIÓN NO SOPORTADA</a>
     </div>
 
-    <div class="grid_estanteria">
-        <div class="colorb"></div>
-        <div class="colorb2"></div>
-        <div class="colorb3"></div>
-        <div class="colorb4"></div>
+    <div class="grid_escenario">
+        <div class="warning">
+            NO HAS COMPRADO NADA
+        </div>
+        <div class="estanteria-esc">
+            <img src="img/estanteria.jpg" alt="estanteria" onclick="openestanteria()">
+            <span>SELECCIÓN DE COMPONENTES</span>
+        </div>
 
-        
+        <div class="repair">
+            <img src="img/computericon.jpg" alt="repair" onclick="comprobacion()">
+            <span>REPARACIÓN</span>
+        </div>
+
+        <div class="lista_icon">
+            <img src="img/lista.jpg" alt="lista" onclick="openlist()">
+            <span>LISTA DE COMPONENTES</span>
+        </div>
     </div>
-    <script src="Nivel3.js"></script>
+
+    <div class="componentesPC">
+        <div class="navclose">
+            <div class="whitecrossh" onclick="estanteriaback()">
+                <img class="whitecross" src="img/closecross.png" width="30px" height="30px" alt="closeicon">
+            </div>
+        </div>
+        <header>
+            <iframe src="img/COMPUTERICON.svg" width="100px" height="50px" style="border: none;"></iframe>
+            <span>COMPONENTES PC</span>
+            <div class="carrito" onclick="showc()">
+                <img src="img/carrito.png" width="30px" height="30px">
+                <span>Mi carrito</span>
+            </div>
+        </header>
+        <div class="componentescontenido">
+
+            <div class="comptitulo">Nuestras recomendaciones en hardware</div>
+
+            <div class="componentes">
+                <img src="img/cpu_medium.jpg" alt="cpu" height="300px" width="300px">
+                <span id="cpumid">Intel core i5 -6500 LGA 1151</span>
+                <div class="comprar" onclick="cpuclick('cpumid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/cpulow.jpg" alt="cpu" height="300px" width="300px">
+                <span id="cpulow">Intel core i3 7a generación</span>
+                <div class="comprar" onclick="cpuclick('cpulow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/cpuhight.jpg" alt="cpu" height="300px" width="300px">
+                <span id="cpuhig">amd ryzen 9</span>
+                <div class="comprar" onclick="cpuclick('cpuhig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/Discolow.jpg" alt="disco" height="300px" width="300px">
+                <span id="dislow">HDD 500GB</span>
+                <div class="comprar" onclick="disclick('dislow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/diskhight.jpg" alt="disco" height="300px" width="300px">
+                <span id="dishig">Samsung SSD 500GB</span>
+                <div class="comprar" onclick="disclick('dishig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/Discomid.jpg" alt="disco" height="300px" width="300px">
+                <span id="dismid">HDD 1TB</span>
+                <div class="comprar" onclick="disclick('dismid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/hightgrafica.png" alt="Gpu" height="300px" width="300px">
+                <span id="gpuhig">Nvidia RTX 3060 ti</span>
+                <div class="comprar" onclick="gpuclick('gpuhig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/tarjeta-mid.jpeg" alt="cpu" height="300px" width="300px">
+                <span id="gpumid">PowerColor Red Dragon Radeon RX 550</span>
+                <div class="comprar" onclick="gpuclick('gpumid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/tarjeta-low.jpg" alt="cpu" height="300px" width="300px">
+                <span id="gpulow">Geforce GT 710</span>
+                <div class="comprar" onclick="gpuclick('gpulow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/ram-medium.jpg" alt="cpu" height="300px" width="300px">
+                <span id="rammid">8gb ram</span>
+                <div class="comprar" onclick="ramclick('rammid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/ramlow.jpg" alt="cpu" height="300px" width="300px">
+                <span id="ramlow">4gb ram</span>
+                <div class="comprar" onclick="ramclick('ramlow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/16GB.jpg" alt="cpu" height="300px" width="300px">
+                <span id="ramhig">16GB ram</span>
+                <div class="comprar" onclick="ramclick('ramhig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/motherlow.jpg" alt="cpu" height="300px" width="300px">
+                <span id="motlow">B550M -A PRO</span>
+                <div class="comprar" onclick="motclick('motlow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/motherhight.jpg" alt="cpu" height="300px" width="300px">
+                <span id="mothig">pro z690-A</span>
+                <div class="comprar" onclick="motclick('mothig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/mothermid.jpg" alt="cpu" height="300px" width="300px">
+                <span id="motmid">TUFGAMING B150 PLUS II</span>
+                <div class="comprar" onclick="motclick('motmid')">Añadir al carrito</div>
+                <div class="extra"></div>
+            </div>
+
+            <div class="listacompra" id="listacompra">
+                <img class="cerrarcarrito" src="img/closecross.png" height="30px" width="30px"
+                    style="margin: 10px 10px 10px auto;" onclick="hidec()">
+                <div class="h"><span>Mi Carrito</span></div>
+                <div class="carritocontent">
+                    <div class="ctext" id="ctext">
+
+                    </div>
+                    <div class="comprarlo" id="compra" onclick="compra()">Comprar</div>
+                    <div class="vaciarlo" onclick="vaciarcarritototal()">Vaciar El Carrito</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lista">
+        <div class="listborder">
+            <div class="listcontent">
+                <span id="listacontenido"></span>
+                <p id="texto_lista"></p>
+                <p class="componentes_title">componentes:<br></p>
+                <p id="componentes"></p>
+            </div>
+        </div>
+        <img class="backicon2" alt="cerrar" src="img/icon.png" onclick="cerrarlista()">
+    </div>
+
+
+    <script src="js/cambio_de_escenario.js"></script>
+    <script src="js/nivel1.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
+
 </html>
