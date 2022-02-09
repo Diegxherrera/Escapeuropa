@@ -164,6 +164,10 @@ img.prohibited-mini-icon {
     margin-top: 5px;
 }
 
+p.apptitle {
+    word-wrap: break-word;
+}
+
 div.windows {
     align-items: center;
     justify-content: center;
@@ -174,7 +178,6 @@ div.windows {
 iframe {
     z-index: 1;
     position: absolute;
-    display: block;
     width: 60%;
     height: 70%;
     color: black;
@@ -183,14 +186,14 @@ iframe {
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     margin-top: 7.5%;
-    margin-left: 30%;
+    margin-left: 300%;
 }
 
 .notepad {
     visibility: hidden;
 }
 
-.chromewindow {
+.google {
     visibility: visible;
 }
 

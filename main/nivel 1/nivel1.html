@@ -7,101 +7,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nivel 1</title>
     <link rel="stylesheet" href="css/escenarario.css">
-    <link rel="stylesheet" href="css/estanteria.css">
-    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/componentesPC.css">
+    <link rel="stylesheet" href="css/lista.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
-<body background="img/background.jpg">
+<body>
     <div class="resolution">
         <a class="enlace" href="../extra/resolucion.html">RESOLUCIÓN NO SOPORTADA</a>
     </div>
-    <div class="grid_escenario">
-        <div class="blackleft"></div>
-        <div class="blackright"></div>
-        <div class="blackcenter"></div>
 
+    <div class="grid_escenario">
+        <div class="warning">
+            NO HAS COMPRADO NADA
+        </div>
         <div class="estanteria-esc">
             <img src="img/estanteria.jpg" alt="estanteria" onclick="openestanteria()">
             <span>SELECCIÓN DE COMPONENTES</span>
         </div>
 
         <div class="repair">
-            <img src="img/computericon.jpg" alt="repair" onclick="openrepair()">
+            <img src="img/computericon.jpg" alt="repair" onclick="comprobacion()">
             <span>REPARACIÓN</span>
         </div>
 
-        <div class="lista">
-            <img src="img/lista.jpg" alt="lista" onclick="">
+        <div class="lista_icon">
+            <img src="img/lista.jpg" alt="lista" onclick="openlist()">
             <span>LISTA DE COMPONENTES</span>
         </div>
     </div>
 
-    <div class="estanteria">
-        <div class="grid_estanteria">
-            <div class="celdah" id="celda1">CPU</div>
-            <div class="celdah" id="celda1">TARJETA GRAFICA</div>
-            <div class="celdah" id="celda3">RAM</div>
-            <div class="celdah" id="celda4">DISCO DURO</div>
-            <div class="celdah" id="celda5">PLACA BASE</div>
-
-            <div class="celda" id="celda6">
-                <img src="img/cpulow.jpg" alt="cpulow" id="cpulow" onclick="cpuclick('cpulow')">
+    <div class="componentesPC">
+        <div class="navclose">
+            <div class="whitecrossh" onclick="estanteriaback()">
+                <img class="whitecross" src="img/closecross.png" width="30px" height="30px" alt="closeicon">
             </div>
-            <div class="celda" id="celda7">
-                <img src="img/hightgrafica.png" alt="grafhight" id="gpuhig" onclick="gpuclick('gpuhig')">
-            </div>
-            <div class="celda" id="celda8">
-                <div id="ramlow" onclick="ramclick('ramlow')">4GB</div>
-            </div>
-            <div class="celda" id="celda9">
-                <img src="img/Discomid.jpg" alt="Discomid" id="dismid" onclick="disclick('dismid')">
-            </div>
-            <div class="celda" id="celda10">
-                <img src="img/mothermid.jpg" alt="mothermid" id="motmid" onclick="motclick('motmid')">
-            </div>
-            <div class="celda" id="celda11">
-                <img src="img/cpu_medium.jpg" alt="cpumid" id="cpumid" onclick="cpuclick('cpumid')">
-            </div>
-            <div class="celda" id="celda12">
-                <img src="img/tarjeta-mid.jpeg" alt="grafmid" id="gpumid" onclick="gpuclick('gpumid')">
-            </div>
-            <div class="celda" id="celda13">
-                <div id="rammid" onclick="ramclick('rammid')">8GB</div>
-            </div>
-            <div class="celda" id="celda14">
-                <img src="img/diskhight.jpg" alt="Discohight" id="dishig" onclick="disclick('dishig')">
-            </div>
-            <div class="celda" id="celda15">
-                <img src="img/motherlow.jpg" alt="motherlow" id="motlow" onclick="motclick('motlow')">
-            </div>
-            <div class="celda" id="celda16">
-                <img src="img/cpuhight.jpg" alt="cpuhight" id="cpuhig" onclick="cpuclick('cpuhig')">
-            </div>
-            <div class="celda" id="celda17">
-                <img src="img/tarjeta-low.jpg" alt="graflow" id="gpulow" onclick="gpuclick('gpulow')">
-            </div>
-            <div class="celda" id="celda18">
-                <div id="ramhig" onclick="ramclick('ramhig')">16GB</div>
-            </div>
-            <div class="celda" id="celda19">
-                <img src="img/Discolow.jpg" alt="Discolow" id="dislow" onclick="disclick('dislow')">
-            </div>
-            <div class="celda" id="celda20">
-                <img src="img/motherhight.jpg" alt="motherhight" id="mothig" onclick="motclick('mothig')">
-            </div>
-
-            <img class="backicon" src="img/icon.png" alt="back" onclick="estanteriaback()">
-
         </div>
+        <header>
+            <iframe src="img/COMPUTERICON.svg" width="100px" height="50px" style="border: none;"></iframe>
+            <span>COMPONENTES PC</span>
+            <div class="carrito" onclick="showc()">
+                <img src="img/carrito.png" width="30px" height="30px">
+                <span>Mi carrito</span>
+            </div>
+        </header>
+        <div class="componentescontenido">
 
+            <div class="comptitulo">Nuestras recomendaciones en hardware</div>
 
+            <div class="componentes">
+                <img src="img/cpu_medium.jpg" alt="cpu" height="300px" width="300px">
+                <span id="cpumid">Intel core i5 -6500 LGA 1151</span>
+                <div class="comprar" onclick="cpuclick('cpumid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/cpulow.jpg" alt="cpu" height="300px" width="300px">
+                <span id="cpulow">Intel core i3 7a generación</span>
+                <div class="comprar" onclick="cpuclick('cpulow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/cpuhight.jpg" alt="cpu" height="300px" width="300px">
+                <span id="cpuhig">amd ryzen 9</span>
+                <div class="comprar" onclick="cpuclick('cpuhig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/Discolow.jpg" alt="disco" height="300px" width="300px">
+                <span id="dislow">HDD 500GB</span>
+                <div class="comprar" onclick="disclick('dislow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/diskhight.jpg" alt="disco" height="300px" width="300px">
+                <span id="dishig">Samsung SSD 500GB</span>
+                <div class="comprar" onclick="disclick('dishig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/Discomid.jpg" alt="disco" height="300px" width="300px">
+                <span id="dismid">HDD 1TB</span>
+                <div class="comprar" onclick="disclick('dismid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/hightgrafica.png" alt="Gpu" height="300px" width="300px">
+                <span id="gpuhig">Nvidia RTX 3060 ti</span>
+                <div class="comprar" onclick="gpuclick('gpuhig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/tarjeta-mid.jpeg" alt="cpu" height="300px" width="300px">
+                <span id="gpumid">PowerColor Red Dragon Radeon RX 550</span>
+                <div class="comprar" onclick="gpuclick('gpumid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/tarjeta-low.jpg" alt="cpu" height="300px" width="300px">
+                <span id="gpulow">Geforce GT 710</span>
+                <div class="comprar" onclick="gpuclick('gpulow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/ram-medium.jpg" alt="cpu" height="300px" width="300px">
+                <span id="rammid">8gb ram</span>
+                <div class="comprar" onclick="ramclick('rammid')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/ramlow.jpg" alt="cpu" height="300px" width="300px">
+                <span id="ramlow">4gb ram</span>
+                <div class="comprar" onclick="ramclick('ramlow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/16GB.jpg" alt="cpu" height="300px" width="300px">
+                <span id="ramhig">16GB ram</span>
+                <div class="comprar" onclick="ramclick('ramhig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/motherlow.jpg" alt="cpu" height="300px" width="300px">
+                <span id="motlow">B550M -A PRO</span>
+                <div class="comprar" onclick="motclick('motlow')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/motherhight.jpg" alt="cpu" height="300px" width="300px">
+                <span id="mothig">pro z690-A</span>
+                <div class="comprar" onclick="motclick('mothig')">Añadir al carrito</div>
+            </div>
+
+            <div class="componentes">
+                <img src="img/mothermid.jpg" alt="cpu" height="300px" width="300px">
+                <span id="motmid">TUFGAMING B150 PLUS II</span>
+                <div class="comprar" onclick="motclick('motmid')">Añadir al carrito</div>
+                <div class="extra"></div>
+            </div>
+
+            <div class="listacompra" id="listacompra">
+                <img class="cerrarcarrito" src="img/closecross.png" height="30px" width="30px"
+                    style="margin: 10px 10px 10px auto;" onclick="hidec()">
+                <div class="h"><span>Mi Carrito</span></div>
+                <div class="carritocontent">
+                    <div class="ctext" id="ctext">
+
+                    </div>
+                    <div class="comprarlo" id="compra" onclick="compra()">Comprar</div>
+                    <div class="vaciarlo" onclick="vaciarcarritototal()">Vaciar El Carrito</div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="repair">
-
+    <div class="lista">
+        <div class="listborder">
+            <div class="listcontent">
+                <span id="listacontenido"></span>
+                <p id="texto_lista"></p>
+                <p class="componentes_title">componentes:<br></p>
+                <p id="componentes"></p>
+            </div>
+        </div>
+        <img class="backicon2" alt="cerrar" src="img/icon.png" onclick="cerrarlista()">
     </div>
+
+
     <script src="js/cambio_de_escenario.js"></script>
-    <script src="js/estanteria.js"></script>
+    <script src="js/nivel1.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 
 </html>

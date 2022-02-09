@@ -49,12 +49,12 @@ function chimg() {
     }
     if (contador == 5) {
         img5.hide()
-        $('body').addClass("temblor")
+        $('body').addClass('temblor')
         setTimeout("$('body').removeClass('temblor')", 500)
         console.log("hide")
     }
     if (contador == 6) {
-        img5.addClass("img5rt")
+        img5.addClass('img5rt')
         img5.show()
     }
     if (contador == 8) {
@@ -68,10 +68,10 @@ function chimg() {
     }
     contador++
 }
-    document.addEventListener("keyup", next)
+document.addEventListener("keyup", next)
 
-    function next(tecla){
-        if(tecla.key == "Enter" || tecla.key == " "){
-            indice()
-        }
+function next(tecla){
+    if(tecla.key == "Enter" || tecla.key == " "){
+        indice()
     }
+}

@@ -1,7 +1,4 @@
-@font-face {
-    font-family: NSD BIOS;
-    src: url(../img/BIOS.ttf);
-}
+/*CSS GLOBAL*/
 
 * {
     margin: 0;
@@ -28,11 +25,21 @@ body {
     display: none;
 }
 
+.boot_page_hide {
+    display: none;
+}
+
 .main_page_hide {
     display: none;
 }
 
 .advanced_page_show {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.boot_page_show {
     display: block;
     width: 100%;
     height: 100%;
@@ -62,7 +69,7 @@ body {
 }
 
 .main {
-    width: 30%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -71,16 +78,27 @@ body {
 }
 
 .advanced {
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
 
-.main:hover,
-.advanced:hover {
+.boot {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main, .advanced, .boot {
+    cursor: pointer;
+}
+
+.main:hover, .advanced:hover, .boot:hover {
     color: #1100ff;
     background-color: white;
+    cursor: pointer;
 }
 
 .espaciado {
@@ -102,24 +120,38 @@ body {
     display: inline-flex;
 }
 
+.espaciadobloque {
+    width: 35%;
+    height: 100%;
+}
+
 .contenido1 {
-    width: 40%;
-    height: 50%;
+    width: 20%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5%;
 }
 
 .contenido2 {
     width: auto;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 5%;
+}
+
+.Time, .Date, .Enabled, .Disabled, .None {
+    cursor: pointer;
+}
+
+.espaciocontenido1, .espaciocontenido2 {
+    width: 100%;
+    height: 15%;
 }
 
 .footer {
@@ -136,14 +168,14 @@ body {
 /*CSS DE LA PARTE DE ADVANCED*/
 
 .main2 {
-    width: 30%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
 }
 
 .advanced2 {
-    width: 40%;
+    width: 35%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -151,10 +183,21 @@ body {
     color: #1100ff;
 }
 
-.main2:hover,
-.advanced2:hover {
+.boot2 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main2, .advanced2, .boot2 {
+    cursor: pointer;
+}
+
+.mai2n:hover, .advanced2:hover, .boot2:hover {
     color: #1100ff;
     background-color: white;
+    cursor: pointer;
 }
 
 .espaciado2 {
@@ -173,4 +216,39 @@ body {
     color: #1100ff;
     font-size: larger;
     letter-spacing: 0.1em;
+}
+
+/*CSS DE LA PARTE DE BOOT*/
+
+.main3 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.advanced3 {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.boot3 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #1100ff;
+}
+
+.main3, .advanced3, .boot3 {
+    cursor: pointer;
+}
+
+.main3:hover, .advanced3:hover, .boot3:hover {
+    color: #1100ff;
+    background-color: white;
+    cursor: pointer;
 }
