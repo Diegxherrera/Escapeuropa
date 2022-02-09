@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escritorio - Windows 10</title>
+    <script type="text/javascript" src="js/2bleclick.js"></script>
+    <script type="text/javascript" src="js/block.js"></script>
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/windows-logo.png" />
+    <link rel="stylesheet" href="css/textdocument.css">
+    <link rel="stylesheet" href="css/helpapplication.css">
+    <script src="js/helpapplication.js"></script>
+</head>
+
+<body class="body" id="body">
+    <main>
+        <div class="resolution">
+            <a class="enlace" href="extra/resolucion.html">RESOLUCIÓN NO SOPORTADA</a>
+        </div>
+        <div class="reticuleindex" id="reticuleindex">
+            <table class="appsreticule" id="appsreticule">
+                <tbody>
+                <tr>
+                    <td id="app-1 trash" onclick="unclick('app-1 trash')" ondblclick="dblclick('app-1')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/trash.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Papelera</p>
+                    </td>
+                    <td id="app-2 chrome" onclick="unclick('app-2 chrome')" ondblclick="dblclick('app-2')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/chrome.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Google Chrome</p>
+                    </td>
+                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('app-3')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/filesexplorer.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Explorador de Archivos</p>
+                    </td>
+                    <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')" ondblclick="blockedapp('app-4 blocked')">
+                        <div class="appicon-1" id="appicon-1 blocked">
+                            <img src="img/blocked.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">[1/^*Jw?¡'2:&</p>
+                    </td>
+                    <td id="app-5 virus" onclick="unclick('app-5 virus')" ondblclick="dblclick('app-5')">
+                        <div class="appicon-1" id="appicon-1">
+                            <img src="img/virus_icon.png" id="appicon" class="appicon">
+                        </div>
+                        <p id="apptitle" class="apptitle">Escape Room Hack</p>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="centered-windows" id="centered-windows">
+            <div class="blocked-alert" id="blocked-alert">
+                <div class="blocked-alert-header">
+                    <table class="alert-header-columns">
+                        <tr></tr>Alerta de Windows
+                        <div class="blocked-alert-top-buttons">
+                            <img src="img/window-minimize-svgrepo-com.svg" class="blocked-alert-minimizebtn"></img>
+                            <img src="img/window-maximize-svgrepo-com.svg" class="blocked-alert-fullscreenbtn-disabled"></img>
+                            <img src="img/close-svgrepo-com.svg" class="blocked-alert-closebtn"></img>
+                        </div>
+                    </table>
+                </div>
+                <div class="blocked-alert-body">
+                    <img src="img/blocked.png" class="prohibited-mini-icon">
+                    <p class="alert-text">Este archivo está corrupto. Intente abrirlo más tarde. </p>
+                </div>
+            </div>
+            <div class="windows" id="windows">
+                <iframe class="google" id="google" src="extra/google.html">
+                </iframe>
+                <iframe class="notepad" id="notepad" src="extra/textdocument.html">
+                </iframe>
+            </div>
+            <div class="leftmenu" id="leftmenu">
+                <div class="left-menu01" id="left-menu01">
+                    Hola
+                </div>
+            </div>
+        </div>
+        <div class="rectangle_app" id="rectangle_app"></div>
+    <div class="rectangle2_app" id="rectangle2_app"></div>
+            <div class="name_app" id="name_app">Help</div>
+            <div class="rectangle3_app" id="rectangle3_app"></div>
+            <div class="line_app" id="line_app"></div>
+            <div class="rectangle4_app" id="rectangle4_app"></div>
+            <div class="rectangle5_app" id="rectangle5_app"></div>
+            <div class="rectangle6_app" id="rectangle6_app" onclick="cerrar_help()"></div>
+            <div class="line2_app" id="line2_app"></div>
+            <div class="line3_app" id="line3_app"></div>
+            <div class="text_app" id="text_app">¿Necesitas ayuda con el Monitor de tareas?</div>
+            <div class="text2_app" id="text2_app">Con estas pistas puedes abrirlo:</div>
+            <div class="text3_app" id="text3_app">1.Haz click en el mismo sitio en el que harias click en el Windows original para abrir el Administrador de tareas.<br><br>
+                2.No solo hagas un click, intenta hacer más de uno.<br><br>
+                3.Una vez en el Monitor de tareas, recuerda que no puedes finalizar el proceso de otros programas que no sean aplicaciones en primer plano.<br><br>
+                4.Cuidado con lo que abres y pones, todos los niveles tienen un margen de error si tocas o haces lo que no debes.<br><br></div>
+    </main>
+    <footer>
+        <div class="bottombar" id="bottombar">
+            <div class="lefticons-bttmbar">
+                <img class="windowslogo" src="img/white-logo.png" onclick="">
+                <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
+                <img class="cortanalogo" src="img/cortana-white-icon.png">
+                <span class="help_icon_icon" onclick="mostrar_help()">
+                        <img src="img/help_icon.png" class="help_icon_action" width="40px" height="40px">
+                </span>
+            </div>
+            <div class="righticons-bttmbar">
+                <p>20:00</p>
+                <img src="img/notification-center-icon.png" width="30px" height="30px">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

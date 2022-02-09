@@ -1,0 +1,318 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+html {
+    size: cover;
+    overflow-y: none;
+    color: white;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+main {
+    height: 45em;
+}
+
+footer {
+    height: 3em;
+    position: sticky;
+    bottom: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body.body {
+    background-image: url('../img/defaultbg-2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+div.reticuleindex {
+    z-index: -10;
+}
+
+table.appsreticule {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    color: #FFFFFF;
+    text-shadow: 3px 5px 7px #474747;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+
+}
+
+div.appicon-1 {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+tr {
+    display: inline;
+    padding-bottom: 10px;
+}
+
+td {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 2.5px;
+    position: relative;
+    border: 1px solid rgba(0, 89, 255, 0);
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.199);
+    border: 1px dotted white;
+}
+
+td.blocked:hover {
+    background-color: rgba(255, 0, 0, 0.199);
+    border: 1px dotted red;
+}
+
+td>div>img.appicon {
+    height: 60px;
+    width: auto;
+    text-align: center;
+}
+
+div.centered-windows {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    visibility: hidden;
+}
+
+div.blocked-alert {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    display: show;
+    width: 60%;
+    height: 20%;
+    border: 1px solid black;
+    justify-self: center;
+    background-color: rgba(202, 202, 202, 0.979);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    margin-top: 50em;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+div.blocked-alert-header {
+    display: flex;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
+    justify-content: flex-end;
+}
+
+div.alert-name {
+    display: flex;
+    justify-content: flex-start;
+}
+
+div.blocked-alert-top-buttons {
+    display: flex;
+    align-items: right;
+}
+
+img.blocked-alert-minimizebtn {
+    height: 30px;
+    width: auto;
+}
+
+img.blocked-alert-fullscreenbtn-disabled {
+    height: 30px;
+    width: auto;
+}
+
+img.blocked-alert-closebtn {
+    height: 28px;
+    width: auto;
+}
+
+div.blocked-alert-body {
+    margin: 0.7em 0.7em 0em 0.7em;
+    background-color: rgb(151, 38, 30);
+    height: 4.6em;
+    display: flex;
+}
+
+img.prohibited-mini-icon {
+    height: 4em;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+div.windows {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 31%;
+}
+
+iframe {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: 70%;
+    color: black;
+    border: 1px solid inherit;
+    background-color: rgba(255, 255, 255, 0.979);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
+    margin-top: 7.5%;
+    margin-left: 30%;
+}
+
+.notepad {
+    visibility: hidden;
+}
+
+.chromewindow {
+    visibility: visible;
+}
+
+.google {
+    visibility: hidden;
+}
+
+div.leftmenu {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 31%;
+}
+
+div.left-menu01 {
+    z-index: 1;
+    position: absolute;
+    display: none;
+    width: 60%;
+    height: 70%;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.979);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
+    margin-top: 7.5%;
+    margin-left: 30%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+div.bottombar {
+    background-color: #00000096;
+    height: 3.25em;
+    width: cover;
+    position: sticky;
+    bottom: 0;
+    float: center;
+    display: flex;
+    overflow-y: hidden;
+}
+
+img.windowslogo {
+    width: auto;
+    height: 2.3em;
+    margin-left: 7.5px;
+    margin-top: 5px;
+    margin-right: 7.5px;
+}
+
+input.srch-br {
+    border: 0px;
+    height: 5.8em;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 16em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    overflow-x: none;
+}
+
+img.cortanalogo {
+    width: auto;
+    height: 2.3em;
+    margin-left: 7.5px;
+    margin-top: 6.75px;
+    margin-right: 7.5px;
+}
+
+.resolution {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .resolution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        color: black;
+        font-size: larger;
+        font-family: "Helvetica", "Arial";
+        z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
+    }
+}
+
+@media screen and (max-height:500px) {
+    .resolution {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        color: black;
+        font-size: larger;
+        font-family: "Helvetica", "Arial";
+        z-index: 10;
+    }
+    .resolution a {
+        cursor: help;
+    }
+}
+
+.righticons-bttmbar{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 68%; 
+}

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    border: 0;
+}
+.rectangle_app{
+    position: absolute;
+    left: 37.29%;
+    visibility: hidden;
+    right: 37.29%;
+    top: 20.21%;
+    bottom: 33.11%;
+    height: 62%;
+    background: #2b2b2b;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rectangle2_app{
+    position: absolute;
+    visibility: hidden;
+    left: 37.29%;
+    right: 37.29%;
+    top: 20.21%;
+    bottom: 76.17%;
+    background: #2b2b2b;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+.name_app{
+    position: absolute;
+    visibility: hidden;
+    left: 37.72%;
+    right: 54.25%;
+    top: 20.5%;
+    bottom: 77%;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #d4d4d4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rectangle3_app{
+    position: absolute;
+    left: 49.72%;
+    visibility: hidden;
+    right: 45.97%;
+    top: 20.21%;
+    bottom: 76.17%;
+    background: #2b2b2b;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+.rectangle3_app:hover{
+    position: absolute;
+    visibility: hidden;
+    left: 49.72%;
+    right: 45.97%;
+    top: 20.21%;
+    bottom: 76.17%;
+    background: gray;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+.line_app{
+    position: absolute;
+    left: 51.46%;
+    visibility: hidden;
+    right: 47.5%;
+    top: 22.07%;
+    bottom: 77.93%;
+    border: 1px solid #d4d4d4;
+}
+.rectangle4_app{
+    position: absolute;
+    left: 53.96%;
+    visibility: hidden;
+    right: 41.74%;
+    top: 20.21%;
+    bottom: 76.17%;
+    width: 5%;
+    background: #2b2b2b;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+.rectangle4_app:hover{
+    position: absolute;
+    left: 53.96%;
+    right: 41.74%;
+    visibility: hidden;
+    top: 20.21%;
+    bottom: 76.17%;
+    width: 5%;
+    background: gray;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+.rectangle5_app{
+    position: absolute;
+    left: 55.76%;
+    visibility: hidden;
+    right: 43.47%;
+    top: 21.39%;
+    bottom: 77.54%;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+}
+.rectangle6_app{
+    position: absolute;
+    left: 58.33%;
+    visibility: hidden;
+    right: 37.36%;
+    top: 20.31%;
+    bottom: 76.27%;
+    background: #2b2b2b;
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+
+}
+.rectangle6_app:hover{
+    position: absolute;
+    visibility: hidden;
+    left: 58.33%;
+    right: 37.36%;
+    top: 20.31%;
+    bottom: 76.27%;
+    background: red;
+    border-top: 1px solid #d4d4d4;
+}
+.line2_app{
+    position: absolute;
+    left: 59.9%;
+    visibility: hidden;
+    right: 38.85%;
+    top: 22.05%;
+    bottom: 78%;
+    border: 1px solid #d4d4d4;
+    transform: rotate(134.13deg);
+}
+.line3_app{
+    position: absolute;
+    visibility: hidden;
+    left: 59.99%;
+    right: 38.76%;
+    top: 22.08%;
+    bottom: 77.92%;
+    border: 1px solid #d4d4d4;
+    transform: rotate(39.81deg);
+}
+.text_app{
+    position: absolute;
+    visibility: hidden;
+    left: 38%;
+    right: 29.28%;
+    top: 25.59%;
+    bottom: 66.02%;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #d4d4d4;
+}
+.text2_app{
+    position: absolute;
+    visibility: hidden;
+    left: 41.81%;
+    right: 25.62%;
+    top: 31.05%;
+    bottom: 61.82%;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #d4d4d4; 
+}
+.text3_app{
+    position: absolute;
+    visibility: hidden;
+    left: 38.06%;
+    right: 37.92%;
+    top: 36.33%;
+    bottom: 33.11%;
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #d4d4d4;
+}

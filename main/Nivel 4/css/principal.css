@@ -1,0 +1,33 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.redireccionando{
+    font-size: xx-large;
+    font-family: 'Segoe UI';
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15%;
+}
+.cargando{
+    border: 15px solid #e0dede;
+    animation-name: cargando;
+    border-radius: 50%;
+    border-left: 16px solid #71b8ca;
+    width: 110px;
+    height: 110px;
+    animation: spin 1s linear infinite;
+} 
+@keyframes spin{
+    0%{ 
+        transform: rotate(0deg); 
+    }
+    100%{ 
+        transform: rotate(360deg); 
+    }
+  }
