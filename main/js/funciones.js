@@ -55,9 +55,3 @@ function cambiargallego() {
     Euskera.removeClass('Euskera_show');
     Español.removeClass('Español_show');
 };
-
-function paginaKOMBAT( {
-    if (document.getElementById("search_URL" = "KOMBAT.es")) {
-
-    };
-})
