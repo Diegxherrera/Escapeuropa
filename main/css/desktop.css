@@ -193,11 +193,11 @@ iframe {
 }
 
 .notepad {
-    visibility: visible;
+    visibility: hidden;
 }
 
 .google {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .filesexplorer {
