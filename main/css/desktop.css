@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 html {
@@ -37,6 +37,7 @@ body.body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    z-index: -10;
 }
 
 div.reticuleindex {
@@ -95,14 +96,15 @@ div.centered-windows {
     align-items: center;
     justify-content: center;
     display: flex;
-    visibility: hidden;
+    visibility: visible;
+    height: auto;
 }
 
 div.blocked-alert {
-    overflow: hidden;
+    overflow: visible;
     z-index: 1;
     position: absolute;
-    display: show;
+    display: flex;
     width: 60%;
     height: 20%;
     border: 1px solid black;
@@ -176,17 +178,18 @@ div.windows {
 }
 
 iframe {
-    z-index: 1;
+    margin-top: 0;
+    padding-top: 0;
+    top: 7%;
+    z-index: 10;
     position: absolute;
-    width: 60%;
-    height: 70%;
-    color: black;
-    border: 1px solid inherit;
+    width: 70%;
+    height: 80%;
+    border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    margin-top: 7.5%;
-    margin-left: 300%;
+    margin-left: 20%;
 }
 
 .notepad {
@@ -197,7 +200,7 @@ iframe {
     visibility: visible;
 }
 
-.google {
+.filesexplorer {
     visibility: hidden;
 }
 
@@ -288,13 +291,22 @@ img.cortanalogo {
         width: 100vw;
         height: 100vh;
         background-color: white;
-        color: black;
         font-size: larger;
         font-family: "Helvetica", "Arial";
         z-index: 10;
     }
     .resolution a {
         cursor: help;
+        color: black;
+    }
+    .google {
+        visibility: hidden;
+    }
+    .notepad {
+        visibility: hidden;
+    }
+    .filesexplorer {
+        visibility: hidden;
     }
 }
 
@@ -314,5 +326,14 @@ img.cortanalogo {
     }
     .resolution a {
         cursor: help;
+    }
+    .google {
+        visibility: hidden;
+    }
+    .notepad {
+        visibility: hidden;
+    }
+    .filesexplorer {
+        visibility: hidden;
     }
 }
