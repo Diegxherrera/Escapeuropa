@@ -7,7 +7,7 @@ body {
     background-color: #212121;
     width: 100vw;
     height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: small;
     overflow: hidden;
 }
@@ -85,14 +85,15 @@ body {
 .login {
     color: white;
     background-color: rgb(31, 140, 241);
-    height: 90%;
-    width: 15%;
+    height: 95%;
+    width: 20%;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border: 1px solid rgb(31, 140, 241);
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     transition: all 0.2s ease-in;
     transition: all 0.2s ease-out;
 }
@@ -121,7 +122,7 @@ body {
 }
 
 svg.apps-ggl-icons {
-    height: 70%;
+    height: 100%;
     width: auto;
     color: white;
 }
@@ -139,6 +140,11 @@ svg.apps-ggl-icons {
     align-items: center;
 }
 
+svg.search-icon {
+    height: 20px;
+    width: 20px;
+}
+
 .search_text {
     color: white;
     background-color: #272727;
@@ -146,7 +152,7 @@ svg.apps-ggl-icons {
     border-radius: 5em;
     width: 35%;
     height: 50%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: small;
 }
 
@@ -169,30 +175,31 @@ svg.apps-ggl-icons {
 .texto2,
 .texto3 {
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .texto2 {
-    height: 42.5%;
-    width: 10%;
+    height: 52%;
+    width: 12.5%;
     background-color: #3b3b3b;
     border: #3b3b3b 1px solid;
     border-radius: 0.5em;
     display: flex;
-    align-items: center;
     justify-content: center;
     transition: all 0.2s ease-in;
 }
 
 .texto3 {
-    height: 42.5%;
-    width: 10%;
+    height: 52%;
+    width: 12.5%;
     background-color: #3b3b3b;
     border: #3b3b3b 1px solid;
     border-radius: 0.5em;
-    display: flex;
-    align-items: center;
     justify-content: center;
+    display: flex;
     transition: all 0.2s ease-in;
 }
 
