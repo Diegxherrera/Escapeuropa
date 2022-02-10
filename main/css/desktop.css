@@ -15,7 +15,6 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow: hidden;
-    font-size: 17px;
 }
 
 main {
@@ -193,11 +192,11 @@ iframe {
 }
 
 .notepad {
-    visibility: visible;
+    visibility: hidden;
 }
 
 .google {
-    visibility: hidden;
+    visibility: visible;
 }
 
 .filesexplorer {
@@ -237,7 +236,7 @@ div.bottombar {
     position: sticky;
     bottom: 0;
     float: center;
-    display: flex;
+    display: inline-flex;
     overflow-y: hidden;
     display: flex;
     justify-content: space-between;
@@ -245,10 +244,11 @@ div.bottombar {
 
 div.lefticons-bttmbar {
     color: #000000;
+    display: inline-flex
 }
 
 div.righticons-bttmbar {
-    justify-content: end;
+    display: inline-flex;
 }
 
 img.windowslogo {
@@ -259,21 +259,58 @@ img.windowslogo {
     margin-right: 7.5px;
 }
 
+div.srch-br-support {
+    width: cover;
+    height: cover;
+}
+
 input.srch-br {
     border: 0px;
     height: 5.8em;
     margin-top: 0;
     margin-bottom: 5px;
     text-align: left;
-    width: 16em;
+    width: 24em;
     font-family: 'Open Sans', sans-serif;
     color: rgb(71, 71, 71);
     overflow: none;
+    font-size: 0.8em;
 }
 
-p.date,
-p.time {
+p#date,
+p#time {
     text-align: center;
+    margin-right: 1em;
+}
+
+div.rght-col-0 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 1em;
+}
+
+img.wifi-icon {
+    width: auto;
+    height: 1em;
+}
+
+img.bluetooth-icon {
+    width: auto;
+    height: 1.5em;
+    margin-right: 0.5em;
+}
+
+div.rght-col-2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 1em;
+}
+
+img.notification-centre {
+    width: auto;
+    height: 2em;
 }
 
 img.cortanalogo {
