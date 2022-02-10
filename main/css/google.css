@@ -11,6 +11,10 @@ body {
     font-size: small;
     overflow: hidden;
 }
+.tab{
+height: 12%;
+}
+
 
 .Español_show {
     display: block;
