@@ -192,7 +192,6 @@ iframe {
     margin-left: 20%;
 }
 
-
 .notepad {
     visibility: visible;
 }
@@ -240,11 +239,12 @@ div.bottombar {
     float: center;
     display: flex;
     overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 div.lefticons-bttmbar {
-    justify-content: flex-start;
-    vertical-align: middle;
+    color: #000000;
 }
 
 div.righticons-bttmbar {
@@ -266,9 +266,14 @@ input.srch-br {
     margin-bottom: 5px;
     text-align: left;
     width: 16em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gray;
-    overflow-x: none;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(71, 71, 71);
+    overflow: none;
+}
+
+p.date,
+p.time {
+    text-align: center;
 }
 
 img.cortanalogo {
