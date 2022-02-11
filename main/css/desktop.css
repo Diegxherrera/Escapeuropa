@@ -191,6 +191,7 @@ iframe {
     margin-left: 20%;
 }
 div.leftmenu {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -200,7 +201,7 @@ div.leftmenu {
 div.left-menu01 {
     z-index: 1;
     position: absolute;
-    display: none;
+    display: block;
     width: 60%;
     height: 70%;
     border: 1px solid black;
