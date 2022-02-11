@@ -216,8 +216,56 @@ body {
     color: #1100ff;
     font-size: larger;
     letter-spacing: 0.1em;
+    display: inline-flex;
+    flex-direction: row;
 }
 
+.espaciado_bloque2 {
+    width: 10%;
+    height: 100%;
+}
+
+.sub_bloque2_1 {
+    width: 70%;
+    height: 100%;
+}
+
+.advanced_text {
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: x-large;
+    color: black;
+}
+
+.linea_separacion {
+    width: 80%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.linea_separacion_edit {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #1100ff;
+}
+
+.contenido1_bloque2 {
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8%;
+}
+
+.warning_text, .warning_text2 {
+    color: black;
+    font-size: large;
+}
 /*CSS DE LA PARTE DE BOOT*/
 
 .main3 {
@@ -336,4 +384,75 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.menu_hardrive{
+    width: 600px;
+    height: 300px;
+    color: white;
+    font-size: larger;
+    letter-spacing: 0.1em;
+    background-color: #000AFF;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    visibility: hidden;
+}
+.hardrive_show{
+    width: 600px;
+    height: 300px;
+    color: white;
+    font-size: larger;
+    letter-spacing: 0.1em;
+    background-color: #000AFF;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+.text_menu_hardrive{
+    margin-top: 10%;
+    max-width: 400px;
+    margin-left: 16%;
+}
+
+.text_menu_hardrive2{
+    margin-top: 3%;
+    max-width: 400px;
+    margin-left: 16%;
+}
+
+.title_menu_hardrive{
+    margin-top: 1%;
+}
+
+.line1_hardrive{
+    position: absolute;
+    z-index: 1;
+    height: 2px;
+    width: 600px;
+    background-color: white;
+}
+
+.line2_hardrive{
+    position: absolute;
+    margin-top: 65px;
+    z-index: 1;
+    height: 2px;
+    width: 600px;
+    background-color: white;
+}
+
+.text_menu_hardrive:hover{
+    color: #000AFF;
+    background-color: white;
+}
+
+.text_menu_hardrive2:hover{
+    color: #000AFF;
+    background-color: white;
+}
+
+.title_menu_hardrive{
+    margin-top: 1%;
 }
