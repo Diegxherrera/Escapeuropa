@@ -1,6 +1,7 @@
 const Main = $('#Main');
 const Advanced = $('#Advanced');
 const Boot = $('Boot')
+const Bselector = $('#menu_hardrive');
 
 function cambiarAdvanced() {
 
@@ -40,5 +41,11 @@ function cambiarMain() {
     Main.removeClass('main_page_hide');
     Advanced.removeClass('advanced_page_show');
     Boot.addClass('boot_page_show');
+};
+
+function menuhardrive() {
+    console.log('menu boot mostrado');
+    Bselector.addClass('main_page_show');
+    Bselector.removeClass('menu_hardrive');
 };
 
