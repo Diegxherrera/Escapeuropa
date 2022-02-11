@@ -191,18 +191,6 @@ iframe {
     margin-left: 20%;
 }
 
-#inotepad {
-    visibility: hidden;
-}
-
-#igoogle {
-    visibility: hidden;
-}
-
-#ifilesexplorer {
-    visibility: hidden;
-}
-
 div.leftmenu {
     align-items: center;
     justify-content: center;
