@@ -190,6 +190,7 @@ iframe {
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     margin-left: 20%;
 }
+
 div.leftmenu {
     align-items: center;
     justify-content: center;
@@ -198,7 +199,7 @@ div.leftmenu {
 }
 
 div.left-menu01 {
-    z-index: 1;
+    z-index: 30;
     position: absolute;
     display: none;
     width: 60%;
@@ -231,11 +232,19 @@ div.bottombar {
 
 div.lefticons-bttmbar {
     color: #000000;
-    display: inline-flex
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.righticons-bttmbar {
     display: inline-flex;
+}
+
+img.taskbar-icon {
+    width: auto;
+    height: 2.5em;
+    margin-right: 1em;
 }
 
 img.windowslogo {
@@ -304,7 +313,6 @@ img.cortanalogo {
     width: auto;
     height: 2.3em;
     margin-left: 7.5px;
-    margin-top: 6.75px;
     margin-right: 7.5px;
 }
 
