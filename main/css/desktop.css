@@ -191,15 +191,15 @@ iframe {
     margin-left: 20%;
 }
 
-.notepad {
+#inotepad {
     visibility: hidden;
 }
 
-.google {
-    visibility: visible;
+#igoogle {
+    visibility: hidden;
 }
 
-.filesexplorer {
+#ifilesexplorer {
     visibility: hidden;
 }
 
