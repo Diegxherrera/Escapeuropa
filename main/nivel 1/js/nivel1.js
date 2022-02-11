@@ -66,7 +66,7 @@ else if (quality <= 9) {
 }
 else if (quality <= 10) {
     console.log("alta calidad")
-    comprobador = "BBB"
+    comprobador = "CCC"
     textquality = "altos recursos"
 }
 
@@ -190,7 +190,12 @@ function comprobacion() {
     else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true && comprado == true) {
         alert("correcto") //animación de montaje del pc
     }
-    else { alert("incorrecto") } //si falla 3 veces restart desde intro
+    else { alert("incorrecto") 
+    console.log(correcto)
+    console.log(vecescorrecto)
+    console.log(comprado)
+    console.log(comprobador)} 
+    //si falla 3 veces restart desde intro
 }
 
 function vaciarcarritoparcial(){
