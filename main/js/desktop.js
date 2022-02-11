@@ -1,16 +1,14 @@
 console.log("linked")
-$('.left-menu').hide()
+$('.leftmenu').hide()
 
 function openmenu() {
-    $('.left-menu').show()
+    $('.leftmenu').show()
     $('.windowslogo').removeAttr("onclick", "openmenu()")
     $('.windowslogo').attr("onclick", "closemenu()")
     console.log("funciono")
 }
-
 function closemenu() {
-    $('.left-menu').hide()
+    $('.leftmenu').hide()
     $('.windowslogo').removeAttr("onclick", "closemenu()")
     $('.windowslogo').attr("onclick", "openmenu()")
-
 }
