@@ -6,7 +6,7 @@
 }
 
 html {
-    size: cover;
+    height: cover;
     overflow-y: none;
     color: white;
 }
@@ -18,7 +18,7 @@ body {
 }
 
 main {
-    height: 45em;
+    height: 100vh;
 }
 
 footer {
@@ -95,7 +95,7 @@ div.centered-windows {
     align-items: center;
     justify-content: center;
     display: flex;
-    visibility: visible;
+    visibility: hidden;
     height: auto;
 }
 
