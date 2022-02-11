@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no" />
     <title>Escritorio - Windows 10</title>
     <script type="text/javascript" src="js/2bleclick.js"></script>
     <script type="text/javascript" src="js/block.js"></script>
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/windows-logo.png" />
     <link rel="stylesheet" href="css/textdocument.css">
+    <script type="text/javascript" src="js/date.js"></script>
 </head>
 
 <body class="body" id="body">
@@ -51,7 +52,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="centered-windows" id="centered-windows">
             <div class="blocked-alert" id="blocked-alert">
                 <div class="blocked-alert-header">
@@ -69,28 +69,42 @@
                     <p class="alert-text">Este archivo está corrupto. Intente abrirlo más tarde. </p>
                 </div>
             </div>
-            <div class="windows" id="windows">
-                <iframe class="google" id="google" src="extra/google.html">
-                </iframe>
-                <iframe class="notepad" id="notepad" src="extra/textdocument.html">
-                </iframe>
-            </div>
             <div class="leftmenu" id="leftmenu">
                 <div class="left-menu01" id="left-menu01">
                     Hola
                 </div>
             </div>
         </div>
+        <div class="windows" id="windows">
+            <iframe class="google" id="google" src="extra/google.html">
+            </iframe>
+            <iframe class="notepad" id="notepad" src="extra/notepad.html">
+            </iframe>
+            <iframe class="filesexplorer" id="filesexplorer" src="extra/explorador.html">
+            </iframe>
+        </div>
     </main>
     <footer>
         <div class="bottombar" id="bottombar">
             <div class="lefticons-bttmbar">
                 <img class="windowslogo" src="img/white-logo.png" onclick="">
-                <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
+                <div class="srch-br-support">
+                    <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
+                </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
             </div>
             <div class="righticons-bttmbar">
-                <p>20:00</p>
+                <div class="rght-col-0">
+                    <img class="bluetooth-icon" src="img/bluetooth-disabled-icon.png">
+                    <img class="wifi-icon" src="img/wifi-icon.png">
+                </div>
+                <div class="rght-col-1">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </div>
+                <div class="rght-col-2">
+                    <img class="notification-centre" src="img/notification-centre-white.png">
+                </div>
             </div>
         </div>
     </footer>

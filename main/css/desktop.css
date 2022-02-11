@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 html {
-    size: cover;
+    height: cover;
     overflow-y: none;
     color: white;
 }
@@ -15,11 +15,10 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow: hidden;
-    font-size: 17px;
 }
 
 main {
-    height: 45em;
+    height: 100vh;
 }
 
 footer {
@@ -37,6 +36,7 @@ body.body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    z-index: -10;
 }
 
 div.reticuleindex {
@@ -96,13 +96,14 @@ div.centered-windows {
     justify-content: center;
     display: flex;
     visibility: hidden;
+    height: auto;
 }
 
 div.blocked-alert {
-    overflow: hidden;
+    overflow: visible;
     z-index: 1;
     position: absolute;
-    display: show;
+    display: flex;
     width: 60%;
     height: 20%;
     border: 1px solid black;
@@ -176,17 +177,18 @@ div.windows {
 }
 
 iframe {
-    z-index: 1;
+    margin-top: 0;
+    padding-top: 0;
+    top: 7%;
+    z-index: 10;
     position: absolute;
-    width: 60%;
-    height: 70%;
-    color: black;
-    border: 1px solid inherit;
+    width: 70%;
+    height: 80%;
+    border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    margin-top: 7.5%;
-    margin-left: 300%;
+    margin-left: 20%;
 }
 
 .notepad {
@@ -197,7 +199,7 @@ iframe {
     visibility: visible;
 }
 
-.google {
+.filesexplorer {
     visibility: hidden;
 }
 
@@ -234,17 +236,19 @@ div.bottombar {
     position: sticky;
     bottom: 0;
     float: center;
-    display: flex;
+    display: inline-flex;
     overflow-y: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 div.lefticons-bttmbar {
-    justify-content: flex-start;
-    vertical-align: middle;
+    color: #000000;
+    display: inline-flex
 }
 
 div.righticons-bttmbar {
-    justify-content: end;
+    display: inline-flex;
 }
 
 img.windowslogo {
@@ -255,16 +259,58 @@ img.windowslogo {
     margin-right: 7.5px;
 }
 
+div.srch-br-support {
+    width: cover;
+    height: cover;
+}
+
 input.srch-br {
     border: 0px;
     height: 5.8em;
     margin-top: 0;
     margin-bottom: 5px;
     text-align: left;
-    width: 16em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: gray;
-    overflow-x: none;
+    width: 24em;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(71, 71, 71);
+    overflow: none;
+    font-size: 0.8em;
+}
+
+p#date,
+p#time {
+    text-align: center;
+    margin-right: 1em;
+}
+
+div.rght-col-0 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 1em;
+}
+
+img.wifi-icon {
+    width: auto;
+    height: 1em;
+}
+
+img.bluetooth-icon {
+    width: auto;
+    height: 1.5em;
+    margin-right: 0.5em;
+}
+
+div.rght-col-2 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-right: 1em;
+}
+
+img.notification-centre {
+    width: auto;
+    height: 2em;
 }
 
 img.cortanalogo {
@@ -288,13 +334,22 @@ img.cortanalogo {
         width: 100vw;
         height: 100vh;
         background-color: white;
-        color: black;
         font-size: larger;
         font-family: "Helvetica", "Arial";
         z-index: 10;
     }
     .resolution a {
         cursor: help;
+        color: black;
+    }
+    .google {
+        visibility: hidden;
+    }
+    .notepad {
+        visibility: hidden;
+    }
+    .filesexplorer {
+        visibility: hidden;
     }
 }
 
@@ -314,5 +369,14 @@ img.cortanalogo {
     }
     .resolution a {
         cursor: help;
+    }
+    .google {
+        visibility: hidden;
+    }
+    .notepad {
+        visibility: hidden;
+    }
+    .filesexplorer {
+        visibility: hidden;
     }
 }
