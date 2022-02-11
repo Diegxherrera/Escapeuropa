@@ -76,37 +76,183 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-#admin_flechita{
-    margin-left: 8.8%;
+.admin_porcentajestodo{
+    width: 100%;
+    height: 4%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.admin_espacio{
+    width: 70%;
 }
 
 .admin_porcentajes{
-    font-size: 30px;
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.36%;
     font-family: 'Calibri';
-    display: flex;
-    justify-content: right;
-    margin-right: 5%;
-    color: rgb(66, 66, 66);
+    font-size: x-large;
+}
+.admin_mismaaltura{
+    width: 100%;
+    height: 4%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .admin_nombre{
     color: gray;
     font-family: 'Calibri';
     font-size: 14px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .admin_estado{
     color: gray;
     font-family: 'Calibri';
     font-size: 14px;
-    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 8%;
+    height: 100%;
+    align-items: center;
 }
 
-.admin_cpu{
+.admin_datos{
     color: gray;
     font-family: 'Calibri';
     font-size: 14px;
-    display: flex;
+    text-align: right;
+    word-spacing: 0.35cm;
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: right;
+    align-items: center;
+    justify-content: center;
+    gap: 3.36%;
+}
+
+.admin_hr{
+    width: 22%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.admin_cpu{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_memoria{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_disco{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_red{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_gpu{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento68{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento85{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento01{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento02{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento03{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_aplicacionestodo{
+    width: 70%;
+    height: 70%;
+    display: flex;
+}
+
+.admin_espacioenblanco{
+    width: 2.5%;
+    height: 100%;
+}
+
+.admin_aplicaciones{
+    width: 97.5%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6%;
+    font-family: 'Segoe UI';
+
+}
+
+.admin_titulo1{
+    font-size: x-large;
+    font-family: 'Segoe UI';
+    color: rgb(41, 104, 223);
+}
+
+.admin_proceso1{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+}
+
+.admin_controlabajo1{
+    font-size: large;
+    font-family: 'Calibri';
+    background-color: lightgray;
+    width: 1%;
+    color: rgb(97, 96, 96);
+}
+
+.admin_controlabajo2{
+    background-color: aqua;
 }

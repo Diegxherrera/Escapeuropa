@@ -10,6 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: small;
     overflow: hidden;
+
 }
 .tab{
 height: 12%;
@@ -240,7 +241,7 @@ svg.search-icon {
 .contenedor3 {
     width: 102%;
     margin-left: -1%;
-    height: 5%;
+    height: 4.5%;
     display: flex;
     color: #bebbbd;
     background-color: #181818;
@@ -256,12 +257,12 @@ svg.search-icon {
     margin-top: 0.1%;
     width: 101%;
     margin-left: -1%;
-    height: 5%;
+    height: 5.5%;
     display: flex;
     color: #bebbbd;
     background-color: #181818;
     align-items: center;
-    font-size: medium;
+    font-size: small;
 }
 
 .contenedor4 a {
@@ -275,6 +276,7 @@ svg.search-icon {
     gap: 2%;
     display: flex;
     justify-content: left;
+    font-size: small;
 }
 
 .centrofooter {
@@ -284,6 +286,7 @@ svg.search-icon {
     justify-content: center;
     align-items: center;
     gap: 1%;
+    font-size: small;
 }
 
 .hoja {
@@ -300,6 +303,7 @@ svg.search-icon {
     gap: 2%;
     display: flex;
     justify-content: right;
+    font-size: small;
 }
 
 a:hover {
