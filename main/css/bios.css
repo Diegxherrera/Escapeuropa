@@ -398,16 +398,16 @@ body {
     text-align: center;
     visibility: hidden;
 }
-.hardrive_show{
-    width: 600px;
-    height: 300px;
-    color: white;
-    font-size: larger;
-    letter-spacing: 0.1em;
-    background-color: #000AFF;
-    position: absolute;
-    z-index: 1;
-    text-align: center;
+.close_icon{
+    width: 16px;
+    height: 16px;
+    margin-left: 30.9vh;
+}
+.close_icon:hover{
+    width: 16px;
+    height: 16px;
+    margin-left: 30.9vh;
+    cursor: pointer;
 }
 
 .text_menu_hardrive{
@@ -417,6 +417,12 @@ body {
 }
 
 .text_menu_hardrive2{
+    margin-top: 3%;
+    max-width: 400px;
+    margin-left: 16%;
+}
+
+.text_menu_hardrive3{
     margin-top: 3%;
     max-width: 400px;
     margin-left: 16%;
@@ -452,7 +458,10 @@ body {
     color: #000AFF;
     background-color: white;
 }
-
+.text_menu_hardrive3:hover{
+    color: #000AFF;
+    background-color: white;
+}
 .title_menu_hardrive{
     margin-top: 1%;
 }

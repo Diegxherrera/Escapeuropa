@@ -1,7 +1,10 @@
 const Main = $('#Main');
 const Advanced = $('#Advanced');
 const Boot = $('Boot')
-const Bselector = $('#menu_hardrive');
+const Bselector = document.getElementById('menu_hardrive');
+const text1 = document.getElementById('text_menu_hardrive');
+
+var sel = 0;
 
 function cambiarAdvanced() {
 
@@ -45,7 +48,14 @@ function cambiarMain() {
 
 function menuhardrive() {
     console.log('menu boot mostrado');
-    Bselector.addClass('main_page_show');
-    Bselector.removeClass('menu_hardrive');
+    Bselector.style.visibility = 'visible'
+    if(selected = 1){
+        text1.style.backgroundColor = 'white';
+        text1.style.color = 'blue';
+    }
+};
+function closehardrive() {
+    console.log('menu boot ocultado');
+    Bselector.style.visibility = 'hidden'
 };
 
