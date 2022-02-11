@@ -1,6 +1,7 @@
-getElementById("igoogle")
-getElementById("ifilesexplorer)
-        getElementById("i") getElementById("i")
+//default
+document.getElementById("igoogle").style.cssText = "visibility: hidden"
+document.getElementById("ifilesexplorer").style.cssText = "visibility: hidden"
+document.getElementById("inotepad").style.cssText = "visibility: hidden"
 
         //en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
         //IMPORTANTE LE DEBES AÑADIR EL ID DENTRO DE LA FUNCIÓN DE LO QUE QUIERES QUE SE MUESETRE AL HACER DOBLE CLICK 

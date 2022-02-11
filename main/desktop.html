@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no" />
     <title>Escritorio - Windows 10</title>
-    <script type="text/javascript" src="js/2bleclick.js"></script>
     <script type="text/javascript" src="js/block.js"></script>
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,7 @@
         <div class="reticuleindex" id="reticuleindex">
             <table class="appsreticule" id="appsreticule">
                 <tr>
-                    <td id="app-1 trash" onclick="unclick('app-1 trash')" ondblclick="dblclick('ifilesexplorer')">
+                    <td id="app-1 trash" onclick="unclick('app-1 trash')" ondblclick="dblclick('itrash')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/trash.png" id="appicon" class="appicon">
                         </div>
@@ -37,13 +36,13 @@
                         </div>
                         <p id="apptitle" class="apptitle">Google Chrome</p>
                     </td>
-                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('app-3 files-explorer')">
+                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('ifilesexplorer')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/filesexplorer.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Explorador de Archivos</p>
                     </td>
-                    <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')" ondblclick="blockedapp('app-4 blocked')">
+                    <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')" ondblclick="blockedapp('iblocked')">
                         <div class="appicon-1" id="appicon-1 blocked">
                             <img src="img/blocked.png" id="appicon" class="appicon">
                         </div>
@@ -111,6 +110,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/2bleclick.js"></script>
 </body>
 
 </html>
