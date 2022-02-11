@@ -3,6 +3,9 @@ const Advanced = $('#Advanced');
 const Boot = $('Boot')
 const Bselector = document.getElementById('menu_hardrive');
 const text1 = document.getElementById('text_menu_hardrive');
+const text2 = document.getElementById('text_menu_hardrive2');
+const text3 = document.getElementById('text_menu_hardrive3');
+
 
 var sel = 0;
 
@@ -49,13 +52,59 @@ function cambiarMain() {
 function menuhardrive() {
     console.log('menu boot mostrado');
     Bselector.style.visibility = 'visible'
-    if(selected = 1){
-        text1.style.backgroundColor = 'white';
-        text1.style.color = 'blue';
-    }
 };
 function closehardrive() {
     console.log('menu boot ocultado');
     Bselector.style.visibility = 'hidden'
 };
+document.addEventListener("keyup", next)
 
+function next(tecla){
+    if(tecla.key == "ArrowUp"){ // Subir
+        console.log(tecla);
+        if(sel!=0){
+            sel--
+        }
+        console.log(sel);
+    
+
+    }
+    if(tecla.key == "ArrowDown"){ // Bajar
+        console.log(tecla);
+        if(sel<2){
+            sel++
+        }
+        console.log(sel);
+    
+
+    }
+    if(sel==0){
+        text1.style.backgroundColor='white';
+        text1.style.color='#1100ff';
+        text2.style.backgroundColor='#1100ff';
+        text2.style.color='white';
+        text3.style.backgroundColor='#1100ff';
+        text3.style.color='white';
+    }
+    if(sel==1){
+        text1.style.backgroundColor='#1100ff';
+        text1.style.color='white';
+        text2.style.backgroundColor='white';
+        text2.style.color='#1100ff';
+        text3.style.backgroundColor='#1100ff';
+        text3.style.color='white';
+    }
+    if(sel==2){
+        text1.style.backgroundColor='#1100ff';
+        text1.style.color='white';
+        text2.style.backgroundColor='#1100ff';
+        text2.style.color='white';
+        text3.style.backgroundColor='white';
+        text3.style.color='#1100ff';
+    }
+    if(tecla.key == "Escape"){
+        console.log(tecla)
+        Bselector.style.visibility = 'hidden';
+        console.log('hardrive menu cerrado')
+    }
+}

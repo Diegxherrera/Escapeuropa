@@ -392,7 +392,7 @@ body {
     color: white;
     font-size: larger;
     letter-spacing: 0.1em;
-    background-color: #000AFF;
+    background-color: #1100ff;
     position: absolute;
     z-index: 1;
     text-align: center;
@@ -449,19 +449,7 @@ body {
     background-color: white;
 }
 
-.text_menu_hardrive:hover{
-    color: #000AFF;
-    background-color: white;
-}
 
-.text_menu_hardrive2:hover{
-    color: #000AFF;
-    background-color: white;
-}
-.text_menu_hardrive3:hover{
-    color: #000AFF;
-    background-color: white;
-}
 .title_menu_hardrive{
     margin-top: 1%;
 }
