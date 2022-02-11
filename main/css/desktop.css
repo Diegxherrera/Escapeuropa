@@ -219,7 +219,7 @@ div.left-menu01 {
 
 div.bottombar {
     background-color: #00000096;
-    height: 3.25em;
+    height: 6vh;
     width: cover;
     position: sticky;
     bottom: 0;
@@ -233,8 +233,6 @@ div.bottombar {
 div.lefticons-bttmbar {
     color: #000000;
     display: inline-flex;
-    justify-content: center;
-    align-items: center;
 }
 
 div.righticons-bttmbar {
@@ -245,6 +243,17 @@ img.taskbar-icon {
     width: auto;
     height: 2.5em;
     margin-right: 1em;
+}
+
+div.tskbr-ic-hv {
+    width: auto;
+    height: 3.25em;
+    display: inline-flex;
+    align-items: center;
+}
+
+div.tskbr-ic-hv:hover {
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 img.windowslogo {
