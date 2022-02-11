@@ -1,135 +1,161 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <title>BIOS</title>
-        
-        <script src="js/jquery-3.6.0.js"></script>
-        <link rel="stylesheet" href="css/bios.css">
 
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>BIOS</title>
 
-    <body>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/bios.css">
 
-        <div class="main_page_show" id="Main">
+</head>
 
-            <div class="header">BIOS SETUP UTILITY</div>
+<body>
 
-            <diV class="contenedor1">
-                <div class="main" onclick="cambiarMain()">Main</div>
-                <div class="advanced" onclick="cambiarAdvanced()">Advanced</div>
-                <div class="boot" onclick="cambiarBoot()">Boot</div>
-            </diV>
+    <div class="main_page_show" id="Main">
 
-            <div class="espaciado">
+        <div class="header">BIOS SETUP UTILITY</div>
 
-                <div class="bloque">
+        <diV class="contenedor1">
+            <div class="main" onclick="cambiarMain()">Main</div>
+            <div class="advanced" onclick="cambiarAdvanced()">Advanced</div>
+            <div class="boot" onclick="cambiarBoot()">Boot</div>
+        </diV>
 
-                    <div class="espaciadobloque"></div>
-                    <div class="contenido1">
+        <div class="espaciado">
 
-                        <div class="hora">System Time :</div>
-                        <div class="fecha">System Date :</div>
+            <div class="bloque">
 
-                        <div class="espaciadocontenido1"></div>
+                <div class="espaciadobloque"></div>
+                <div class="contenido1">
 
-                        <div class="DiscoA">Legacy Diskette A :</div>
-                        <div class="DiscoB">Legacy Diskette B :</div>
+                    <div class="hora">System Time :</div>
+                    <div class="fecha">System Date :</div>
 
-                        <div class="espaciadocontenido1"></div>
+                    <div class="espaciadocontenido1"></div>
 
-                        <div class="PrimaryM">Primary Master</div>
-                        <div class="PrimaryS">Primary Slave</div>
-                        <div class="SecondaryM">Secondary Master</div>
-                        <div class="SecondaryS">Secondary Slave</div>
+                    <div class="DiscoA">Legacy Diskette A :</div>
+                    <div class="DiscoB">Legacy Diskette B :</div>
 
-                        <div class="espaciadocontenido1"></div>
-                        
+                    <div class="espaciadocontenido1"></div>
+
+                    <div class="PrimaryM">Primary Master</div>
+                    <div class="PrimaryS">Primary Slave</div>
+                    <div class="SecondaryM">Secondary Master</div>
+                    <div class="SecondaryS">Secondary Slave</div>
+
+                    <div class="espaciadocontenido1"></div>
+
+
+                </div>
+
+                <div class="contenido2">
+
+                    <div id="time" class="Time"></div>
+                    <div id="date" class="Date"></div>
+
+                    <div class="espaciadocontenido2"></div>
+
+                    <div class="Enabled">[ Enabled ]</div>
+                    <div class="Disabled">[ Disabled ]</div>
+
+                    <div class="espaciadocontenido2"></div>
+
+                    <div class="None">[ None ]</div>
+                    <div class="None">[ None ]</div>
+                    <div class="None">[ None ]</div>
+                    <div class="None">[ None ]</div>
+
+                    <div class="espaciadocontenido2"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
+
+    </div>
+
+    <div class="advanced_page_show" id="Advanced">
+
+        <div class="header">BIOS SETUP UTILITY</div>
+
+        <diV class="contenedor1">
+            <div class="main2" onclick="cambiarMain()">Main</div>
+            <div class="advanced2" onclick="cambiarAdvanced()">Advanced</div>
+            <div class="boot2" onclick="cambiarBoot()">Boot</div>
+        </diV>
+
+        <div class="espaciado2">
+
+            <div class="bloque2">
+
+            </div>
+
+        </div>
+
+        <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
+
+
+
+    </div>
+
+    <div class="boot_page_show" id="Boot">
+
+        <div class="header">BIOS SETUP UTILITY</div>
+
+        <diV class="contenedor1">
+            <div class="main3" onclick="cambiarMain()">Main</div>
+            <div class="advanced3" onclick="cambiarAdvanced()">Advanced</div>
+            <div class="boot3" onclick="cambiarBoot()">Boot</div>
+        </diV>
+
+        <div class="espaciado3">
+
+            <div class="bloque3">
+
+                <div class="espaciadobloque3"></div>
+                <div class="contenido3">
+
+                    <div class="removable_device">+Removable Devices</div>
+                    <div class="hard_drive">+Hard Drive</div>
+                    <div class="cd_drive">CD-ROM Drive</div>
+                    <div class="network_boot">Network boot from Intel E1000</div>
+
+                </div>
+
+                <div class="espaciadobloque3_1"></div>  
+                <div class="bloque3_1">
+
+                    <div class="subloque3_1">  
+                        Item Specific Help
+                    </div>
+
+                    <div class="subloque3_2">
+
+                        Keys used to view or <br> configure devices: <br> Enter expands or <br> collapses devices with <br> a + or - <br>
+                        May move removable <br> device between Hard <br> Disk or Removable Disk <br> Remove a device <br> That is not installed
 
                     </div>
 
-                    <div class="contenido2">
-
-                        <div id="time" class="Time"></div>
-                        <div id="date" class="Date"></div>
-
-                        <div class="espaciadocontenido2"></div>
-
-                        <div class="Enabled">[ Enabled ]</div>
-                        <div class="Disabled">[ Disabled ]</div>
-
-                        <div class="espaciadocontenido2"></div>
-
-                        <div class="None">[ None ]</div>
-                        <div class="None">[ None ]</div>
-                        <div class="None">[ None ]</div>
-                        <div class="None">[ None ]</div>
-
-                        <div class="espaciadocontenido2"></div>
-
-                    </div>
-
                 </div>
 
             </div>
 
-            <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
-
         </div>
 
-        <div class="advanced_page_show" id="Advanced">
-
-            <div class="header">BIOS SETUP UTILITY</div>
-
-            <diV class="contenedor1">
-                <div class="main2" onclick="cambiarMain()">Main</div>
-                <div class="advanced2" onclick="cambiarAdvanced()">Advanced</div>
-                <div class="boot2" onclick="cambiarBoot()">Boot</div>
-            </diV>
-
-            <div class="espaciado2">
-
-                <div class="bloque2">
-                    
-                </div>
-
-            </div>
-
-            <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
+        <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
 
 
 
-        </div>
+    </div>
 
-        <div class="boot_page_show" id="Boot">
-
-            <div class="header">BIOS SETUP UTILITY</div>
-
-            <diV class="contenedor1">
-                <div class="main3" onclick="cambiarMain()">Main</div>
-                <div class="advanced3" onclick="cambiarAdvanced()">Advanced</div>
-                <div class="boot3" onclick="cambiarBoot()">Boot</div>
-            </diV>
-
-            <div class="espaciado2">
-
-                <div class="bloque2">
-                    
-                </div>
-
-            </div>
-
-            <div class="footer">v02.61 (C)Copyright 1985-2009. American Megatrends, Inc.</div>
+    <script src="js/bios.js" type="text/javascript"></script>
+    <script src="js/datebios.js" type="text/javascript"></script>
 
 
-
-        </div>
-
-        <script src="js/bios.js"></script>
-        <script src="js/date.js"></script>
-
-
-    </body>
+</body>
 
 </html>

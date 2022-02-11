@@ -4,16 +4,16 @@ const Gallego = $('#Gallego');
 const Catalan = $('#Catalan');
 
 function cambiarcatalan() {
-console.log('cambiadoacatalan')
-Catalan.addClass('Catalan_show');
-Español.addClass('Español_hide');
-Gallego.addClass('Gallego_hide');
-Euskera.addClass('Euskera_hide');
+    console.log('cambiadoacatalan')
+    Catalan.addClass('Catalan_show');
+    Español.addClass('Español_hide');
+    Gallego.addClass('Gallego_hide');
+    Euskera.addClass('Euskera_hide');
 
-Español.removeClass('Español_show');
-Gallego.removeClass('Gallego_show');
-Euskera.removeClass('Euskera_show');
-Catalan.removeClass('Catalan_hide');
+    Español.removeClass('Español_show');
+    Gallego.removeClass('Gallego_show');
+    Euskera.removeClass('Euskera_show');
+    Catalan.removeClass('Catalan_hide');
 
 };
 

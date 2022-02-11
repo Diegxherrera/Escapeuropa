@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    background-color: azure;
+}
+
 div.np-head {
     display: grid;
     grid-template-columns: 5% 70% 15%;
@@ -56,8 +60,19 @@ div.np-head-col3>img {
     margin-right: 10px;
 }
 
-div.np-body {
+div.np-limits {
+    z-index: 6;
     width: cover;
+    position: absolute;
+    height: 100%;
+    background-color: aqua;
+}
+
+div.np-body {
+    position: absolute;
+    z-index: 10;
+    width: cover;
+    height: cover;
 }
 
 @media (max-width: 576px) {

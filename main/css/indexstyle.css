@@ -1,0 +1,272 @@
+* {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+html {
+    background-color: #000000;
+    height: cover;
+    width: cover;
+}
+
+body {
+    background-image: url('../img/bg-index.png');
+    font-family: Ubuntu, monospace;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    width: 100%;
+    height: 4em;
+    border: 1px solid black;
+    background-color: black;
+    margin-bottom: 4em;
+}
+
+img#headericon {
+    height: 6em;
+    width: auto;
+    margin-top: -2vh;
+    margin-bottom: 0px;
+    margin-left: 2em;
+    margin-right: 0em;
+}
+
+li.menucards {
+    display: inline;
+    margin-right: 2em;
+    font-size: 1.4em;
+    float: right;
+    list-style: none;
+    margin-top: 0.8em;
+}
+
+li.menucards a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 0.4em;
+    transition: all 0.5s;
+    border: 1px solid black;
+    border-radius: 40px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+li.menucards a:hover {
+    border: 1px solid rgb(185, 39, 26);
+    padding: 10px;
+    background-color: rgb(185, 39, 26);
+    border-radius: 40px;
+    color: #000000;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+div.Welcome {
+    display: flex;
+    height: 600px;
+    color: #FFFFFF;
+    text-align: center;
+    display: inline;
+    font-size: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+div.Subtitle {
+    text-align: center;
+    margin-top: 1em;
+    color: #696969;
+    font-size: 1.1em;
+    padding-left: 11.5em;
+    padding-right: 11.5em;
+}
+
+.GoBtn {
+    border: 4px solid white;
+    display: block;
+    margin-left: 37.5%;
+    margin-right: 35%;
+    width: 26.5%;
+    height: 2.5em;
+    margin-top: 2em;
+    font-size: 20px;
+    background-color: #52040400;
+    border-radius: 3em;
+    color: #FFF;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+    transition: ease 0.5s;
+    -webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -ms-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    font-family: Ubuntu, monospace;
+    margin-bottom: 9em;
+}
+
+.GoBtn:hover {
+    cursor: pointer;
+    border: 4px solid rgb(185, 39, 26);
+    color: rgb(185, 39, 26);
+    background-color: transparent;
+    border-radius: 3em;
+    -webkit-border-radius: 3em;
+    -moz-border-radius: 3em;
+    -ms-border-radius: 3em;
+    -o-border-radius: 3em;
+}
+
+footer {
+    height: 10em;
+    background-color: #000000;
+    color: #FFF;
+    height: 155px;
+    display: flex;
+}
+
+footer img {
+    width: auto;
+    height: 10em;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-right: 3em;
+    margin-left: 1em;
+}
+
+div.footerlogo {
+    margin-right: 0em;
+}
+
+div.headys {
+    width: 10em;
+    margin-right: 0em;
+    float: left;
+}
+
+ol.footercolumns {
+    display: block;
+    margin-top: 2em;
+    list-style: none;
+}
+
+ol.footercolumns a {
+    text-decoration: none;
+}
+
+div.column-1 {
+    height: 100%;
+    width: 100%;
+    margin-left: 0em;
+}
+
+li.footerlinks {
+    padding-top: 4px;
+}
+
+li.footerlinks a {
+    color: rgb(196, 196, 196);
+}
+
+li.footerlinks a:hover {
+    color: rgb(253, 156, 147);
+}
+
+@media screen and (min-width: 601px) {
+    div.Welcome {
+        font-size: 35px;
+    }
+    div.Subtitle {
+        font-size: 25px;
+        padding-left: 4.5em;
+        padding-right: 4.5em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.Welcome {
+        font-size: 25px;
+    }
+    div.Subtitle {
+        padding-left: 4.5em;
+        padding-right: 4.5em;
+    }
+    .GoBtn {
+        width: 45%;
+        height: 2.5em;
+        margin-left: 26.5%;
+        margin-right: 20%;
+    }
+    li.menucards {
+        display: inline;
+        margin-right: 0.55em;
+        font-size: 1.2em;
+        float: right;
+        list-style: none;
+        margin-top: 1.2em;
+    }
+    img#headericon {
+        height: 3.25em;
+        width: auto;
+        margin-bottom: 0px;
+        margin-left: 2em;
+        margin-right: 0em;
+    }
+}
+
+@media screen and (max-width:450px) {
+    div.Welcome {
+        font-size: 18px;
+    }
+    div.Subtitle {
+        font-size: 13px;
+        padding-left: 9.5em;
+        padding-right: 9.5em;
+    }
+    .GoBtn {
+        width: 45%;
+        height: 2.5em;
+        margin-left: 27.5%;
+        margin-right: 20%;
+        font-size: 15px;
+    }
+    header {
+        height: 8em;
+    }
+}
+
+@media screen and (width: 375px) {
+    li.menucards {
+        display: inline;
+        margin-right: 0.55em;
+        font-size: 1.2em;
+        float: right;
+        list-style: none;
+        margin-top: 1.3em;
+    }
+    img#headericon {
+        height: 3.25em;
+        width: auto;
+        margin-top: 2.25em;
+        margin-bottom: 0px;
+        margin-left: 2em;
+        margin-right: 0em;
+    }
+}
+
+@media screen and (max-width:200px) {
+    .GoBtn {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 70%;
+    }
+}

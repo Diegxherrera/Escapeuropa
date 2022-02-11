@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/windows-logo.png" />
     <link rel="stylesheet" href="css/textdocument.css">
+    <script type="text/javascript" src="js/date.js"></script>
 </head>
 
 <body class="body" id="body">
@@ -79,7 +80,7 @@
             </iframe>
             <iframe class="notepad" id="notepad" src="extra/notepad.html">
             </iframe>
-            <iframe class="filesexplorer" src="extra/explorador.html">
+            <iframe class="filesexplorer" id="filesexplorer" src="extra/explorador.html">
             </iframe>
         </div>
     </main>
@@ -87,11 +88,23 @@
         <div class="bottombar" id="bottombar">
             <div class="lefticons-bttmbar">
                 <img class="windowslogo" src="img/white-logo.png" onclick="">
-                <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
+                <div class="srch-br-support">
+                    <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
+                </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
             </div>
             <div class="righticons-bttmbar">
-                <p>20:00</p>
+                <div class="rght-col-0">
+                    <img class="bluetooth-icon" src="img/bluetooth-disabled-icon.png">
+                    <img class="wifi-icon" src="img/wifi-icon.png">
+                </div>
+                <div class="rght-col-1">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </div>
+                <div class="rght-col-2">
+                    <img class="notification-centre" src="img/notification-centre-white.png">
+                </div>
             </div>
         </div>
     </footer>
