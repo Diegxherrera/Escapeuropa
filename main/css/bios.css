@@ -398,7 +398,6 @@ body {
     text-align: center;
     visibility: hidden;
 }
-<<<<<<< Updated upstream
 .close_icon{
     width: 16px;
     height: 16px;
@@ -409,17 +408,7 @@ body {
     height: 16px;
     margin-left: 30.9vh;
     cursor: pointer;
-=======
-.close_hd{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    z-index: 1;
-    margin-left: 92%;
-    bottom: 138px;
->>>>>>> Stashed changes
 }
-
 
 .text_menu_hardrive{
     margin-top: 10%;

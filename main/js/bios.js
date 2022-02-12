@@ -2,15 +2,12 @@ const Main = $('#Main');
 const Advanced = $('#Advanced');
 const Boot = $('Boot')
 const Bselector = document.getElementById('menu_hardrive');
-<<<<<<< Updated upstream
 const text1 = document.getElementById('text_menu_hardrive');
 const text2 = document.getElementById('text_menu_hardrive2');
 const text3 = document.getElementById('text_menu_hardrive3');
 
 
 var sel = 0;
-=======
->>>>>>> Stashed changes
 
 function cambiarAdvanced() {
 
@@ -54,11 +51,7 @@ function cambiarMain() {
 
 function menuhardrive() {
     console.log('menu boot mostrado');
-<<<<<<< Updated upstream
     Bselector.style.visibility = 'visible'
-=======
-    Bselector.style.visibility = 'visible';
->>>>>>> Stashed changes
 };
 function closehardrive() {
     console.log('menu boot ocultado');
