@@ -13,8 +13,12 @@ function comprobar() {
             window.location.href = "cargainicio.html";
         }, 2000);
     } else {
-        document.getElementById("error").style.display = "block";
+        document.getElementById("error").style.visibility = "visible";
         var correcto = false;
         console.log(correcto);
     }
+}
+
+function close_alert(){
+    document.getElementById("error").style.visibility = "hidden";
 }
