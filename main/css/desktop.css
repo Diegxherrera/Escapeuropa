@@ -95,74 +95,56 @@ div.centered-windows {
     align-items: center;
     justify-content: center;
     display: flex;
-    visibility: hidden;
+    visibility: visible;
     height: auto;
 }
 
-div.blocked-alert {
-    overflow: visible;
+.incorrecto {
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    visibility: visible;
+    bottom: 40%;
+    left: 35%;
+    right: 50%;
+    transition: all ease-in-out 1s;
+}
+
+.button_error {
+    width: 70px;
+    height: 25px;
     z-index: 1;
     position: absolute;
-    display: flex;
-    width: 60%;
-    height: 20%;
-    border: 1px solid black;
-    justify-self: center;
-    background-color: rgba(202, 202, 202, 0.979);
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    margin-top: 50em;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    top: 17vh;
+    right: 2vh;
+    background-color: lightgray;
+    border: 2px solid gray;
 }
 
-div.blocked-alert-header {
-    display: flex;
-    margin-top: 0.5em;
-    margin-left: 1em;
-    margin-right: 1em;
-    justify-content: flex-end;
+.button_error:hover {
+    border-color: #357EC7;
 }
 
-div.alert-name {
-    display: flex;
-    justify-content: flex-start;
+.button_error:active {
+    font-size: 13px;
 }
 
-div.blocked-alert-top-buttons {
-    display: flex;
-    align-items: right;
-}
-
-img.blocked-alert-minimizebtn {
+.top_bar {
+    z-index: 1;
+    background-color: rgb(167, 57, 53);
+    width: 600px;
     height: 30px;
-    width: auto;
+    transition: all ease-in-out 1s;
 }
 
-img.blocked-alert-fullscreenbtn-disabled {
-    height: 30px;
-    width: auto;
-}
-
-img.blocked-alert-closebtn {
-    height: 28px;
-    width: auto;
-}
-
-div.blocked-alert-body {
-    margin: 0.7em 0.7em 0em 0.7em;
-    background-color: rgb(151, 38, 30);
-    height: 4.6em;
-    display: flex;
-}
-
-img.prohibited-mini-icon {
-    height: 4em;
-    margin-left: 10px;
-    margin-top: 5px;
+.close {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 1vh;
+    top: 0.7vh;
+    transition: all ease-in-out 1s;
 }
 
 p.apptitle {

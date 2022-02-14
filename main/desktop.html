@@ -53,21 +53,11 @@
             </table>
         </div>
         <div class="centered-windows" id="centered-windows">
-            <div class="blocked-alert" id="blocked-alert">
-                <div class="blocked-alert-header">
-                    <table class="alert-header-columns">
-                        <tr></tr>Alerta de Windows
-                        <div class="blocked-alert-top-buttons">
-                            <img src="img/window-minimize-svgrepo-com.svg" class="blocked-alert-minimizebtn"></img>
-                            <img src="img/window-maximize-svgrepo-com.svg" class="blocked-alert-fullscreenbtn-disabled"></img>
-                            <img src="img/close-svgrepo-com.svg" class="blocked-alert-closebtn"></img>
-                        </div>
-                    </table>
+            <div id="error" class="incorrecto">
+                <div class="top_bar">
+                    <img class=""> <img class="close" onclick="close_alert()" src="img/close-svgrepo-com.svg" alt="Cerrar ventana">
                 </div>
-                <div class="blocked-alert-body">
-                    <img src="img/blocked.png" class="prohibited-mini-icon">
-                    <p class="alert-text">Este archivo está corrupto. Intente abrirlo más tarde. </p>
-                </div>
+                <button class="button_error" onclick="close_alert()" id="button_error">Aceptar</button>
             </div>
         </div>
         <div class="leftmenu" id="leftmenu">
@@ -92,13 +82,13 @@
                     <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
                 </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
-                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="unclick('app-1 files-explorer')" ondblclick="dblclick('ifilesexplorer')">
+                <div class="tskbr-ic-hv" id="app-3 files-explorer" ondblclick="dblclick('ifilesexplorer')">
                     <img class="taskbar-icon" src="img/filesexplorer.png">
                 </div>
-                <div class="tskbr-ic-hv" onclick="unclick('app-2 chrome')" ondblclick="dblclick('igoogle')">
+                <div class="tskbr-ic-hv" ondblclick="dblclick('igoogle')">
                     <img class="taskbar-icon" src="img/chrome.png">
                 </div>
-                <div class="tskbr-ic-hv">
+                <div class="tskbr-ic-hv" ondblclick="dblclick('inotepad')">
                     <img class="taskbar-icon" src="img/notepad-icon.webp">
                 </div>
             </div>
