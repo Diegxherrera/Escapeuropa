@@ -219,7 +219,7 @@ div.left-menu01 {
 
 div.bottombar {
     background-color: #00000096;
-    height: 5vh;
+    height: 3em;
     width: cover;
     position: sticky;
     bottom: 0;
@@ -244,14 +244,15 @@ div.righticons-bttmbar {
 img.taskbar-icon {
     width: auto;
     height: 2.5em;
-    margin-right: 1em;
+    display: flex;
 }
 
 div.tskbr-ic-hv {
-    width: auto;
+    width: 3.75em;
     height: 3.25em;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 div.tskbr-ic-hv:hover {
@@ -269,13 +270,14 @@ img.windowslogo {
 div.srch-br-support {
     width: cover;
     height: cover;
+    background-color: white;
 }
 
 input.srch-br {
     border: 0px;
-    height: em;
+    height: 3em;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
     text-align: left;
     width: 22em;
     font-family: 'Open Sans', sans-serif;
@@ -306,6 +308,10 @@ img.bluetooth-icon {
     width: auto;
     height: 1.5em;
     margin-right: 0.5em;
+}
+
+img.bluetooth-icon:hover {
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 div.rght-col-2 {
