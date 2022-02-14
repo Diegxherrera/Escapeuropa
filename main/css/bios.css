@@ -411,6 +411,8 @@ body {
 }
 
 .text_menu_hardrive{
+    color: white;
+    background-color: #1100ff;
     margin-top: 10%;
     max-width: 400px;
     margin-left: 16%;

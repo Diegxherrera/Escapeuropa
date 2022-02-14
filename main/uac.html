@@ -37,16 +37,24 @@
         </div>
         <div id='error' class="incorrecto">
             <div class="top_bar">
-                <img class="close" onclick="close_alert()" src="img/close-svgrepo-com.svg" alt="">
+                <div class="closeicon">
+                <img class="close" onclick="close_alert()" src="img/close-svgrepo-com.svg" alt="Closed">
+                </div>
+                <img class="icon" src="img/blocked.png" alt="Error">
+                <span class="texterror">Error</span>
+                <img class="wrong" src="img/blocked.png" alt="Error">
+                <span class="texto1">La contraseña introducida es incorrecta.<br>
+                Vuelva a intentarlo o reestablezca la contraseña para accceder</span>
             </div>
             <button class="button_error" onclick="close_alert()" id="button_error">Aceptar</button>
+            <button class="button_error2" onclick="resetpass()" id="button_error">Reestablecer</button>
         </div>
         <div class="email_text">
-            <input type="email" id="email_text" onclick="onclick3()" placeholder="Nombre de usuario"><br>
+            <input type="email" id="email_text" onclick="onclick3()" placeholder=" Nombre de usuario"><br>
         </div>
 
         <div class="password">
-            <input type="password" class="password_text" id="password_text" onclick="onclick2()" placeholder="Contraseña">
+            <input type="password" class="password_text" id="password_text" onclick="onclick2()" placeholder=" Contraseña">
             <input id="password_button" type="button" value=" ➔" onmousedown="onclick1()" onclick="comprobar()">
         </div>
 

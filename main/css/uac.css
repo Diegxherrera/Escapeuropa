@@ -46,6 +46,7 @@ div.container {
     height: 35px;
     margin-top: 1%;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 #password_button:hover{
@@ -95,7 +96,6 @@ p{
     bottom: 40%;
     left: 35%;
     right: 50%;
-    transition: all ease-in-out 1s;
 }
 .button_error{
     width: 70px;
@@ -109,6 +109,7 @@ p{
 }
 .button_error:hover{
     border-color: #357EC7;
+    cursor: pointer;
 }
 .button_error:active{
     font-size: 13px;
@@ -116,7 +117,7 @@ p{
 
 .top_bar{
     z-index: 1;
-    background-color: #1c77d1;
+    background-color: transparent;
     width: 600px;
     height: 30px;
 }
@@ -125,6 +126,73 @@ p{
     width: 16px;
     height: 16px;
     position: absolute;
-    right: 1vh;
+    right: 1.6vh;
     top: 0.7vh;
+    cursor: pointer;
+}
+
+.wrong{
+    z-index: 1;
+    position: absolute;
+    top: 4vh;
+    left:2vh;
+    width: 55px;
+    height: 55px;
+}
+
+.texto1{
+    z-index: 1;
+    position: absolute;
+    top: 4.5vh;
+    left: 9vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+.button_error2{
+    width: 90px;
+    height: 25px;
+    z-index: 1;
+    position: absolute;
+    top: 17vh;
+    right: 10vh;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+.button_error2:hover{
+    border-color: #357EC7;
+    cursor: pointer;
+}
+.button_error2  :active{
+    font-size: 13px;
+}
+
+.icon{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 0.5vh;
+    top: 0.4vh;
+}
+
+
+.texterror{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left: 3.5vh;
+    top: 0.33vh;
+}
+
+.closeicon{
+    width: 50px;
+    position: absolute;
+    height: 30px;
+    right: 0px;
+    transition: ease-in all 0.1s;
+}
+.closeicon:hover{
+    position: absolute;
+    right: 0px;
+    background-color: red;
+    opacity: 50%;
 }

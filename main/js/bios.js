@@ -105,6 +105,11 @@ function next(tecla){
     if(tecla.key == "Escape"){
         console.log(tecla)
         Bselector.style.visibility = 'hidden';
-        console.log('hardrive menu cerrado')
+        console.log('hardrive menu cerrado');
+    }
+    if(tecla.key == "Enter"){
+        console.log(tecla)
+        Bselector.style.visibility = 'hidden';
+        console.log('hardrive menu cerrado');
     }
 }
