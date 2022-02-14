@@ -8,6 +8,7 @@ const text3 = document.getElementById('text_menu_hardrive3');
 
 
 var sel = 0;
+var val = 0;
 
 function cambiarAdvanced() {
 
@@ -46,7 +47,7 @@ function cambiarMain() {
 
     Main.removeClass('main_page_hide');
     Advanced.removeClass('advanced_page_show');
-    Boot.addClass('boot_page_show');
+    Boot.removeClass('boot_page_show');
 };
 
 function menuhardrive() {
@@ -75,9 +76,53 @@ function next(tecla){
             sel++
         }
         console.log(sel);
+        }
+        if(tecla.key == "ArrowLeft"){ // Subir
+            console.log(tecla);
+            if(val!=0){
+                val--
+            }
+            console.log(val);
+        
     
+        }
+        if(tecla.key == "ArrowRight"){ // Bajar
+            console.log(tecla);
+            if(val<2){
+                val++
+                Main.addClass('main_page_show');
+                Advanced.addClass('advanced_page_hide');
+                Boot.addClass('boot_page_hide');
+            }
+            console.log(val);
+        }
+        if(val==0){
+            Main.addClass('main_page_show');
+            Advanced.addClass('advanced_page_hide');
+            Boot.addClass('boot_page_hide');
+            Main.removeClass('main_page_hide');
+            Advanced.removeClass('advanced_page_show');
+            Boot.removeClass('boot_page_show');
 
-    }
+        }
+        if(val==1){
+            Main.addClass('main_page_hide');
+            Advanced.addClass('advanced_page_show');
+            Boot.addClass('boot_page_hide');
+        
+            Main.removeClass('main_page_show');
+            Advanced.removeClass('advanced_page_hide');
+            Boot.addClass('boot_page_show');
+        }
+        if(val==2){
+            Main.addClass('main_page_hide');
+            Advanced.addClass('advanced_page_hide');
+            Boot.addClass('boot_page_show');
+
+            Main.removeClass('main_page_show');
+            Advanced.removeClass('advanced_page_show');
+            Boot.addClass('boot_page_hide');
+        }
     if(sel==0){
         text1.style.backgroundColor='white';
         text1.style.color='#1100ff';
