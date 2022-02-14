@@ -55,12 +55,6 @@ table.appsreticule {
     position: absolute;
 }
 
-div.appicon-1 {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
 tr {
     display: inline;
     padding-bottom: 10px;
@@ -149,6 +143,7 @@ div.centered-windows {
 
 p.apptitle {
     word-wrap: break-word;
+    width: 120px;
 }
 
 div.windows {
@@ -252,14 +247,14 @@ img.windowslogo {
 div.srch-br-support {
     width: cover;
     height: cover;
-    position:sticky;
+    position: sticky;
     height: 5vh;
     background-color: white;
 }
 
 input.srch-br {
     border: 0px;
-    height: 3em;    
+    height: 3em;
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 1vh;
