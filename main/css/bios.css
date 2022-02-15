@@ -455,3 +455,25 @@ body {
 .title_menu_hardrive{
     margin-top: 1%;
 }
+
+.removable_device{
+    background-color: #1100ff;
+    color: white;
+}
+
+.Enabled{
+    background-color: #1100ff;
+    color: white;
+}
+.menu_enabled{
+    width: 600px;
+    height: 300px;
+    color: white;
+    font-size: larger;
+    letter-spacing: 0.1em;
+    background-color: #1100ff;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    visibility: hidden;
+}
