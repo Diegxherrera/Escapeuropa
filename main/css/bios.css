@@ -91,15 +91,6 @@ body {
     justify-content: center;
 }
 
-.main, .advanced, .boot {
-    cursor: pointer;
-}
-
-.main:hover, .advanced:hover, .boot:hover {
-    color: #1100ff;
-    background-color: white;
-    cursor: pointer;
-}
 
 .espaciado {
     width: 100%;
@@ -145,9 +136,6 @@ body {
     gap: 5%;
 }
 
-.Time, .Date, .Enabled, .Disabled, .None {
-    cursor: pointer;
-}
 
 .espaciocontenido1, .espaciocontenido2 {
     width: 100%;
@@ -190,15 +178,6 @@ body {
     justify-content: center;
 }
 
-.main2, .advanced2, .boot2 {
-    cursor: pointer;
-}
-
-.mai2n:hover, .advanced2:hover, .boot2:hover {
-    color: #1100ff;
-    background-color: white;
-    cursor: pointer;
-}
 
 .espaciado2 {
     width: 100%;
@@ -291,15 +270,7 @@ body {
     color: #1100ff;
 }
 
-.main3, .advanced3, .boot3 {
-    cursor: pointer;
-}
 
-.main3:hover, .advanced3:hover, .boot3:hover {
-    color: #1100ff;
-    background-color: white;
-    cursor: pointer;
-}
 
 .espaciado3 {
     width: 100%;
@@ -336,13 +307,6 @@ body {
     gap: 5%;
 }
 
-.removable_device:hover, .hard_drive:hover, .cd_drive:hover, .network_boot:hover {
-    cursor: pointer;
-}
-
-.removable_device, .hard_drive, .cd_drive, .network_boot {
-    cursor: pointer;
-}
 
 .espaciadobloque3_1 {
     width: 15%;
@@ -407,7 +371,6 @@ body {
     width: 16px;
     height: 16px;
     margin-left: 30.9vh;
-    cursor: pointer;
 }
 
 .text_menu_hardrive{

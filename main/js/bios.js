@@ -73,62 +73,7 @@ function closehardrive() {
 document.addEventListener("keyup", next)
 
 function next(tecla){
-    console.log(tecla);
-    /*
-    if(tecla.key == "ArrowUp"){ // Subir
-        console.log(tecla);
-        if(sel!=0){
-            sel--
-        }
-        console.log(sel);
-    
-
-    }
-    if(tecla.key == "ArrowDown"){ // Bajar
-        console.log(tecla);
-        if(sel<2){
-            sel++
-        }
-        console.log(sel);
-        }
-    if(sel==0){
-        text1.style.backgroundColor='white';
-        text1.style.color='#1100ff';
-        text2.style.backgroundColor='#1100ff';
-        text2.style.color='white';
-        text3.style.backgroundColor='#1100ff';
-        text3.style.color='white';
-    }
-    if(sel==1){
-        text1.style.backgroundColor='#1100ff';
-        text1.style.color='white';
-        text2.style.backgroundColor='white';
-        text2.style.color='#1100ff';
-        text3.style.backgroundColor='#1100ff';
-        text3.style.color='white';
-    }
-    if(sel==2){
-        text1.style.backgroundColor='#1100ff';
-        text1.style.color='white';
-        text2.style.backgroundColor='#1100ff';
-        text2.style.color='white';
-        text3.style.backgroundColor='white';
-        text3.style.color='#1100ff';
-    }
-    if(tecla.key == "Escape"){
-        console.log(tecla)
-        Bselector.style.visibility = 'hidden';
-        console.log('hardrive menu cerrado');
-    }
-    if(tecla.key == "Enter"){
-        console.log(tecla)
-        Bselector.style.visibility = 'hidden';
-        console.log('hardrive menu cerrado');
-    }*/
-
-
-
-
+ 
     // Menu superior 
     if(tecla.key == 'ArrowLeft'){
         if(topvalue==0){
@@ -257,6 +202,24 @@ function next(tecla){
                 bootpagevalue++;
             }
         }
+        if(bootpagevalue==1){
+            if(tecla.key=='ArrowDown'){
+                if(bootpagevalue==2){
+                    console.log('max alcanzado boot page');
+                }else{
+                    hardriveselec++;
+                    console.log('aumentado boot page');
+                }
+            }
+            if(tecla.key=='ArrowUp'){
+                if(bootpagevalue==0){
+                    console.log('min alcanzado boot page');
+                }else{
+                    hardriveselec--;
+                    console.log('disminuido boot page')
+                }
+            }
+        }
         if(bootpagevalue==0){
             rmv.style.backgroundColor='#1100FF';
             rmv.style.color='white';
@@ -270,6 +233,10 @@ function next(tecla){
             hdrive.style.color='white'
             cdrive.style.backgroundColor='white';
             cdrive.style.color='#1100FF';
+            if(tecla.key==' '){
+                Bselector.style.visibility='visible';
+                inner = 1;
+            }
         }
         if(bootpagevalue==2){
             hdrive.style.backgroundColor='white';
@@ -285,15 +252,46 @@ function next(tecla){
             nboot.style.color='white';
             nboot.style.backgroundColor='#1100FF';
         }
-        if(tecla.key==' '){
-            Bselector.style.visibility='visible';
+        
+        
+        if(inner==1){
+            if(hardriveselec==0){
+                text1.style.backgroundColor='white';
+                text1.style.color='#1100ff';
+                text2.style.backgroundColor='#1100ff';
+                text2.style.color='white';
+                text3.style.backgroundColor='#1100ff';
+                text3.style.color='white';
+            }
+            if(hardriveselec==1){
+                text1.style.backgroundColor='#1100ff';
+                text1.style.color='white';
+                text2.style.backgroundColor='white';
+                text2.style.color='#1100ff';
+                text3.style.backgroundColor='#1100ff';
+                text3.style.color='white';
+            }
+            if(hardriveselec==2){
+                text1.style.backgroundColor='#1100ff';
+                text1.style.color='white';
+                text2.style.backgroundColor='#1100ff';
+                text2.style.color='white';
+                text3.style.backgroundColor='white';
+                text3.style.color='#1100ff';
+            }
+            if(tecla.key=='Escape'){
+                Bselector.style.visibility='hidden'
+                inner = 0;
+            }
+            if(tecla.key=='Enter'){
+                Bselector.style.visibility='hidden'
+                inner = 0;
+            }
+
+            
         }
-        if(tecla.key=='Escape'){
-            Bselector.style.visibility='hidden'
-        }
-        if(tecla.key=='Enter'){
-            Bselector.style.visibility='hidden'
-        }
+
+
     }
 
 
@@ -305,4 +303,5 @@ function next(tecla){
         var mainpagevalue = 0; // Valor desplazamiento pagina main
         var bootpagevalue = 0; // Valor desplazamiento pagina boot
         var hardriveselec = 0; // Valor seleecion hardrive boot
+        var inner = 0; // ID Si esta abierto
 
