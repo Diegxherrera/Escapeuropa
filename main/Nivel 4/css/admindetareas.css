@@ -65,11 +65,27 @@ body{
     font-family: 'Calibri';
 }
 
+#admin_control2:hover{
+    background-color: lightgray;
+}
+
+#admin_control0:hover{
+    background-color: red;
+}
+.admin_control:hover{
+    background-color: lightblue;
+}
+
 .admin_control3{
     border: 0.5px solid rgb(114, 114, 114);
     width: 80px;
     background-color: lightgray;
 }
+
+.admin_control3:hover{
+    background-color: lightblue;
+}
+
 .admin_control4{
     border: 0.5px solid rgb(114, 114, 114);
     width: 80px;
@@ -209,7 +225,7 @@ body{
 }
 
 .admin_aplicacionestodo{
-    width: 70%;
+    width: 100%;
     height: 70%;
     display: flex;
 }
@@ -221,12 +237,12 @@ body{
 
 .admin_aplicaciones{
     width: 97.5%;
-    height: 100%;
+    height: auto;
     display: inline-flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    gap: 6%;
+    gap: 4%;
     font-family: 'Segoe UI';
 
 }
@@ -242,17 +258,150 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    width: 200px;
+    width: 70%;
 }
-
+.admin_controlesabajo{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    gap: 48%;
+}
 .admin_controlabajo1{
     font-size: large;
     font-family: 'Calibri';
     background-color: lightgray;
     width: 1%;
     color: rgb(97, 96, 96);
+    display: flex;
 }
 
-.admin_controlabajo2{
-    background-color: aqua;
+.admin_menosdetalles{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    gap: 80%;
+    font-family: 'Calibri';
+}
+
+
+.admin_controlabajo3{
+    font-size: large;
+    font-family: 'Calibri';
+    background-color: lightgray;
+    width: 1%;
+    color: rgb(97, 96, 96);
+    display: flex;
+    text-align: right;
+}
+
+.admin_finalizartarea{
+    border: 1px solid black;
+    background-color: lightgray;
+    display: flex;
+    text-align: center;
+    width: 8%;
+    font-family: 'Calibri';
+}
+
+.admin_datos_aplicaciones{
+    color: gray;
+    font-family: 'Calibri';
+    font-size: small;
+    text-align: right;
+    word-spacing: 0.35cm;
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.36%;
+}
+
+.admin_cpu_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_memoria_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_disco_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_red_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_gpu_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_administradortareas{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_killer{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_funny{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_antimalware{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_busqueda{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_comsurrogate{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_chrome{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_googlecrash{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_hostprocess{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
 }
