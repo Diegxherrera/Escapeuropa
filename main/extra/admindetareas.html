@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de tareas</title>
+    <link rel="stylesheet" href="../css/admindetareas.css">
+    <script src="../js/admindetareas.js"></script>
+</head>
+<body>
+
+<span id="admin_container_all">
+<div class="admin_container">
+    <div class="admin_container2">
+        <div class="admin_top">
+            <img src="../img/admin_icon.jfif" width="20px" height="20px"> 
+            <span class="Admin_text">Monitor de tareas</span>
+        </div>
+        <div class="admin_opciones">
+            <span class="admin_control">Archivo</span>
+            <span class="admin_control">Opciones</span>
+            <span class="admin_control">Vista</span>
+        </div>
+    </div>
+
+    
+    <div class="admin_top2">
+        <span class="admin_control2" id="admin_control2">—</span>
+        <span class="admin_control2" id="admin_control2">▭</span>
+        <span class="admin_control2" id="admin_control0" onclick="admin_cerrar()">X</span> 
+    </div>
+</div>
+
+<span id="admin_errortext" style="display: none; font-size: xx-large;"></span>
+
+    <div class="admin_container4">
+        <div class="admin_opciones2">
+            <span class="admin_control4">Procesos</span>
+            <span class="admin_control3">Rendimiento</span>
+            <span class="admin_control3">Historial de aplicaciones</span>
+            <span class="admin_control3">Inicio</span>
+            <span class="admin_control3">Usuarios</span>
+            <span class="admin_control3">Detalles</span>
+            <span class="admin_control3">Servicios</span>
+        </div>
+    </div>
+
+        
+
+    <div class="admin_porcentajestodo">
+        <div class="admin_espacio"></div>
+        <div class="admin_porcentajes" id="admin_porcentajes">
+            <hr size="25%">
+                <div class="admin_porciento68" id="admin_porciento68">68%</div>
+                <hr size="25%">
+                <div class="admin_porciento85" id="admin_porciento85">85%</div>
+                <hr size="25%">
+                <div class="admin_porciento01" id="admin_porciento01">0%</div>
+                <hr size="25%">
+                <div class="admin_porciento02" id="admin_porciento02">0%</div>
+                <hr size="25%">
+                <div class="admin_porciento03" id="admin_porciento03">0%</div>
+                <hr size="25%">
+        </div>
+    </div>
+    
+        <div class="admin_mismaaltura">
+
+            <div class="admin_nombre">Nombre</div>
+            <hr size="25%">
+            <div class="admin_estado">Estado</div>
+            <div class="admin_hr"><hr size="25%"></div>
+            <div class="admin_datos">
+
+                <hr size="25%">
+                <div class="admin_cpu">CPU</div>
+                <hr size="25%">
+                <div class="admin_memoria">Memoria</div>
+                <hr size="25%">
+                <div class="admin_disco">Disco</div>
+                <hr size="25%">
+                <div class="admin_red">Red</div>
+                <hr size="25%">
+                <div class="admin_gpu">GPU</div>
+                <hr size="25%">
+
+            </div>
+        </div>
+        <hr>
+      
+        <div class="admin_aplicacionestodo">
+            <div class="admin_espacioenblanco"></div>
+            <div class="admin_aplicaciones">
+
+                <div class="admin_titulo1" id="admin_titulo1">Aplicaciones (3)</div>
+
+                <div class="admin_administradortareas">
+                    <div class="admin_proceso1"><img src="../img/admin_icon.jfif" width="2%">Monitor de tareas</div>
+                        <div class="admin_datos_aplicaciones">
+                            <hr size="25%">
+                            <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">3,5%</div>
+                            <hr size="25%">
+                            <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">28,2 MB</div>
+                            <hr size="25%">
+                            <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                            <hr size="25%">
+                            <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                            <hr size="25%">
+                            <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                            <hr size="25%">
+                        </div>    
+                </div>
+
+                <div class="admin_killer" id="admin_killer" onclick="admin_seleccionar()">
+                <div class="admin_proceso1"><img src="../img/killer.png"  width="2%">killer</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" id="admin_cpu_killer" style="background-color: rgb(248, 171, 70);">25%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" id="admin_memoria_killer" style="background-color: rgb(248, 171, 70);">102,1 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" id="admin_disco_killer" style="background-color: lightgoldenrodyellow;">0,1 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" id="admin_red_killer" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" id="admin_gpu_killer" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+                
+
+                <div class="admin_funny" id="admin_funny" onclick="admin_seleccionar2()">
+                <div class="admin_proceso1"><img src="../img/funny.png"  width="2%">funny</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" id="admin_cpu_funny" style="background-color: rgb(248, 205, 110);">18%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" id="admin_memoria_funny" style="background-color: lightgoldenrodyellow;">17,2 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" id="admin_disco_funny" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" id="admin_red_funny" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" id="admin_gpu_funny" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+                
+                <div class="admin_titulo1">Procesos en segundo plano (18)</div>
+
+                <div class="admin_antimalware">
+                <div class="admin_proceso1"><img src="../img/funny.png" width="2%">Antimalware Service Executable</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">1%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" style="background-color: rgb(248, 205, 110);">530,4 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+
+                <div class="admin_busqueda">
+                <div class="admin_proceso1"><img src="../img/busqueda.png"  width="2%">Búsqueda</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">0 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+
+                <div class="admin_comsurrogate">
+                <div class="admin_proceso1"><img src="../img/funny.png"  width="2%">COM Surrogate</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">2,4 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+
+                <div class="admin_chrome">
+                <div class="admin_proceso1"><img src="../img/chrome.png" width="2%">Chrome</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">2%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">4,8 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+
+                <div class="admin_googlecrash">
+                <div class="admin_proceso1"><img src="../img/funny.png" width="2%">Google Crash Handler</div>
+                <div class="admin_datos_aplicaciones">
+                    <hr size="25%">
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">0,8 MB</div>
+                    <hr size="25%">
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
+                    <hr size="25%">
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
+                    <hr size="25%">
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
+                    <hr size="25%">
+                </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="admin_controlesabajo">
+            <div class="admin_controlabajo1"><</div>
+            <div class="admin_controlabajo2"></div>
+            <div class="admin_controlabajo3">></div>
+        </div>
+        <div class="admin_menosdetalles">
+            <div class="admin_menosdetalles_boton"><input type="checkbox">Menos detalles</div>
+            <div class="admin_finalizartarea" onclick="admin_finalizartarea()"><input type="button" class="admin_finalizartarea_boton" onclick="admin_finalizartarea()">Parar tarea</div>
+        </div>
+    </span>
+</html>
