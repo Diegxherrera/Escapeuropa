@@ -171,14 +171,18 @@ div.windows {
     height: 31%;
 }
 
+div.onnotepadactive {
+    visibility: show;
+}
+
 iframe {
     margin-top: 0;
     padding-top: 0;
-    top: 7%;
+    top: 12.5%;
     z-index: 10;
     position: absolute;
     width: 70%;
-    height: 80%;
+    height: 75%;
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
