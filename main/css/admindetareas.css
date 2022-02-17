@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    cursor: default;
+}
+.admin_container{
+    box-shadow: inset 0px -1px rgb(116, 116, 116);
+    width: 100%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+.admin_container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin_top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Calibri';
+}
+
+.admin_top2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 150px;
+    font-family: 'Calibri';
+}
+
+.admin_control2{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.admin_control{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin_opciones{
+   display: flex;
+   font-family: 'Calibri';
+   justify-content: space-around;
+   width: 200px;
+}
+
+.admin_container4{
+    border-left: 1px solid rgb(114, 114, 114);
+    border-right: 1px solid rgb(114, 114, 114);
+    border-bottom: 1px solid rgb(114, 114, 114);
+    font-family: 'Calibri';
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    font-family: 'Calibri';
+}
+
+#admin_control2:hover{
+    background-color: lightgray;
+}
+
+#admin_control0:hover{
+    background-color: red;
+}
+.admin_control:hover{
+    background-color: lightblue;
+}
+
+.admin_control3{
+    border: 0.5px solid rgb(114, 114, 114);
+    width: 80px;
+    background-color: lightgray;
+}
+
+.admin_control3:hover{
+    background-color: lightblue;
+}
+
+.admin_control4{
+    border: 0.5px solid rgb(114, 114, 114);
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.admin_porcentajestodo{
+    width: 100%;
+    height: 4%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.admin_espacio{
+    width: 70%;
+}
+
+.admin_porcentajes{
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.36%;
+    font-family: 'Calibri';
+    font-size: x-large;
+}
+.admin_mismaaltura{
+    width: 100%;
+    height: 4%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.admin_nombre{
+    color: gray;
+    font-family: 'Calibri';
+    font-size: 14px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.admin_estado{
+    color: gray;
+    font-family: 'Calibri';
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    width: 8%;
+    height: 100%;
+    align-items: center;
+}
+
+.admin_datos{
+    color: gray;
+    font-family: 'Calibri';
+    font-size: 14px;
+    text-align: right;
+    word-spacing: 0.35cm;
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.36%;
+}
+
+.admin_hr{
+    width: 22%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.admin_cpu{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_memoria{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_disco{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_red{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_gpu{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento68{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento85{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento01{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento02{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento03{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_aplicacionestodo{
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+.admin_espacioenblanco{
+    width: 2.5%;
+    height: 100%;
+}
+
+.admin_aplicaciones{
+    width: 97.5%;
+    height: auto;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4%;
+    font-family: 'Segoe UI';
+
+}
+
+.admin_titulo1{
+    font-size: x-large;
+    font-family: 'Segoe UI';
+    color: rgb(41, 104, 223);
+}
+
+.admin_proceso1{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+}
+.admin_controlesabajo{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+    align-items: center;
+    gap: 48%;
+}
+.admin_controlabajo1{
+    font-size: large;
+    font-family: 'Calibri';
+    background-color: lightgray;
+    width: 1%;
+    color: rgb(97, 96, 96);
+    display: flex;
+}
+
+.admin_menosdetalles{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5%;
+    gap: 80%;
+    font-family: 'Calibri';
+}
+
+
+.admin_controlabajo3{
+    font-size: large;
+    font-family: 'Calibri';
+    background-color: lightgray;
+    width: 1%;
+    color: rgb(97, 96, 96);
+    display: flex;
+    text-align: right;
+}
+
+.admin_finalizartarea{
+    border: 1px solid black;
+    background-color: lightgray;
+    display: flex;
+    text-align: center;
+    width: 8%;
+    font-family: 'Calibri';
+}
+
+.admin_finalizartarea:hover{
+    background-color: rgb(146, 146, 146);
+}
+
+.admin_datos_aplicaciones{
+    color: gray;
+    font-family: 'Calibri';
+    font-size: small;
+    text-align: right;
+    word-spacing: 0.35cm;
+    width: 30%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3.36%;
+}
+
+.admin_cpu_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_memoria_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_disco_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_red_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin_gpu_app{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_administradortareas{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_killer{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_funny{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_antimalware{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_busqueda{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_comsurrogate{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_chrome{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_googlecrash{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.admin_hostprocess{
+    width: 99%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#admin_container_all{
+    animation: glitch 2000ms infinite;
+    animation-play-state: paused;
+}
+
+@keyframes glitch{
+    1%{
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.05em -0.030em 0 rgba(0, 255, 0, 0.75),
+    -0.030em 0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    
+    25%{
+    text-shadow: -0.05em -0.030em 0 rgba(255, 0, 0, 0.75),
+    0.030em 0.030em 0 rgba(0, 255, 0, 0.75),
+    -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    
+    50%{
+    text-shadow: 0.030em 0.05em 0 rgba(255, 0, 0, 0.75),
+    0.05em 0 0 rgba(0, 255, 0, 0.75), 
+    0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+    
+    100%{
+    text-shadow: -0.030em 0 0 rgba(255, 0, 0, 0.75),
+    -0.030em -0.030em 0 rgba(0, 255, 0, 0.75),
+    -0.030em -0.05em 0 rgba(0, 0, 255, 0.75);
+    }
+}
