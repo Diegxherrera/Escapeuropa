@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="uft-8">
+        <title>Instalación de windows</title>
+
+        <link rel="stylesheet" href="css/configuracion_windows.css">
+        <script src="js/jquery-3.6.0.js"></script>
+
+    </head>
+
+    <body>
+
+            <div id="option1">
+
+                <div class="header">
+
+                    <div class="header_left">
+
+                        Programa de configuración de Windows
+
+                    </div>
+
+                    <div class="header_right">
+
+                        <div class="close"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="img_windows">
+
+                    <img src="img/logo_windows_configuración .png" width="45%" height="40%">
+
+                </div>
+
+                <div class="install_now">
+
+                    <div class="text_install_now" onclick="cambiarInstall()">
+
+                        Instalar ahora
+
+                    </div>
+
+                </div>
+                        
+                <div class="repair_system">
+
+                    <div class="text_repair_system">
+
+                        Reparar el equipo
+
+                    </div>
+
+                </div>
+                    
+                <div class="microsoft_text">
+
+                    <div class="text_microsoft_text">
+
+                        C 2019 Microsoft Corporation. Todos los derechos reservados.
+
+                    </div>
+                            
+                </div>
+  
+            </div>
+
+
+            
+
+            <div id="option2">
+
+                <div class="header">
+
+                    <div class="header_left">
+
+                        Programa de configuración de Windows
+
+                    </div>
+
+                    <div class="header_right">
+
+                        <div class="close"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="img_windows">
+
+                    <img src="img/logo_windows_configuración .png" width="45%" height="40%">
+
+                </div>
+
+                <div class="text_option2" onclick="input()">
+
+                    <div class="language" onclick="language()">
+
+                        Idioma que va a instalar: 
+                        
+                        <select name="language">
+
+                        <div>
+
+                            <option id="correct">Español (España, internacional)</option>
+
+                        </div>
+
+                        <div>
+
+                            <option id="incorrect">Inglés (Inglés, internacional)</option>
+
+                        </div>
+
+                        <div+>
+
+                            <option id="incorrect">Francés (Francés, internacional)</option>
+
+                        </div+>
+                        
+                        </select> 
+
+                    </div>
+
+                    <div class="form" onclick="form()">
+
+                        Formato de hora y moneda: 
+                        
+                        <select name="form">
+
+                        <div onclick="Correct()">
+
+                            <option id="correct">Español (España, internacional)</option>
+
+                        </div>
+
+                        <div onclick="Incorrect()">
+
+                            <option id="incorrect">Inglés (Inglés, internacional)</option>
+
+                        </div>
+
+                        <div onclick="Incorrect()">
+
+                            <option id="incorrect">Francés (Francés, internacional)</option>
+
+                        </div>
+                        
+                        </select> 
+
+                    </div>
+
+                    <div class="keyboard" onclick="keyboard()">
+
+                        Teclado o método de entrada:  
+                        
+                        <select name="form">
+
+                            <div onclick="Correct()">
+
+                                <option id="correct">Español</option>
+    
+                            </div>
+
+                            <div onclick="Incorrect()">
+
+                                <option id="incorrect">Inglés</option>
+    
+                            </div>
+
+                            <div onclick="Incorrect()">
+
+                                <option id="incorrect">Francés</option>
+    
+                            </div>
+                        
+                        </select> 
+
+                    </div>
+
+                </div>
+
+                <div class="help_text">
+
+                    <div class="text_help_text">
+
+                        Especifica el idioma y otras preferencias y haz click en "Siguiente" para continuar.
+
+                    </div>
+
+                </div>
+
+                <div class="microsoft_text">
+
+                    <div class="text_microsoft_text">
+
+                        C 2019 Microsoft Corporation. Todos los derechos reservados.
+
+                    </div>
+                            
+                </div>
+
+                <div class="next_bloq">
+
+                    <div class="button_next" onclick="cambiarInstalling()">
+
+                        <button class="button">Siguiente</button>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div id="option3">
+
+                <div class="content_option3">
+
+                    <div class="text_content_option3">Preparando instalación.</div> 
+                    
+                    <div id="autoProgress">0%</div>
+
+                    <div class="time_lapse">Esto puede tardar unos minutos.</div>
+
+                </div>
+
+            </div>
+
+        <script type="text/javascript" src="js/configuracion_windows.js"></script>
+
+    </body>
+
+</html>
