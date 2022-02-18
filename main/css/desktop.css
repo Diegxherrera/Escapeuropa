@@ -55,12 +55,6 @@ table.appsreticule {
     position: absolute;
 }
 
-div.appicon-1 {
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-}
-
 tr {
     display: inline;
     padding-bottom: 10px;
@@ -167,6 +161,7 @@ img.prohibited-mini-icon {
 
 p.apptitle {
     word-wrap: break-word;
+    width: 120px;
 }
 
 div.windows {
@@ -176,14 +171,18 @@ div.windows {
     height: 31%;
 }
 
+div.onnotepadactive {
+    visibility: show;
+}
+
 iframe {
     margin-top: 0;
     padding-top: 0;
-    top: 7%;
+    top: 12.5%;
     z-index: 10;
     position: absolute;
     width: 70%;
-    height: 80%;
+    height: 75%;
     border: 1px solid black;
     background-color: rgba(255, 255, 255, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
@@ -192,6 +191,7 @@ iframe {
 }
 
 div.leftmenu {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -200,10 +200,12 @@ div.leftmenu {
 
 div.left-menu01 {
     z-index: 30;
+    display: block;
     position: absolute;
-    display: none;
-    width: 60%;
-    height: 70%;
+    right: 155vh;
+    width: 43vh;
+    padding-bottom: 20vh;
+    margin-bottom: 40vh;
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
@@ -219,7 +221,7 @@ div.left-menu01 {
 
 div.bottombar {
     background-color: #00000096;
-    height: 6vh;
+    height: 3em;
     width: cover;
     position: sticky;
     bottom: 0;
@@ -233,6 +235,8 @@ div.bottombar {
 div.lefticons-bttmbar {
     color: #000000;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.righticons-bttmbar {
@@ -242,14 +246,15 @@ div.righticons-bttmbar {
 img.taskbar-icon {
     width: auto;
     height: 2.5em;
-    margin-right: 1em;
+    display: flex;
 }
 
 div.tskbr-ic-hv {
-    width: auto;
+    width: 3.75em;
     height: 3.25em;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 div.tskbr-ic-hv:hover {
@@ -267,19 +272,24 @@ img.windowslogo {
 div.srch-br-support {
     width: cover;
     height: cover;
+    position: sticky;
+    height: 5vh;
+    background-color: white;
 }
 
 input.srch-br {
     border: 0px;
-    height: 5.8em;
+    height: 3em;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    padding-left: 1vh;
     text-align: left;
-    width: 24em;
+    width: 22em;
     font-family: 'Open Sans', sans-serif;
     color: rgb(71, 71, 71);
     overflow: none;
-    font-size: 0.8em;
+    background-color: white;
+    font-size: 1em;
 }
 
 p#date,
@@ -304,6 +314,10 @@ img.bluetooth-icon {
     width: auto;
     height: 1.5em;
     margin-right: 0.5em;
+}
+
+img.bluetooth-icon:hover {
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 div.rght-col-2 {

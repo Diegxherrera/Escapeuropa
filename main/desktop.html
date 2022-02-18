@@ -13,7 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/windows-logo.png" />
     <link rel="stylesheet" href="css/textdocument.css">
-    <script type="text/javascript" src="js/date.js"></script>
+    <link rel="stylesheet" href="css/notepad.css">
+    <script type="text/javascript" src="js/date.js">
+    </script>
+    <script src="js/jquery-3.6.0.js"></script>
 </head>
 
 <body class="body" id="body">
@@ -52,21 +55,11 @@
             </table>
         </div>
         <div class="centered-windows" id="centered-windows">
-            <div class="blocked-alert" id="blocked-alert">
-                <div class="blocked-alert-header">
-                    <table class="alert-header-columns">
-                        <tr></tr>Alerta de Windows
-                        <div class="blocked-alert-top-buttons">
-                            <img src="img/window-minimize-svgrepo-com.svg" class="blocked-alert-minimizebtn"></img>
-                            <img src="img/window-maximize-svgrepo-com.svg" class="blocked-alert-fullscreenbtn-disabled"></img>
-                            <img src="img/close-svgrepo-com.svg" class="blocked-alert-closebtn"></img>
-                        </div>
-                    </table>
+            <div id="error" class="incorrecto">
+                <div class="top_bar">
+                    <img class=""> <img class="close" onclick="close_alert()" src="img/close-svgrepo-com.svg" alt="Cerrar ventana">
                 </div>
-                <div class="blocked-alert-body">
-                    <img src="img/blocked.png" class="prohibited-mini-icon">
-                    <p class="alert-text">Este archivo está corrupto. Intente abrirlo más tarde. </p>
-                </div>
+                <button class="button_error" onclick="close_alert()" id="button_error">Aceptar</button>
             </div>
         </div>
         <div class="leftmenu" id="leftmenu">
@@ -75,6 +68,21 @@
             </div>
         </div>
         <div class="windows" id="windows">
+            <div class="onnotepadactive" id="onnotepadactive">
+                <div id="np-head" class="np-head">
+                    <div id="np-head-col1" class="np-head-col1">
+                        <img class="np-icon" src="img/notepad-icon.webp">
+                    </div>
+                    <div id="np-head-col2" class="np-head-col2">
+                        <p class="np-title">Nota nueva - Bloc de Notas</p>
+                    </div>
+                    <div id="np-head-col3" class="np-head-col3">
+                        <img src="img/window-minimize-svgrepo-com.svg" class="np-minimizebtn" id="np-minimizebtn">
+                        <img src="img/window-maximize-svgrepo-com.svg" class="np-fullscreenbtn-disabled">
+                        <img src="img/close-svgrepo-com.svg" class="np-closebtn" id="np-closebtn">
+                    </div>
+                </div>
+            </div>
             <iframe class="google" id="igoogle" src="extra/google.html">
             </iframe>
             <iframe class="notepad" id="inotepad" src="extra/notepad.html">
@@ -86,18 +94,18 @@
     <footer>
         <div class="bottombar" id="bottombar">
             <div class="lefticons-bttmbar">
-                <img class="windowslogo" src="img/white-logo.png" onclick="">
+                <img class="windowslogo" src="img/white-logo.png" onclick="openmenu()">
                 <div class="srch-br-support">
                     <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
                 </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
-                <div class="tskbr-ic-hv">
+                <div class="tskbr-ic-hv" id="app-3 files-explorer" ondblclick="dblclick('ifilesexplorer')">
                     <img class="taskbar-icon" src="img/filesexplorer.png">
                 </div>
-                <div class="tskbr-ic-hv">
+                <div class="tskbr-ic-hv" ondblclick="dblclick('igoogle')">
                     <img class="taskbar-icon" src="img/chrome.png">
                 </div>
-                <div class="tskbr-ic-hv">
+                <div class="tskbr-ic-hv" ondblclick="dblclick('inotepad')">
                     <img class="taskbar-icon" src="img/notepad-icon.webp">
                 </div>
             </div>
@@ -117,6 +125,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="js/2bleclick.js"></script>
+    <script type="text/javascript" src="js/desktop.js"></script>
 </body>
 
 </html>

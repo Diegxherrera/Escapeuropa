@@ -1,6 +1,8 @@
 var usuario;
 var pass;
 var clase = document.getElementById('error');
+document.addEventListener("keyup", next)
+
 
 function comprobar() {
     var usuario = document.getElementById('email_text').value;
@@ -11,10 +13,25 @@ function comprobar() {
 
         setTimeout(function() {
             window.location.href = "cargainicio.html";
-        }, 2000);
+        }, 50);
     } else {
-        document.getElementById("error").style.display = "block";
+        document.getElementById("error").style.visibility = "visible";
         var correcto = false;
         console.log(correcto);
     }
 }
+
+function close_alert(){
+    document.getElementById("error").style.visibility = "hidden";
+}
+
+function resetpass(){
+    window.location.href = 'uac_alt.html'
+}
+
+function next(tecla){
+    if(tecla.key == "Enter"){ 
+        console.log(tecla);
+        comprobar();
+    
+    }}

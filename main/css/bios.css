@@ -91,15 +91,6 @@ body {
     justify-content: center;
 }
 
-.main, .advanced, .boot {
-    cursor: pointer;
-}
-
-.main:hover, .advanced:hover, .boot:hover {
-    color: #1100ff;
-    background-color: white;
-    cursor: pointer;
-}
 
 .espaciado {
     width: 100%;
@@ -145,9 +136,6 @@ body {
     gap: 5%;
 }
 
-.Time, .Date, .Enabled, .Disabled, .None {
-    cursor: pointer;
-}
 
 .espaciocontenido1, .espaciocontenido2 {
     width: 100%;
@@ -190,15 +178,6 @@ body {
     justify-content: center;
 }
 
-.main2, .advanced2, .boot2 {
-    cursor: pointer;
-}
-
-.mai2n:hover, .advanced2:hover, .boot2:hover {
-    color: #1100ff;
-    background-color: white;
-    cursor: pointer;
-}
 
 .espaciado2 {
     width: 100%;
@@ -291,15 +270,7 @@ body {
     color: #1100ff;
 }
 
-.main3, .advanced3, .boot3 {
-    cursor: pointer;
-}
 
-.main3:hover, .advanced3:hover, .boot3:hover {
-    color: #1100ff;
-    background-color: white;
-    cursor: pointer;
-}
 
 .espaciado3 {
     width: 100%;
@@ -336,13 +307,6 @@ body {
     gap: 5%;
 }
 
-.removable_device:hover, .hard_drive:hover, .cd_drive:hover, .network_boot:hover {
-    cursor: pointer;
-}
-
-.removable_device, .hard_drive, .cd_drive, .network_boot {
-    cursor: pointer;
-}
 
 .espaciadobloque3_1 {
     width: 15%;
@@ -387,36 +351,43 @@ body {
 }
 
 .menu_hardrive{
-    width: 600px;
-    height: 300px;
+    width: 30%;
+    height: 30%;
     color: white;
     font-size: larger;
     letter-spacing: 0.1em;
-    background-color: #000AFF;
+    background-color: #1100ff;
     position: absolute;
     z-index: 1;
     text-align: center;
     visibility: hidden;
 }
-.hardrive_show{
-    width: 600px;
-    height: 300px;
-    color: white;
-    font-size: larger;
-    letter-spacing: 0.1em;
-    background-color: #000AFF;
-    position: absolute;
-    z-index: 1;
-    text-align: center;
+.close_icon{
+    width: 16px;
+    height: 16px;
+    margin-left: 30.9vh;
+}
+.close_icon:hover{
+    width: 16px;
+    height: 16px;
+    margin-left: 30.9vh;
 }
 
 .text_menu_hardrive{
+    color: white;
+    background-color: #1100ff;
     margin-top: 10%;
     max-width: 400px;
     margin-left: 16%;
 }
 
 .text_menu_hardrive2{
+    margin-top: 3%;
+    max-width: 400px;
+    margin-left: 16%;
+}
+
+.text_menu_hardrive3{
     margin-top: 3%;
     max-width: 400px;
     margin-left: 16%;
@@ -443,16 +414,29 @@ body {
     background-color: white;
 }
 
-.text_menu_hardrive:hover{
-    color: #000AFF;
-    background-color: white;
-}
-
-.text_menu_hardrive2:hover{
-    color: #000AFF;
-    background-color: white;
-}
 
 .title_menu_hardrive{
     margin-top: 1%;
+}
+
+.removable_device{
+    background-color: #1100ff;
+    color: white;
+}
+
+.Enabled{
+    background-color: #1100ff;
+    color: white;
+}
+.menu_enabled{
+    width: 600px;
+    height: 300px;
+    color: white;
+    font-size: larger;
+    letter-spacing: 0.1em;
+    background-color: #1100ff;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    visibility: hidden;
 }
