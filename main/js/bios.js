@@ -1,6 +1,6 @@
 const Main = $('#Main');
 const Advanced = $('#Advanced');
-const Boot = $('Boot')
+const Boot = $('Boot');
 const Bselector = $('#menu_hardrive');
 
 function cambiarAdvanced() {
