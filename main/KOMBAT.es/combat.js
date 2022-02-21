@@ -103,8 +103,8 @@ function combat(yourselect) {
     console.log(vida1 + "/" + vida2)
 
     if (vida2 == 0) {
-        alert("ganas") //reeemplazar por el acceso al siguiente nivel que se vea el 0.
-        restart()
+        alert("Ganas") //reeemplazar por el acceso al siguiente nivel que se vea el 0.
+        location.href = "../carganivel4.html"
     }
     if (vida1 == 0) {
         alert("pierdes") //reeemplazar por Roberto que diga intentalo de nuevo.
