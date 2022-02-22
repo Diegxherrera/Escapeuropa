@@ -2,14 +2,16 @@
 document.getElementById("igoogle").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorer").style.cssText = "visibility: hidden"
 document.getElementById("inotepad").style.cssText = "visibility: hidden"
+let index_value = 100
 
 //en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
 //IMPORTANTE LE DEBES AÑADIR EL ID DENTRO DE LA FUNCIÓN DE LO QUE QUIERES QUE SE MUESETRE AL HACER DOBLE CLICK 
 function dblclick(id) {
     const element = document.getElementById(id)
     element.style.cssText = "visibility: visible"
-    element.style.cssText = "z-index: 100"
+    element.style.cssText = "z-index: " + index_value
     console.log(element + "funciono")
+    index_value++
 }
 //este para el borón de cerrar funciona igual pero hace lo contrario
 function close(id) {
