@@ -8,6 +8,8 @@ function createcookie(name,value){
 
 let x;
 let i;
+let comprobación;
+
 function getCookie(cookie) {
   let name = cookie + "=";
   let dc = document.cookie.split(";");
@@ -15,12 +17,18 @@ function getCookie(cookie) {
     busca = dc[i].indexOf(name)
     if (busca == 1){
       x = i
+      comprobación = true
     }
     i++
   }
+  if(comprobación==true){
   const resultado = dc[x]
   const valor = resultado.split("=")
   return valor[1]
+  }else{
+    return undefined
+  }
 }
+
 
 
