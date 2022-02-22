@@ -3,6 +3,8 @@ const Option2 = $('option2');
 
 let i = 0;
 
+//Le decimos a nuestra funcion onclick que cuando hagamos click en la funcion se nos cambie el display de las capas, de esta manera x capas serán invisibles y x serán visibles.
+
 function cambiarInstall() {
     
     console.log('CambiarInstall');
@@ -15,8 +17,12 @@ function cambiarInstall() {
 
 };
 
+//Le damos un valor a correct e incorrect
+
 let correct = true;
 let incorrect = true;
+
+//Le decimos a nuestra funcion onclick que cuando correct sea true, incorrect sea false, y viceversa.
 
 function language() {
 
@@ -31,6 +37,9 @@ function language() {
     }
 }
 
+//Le decimos a nuestra funcion onclick que cuando correct sea true, incorrect sea false, y viceversa.
+
+
 function form() {
 
     if (correct === true) {
@@ -43,6 +52,9 @@ function form() {
         incorrect = true;
     }
 }
+
+//Le decimos a nuestra funcion onclick que cuando correct sea true, incorrect sea false, y viceversa.
+
 
 function keyboard() {
 
@@ -57,6 +69,8 @@ function keyboard() {
     }
 }
 
+//Le decimos a nuestra funcion que cuando correct e incorrect sean true se cambie el display de las capas para pasar al próximo option.
+
 function cambiarInstalling() {
 
     console.log('CambiarInstalling');
@@ -70,6 +84,8 @@ function cambiarInstalling() {
         document.getElementById("option4").style.display = "none";
     }
 
+    //Le decimos a nuestra funcion que cuando correct e incorrect sean false se cambie el display de las capas para que nos salga un error y poder reiniciar el nivel.
+
     else {
 
         document.getElementById("option1").style.display = "none";
@@ -79,6 +95,8 @@ function cambiarInstalling() {
         document.getElementById("option4").style.display = "none";;
     }
 };
+
+//Le decimos a nuestra funcion que cuando hagamos click sobre la misma nos vuelva al principio del nivel y no conserve los valores que hemos dado anteriormente a correct e incorrect.
 
 function reload_option2() {
 
@@ -93,6 +111,8 @@ function reload_option2() {
     correct = true;
     incorrect = true;
 }
+
+// Creamos un Array para el progreso de Instalación y Preparación de Instalación de Windows 10.
 
 const numero = new Array();
 
@@ -138,6 +158,9 @@ const numero = new Array();
     numero[39] = "100%";
     numero[40] = "100%";
 
+
+//Creamos una función y le decimos que el array numero es igual a i.
+
 function numero_progress() {
 
     console.log('autoProgress');
@@ -145,7 +168,11 @@ function numero_progress() {
     numero = i;
 }
 
+//Le decimos al codigo que onload es igual a la funcion.
+
 onload = function() {
+
+    //Creamos un intervalo para la funcion en el que decimos que i aumentará uno cada 1000 ms, i se presentara en la capa que contiene el identificador "autoProgress".
 
     setInterval(function() {
  
