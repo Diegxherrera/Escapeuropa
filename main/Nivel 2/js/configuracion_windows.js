@@ -1,6 +1,8 @@
 const Option1 = $('option1');
 const Option2 = $('option2');
 
+let i = 0;
+
 function cambiarInstall() {
     
     console.log('CambiarInstall');
@@ -80,15 +82,16 @@ function cambiarInstalling() {
 
 function reload_option2() {
 
-    setInterval(function() {
+    console.log('reload_option2');
 
-    document.getElementById("option1").style.display = "none";
-    document.getElementById("option2").style.display = "block";
+    document.getElementById("option1").style.display = "block";
+    document.getElementById("option2").style.display = "none";
     document.getElementById("option2_error").style.display = "none";
     document.getElementById("option3").style.display = "none";
     document.getElementById("option4").style.display = "none";
 
-    },5000);
+    correct = true;
+    incorrect = true;
 }
 
 const numero = new Array();
@@ -135,8 +138,6 @@ const numero = new Array();
     numero[39] = "100%";
     numero[40] = "100%";
 
-let i = 0;
-
 function numero_progress() {
 
     console.log('autoProgress');
@@ -145,9 +146,9 @@ function numero_progress() {
 }
 
 onload = function() {
-  
-    setInterval(function() {
 
+    setInterval(function() {
+ 
         i++;
 
         document.getElementById('autoProgress').innerHTML = numero[i];

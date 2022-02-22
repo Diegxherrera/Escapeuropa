@@ -183,7 +183,8 @@ body {
     height: 95%;
     display: inline-flex;
     flex-direction: column;
-    gap: 5%;
+    gap: 8%;
+    margin-left: 1%;
 }
 
 .text_content_option2_error {
@@ -202,6 +203,13 @@ body {
     font-size: 1em;
 }
 
+.reload_option2 {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
 /*CSS OPTION_3*/
 
 .content_option3 {
