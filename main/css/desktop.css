@@ -172,13 +172,13 @@ div.windows {
 }
 
 div.onnotepadactive {
-    visibility: show;
+    visibility: visible;
 }
 
 iframe {
     margin-top: 0;
     padding-top: 0;
-    top: 12.5%;
+    top: 11.6%;
     z-index: 10;
     position: absolute;
     width: 70%;

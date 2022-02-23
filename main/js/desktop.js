@@ -1,5 +1,7 @@
 console.log("linked")
 $('.leftmenu').hide()
+$('#np-head').hide();
+
 
 function openmenu() {
     $('.leftmenu').show()
@@ -12,4 +14,8 @@ function closemenu() {
     $('.leftmenu').hide()
     $('.windowslogo').removeAttr("onclick", "closemenu()")
     $('.windowslogo').attr("onclick", "openmenu()")
+}
+function hideIframe(){
+    $('#ifilesexplorer').hide();
+    $('#np-head').hide();
 }
