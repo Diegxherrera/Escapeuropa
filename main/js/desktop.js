@@ -10,14 +10,14 @@ function openmenu() {
     $('.windowslogo').attr("onclick", "closemenu()")
     console.log("funciono")
 }
+
 function closemenu() {
     $('.leftmenu').hide()
     $('.windowslogo').removeAttr("onclick", "closemenu()")
     $('.windowslogo').attr("onclick", "openmenu()")
 }
-function hideIframe(){
-    $('#ifilesexplorer').hide();
+
+function hideIframe() {
+    $('#inotepad').hide();
     $('#np-head').hide();
 }
-
-
