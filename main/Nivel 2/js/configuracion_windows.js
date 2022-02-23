@@ -129,25 +129,95 @@ const numero = new Array();
     numero[9] = "9%";
     numero[10] = "10%";
     numero[11] = "11%";
-    numero[12] = "33%";
-    numero[13] = "34%";
-    numero[14] = "35%";
-    numero[15] = "36%";
-    numero[16] = "37%";
-    numero[17] = "50%";
-    numero[18] = "67%";
-    numero[19] = "68%";
-    numero[20] = "69%";
-    numero[21] = "70%";
-    numero[22] = "77%";
-    numero[23] = "98%";
-    numero[24] = "99%";
-    numero[25] = "100%";
-    numero[26] = "100%";
-    numero[27] = "100%";
-    numero[28] = "100%";
-    numero[29] = "100%";
-    numero[30] = "100%";
+    numero[12] = "12%";
+    numero[13] = "13%";
+    numero[14] = "14%";
+    numero[15] = "15%";
+    numero[16] = "16%";
+    numero[17] = "17";
+    numero[18] = "18%";
+    numero[19] = "19%";
+    numero[20] = "20%";
+    numero[21] = "21%";
+    numero[22] = "22%";
+    numero[23] = "23%";
+    numero[24] = "24%";
+    numero[25] = "25%";
+    numero[26] = "26%";
+    numero[27] = "27%";
+    numero[28] = "28%";
+    numero[29] = "29%";
+    numero[30] = "30%";
+    numero[31] = "31%";
+    numero[32] = "32%";
+    numero[33] = "33%";
+    numero[34] = "34%";
+    numero[35] = "35%";
+    numero[36] = "36%";
+    numero[37] = "37%";
+    numero[38] = "38%";
+    numero[39] = "39%";
+    numero[40] = "40%";
+    numero[41] = "41%";
+    numero[42] = "42%";
+    numero[43] = "43%";
+    numero[44] = "44%";
+    numero[45] = "45%";
+    numero[46] = "46%";
+    numero[47] = "47%";
+    numero[48] = "48%";
+    numero[49] = "49%";
+    numero[50] = "50%";
+    numero[51] = "51%";
+    numero[52] = "52%";
+    numero[53] = "53%";
+    numero[54] = "54%";
+    numero[55] = "55%";
+    numero[56] = "56%";
+    numero[57] = "57%";
+    numero[58] = "58%";
+    numero[59] = "59%";
+    numero[60] = "60%";
+    numero[61] = "61%";
+    numero[62] = "62%";
+    numero[63] = "63%";
+    numero[64] = "64%";
+    numero[65] = "65%";
+    numero[66] = "66%";
+    numero[67] = "67%";
+    numero[68] = "68%";
+    numero[69] = "69%";
+    numero[70] = "70%";
+    numero[71] = "71%";
+    numero[72] = "72%";
+    numero[73] = "73%";
+    numero[74] = "74%";
+    numero[75] = "75%";
+    numero[76] = "76%";
+    numero[77] = "77%";
+    numero[78] = "78%";
+    numero[79] = "79%";
+    numero[80] = "80%";
+    numero[81] = "81%";
+    numero[82] = "82%";
+    numero[83] = "83%";
+    numero[84] = "84%";
+    numero[85] = "85%";
+    numero[86] = "86%";
+    numero[87] = "87%";
+    numero[88] = "88%";
+    numero[89] = "89%";
+    numero[90] = "90%";
+    numero[91] = "91%";
+    numero[92] = "92%";
+    numero[93] = "93%";
+    numero[94] = "94%";
+    numero[95] = "95%";
+    numero[96] = "96%";
+    numero[97] = "97%";
+    numero[98] = "98%";
+    numero[99] = "99%";
+    numero[100] = "100%";
 
 
 const text = new Array ();
@@ -183,6 +253,9 @@ const text = new Array ();
     text [28] = "No desconecte ni apague su PC"
     text [29] = "Esto puede tardar unos minutos"
     text [30] = "No desconecte ni apague su PC"
+ 
+const numero2 = numero;
+const text2 = text;
 
 
 //Creamos una función y le decimos que el array numero es igual a "i" y el array text es igual a "a".
@@ -206,27 +279,44 @@ onload = function() {
 
     setInterval(function() {
 
-        // Le decimos a "i" y a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo
-        if (i > numero.length & a > text.length) {
+        if (i === numero.length & a === text.length) {
 
+            document.getElementById("option1").style.display = "none";
+            document.getElementById("option2").style.display = "none";
+            document.getElementById("option2_error").style.display = "none";
+            document.getElementById("option3").style.display = "none";
+            document.getElementById("option4").style.display = "block";
+
+            
             clearInterval(numero);
             clearInterval(text);
         } 
-        
+
+        // Le decimos a "i" y a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo
+
         i++;
         a++;
 
         //Option 3
 
         document.getElementById('autoProgress').innerHTML = numero[i];
-        document.getElementById('text_change').innerHTML = text[a];
+        
 
         //Option 4
 
-        document.getElementById('autoProgress2').innerHTML = numero[i];
-        document.getElementById('text_change2').innerHTML = text[a];
+        document.getElementById('autoProgress2').innerHTML = numero2[i];
+    },200);
 
-    },20);
+    setInterval(function() {
+
+        //Option 3
+
+        document.getElementById('text_change').innerHTML = text[a];
+
+        //Option 4
+        
+        document.getElementById('text_change').innerHTML = text2[a];
+    },2000);
 }
 
 
