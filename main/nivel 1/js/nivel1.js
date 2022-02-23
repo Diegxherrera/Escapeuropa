@@ -188,6 +188,32 @@ function comprobacion() {
         setTimeout("$('.warning').css('display','none')", 2500)
     }
     else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true && comprado == true) {
+        switch(secuencia){
+            case "CCC":
+                if(disco==true){
+                    createCookie("disk","SamsungSSD")
+                    createCookie("tam","1TB")
+                    console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
+                    console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
+                    break
+                }
+            case "BBB":
+                if(disco==true){
+                    createCookie("disk","WesternDigital")
+                    createCookie("tam","1TB")
+                    console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
+                    console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
+                    break
+                }
+            case "AAA":
+                if(disco==true){
+                    createCookie("disk","WesternDigital")
+                    createCookie("tam","500GB")
+                    console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
+                    console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
+                    break
+                }
+        }
         alert("correcto") //animación de montaje del pc
     }
     else { alert("incorrecto") 
