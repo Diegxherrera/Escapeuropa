@@ -79,7 +79,7 @@ function form() {
 
     else {
 
-        incorrect = true;
+        incorrect = false;
     }
 }
 
@@ -95,7 +95,7 @@ function keyboard() {
 
     else {
 
-        incorrect = true;
+        incorrect = false;
     }
 }
 
