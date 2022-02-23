@@ -1,16 +1,11 @@
 //dura un mes
-function create_long_cookie(name,value){
+function createCookie(name,value){
   //obtener dia de hoy + 30 dias
   const time = new Date()
   time.setTime(time.getTime()+(30*86400000));
   const UTCtime = time.toUTCString()
   //cookie = nombre=valor;expira=tiempo;ruta;
   document.cookie = name +"="+value+";"+"expires="+UTCtime+";path=/";
-  return "creada"
-}
-//hasta que ce cierre el navegador
-function create_short_cookie(name,value){
-  document.cookie = name +"="+value+";";
   return "creada"
 }
 
