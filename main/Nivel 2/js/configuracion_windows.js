@@ -1,35 +1,5 @@
 const Option1 = $('option1');
 const Option2 = $('option2');
-var value = 0;
-numeros = new Array();
-
-numeros[0] = "0%"
-numeros[1] = "1%";
-numeros[2] = "2%";
-numeros[3] = "3%";
-numeros[4] = "4%";
-numeros[5] = "5%";
-numeros[6] = "6%";
-numeros[7] = "7%";
-numeros[8] = "8%";
-numeros[9] = "9%";
-numeros[10] = "10%";
-numeros[11] = "11%";
-numeros[12] = "33%";
-numeros[13] = "34%";
-numeros[14] = "35%";
-numeros[15] = "36%";
-numeros[16] = "37%";
-numeros[17] = "50%";
-numeros[18] = "67%";
-numeros[19] = "68%";
-numeros[20] = "69%";
-numeros[21] = "70%";
-numeros[22] = "77%";
-numeros[23] = "98%";
-numeros[24] = "99%";
-numeros[25] = "100%";
-window.onload = numero_progress();
 
 let i = 0;
 let a = 0;
@@ -215,7 +185,7 @@ const text = new Array ();
     text [30] = "No desconecte ni apague su PC."
 
 
-//Creamos una función y le decimos que el array numero es igual a i,.
+//Creamos una función y le decimos que el array numero es igual a "i" y el array text es igual a "a".
 
 function numero_text_progress() {
 
@@ -228,11 +198,11 @@ function numero_text_progress() {
 }
 
 
-//Le decimos al codigo que onload es igual a la funcion.
+//Le decimos al codigo que onload es igual a la funcion numero_text_progress().
 
 onload = function() {
 
-    //Creamos un intervalo para la funcion en el que decimos que i aumentará uno cada 1000 ms, i se presentara en la capa que contiene el identificador "autoProgress".
+    //Creamos un intervalo para la funcion en el que decimos que "a" e "i" aumentará uno cada 1000 ms, i se representara en la capa que contiene el identificador "autoProgress" y a se representara en la capa que contiene el identificador "text_change".
     
 
     setInterval(function() {
