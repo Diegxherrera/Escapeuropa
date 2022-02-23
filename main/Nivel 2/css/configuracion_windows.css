@@ -41,7 +41,14 @@ body {
     background-color: rgb(0, 155, 255);
 }
 
-#option3{
+#option3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 155, 255);
+}
+
+#option4 {
     display: none;
     width: 100%;
     height: 100%;
@@ -78,7 +85,7 @@ body {
     align-items: center;
 }
 
-/*CSS OPTION_1*/
+/*CSS OPTION 1*/
 
 .install_now {
     width: 100%;
@@ -135,7 +142,7 @@ body {
 } 
 
 
-/*CSS OPTION_2*/
+/*CSS OPTION 2*/
 
 .text_option2 {
     width: 100%;
@@ -168,7 +175,7 @@ body {
     align-items: flex-end;
 }
 
-/*CSS OPTION_2_ERROR*/
+/*CSS OPTION 2 ERROR*/
 
 .content_option2_error {
     width: 100;
@@ -210,7 +217,8 @@ body {
     display: flex;
     justify-content: center;
 }
-/*CSS OPTION_3*/
+
+/*CSS OPTION 3*/
 
 .content_option3 {
     width: 100%;
@@ -244,12 +252,19 @@ body {
     50%{
         color: transparent;
     }
-    100%{
+    99.9%{
         color: white;
     }
+    100%{
+        color: transparent;
+    }
+
 }
 
 .time_lapse {
-    animation: time_lapse 3s steps(44) 1s infinite;
+    animation: time_lapse 2s infinite;
 }
+
+/*CSS OPTION 4*/
+
 

@@ -2,6 +2,7 @@ const Option1 = $('option1');
 const Option2 = $('option2');
 
 let i = 0;
+let a = 0;
 
 //Le decimos a nuestra funcion onclick que cuando hagamos click en la funcion se nos cambie el display de las capas, de esta manera x capas serán invisibles y x serán visibles.
 
@@ -147,40 +148,76 @@ const numero = new Array();
     numero[28] = "100%";
     numero[29] = "100%";
     numero[30] = "100%";
-    numero[31] = "100%";
-    numero[32] = "100%";
-    numero[33] = "100%";
-    numero[34] = "100%";
-    numero[35] = "100%";
-    numero[36] = "100%";
-    numero[37] = "100%";
-    numero[38] = "100%";
-    numero[39] = "100%";
-    numero[40] = "100%";
 
 
-//Creamos una función y le decimos que el array numero es igual a i.
+const text = new Array ();
 
-function numero_progress() {
+    text [0] = "No desconecte ni apague su PC."
+    text [1] = "Esto puede tardar unos minutos."
+    text [2] = "No desconecte ni apague su PC."
+    text [3] = "Esto puede tardar unos minutos."
+    text [4] = "No desconecte ni apague su PC."
+    text [5] = "Esto puede tardar unos minutos."
+    text [6] = "No desconecte ni apague su PC."
+    text [7] = "Esto puede tardar unos minutos."
+    text [8] = "No desconecte ni apague su PC."
+    text [9] = "Esto puede tardar unos minutos."
+    text [10] = "No desconecte ni apague su PC."
+    text [11] = "Esto puede tardar unos minutos."
+    text [12] = "No desconecte ni apague su PC."
+    text [13] = "Esto puede tardar unos minutos."
+    text [14] = "No desconecte ni apague su PC."
+    text [15] = "Esto puede tardar unos minutos."
+    text [16] = "No desconecte ni apague su PC."
+    text [17] = "Esto puede tardar unos minutos."
+    text [18] = "No desconecte ni apague su PC."
+    text [19] = "Esto puede tardar unos minutos."
+    text [20] = "No desconecte ni apague su PC."
+    text [21] = "Esto puede tardar unos minutos."
+    text [22] = "No desconecte ni apague su PC."
+    text [23] = "Esto puede tardar unos minutos."
+    text [24] = "No desconecte ni apague su PC."
+    text [25] = "Esto puede tardar unos minutos."
+    text [26] = "No desconecte ni apague su PC."
+    text [27] = "Esto puede tardar unos minutos."
+    text [28] = "No desconecte ni apague su PC."
+    text [29] = "Esto puede tardar unos minutos."
+    text [30] = "No desconecte ni apague su PC."
 
-    console.log('autoProgress');
+
+//Creamos una función y le decimos que el array numero es igual a i,.
+
+function numero_text_progress() {
+
+    console.log('autoProgress'); 
 
     numero = i;
+    
+    text = a;
+
 }
+
 
 //Le decimos al codigo que onload es igual a la funcion.
 
 onload = function() {
 
     //Creamos un intervalo para la funcion en el que decimos que i aumentará uno cada 1000 ms, i se presentara en la capa que contiene el identificador "autoProgress".
+    
 
     setInterval(function() {
  
         i++;
+        
+        a++;
 
         document.getElementById('autoProgress').innerHTML = numero[i];
+        document.getElementById('text_change').innerHTML = text[a];
 
-    },1000);
+    },2000);
+
 }
+
+
 
 
