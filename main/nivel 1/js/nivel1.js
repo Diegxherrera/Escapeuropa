@@ -191,7 +191,7 @@ function comprobacion() {
         switch(secuencia){
             case "CCC":
                 if(disco==true){
-                    createCookie("disco","Samsung SSD")
+                    createCookie("disco","SamsungSSD")
                     createCookie("tam","1TB")
                     console.log(getCookie("disco"))
                     console.log(getCookie("tam"))
@@ -199,7 +199,7 @@ function comprobacion() {
                 }
             case "BBB":
                 if(disco==true){
-                    createCookie("disco","Western Digital")
+                    createCookie("disco","WesternDigital")
                     createCookie("tam","1TB")
                     console.log(getCookie("disco"))
                     console.log(getCookie("tam"))
@@ -207,7 +207,7 @@ function comprobacion() {
                 }
             case "AAA":
                 if(disco==true){
-                    createCookie("disco","Western Digital")
+                    createCookie("disco","WesternDigital")
                     createCookie("tam","500GB")
                     console.log(getCookie("disco"))
                     console.log(getCookie("tam"))
