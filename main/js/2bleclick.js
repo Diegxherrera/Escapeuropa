@@ -9,6 +9,7 @@ function dblclick(id) {
     const element = document.getElementById(id)
     element.style.cssText = "visibility: visible"
     element.style.cssText = "z-index: 100"
+    $('#np-head').show();
     console.log(element + "funciono")
 }
 //este para el borón de cerrar funciona igual pero hace lo contrario
