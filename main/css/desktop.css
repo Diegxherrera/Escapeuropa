@@ -172,7 +172,7 @@ div.windows {
 }
 
 div.onnotepadactive {
-    visibility: show;
+    visibility: visible;
 }
 
 iframe {
