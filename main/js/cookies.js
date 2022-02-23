@@ -1,4 +1,4 @@
-function createcookie(name,value){
+function createcookie(name,value){ // Funcion crear cookie
   const time = new Date()
   time.setTime(time.getTime()+(30*86400000));
   const UTCtime = time.toUTCString()
@@ -7,10 +7,10 @@ function createcookie(name,value){
 }
 
 let x;
-let i;
+let i; 
 let comprobación;
 
-function getCookie(cookie) {
+function getCookie(cookie) { // Funcion obtener cookie y comprobarla
   let name = cookie + "=";
   let dc = document.cookie.split(";");
   for (i=0;i<dc.length;i++){
@@ -29,7 +29,4 @@ function getCookie(cookie) {
     return undefined
   }
 }
-
-
-
 

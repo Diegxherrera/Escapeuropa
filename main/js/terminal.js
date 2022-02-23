@@ -9,7 +9,6 @@ let value = 0;
 let directory = 'C:&bsol;Users&bsol;Roberto&#62;';
 let directoryw = 'C:&bsol;Users&bsol;Roberto';
 let dir = 'rob';
-
 //respuesta1
 function next(tecla){
     if(tecla.key == 'Enter'){
@@ -43,8 +42,8 @@ function newLine(){
             case 'c':
                 $('body').append('</br>11/02/2022ㅤㅤㅤㅤ10:21ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤProgram Files</br>11/02/2022ㅤㅤㅤㅤ11:42ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤWindows</br>12/02/2022ㅤㅤㅤㅤ12:43ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤUsers <br>');
                 break
-        }
-        break
+        }  
+        break 
     //caso cls
     case 'cls':
         $('#body').empty();
