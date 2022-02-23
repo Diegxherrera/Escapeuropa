@@ -9,6 +9,8 @@ let index_value = 100
 function dblclick(id) {
     const element = document.getElementById(id)
     element.style.cssText = "visibility: visible"
+    element.style.cssText = "z-index: 100"
+    $('#np-head').show();
     element.style.cssText = "z-index: " + index_value
     console.log(element + "funciono")
     index_value++

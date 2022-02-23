@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/windows-logo.png" />
-    <link rel="stylesheet" href="css/textdocument.css">
     <link rel="stylesheet" href="css/notepad.css">
     <script type="text/javascript" src="js/date.js">
     </script>
@@ -64,7 +63,10 @@
         </div>
         <div class="leftmenu" id="leftmenu">
             <div class="left-menu01" id="left-menu01">
-                Hola
+            </div>
+            <div class="left-menu02" id="left-menu02">
+            </div>
+            <div class="left-menu03" id="left-menu03">
             </div>
         </div>
         <div class="windows" id="windows">
@@ -79,7 +81,7 @@
                     <div id="np-head-col3" class="np-head-col3">
                         <img src="img/window-minimize-svgrepo-com.svg" class="np-minimizebtn" id="np-minimizebtn">
                         <img src="img/window-maximize-svgrepo-com.svg" class="np-fullscreenbtn-disabled">
-                        <img src="img/close-svgrepo-com.svg" class="np-closebtn" id="np-closebtn">
+                        <img src="img/close-svgrepo-com.svg" class="np-closebtn" id="np-closebtn" onclick="hideIframe()">
                     </div>
                 </div>
             </div>
@@ -99,13 +101,13 @@
                     <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
                 </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
-                <div class="tskbr-ic-hv" id="app-3 files-explorer" ondblclick="dblclick('ifilesexplorer')">
+                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer')">
                     <img class="taskbar-icon" src="img/filesexplorer.png">
                 </div>
-                <div class="tskbr-ic-hv" ondblclick="dblclick('igoogle')">
+                <div class="tskbr-ic-hv" onclick="dblclick('igoogle')">
                     <img class="taskbar-icon" src="img/chrome.png">
                 </div>
-                <div class="tskbr-ic-hv" ondblclick="dblclick('inotepad')">
+                <div class="tskbr-ic-hv" onclick="dblclick('inotepad')">
                     <img class="taskbar-icon" src="img/notepad-icon.webp">
                 </div>
             </div>
