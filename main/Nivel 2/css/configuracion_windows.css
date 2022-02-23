@@ -19,7 +19,7 @@ body {
 }
 
 #option1{
-    display: block;
+    display: none;
     width: 60%;
     height: 70%;
     border: 3px solid rgba(175, 220, 255, 0.750);
@@ -49,7 +49,7 @@ body {
 }
 
 #option4 {
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 155, 255);
@@ -252,6 +252,49 @@ body {
     50%{
         color: transparent;
     }
+    100%{
+        color: white;
+    }
+}
+
+.time_lapse {
+    animation: time_lapse 2s infinite;
+}
+
+/*CSS OPTION 4*/
+
+.content_option4 {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.text_content_option4 {
+    color: white;
+    font-size: larger;
+}
+
+#autoProgress2 {
+    color: white;
+    font-size: larger
+}
+
+.time_lapse2 {
+    color: white;
+    font-size: larger;
+}
+
+@keyframes time_lapse2 {
+    0%{
+        color: white;
+    }
+    50%{
+        color: transparent;
+    }
     99.9%{
         color: white;
     }
@@ -261,10 +304,7 @@ body {
 
 }
 
-.time_lapse {
+.time_lapse2 {
     animation: time_lapse 2s infinite;
 }
-
-/*CSS OPTION 4*/
-
 

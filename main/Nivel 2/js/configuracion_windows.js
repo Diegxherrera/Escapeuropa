@@ -113,7 +113,7 @@ function reload_option2() {
     incorrect = true;
 }
 
-// Creamos un Array para el progreso de Instalación y Preparación de Instalación de Windows 10.
+// Creamos dos Array para el progreso de Instalación y Preparación de Instalación de Windows 10.
 
 const numero = new Array();
 
@@ -152,37 +152,37 @@ const numero = new Array();
 
 const text = new Array ();
 
-    text [0] = "No desconecte ni apague su PC."
-    text [1] = "Esto puede tardar unos minutos."
-    text [2] = "No desconecte ni apague su PC."
-    text [3] = "Esto puede tardar unos minutos."
-    text [4] = "No desconecte ni apague su PC."
-    text [5] = "Esto puede tardar unos minutos."
-    text [6] = "No desconecte ni apague su PC."
-    text [7] = "Esto puede tardar unos minutos."
-    text [8] = "No desconecte ni apague su PC."
-    text [9] = "Esto puede tardar unos minutos."
-    text [10] = "No desconecte ni apague su PC."
-    text [11] = "Esto puede tardar unos minutos."
-    text [12] = "No desconecte ni apague su PC."
-    text [13] = "Esto puede tardar unos minutos."
-    text [14] = "No desconecte ni apague su PC."
-    text [15] = "Esto puede tardar unos minutos."
-    text [16] = "No desconecte ni apague su PC."
-    text [17] = "Esto puede tardar unos minutos."
-    text [18] = "No desconecte ni apague su PC."
-    text [19] = "Esto puede tardar unos minutos."
-    text [20] = "No desconecte ni apague su PC."
-    text [21] = "Esto puede tardar unos minutos."
-    text [22] = "No desconecte ni apague su PC."
-    text [23] = "Esto puede tardar unos minutos."
-    text [24] = "No desconecte ni apague su PC."
-    text [25] = "Esto puede tardar unos minutos."
-    text [26] = "No desconecte ni apague su PC."
-    text [27] = "Esto puede tardar unos minutos."
-    text [28] = "No desconecte ni apague su PC."
-    text [29] = "Esto puede tardar unos minutos."
-    text [30] = "No desconecte ni apague su PC."
+    text [0] = "No desconecte ni apague su PC"
+    text [1] = "Esto puede tardar unos minutos"
+    text [2] = "No desconecte ni apague su PC"
+    text [3] = "Esto puede tardar unos minutos"
+    text [4] = "No desconecte ni apague su PC"
+    text [5] = "Esto puede tardar unos minutos"
+    text [6] = "No desconecte ni apague su PC"
+    text [7] = "Esto puede tardar unos minutos"
+    text [8] = "No desconecte ni apague su PC"
+    text [9] = "Esto puede tardar unos minutos"
+    text [10] = "No desconecte ni apague su PC"
+    text [11] = "Esto puede tardar unos minutos"
+    text [12] = "No desconecte ni apague su PC"
+    text [13] = "Esto puede tardar unos minutos"
+    text [14] = "No desconecte ni apague su PC"
+    text [15] = "Esto puede tardar unos minutos"
+    text [16] = "No desconecte ni apague su PC"
+    text [17] = "Esto puede tardar unos minutos"
+    text [18] = "No desconecte ni apague su PC"
+    text [19] = "Esto puede tardar unos minutos"
+    text [20] = "No desconecte ni apague su PC"
+    text [21] = "Esto puede tardar unos minutos"
+    text [22] = "No desconecte ni apague su PC"
+    text [23] = "Esto puede tardar unos minutos"
+    text [24] = "No desconecte ni apague su PC"
+    text [25] = "Esto puede tardar unos minutos"
+    text [26] = "No desconecte ni apague su PC"
+    text [27] = "Esto puede tardar unos minutos"
+    text [28] = "No desconecte ni apague su PC"
+    text [29] = "Esto puede tardar unos minutos"
+    text [30] = "No desconecte ni apague su PC"
 
 
 //Creamos una función y le decimos que el array numero es igual a "i" y el array text es igual a "a".
@@ -202,20 +202,31 @@ function numero_text_progress() {
 
 onload = function() {
 
-    //Creamos un intervalo para la funcion en el que decimos que "a" e "i" aumentará uno cada 1000 ms, i se representara en la capa que contiene el identificador "autoProgress" y a se representara en la capa que contiene el identificador "text_change".
-    
+    //Creamos un intervalo para la funcion en el que decimos que "a" e "i" aumentará uno cada 1000 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2", a se representara en la capas que contienen el identificador "text_change" y "text_change2".
 
     setInterval(function() {
- 
-        i++;
+
+        // Le decimos a "i" y a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo
+        if (i > numero.length & a > text.length) {
+
+            clearInterval(numero);
+            clearInterval(text);
+        } 
         
+        i++;
         a++;
+
+        //Option 3
 
         document.getElementById('autoProgress').innerHTML = numero[i];
         document.getElementById('text_change').innerHTML = text[a];
 
-    },2000);
+        //Option 4
 
+        document.getElementById('autoProgress2').innerHTML = numero[i];
+        document.getElementById('text_change2').innerHTML = text[a];
+
+    },20);
 }
 
 
