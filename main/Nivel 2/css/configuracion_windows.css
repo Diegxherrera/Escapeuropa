@@ -266,8 +266,11 @@ body {
     50%{
         color: transparent;
     }
-    100%{
+    99.9%{
         color: white;
+    }
+    100%{
+        color: transparent;
     }
 }
 
@@ -912,6 +915,10 @@ body {
 
 .animation_bar {
     animation: animation_bar 20s ease;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 2em;
 }
 
 /*CSS OPTION 4*/

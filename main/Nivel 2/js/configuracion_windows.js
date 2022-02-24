@@ -183,6 +183,16 @@ const numero = new Array();
     numero[98] = "98%";
     numero[99] = "99%";
     numero[100] = "100%";
+    numero[101] = "100%";
+    numero[102] = "100%";
+    numero[103] = "100%";
+    numero[104] = "100%";
+    numero[105] = "100%";
+    numero[106] = "100%";
+    numero[107] = "100%";
+    numero[108] = "100%";
+    numero[109] = "100%";
+    numero[110] = "100%";
 
 
 const text = new Array ();
@@ -240,46 +250,36 @@ function numero_text_progress() {
 
 onclick = function() {
 
-    //Creamos un intervalo para la funcion en el que decimos que "a" e "i" aumentará uno cada 1000 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2", a se representara en la capas que contienen el identificador "text_change" y "text_change2".
+    //Creamos un intervalo para la funcion en el que decimos que "i" aumentará uno cada 200 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2".
 
-    setInterval(function() {
-
-        if (i === numero.length & a === text.length) {
-
-            document.getElementById("option2").style.display = "none";
-            document.getElementById("option2_error").style.display = "none";
-            document.getElementById("option3").style.display = "none";
-            document.getElementById("option4").style.display = "block";
-
-            
-            clearInterval(numero);
-            clearInterval(text);
-        } 
-
-        // Le decimos a "i" y a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo
+    const numero_interval = setInterval(function() {
 
         i++;
-        a++;
 
-        //Option 3
-
-        document.getElementById('autoProgress').innerHTML = numero[i];
-        
-
-        //Option 4
-
-        document.getElementById('autoProgress2').innerHTML = numero2[i];
+        document.getElementById('autoProgress').innerHTML = numero[i]; 
     },200);
 
-    setInterval(function() {
+    //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
 
-        //Option 3
+    if (i === numero.length) {
+            
+        this.clearInterval(numero_interval);
+    } 
+
+    //Creamos un intervalo para la funcion en el que decimos que "a" aumentará uno cada 2000 ms, i se representara en las capas que contienen el identificador "text_change" y "text_change2".
+
+    const text_interval = setInterval(function() {
+
+        a++;
 
         document.getElementById('text_change').innerHTML = text[a];
-
-        //Option 4
-        
-        document.getElementById('text_change').innerHTML = text2[a];
     },2000);
+
+    //Le decimos a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+
+    if (a === text.length) {
+            
+        clearInterval(text_interval);
+    } 
 }
 
