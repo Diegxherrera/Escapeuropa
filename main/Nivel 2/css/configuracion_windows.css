@@ -27,7 +27,7 @@ body {
 }
 
 #option2 {
-    display: none;
+    display: block;
     width: 60%;
     height: 70%;
     border: 3px solid rgba(175, 220, 255, 0.750);
@@ -100,14 +100,18 @@ body {
     height: 25%;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 0.1em;
-    color: white;
-    font-size: large;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text_install_now:hover {
+.text_install_now a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.text_install_now a:hover {
     text-decoration: underline;
 }
 

@@ -1,6 +1,3 @@
-const Option1 = $('option1');
-const Option2 = $('option2');
-
 let i = 0;
 let a = 0;
 
@@ -10,7 +7,6 @@ function cambiarInstall() {
     
     console.log('CambiarInstall');
 
-    document.getElementById("option1").style.display = "none";
     document.getElementById("option2").style.display = "block";
     document.getElementById("option2_error").style.display = "none";
     document.getElementById("option3").style.display = "none";
@@ -78,7 +74,6 @@ function cambiarInstalling() {
 
     if (correct === true & incorrect === true) {
 
-        document.getElementById("option1").style.display = "none";
         document.getElementById("option2").style.display = "none";
         document.getElementById("option2_error").style.display = "none";
         document.getElementById("option3").style.display = "block";
@@ -134,7 +129,7 @@ const numero = new Array();
     numero[14] = "14%";
     numero[15] = "15%";
     numero[16] = "16%";
-    numero[17] = "17";
+    numero[17] = "17%";
     numero[18] = "18%";
     numero[19] = "19%";
     numero[20] = "20%";
@@ -273,7 +268,7 @@ function numero_text_progress() {
 
 //Le decimos al codigo que onload es igual a la funcion numero_text_progress().
 
-onload = function() {
+onclick = function() {
 
     //Creamos un intervalo para la funcion en el que decimos que "a" e "i" aumentará uno cada 1000 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2", a se representara en la capas que contienen el identificador "text_change" y "text_change2".
 
@@ -281,7 +276,6 @@ onload = function() {
 
         if (i === numero.length & a === text.length) {
 
-            document.getElementById("option1").style.display = "none";
             document.getElementById("option2").style.display = "none";
             document.getElementById("option2_error").style.display = "none";
             document.getElementById("option3").style.display = "none";
