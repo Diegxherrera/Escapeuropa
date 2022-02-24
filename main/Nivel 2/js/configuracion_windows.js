@@ -272,13 +272,12 @@ onclick = function() {
         a++;
 
         document.getElementById('text_change').innerHTML = text[a];
+        if (a == text.length - 1) {
+            
+            clearInterval(text_interval);
+        } 
     },2000);
 
     //Le decimos a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
-
-    if (a === text.length) {
-            
-        clearInterval(text_interval);
-    } 
 }
 
