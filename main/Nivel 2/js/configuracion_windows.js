@@ -256,15 +256,14 @@ onclick = function() {
 
         i++;
 
-        document.getElementById('autoProgress').innerHTML = numero[i]; 
-    },200);
+        document.getElementById('autoProgress').innerHTML = numero[i];
 
-    //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
-
-    if (i === numero.length) {
+        //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+        if (i == numero.length-1) {
             
-        this.clearInterval(numero_interval);
-    } 
+            clearInterval(numero_interval);
+        } 
+    },200);
 
     //Creamos un intervalo para la funcion en el que decimos que "a" aumentará uno cada 2000 ms, i se representara en las capas que contienen el identificador "text_change" y "text_change2".
 
