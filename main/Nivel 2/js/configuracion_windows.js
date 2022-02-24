@@ -76,6 +76,7 @@ function cambiarInstalling() {
         document.getElementById("option3").style.display = "none";
         document.getElementById("option4").style.display = "none";;
     }
+    hola()
 };
 
 // Creamos dos Array para el progreso de Instalación y Preparación de Instalación de Windows 10.
@@ -248,19 +249,20 @@ function numero_text_progress() {
 
 //Le decimos al codigo que onload es igual a la funcion numero_text_progress().
 
-onclick = function() {
+function hola() {
 
     //Creamos un intervalo para la funcion en el que decimos que "i" aumentará uno cada 200 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2".
 
     const numero_interval = setInterval(function() {
 
         i++;
-
+        console.log(i)
         document.getElementById('autoProgress').innerHTML = numero[i];
 
         //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
         if (i == numero.length-1) {
             
+            console.log("funciono")
             clearInterval(numero_interval);
         } 
     },200);
@@ -268,16 +270,16 @@ onclick = function() {
     //Creamos un intervalo para la funcion en el que decimos que "a" aumentará uno cada 2000 ms, i se representara en las capas que contienen el identificador "text_change" y "text_change2".
 
     const text_interval = setInterval(function() {
-
         a++;
-
+        console.log(a)
         document.getElementById('text_change').innerHTML = text[a];
-        if (a == text.length - 1) {
-            
+        if (a == text.length-1){
+            console.log("funciono")
             clearInterval(text_interval);
         } 
     },2000);
 
     //Le decimos a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+
 }
 
