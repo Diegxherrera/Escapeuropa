@@ -1,19 +1,6 @@
 let i = 0;
 let a = 0;
 
-//Le decimos a nuestra funcion onclick que cuando hagamos click en la funcion se nos cambie el display de las capas, de esta manera x capas serán invisibles y x serán visibles.
-
-function cambiarInstall() {
-    
-    console.log('CambiarInstall');
-
-    document.getElementById("option2").style.display = "block";
-    document.getElementById("option2_error").style.display = "none";
-    document.getElementById("option3").style.display = "none";
-    document.getElementById("option4").style.display = "none";
-
-};
-
 //Le damos un valor a correct e incorrect
 
 let correct = true;
@@ -84,29 +71,12 @@ function cambiarInstalling() {
 
     else {
 
-        document.getElementById("option1").style.display = "none";
         document.getElementById("option2").style.display = "none";
         document.getElementById("option2_error").style.display = "block";
         document.getElementById("option3").style.display = "none";
         document.getElementById("option4").style.display = "none";;
     }
 };
-
-//Le decimos a nuestra funcion que cuando hagamos click sobre la misma nos vuelva al principio del nivel y no conserve los valores que hemos dado anteriormente a correct e incorrect.
-
-function reload_option2() {
-
-    console.log('reload_option2');
-
-    document.getElementById("option1").style.display = "block";
-    document.getElementById("option2").style.display = "none";
-    document.getElementById("option2_error").style.display = "none";
-    document.getElementById("option3").style.display = "none";
-    document.getElementById("option4").style.display = "none";
-
-    correct = true;
-    incorrect = true;
-}
 
 // Creamos dos Array para el progreso de Instalación y Preparación de Instalación de Windows 10.
 
@@ -312,7 +282,4 @@ onclick = function() {
         document.getElementById('text_change').innerHTML = text2[a];
     },2000);
 }
-
-
-
 
