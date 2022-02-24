@@ -262,8 +262,9 @@ onclick = function() {
     //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
 
     if (i === numero.length) {
-            
-        this.clearInterval(numero_interval);
+        
+        this.document.getElementById('autoProgress').style.display = "none";
+        clearInterval(numero_interval);
     } 
 
     //Creamos un intervalo para la funcion en el que decimos que "a" aumentará uno cada 2000 ms, i se representara en las capas que contienen el identificador "text_change" y "text_change2".
