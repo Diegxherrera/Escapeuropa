@@ -76,6 +76,8 @@ function cambiarInstalling() {
         document.getElementById("option3").style.display = "none";
         document.getElementById("option4").style.display = "none";;
     }
+
+    interval()
 };
 
 // Creamos dos Array para el progreso de Instalación y Preparación de Instalación de Windows 10.
@@ -210,24 +212,6 @@ const text = new Array ();
     text [10] = "No desconecte ni apague su PC"
     text [11] = "Esto puede tardar unos minutos"
     text [12] = "No desconecte ni apague su PC"
-    text [13] = "Esto puede tardar unos minutos"
-    text [14] = "No desconecte ni apague su PC"
-    text [15] = "Esto puede tardar unos minutos"
-    text [16] = "No desconecte ni apague su PC"
-    text [17] = "Esto puede tardar unos minutos"
-    text [18] = "No desconecte ni apague su PC"
-    text [19] = "Esto puede tardar unos minutos"
-    text [20] = "No desconecte ni apague su PC"
-    text [21] = "Esto puede tardar unos minutos"
-    text [22] = "No desconecte ni apague su PC"
-    text [23] = "Esto puede tardar unos minutos"
-    text [24] = "No desconecte ni apague su PC"
-    text [25] = "Esto puede tardar unos minutos"
-    text [26] = "No desconecte ni apague su PC"
-    text [27] = "Esto puede tardar unos minutos"
-    text [28] = "No desconecte ni apague su PC"
-    text [29] = "Esto puede tardar unos minutos"
-    text [30] = "No desconecte ni apague su PC"
  
 const numero2 = numero;
 const text2 = text;
@@ -248,24 +232,32 @@ function numero_text_progress() {
 
 //Le decimos al codigo que onload es igual a la funcion numero_text_progress().
 
-onclick = function() {
+function interval() {
 
     //Creamos un intervalo para la funcion en el que decimos que "i" aumentará uno cada 200 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2".
 
     const numero_interval = setInterval(function() {
 
         i++;
+        
+        console.log(i)
+
+        document.getElementById('autoProgress').innerHTML = numero[i];
 
         document.getElementById('autoProgress').innerHTML = numero[i]; 
     },200);
 
     //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
 
-    if (i === numero.length) {
-        
-        this.document.getElementById('autoProgress').style.display = "none";
-        clearInterval(numero_interval);
-    } 
+
+        //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+
+        if (i == numero.length-1) {
+            
+            console.log("funciono");
+
+            clearInterval(numero_interval);
+        } 
 
     //Creamos un intervalo para la funcion en el que decimos que "a" aumentará uno cada 2000 ms, i se representara en las capas que contienen el identificador "text_change" y "text_change2".
 
@@ -273,14 +265,19 @@ onclick = function() {
 
         a++;
 
+        console.log(a)
+
         document.getElementById('text_change').innerHTML = text[a];
+
+        if (a == text.length-1) {
+
+            console.log("funciono");
+
+            clearInterval(text_interval);
+        } 
     },2000);
 
     //Le decimos a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
 
-    if (a === text.length) {
-            
-        clearInterval(text_interval);
-    } 
 }
 
