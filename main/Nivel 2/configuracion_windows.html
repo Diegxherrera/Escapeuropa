@@ -13,65 +13,8 @@
 
     <body>
 
-            <div id="option1">
-
-                <div class="header">
-
-                    <div class="header_left">
-
-                        Programa de configuración de Windows
-
-                    </div>
-
-                    <div class="header_right">
-
-                        <div class="close"></div>
-
-                    </div>
-
-                </div>
-
-                <div class="img_windows">
-
-                    <img src="img/logo_windows_configuración .png" width="45%" height="40%">
-
-                </div>
-
-                <div class="install_now">
-
-                    <div class="text_install_now" onclick="cambiarInstall()">
-
-                        Instalar ahora
-
-                    </div>
-
-                </div>
-                        
-                <div class="repair_system">
-
-                    <div class="text_repair_system">
-
-                        Reparar el equipo
-
-                    </div>
-
-                </div>
-                    
-                <div class="microsoft_text">
-
-                    <div class="text_microsoft_text">
-
-                        C 2019 Microsoft Corporation. Todos los derechos reservados.
-
-                    </div>
-                            
-                </div>
-  
-            </div>
-
-
+            <!--Option1 incluido en otro documento HTML-->
             
-
             <div id="option2">
 
                 <div class="header">
@@ -96,7 +39,7 @@
 
                 </div>
 
-                <div class="text_option2" onclick="input()">
+                <div class="text_option2">
 
                     <div class="language" onclick="language()">
 
@@ -206,9 +149,9 @@
 
                 <div class="next_bloq">
 
-                    <div class="button_next">
+                    <div class="button_next" onclick="cambiarInstalling()">
 
-                        <button class="button" onclick="cambiarInstalling()">Siguiente</button>
+                        <button class="button">Siguiente</button>
 
                     </div>
 
@@ -225,14 +168,22 @@
                         <div class="text_content_option2_error">ERROR :(</div>
                     
                         <div class="text_ingles">
+
                             We're sorry. Your Windows license does not allow you to install this language pack.
+
                         </div>
 
                         <div class="text_frances">
-                            Nous sommes désolés. Votre licence Windows ne vous permet pas d'installer ce module linguistique.
+
+                           Nous sommes désolés. Votre licence Windows ne vous permet pas d'installer ce module linguistique.
+
                         </div>
                         
-                        <div class="reload_option2" onclick="reload_option2()">Haga click aquí para reinicar el nivel.</div>
+                        <div class="reload_option2">
+
+                           <a href="configuracion_instalacion.html">Haga click aquí para reinicar el nivel.</a> 
+
+                        </div>
 
                     </div>
 
@@ -253,6 +204,16 @@
 
                 </div>
 
+                <div class="bloque">
+
+                    <div class="progress_bar">
+
+                        <div class="animation_bar"></div>
+
+                    </div>
+            
+                </div>
+
             </div>
 
             <div id="option4">
@@ -265,6 +226,16 @@
 
                     <div id="text_change2" class="time_lapse2">No desconecte ni apague su PC</div>
                 
+                </div>
+
+                <div class="bloque">
+
+                    <div class="progress_bar">
+
+                        <div class="animation_bar"></div>
+
+                    </div>
+            
                 </div>
 
             </div>
