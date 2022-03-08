@@ -26,7 +26,7 @@ body {
     border-radius: 0.3em;
 }
 
-#option2{
+#option2 {
     display: none;
     width: 60%;
     height: 70%;
@@ -34,7 +34,21 @@ body {
     border-radius: 0.3em;
 }
 
-#option3{
+#option2_error {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 155, 255);
+}
+
+#option3 {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 155, 255);
+}
+
+#option4 {
     display: block;
     width: 100%;
     height: 100%;
@@ -71,7 +85,7 @@ body {
     align-items: center;
 }
 
-/*CSS OPTION_1*/
+/*CSS OPTION 1*/
 
 .install_now {
     width: 100%;
@@ -128,7 +142,7 @@ body {
 } 
 
 
-/*CSS OPTION_2*/
+/*CSS OPTION 2*/
 
 .text_option2 {
     width: 100%;
@@ -161,7 +175,50 @@ body {
     align-items: flex-end;
 }
 
-/*CSS OPTION_3*/
+/*CSS OPTION 2 ERROR*/
+
+.content_option2_error {
+    width: 100;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_option2_error_2 {
+    width: 95%;
+    height: 95%;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8%;
+    margin-left: 1%;
+}
+
+.text_content_option2_error {
+    color: white;
+    letter-spacing: 0.2em;
+    font-size: 5em;
+}
+
+.text_ingles {
+    color: white;
+    font-size: 1em;
+}
+
+.text_frances {
+    color: white;
+    font-size: 1em;
+}
+
+.reload_option2 {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+/*CSS OPTION 3*/
 
 .content_option3 {
     width: 100%;
@@ -201,6 +258,53 @@ body {
 }
 
 .time_lapse {
-    animation: time_lapse 3s steps(44) 1s infinite;
+    animation: time_lapse 2s infinite;
+}
+
+/*CSS OPTION 4*/
+
+.content_option4 {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.text_content_option4 {
+    color: white;
+    font-size: larger;
+}
+
+#autoProgress2 {
+    color: white;
+    font-size: larger
+}
+
+.time_lapse2 {
+    color: white;
+    font-size: larger;
+}
+
+@keyframes time_lapse2 {
+    0%{
+        color: white;
+    }
+    50%{
+        color: transparent;
+    }
+    99.9%{
+        color: white;
+    }
+    100%{
+        color: transparent;
+    }
+
+}
+
+.time_lapse2 {
+    animation: time_lapse 2s infinite;
 }
 

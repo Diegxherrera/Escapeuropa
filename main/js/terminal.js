@@ -35,7 +35,7 @@ function newLine(){
                 $('body').append('</br>15/02/2022ㅤㅤㅤㅤ14:08ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤ.android<br>11/02/2022ㅤㅤㅤㅤ19:03ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤBoot<br>11/02/2022ㅤㅤㅤㅤ19:03ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤdebug <br>');
                 break
             case 'windows':
-                $('body').append('</br>11/02/2022ㅤㅤㅤㅤ11:42ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤSystem32 <br>11/01/2022ㅤㅤㅤㅤ21:02ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤLogs <br>11/02/2022ㅤㅤㅤㅤ23:11ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤData Profiles<br>1#/^2/2?2@ㅤㅤㅤ%9:0@ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤX4nn*<br>');
+                $('body').append('</br>11/02/2022ㅤㅤㅤㅤ11:42ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤSystem32 <br>11/01/2022ㅤㅤㅤㅤ21:02ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤLogs <br>11/02/2022ㅤㅤㅤㅤ23:11ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤData Profiles<br>1#/^2/2?2@ㅤㅤㅤㅤ%9:0@ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤX4nn*<br>');
                 break
             case 'users':
                 $('body').append('</br>11/02/2022ㅤㅤㅤㅤ11:42ㅤㅤㅤㅤ&lt;DIR&gt;ㅤㅤㅤㅤRoberto');
@@ -124,7 +124,7 @@ function newLine(){
             $('body').append('</br> El directorio esta bloqueado o es inaccesible. </br>'); // Bloqueo para directorios que no se van a usar
         }
         break
-    case 'cd debug':
+    case 'cd debug': 
         if(dir != 'rob'){ // En caso de no estar en el directorio Roberto
             $('body').append('</br> El sistema no puede encontrar la ruta especificada.  </br>');
         }else{
@@ -144,6 +144,22 @@ function newLine(){
         }else{
             $('body').append('</br> El directorio esta bloqueado o es inaccesible. </br>'); // Bloqueo para directorios que no se van a usar
         }
+        break
+    
+
+    case 'cd X4nn*':
+        if(dir != 'windows'){
+            $('body').append('</br> El sistema no puede encontrar la ruta especificada.  </br>');
+        }else{
+            $('body').append('</br> 3l direct0ri0 3st4 bloque4d0 o 3s in4cc3s1bl3 </br>'); // Bloqueo para directorios que no se van a usar
+        }
+        break
+
+    case '': // Si esta en blanco
+        
+        break
+    case 'help':
+        $('body').append('</br> Los comandos disponibles son: </br> cd -> Muestra el directorio actual </br> cd (directorio) -> Accede al directorio actual </br> dir -> Muestra los archivos que hay dentro del directorio actual </br> cd.. / cd .. -> Retrocede un directorio en la ruta </br> cls -> Limpia la consola de comandos (borra todo lo escrito) </br>');
         break
     default: 
     if(exist != -1){ // Si no es igual a -1 (es decir, si hay un 'cd ')

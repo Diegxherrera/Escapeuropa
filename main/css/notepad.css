@@ -4,14 +4,14 @@
 }
 
 html {
-    background-color: azure;
+    background-color: white;
 }
 
 div.np-head {
     position: absolute;
     margin-left: 20%;
     width: 70.25vw;
-    top: 7.46%;
+    top: 6.5%;
     display: grid;
     grid-template-columns: 5% 70% 15%;
     width: cover;
