@@ -27,7 +27,7 @@ body {
 }
 
 #option2 {
-    display: none;
+    display: block;
     width: 60%;
     height: 70%;
     border: 3px solid rgba(175, 220, 255, 0.750);
@@ -100,14 +100,18 @@ body {
     height: 25%;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 0.1em;
-    color: white;
-    font-size: large;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.text_install_now:hover {
+.text_install_now a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+}
+
+.text_install_now a:hover {
     text-decoration: underline;
 }
 
@@ -211,18 +215,28 @@ body {
 }
 
 .reload_option2 {
-    color: white;
-    text-decoration: underline;
     font-size: 1.5em;
     display: flex;
     justify-content: center;
 }
 
+.reload_option2 a {
+    color: white;
+    text-decoration: underline;
+}
+
+.reload_option2 a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+
 /*CSS OPTION 3*/
 
 .content_option3 {
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -258,13 +272,699 @@ body {
     100%{
         color: transparent;
     }
-
 }
 
 .time_lapse {
     animation: time_lapse 2s infinite;
 }
 
+.bloque {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.progress_bar {
+    width: 90%;
+    height: 20%;
+    background-color: white;
+    border-radius: 2em;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.animation_bar {
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 2em;
+}
+
+@keyframes animation_bar {
+    0%{
+        width: 0%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    1%{
+        width: 1%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+
+    2%{
+        width: 2%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    3%{
+        width: 3%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    4%{
+        width: 4%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    5%{
+        width: 5%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    6%{
+        width: 6%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    7%{
+        width: 7%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;;
+    }
+    8%{
+        width: 8%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    9%{
+        width: 9%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    10%{
+        width: 10%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    11%{
+        width: 11%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    12%{
+        width: 12%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    13%{
+        width: 13%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    14%{
+        width: 14%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    15%{
+        width: 15%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    16%{
+        width: 16%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    17%{
+        width: 17%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    18%{
+        width: 18%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    19%{
+        width: 19%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    20%{
+        width: 20%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    21%{
+        width: 21%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    22%{
+        width: 22%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    23%{
+        width: 23%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    24%{
+        width: 24%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    25%{
+        width: 25%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    26%{
+        width: 26%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    27%{
+        width: 27%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    28%{
+        width: 28%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    29%{
+        width: 29%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    30%{
+        width: 30%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    31%{
+        width: 31%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    32%{
+        width: 32%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    33%{
+        width: 33%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    34%{
+        width: 34%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    35%{
+        width: 35%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    36%{
+        width: 36%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    37%{
+        width: 37%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    38%{
+        width: 38%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    39%{
+        width: 39%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    40%{
+        width: 40%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    41%{
+        width: 41%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    42%{
+        width: 42%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    43%{
+        width: 43%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    44%{
+        width: 44%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    45%{
+        width: 45%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    46%{
+        width: 46%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    47%{
+        width: 47%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    48%{
+        width: 48%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    49%{
+        width: 49%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    50%{
+        width: 50%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    51%{
+        width: 51%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    52%{
+        width: 52%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    53%{
+        width: 53%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    54%{
+        width: 54%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    55%{
+        width: 55%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    56%{
+        width: 56%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    57%{
+        width: 57%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    58%{
+        width: 58%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    59%{
+        width: 59%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    60%{
+        width: 60%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    61%{
+        width: 61%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    62%{
+        width: 62%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    63%{
+        width: 63%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    64%{
+        width: 64%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    65%{
+        width: 65%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    66%{
+        width: 66%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    67%{
+        width: 67%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    68%{
+        width: 68%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    69%{
+        width: 69%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    70%{
+        width: 70%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    71%{
+        width: 71%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    72%{
+        width: 72%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    73%{
+        width: 74%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    74%{
+        width: 74%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    75%{
+        width: 75%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    76%{
+        width: 76%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    77%{
+        width: 77%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    78%{
+        width: 78%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    79%{
+        width: 79%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    80%{
+        width: 80%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    81%{
+        width: 81%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    82%{
+        width: 82%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    83%{
+        width: 83%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    84%{
+        width: 84%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    85%{
+        width: 85%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    86%{
+        width: 86%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    87%{
+        width: 87%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    88%{
+        width: 88%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    89%{
+        width: 89%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    90%{
+        width: 90%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    91%{
+        width: 91%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    } 
+    92%{
+        width: 92%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    93%{
+        width: 93%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    94%{
+        width: 94%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    95%{
+        width: 95%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    96%{
+        width: 96%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    97%{
+        width: 97%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    98%{
+        width: 98%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    99%{
+        width: 99%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        border-radius: 2em;
+    }
+}
+
+.animation_bar {
+    animation: animation_bar 20s ease;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 2em;
+}
+
 /*CSS OPTION 4*/
 
+.content_option4 {
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.text_content_option4 {
+    color: white;
+    font-size: larger;
+}
+
+#autoProgress2 {
+    color: white;
+    font-size: larger
+}
+
+.time_lapse2 {
+    color: white;
+    font-size: larger;
+}
+
+@keyframes time_lapse2 {
+    0%{
+        color: white;
+    }
+    50%{
+        color: transparent;
+    }
+    99.9%{
+        color: white;
+    }
+    100%{
+        color: transparent;
+    }
+
+}
+
+.time_lapse2 {
+    animation: time_lapse 2s infinite;
+}
 

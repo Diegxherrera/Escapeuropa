@@ -1,45 +1,42 @@
-//dura un mes
-function create_long_cookie(name,value){
-  //obtener dia de hoy + 30 dias
-  const time = new Date()
+//dura un mes 
+function createCookie(name,value){
+  const time = new Date();
   time.setTime(time.getTime()+(30*86400000));
-  const UTCtime = time.toUTCString()
-  //cookie = nombre=valor;expira=tiempo;ruta;
+  const UTCtime = time.toUTCString();
   document.cookie = name +"="+value+";"+"expires="+UTCtime+";path=/";
-  return "creada"
+  return "creada";
 }
-//hasta que ce cierre el navegador
+//hasta que se cierre el navegador
 function create_short_cookie(name,value){
   document.cookie = name +"="+value+";";
-  return "creada"
+  return "creada";
 }
 
-let x;
-let i; 
-let comprobación;
+let x;  
+let i;  
+let comprobacion;
 
 function getCookie(cookie) {
-  //obtener name real
+  let x;
+  let i;
+  let comprobacion;
+
   let name = cookie + "=";
-  //crea un array desde las cookies del usuario
   let dc = document.cookie.split(";");
-  //lee el arraay y lo recorre en busca de...
+  console.log("-------------------------------"+"\n"+"BUSCANDO COOKIE ->");
   for (i=0;i<dc.length;i++){
-    //objetivo
-    busca = dc[i].indexOf(name)
-    //returns
+    busca = dc[i].indexOf(name);
+    console.log("busqueda indice :"+i+ " " + busca+" "+dc[i]);
     if (busca == 1){
-      x = i
-      comprobación = true
+      x = i;
+      comprobacion = true;
     }
-    i++
   }
-  if(comprobación==true){
-  const resultado = dc[x]
-  const valor = resultado.split("=")
-  return valor[1]
+  if(comprobacion==true){
+  const resultado = dc[x];
+  const valor = resultado.split("=");
+  return valor[1];
   }else{
-    return undefined
+    return undefined;
   }
 }
-

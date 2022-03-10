@@ -188,6 +188,53 @@ function comprobacion() {
         setTimeout("$('.warning').css('display','none')", 2500)
     }
     else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true && comprado == true) {
+        switch(secuencia){
+            case "CCC":
+                if(disco==true){
+<<<<<<< HEAD
+                    createCookie("disk","SamsungSSD")
+                    createCookie("tam","1TB")
+                    console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
+                    console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
+=======
+                    createCookie("disco","SamsungSSD")
+                    createCookie("tam","1TB")
+                    console.log(getCookie("disco"))
+                    console.log(getCookie("tam"))
+>>>>>>> 3452ea517958008b2eb9aa8f423dcb7abe00e1da
+                    break
+                }
+            case "BBB":
+                if(disco==true){
+<<<<<<< HEAD
+                    createCookie("disk","WesternDigital")
+                    createCookie("tam","1TB")
+                    console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
+                    console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
+=======
+                    createCookie("disco","WesternDigital")
+                    createCookie("tam","1TB")
+                    console.log(getCookie("disco"))
+                    console.log(getCookie("tam"))
+>>>>>>> 3452ea517958008b2eb9aa8f423dcb7abe00e1da
+                    break
+                }
+            case "AAA":
+                if(disco==true){
+<<<<<<< HEAD
+                    createCookie("disk","WesternDigital")
+                    createCookie("tam","500GB")
+                    console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
+                    console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
+=======
+                    createCookie("disco","WesternDigital")
+                    createCookie("tam","500GB")
+                    console.log(getCookie("disco"))
+                    console.log(getCookie("tam"))
+>>>>>>> 3452ea517958008b2eb9aa8f423dcb7abe00e1da
+                    break
+                }
+        }
         alert("correcto") //animación de montaje del pc
     }
     else { alert("incorrecto") 

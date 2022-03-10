@@ -195,13 +195,97 @@ div.leftmenu {
     position: sticky;
     display: inline-flex;
     bottom: 3em;
-    width: 57vw;
+    width: 25.5em;
     height: 60%;
     border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.979);
+    background-color: #000000f6;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     border-radius: 5px;
+}
+
+div.lm-col01 {
+    width: 3.25em;
+    height: 100%;
+    background-color: #FFFFFF;
+    display: block;
+    overflow: hidden;
+    color: white;
+}
+
+div.col-spc {
+    background-color: #000000;
+    width: cover;
+    height: 14.75em;
+}
+
+div.pfp-ic-sp {
+    width: cover;
+    height: 3em;
+    background-color: #d4d4d4;
+}
+
+div.pfp-ic-sp {
+    width: cover;
+    height: 3em;
+    background-color: #d4d4d4;
+    display: flex;
+}
+
+div.pfp-ic-sp:hover {
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border: 1px solid black;
+}
+
+div.doc-ic-sp {
+    width: cover;
+    height: 3em;
+    background-color: #9b9b9b;
+    display: flex;
+}
+
+div.img-ic-sp {
+    width: cover;
+    height: 3em;
+    background-color: #818181;
+    display: flex;
+}
+
+div.config-ic-sp {
+    width: cover;
+    height: 3em;
+    background-color: #6e6e6e;
+    display: flex;
+}
+
+div.shtd-ic-sp {
+    display: flex;
+    width: cover;
+    height: 3em;
+    background-color: #5f5f5f;
+    justify-content: center;
+    align-items: center;
+}
+
+img.pfp-ic {
+    height: 3em;
+    width: cover;
+}
+
+img.shtd-ic {
+    height: 1.75em;
+    width: cover;
+}
+
+div.lm-col02 {
+    width: 8em;
+    background-color: #eeeeee;
+}
+
+div.lm-col03 {
+    width: 15em;
+    background-color: #d4d4d4;
 }
 
 div.bottombar {
