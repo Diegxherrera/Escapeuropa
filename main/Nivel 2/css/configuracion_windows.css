@@ -43,16 +43,18 @@ body {
 
 #option3 {
     display: none;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 155, 255);
+    width: 60%;
+    height: 70%;
+    border: 3px solid rgba(175, 220, 255, 0.750);
+    border-radius: 0.3em;
 }
 
 #option4 {
     display: none;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 155, 255);
+    width: 60%;
+    height: 70%;
+    border: 3px solid rgba(175, 220, 255, 0.750);
+    border-radius: 0.3em;
 }
 
 .header {
@@ -231,12 +233,11 @@ body {
 }
 
 
-
 /*CSS OPTION 3*/
 
 .content_option3 {
     width: 100%;
-    height: 90%;
+    height:75%;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -280,636 +281,545 @@ body {
 
 .bloque {
     width: 100%;
-    height: 10%;
-    display: flex;
+    height: 5%;
+    display: inline-flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
+
 .progress_bar {
-    width: 90%;
-    height: 20%;
-    background-color: white;
-    border-radius: 2em;
+    width: 33%;
+    height: 35%;
+    background-color: rgb(255, 255, 255);
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
 
-.animation_bar2 {
-    width: 0%;
-    height: 100%;
-    background-color: blue;
-    border-radius: 2em;
+.progress_bar2 {
+    width: 65%;
+    height: 35%;
+    background-color: white;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-@keyframes animation_bar2 {
+.animation_bar {
+    width: 0%;
+    height: 100%;
+    background-color: green;
+}
+
+@keyframes animation_bar {
     0%{
         width: 0%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     1%{
         width: 1%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
 
     2%{
         width: 2%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     3%{
         width: 3%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     4%{
         width: 4%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     5%{
         width: 5%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     6%{
         width: 6%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     7%{
         width: 7%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;;
+        background-color: green;
     }
     8%{
         width: 8%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     9%{
         width: 9%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     10%{
         width: 10%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     11%{
         width: 11%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     12%{
         width: 12%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     13%{
         width: 13%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     14%{
         width: 14%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     15%{
         width: 15%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     16%{
         width: 16%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     17%{
         width: 17%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     18%{
         width: 18%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     19%{
         width: 19%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     20%{
         width: 20%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     21%{
         width: 21%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     22%{
         width: 22%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     23%{
         width: 23%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     24%{
         width: 24%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     25%{
         width: 25%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     26%{
         width: 26%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     27%{
         width: 27%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     28%{
         width: 28%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     29%{
         width: 29%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     30%{
         width: 30%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     31%{
         width: 31%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     32%{
         width: 32%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     33%{
         width: 33%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     34%{
         width: 34%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     35%{
         width: 35%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     36%{
         width: 36%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     37%{
         width: 37%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     38%{
         width: 38%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     39%{
         width: 39%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     40%{
         width: 40%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     41%{
         width: 41%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     42%{
         width: 42%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     43%{
         width: 43%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     44%{
         width: 44%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     45%{
         width: 45%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     46%{
         width: 46%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     47%{
         width: 47%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     48%{
         width: 48%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     49%{
         width: 49%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     50%{
         width: 50%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     51%{
         width: 51%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     52%{
         width: 52%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     53%{
         width: 53%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     54%{
         width: 54%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     55%{
         width: 55%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     56%{
         width: 56%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     57%{
         width: 57%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     58%{
         width: 58%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     59%{
         width: 59%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     60%{
         width: 60%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     61%{
         width: 61%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     62%{
         width: 62%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     63%{
         width: 63%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     64%{
         width: 64%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     65%{
         width: 65%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     66%{
         width: 66%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     67%{
         width: 67%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     68%{
         width: 68%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     69%{
         width: 69%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     70%{
         width: 70%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     71%{
         width: 71%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     72%{
         width: 72%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     73%{
         width: 74%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     74%{
         width: 74%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     75%{
         width: 75%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     76%{
         width: 76%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     77%{
         width: 77%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     78%{
         width: 78%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     79%{
         width: 79%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     80%{
         width: 80%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     81%{
         width: 81%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     82%{
         width: 82%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     83%{
         width: 83%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     84%{
         width: 84%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     85%{
         width: 85%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     86%{
         width: 86%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     87%{
         width: 87%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     88%{
         width: 88%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     89%{
         width: 89%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     90%{
         width: 90%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     91%{
         width: 91%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     } 
     92%{
         width: 92%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     93%{
         width: 93%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     94%{
         width: 94%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     95%{
         width: 95%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     96%{
         width: 96%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     97%{
         width: 97%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     98%{
         width: 98%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     99%{
         width: 99%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     100%{
         width: 100%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
 }
 
@@ -917,15 +827,40 @@ body {
     animation: animation_bar 20s ease;
     width: 100%;
     height: 100%;
-    background-color: blue;
-    border-radius: 2em;
+    background-color: green;
+
+}
+
+.bloque2 {
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.text_izq {
+    width: 33%;
+    height: 100%;
+    display: inline-flex;
+    color: white;
+    margin-left: 1%;
+    gap: 1%;
+}
+
+.text_der {
+    width: 67%;
+    height: 100%;
+    display: inline-flex;
+    color: white;
+    margin-left: 1%;
+    gap: 1%;
 }
 
 /*CSS OPTION 4*/
 
 .content_option4 {
     width: 100%;
-    height: 100%;
+    height:75%;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -948,7 +883,7 @@ body {
     font-size: larger;
 }
 
-@keyframes time_lapse2 {
+@keyframes time_lapse {
     0%{
         color: white;
     }
@@ -961,18 +896,36 @@ body {
     100%{
         color: transparent;
     }
-
 }
 
 .time_lapse2 {
     animation: time_lapse 2s infinite;
 }
 
-.progress_bar2 {
-    width: 90%;
-    height: 20%;
+.bloque {
+    width: 100%;
+    height: 5%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.progress_bar3 {
+    width: 33%;
+    height: 35%;
+    background-color: green;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.progress_bar4 {
+    width: 65%;
+    height: 35%;
     background-color: white;
-    border-radius: 2em;
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -982,617 +935,515 @@ body {
 .animation_bar2 {
     width: 0%;
     height: 100%;
-    background-color: blue;
-    border-radius: 2em;
+    background-color: green;
 }
 
 @keyframes animation_bar2 {
     0%{
         width: 0%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     1%{
         width: 1%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
 
     2%{
         width: 2%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     3%{
         width: 3%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     4%{
         width: 4%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     5%{
         width: 5%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     6%{
         width: 6%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     7%{
         width: 7%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;;
+        background-color: green;
     }
     8%{
         width: 8%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     9%{
         width: 9%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     10%{
         width: 10%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     11%{
         width: 11%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     12%{
         width: 12%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     13%{
         width: 13%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     14%{
         width: 14%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     15%{
         width: 15%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     16%{
         width: 16%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     17%{
         width: 17%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     18%{
         width: 18%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     19%{
         width: 19%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     20%{
         width: 20%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     21%{
         width: 21%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     22%{
         width: 22%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     23%{
         width: 23%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     24%{
         width: 24%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     25%{
         width: 25%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     26%{
         width: 26%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     27%{
         width: 27%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     28%{
         width: 28%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     29%{
         width: 29%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     30%{
         width: 30%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     31%{
         width: 31%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     32%{
         width: 32%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     33%{
         width: 33%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     34%{
         width: 34%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     35%{
         width: 35%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     36%{
         width: 36%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     37%{
         width: 37%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     38%{
         width: 38%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     39%{
         width: 39%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     40%{
         width: 40%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     41%{
         width: 41%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     42%{
         width: 42%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     43%{
         width: 43%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     44%{
         width: 44%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     45%{
         width: 45%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     46%{
         width: 46%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     47%{
         width: 47%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     48%{
         width: 48%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     49%{
         width: 49%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     50%{
         width: 50%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     51%{
         width: 51%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     52%{
         width: 52%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     53%{
         width: 53%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     54%{
         width: 54%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     55%{
         width: 55%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     56%{
         width: 56%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     57%{
         width: 57%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     58%{
         width: 58%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     59%{
         width: 59%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     60%{
         width: 60%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     61%{
         width: 61%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     62%{
         width: 62%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     63%{
         width: 63%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     64%{
         width: 64%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     65%{
         width: 65%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     66%{
         width: 66%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     67%{
         width: 67%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     68%{
         width: 68%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     69%{
         width: 69%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     70%{
         width: 70%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     71%{
         width: 71%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     72%{
         width: 72%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     73%{
         width: 74%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     74%{
         width: 74%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     75%{
         width: 75%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     76%{
         width: 76%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     77%{
         width: 77%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     78%{
         width: 78%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     79%{
         width: 79%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     80%{
         width: 80%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     81%{
         width: 81%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     82%{
         width: 82%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     83%{
         width: 83%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     84%{
         width: 84%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     85%{
         width: 85%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     86%{
         width: 86%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     87%{
         width: 87%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     88%{
         width: 88%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     89%{
         width: 89%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     90%{
         width: 90%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     91%{
         width: 91%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     } 
     92%{
         width: 92%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     93%{
         width: 93%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     94%{
         width: 94%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     95%{
         width: 95%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     96%{
         width: 96%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     97%{
         width: 97%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     98%{
         width: 98%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     99%{
         width: 99%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
     100%{
         width: 100%;
         height: 100%;
-        background-color: blue;
-        border-radius: 2em;
+        background-color: green;
     }
 }
 
@@ -1600,6 +1451,31 @@ body {
     animation: animation_bar2 20s ease;
     width: 100%;
     height: 100%;
-    background-color: blue;
-    border-radius: 2em;
+    background-color: green;
+
+}
+
+.bloque2 {
+    width: 100%;
+    height: 10%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.text_izq {
+    width: 33%;
+    height: 100%;
+    display: inline-flex;
+    color: white;
+    margin-left: 1%;
+    gap: 1%;
+}
+
+.text_der {
+    width: 67%;
+    height: 100%;
+    display: inline-flex;
+    color: white;
+    margin-left: 1%;
+    gap: 1%;
 }
