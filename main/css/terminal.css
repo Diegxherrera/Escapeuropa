@@ -18,8 +18,6 @@ body{
     outline: none;
     text-decoration: none;
     width: 500px;
-    max-width: 500px;
-    max-height: 500px;
 }
 .typing:active{
     background-color: transparent;
