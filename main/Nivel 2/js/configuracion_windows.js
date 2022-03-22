@@ -364,6 +364,7 @@ const numero2 = new Array();
     numero2[73] = "73%";
     numero2[74] = "74%";
     numero2[75] = "75%";
+    numero2[76] = "75%";
     numero2[77] = "77%";
     numero2[78] = "78%";
     numero2[79] = "79%";
