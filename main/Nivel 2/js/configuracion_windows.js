@@ -2,6 +2,7 @@ let i = 0;
 let a = 0;
 let z = 0;
 let x = 0;
+let m = 0;
 
 //Le damos un valor a correct e incorrect
 
@@ -120,19 +121,6 @@ const numero = new Array();
     numero[31] = "31%";
     numero[32] = "32%";
     numero[33] = "33%";
-    numero[34] = "33%";
-    numero[35] = "33%";
-    numero[36] = "33%";
-    numero[37] = "33%";
-    numero[38] = "33%";
-    numero[39] = "33%";
-    numero[40] = "33%";
-    numero[41] = "33%";
-    numero[42] = "33%";
-    numero[43] = "33%";
-    numero[44] = "33%";
-    numero[45] = "33%";
-    numero[46] = "33%";
 
 const text = new Array ();
 
@@ -149,8 +137,6 @@ const text = new Array ();
     text [10] = "Espere unos segundos";
     text [11] = "Espere unos segundos";
     text [12] = "Espere unos segundos";
-    text [13] = "Espere unos segundos";
-    text [14] = "Espere unos segundos";
  
 //Creamos una función y le decimos que el array numero es igual a "i" y el array text es igual a "a".
 
@@ -287,21 +273,6 @@ const numero2 = new Array();
     numero2[64] = "98%";
     numero2[65] = "99%";
     numero2[66] = "100%";
-    numero2[67] = "100%";
-    numero2[68] = "100%";
-    numero2[69] = "100%";
-    numero2[70] = "100%";
-    numero2[71] = "100%";
-    numero2[72] = "100%";
-    numero2[73] = "100%";
-    numero2[74] = "100%";
-    numero2[75] = "100%";
-    numero2[76] = "100%";
-    numero2[77] = "100%";
-    numero2[78] = "100%";
-    numero2[79] = "100%";
-    numero2[80] = "100%";
-    numero2[81] = "100%";
 
 const text2 = new Array ();
 
@@ -318,8 +289,6 @@ const text2 = new Array ();
     text2 [10] = "Espere unos segundos";
     text2 [11] = "Espere unos segundos";
     text2 [12] = "Espere unos segundos";
-    text2 [13] = "Espere unos segundos";
-    text2 [14] = "Espere unos segundos";
  
 //Creamos una función y le decimos que el array numero2 es igual a "i2" y el array text2 es igual a "a2".
 
@@ -337,7 +306,7 @@ function numero_text_progress2() {
 
 function progress2() {
 
-    //Creamos un intervalo para la funcion en el que decimos que "i" aumentará uno cada 200 ms, i se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2".
+    //Creamos un intervalo para la funcion en el que decimos que "z" aumentará uno cada 305 ms, z se representara en las capas que contienen el identificador "autoProgress" y "autoProgress2".
 
     const numero_interval2 = setInterval(function numero_text_progress2() {
 
@@ -347,7 +316,7 @@ function progress2() {
 
         document.getElementById('autoProgress2').innerHTML = numero2[z];
 
-        //Le decimos a "i" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+        //Le decimos a "z" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
 
         if (z == numero2.length-1) {
             
@@ -357,9 +326,9 @@ function progress2() {
         } 
     },305);
 
-    //Creamos un intervalo para la funcion en el que decimos que "a" aumentará uno cada 2000 ms, i se representara en las capas que contienen el identificador "text_change" y "text_change2".
+    //Creamos un intervalo para la funcion en el que decimos que "x" aumentará uno cada 2000 ms, x se representara en las capas que contienen el identificador "text_change" y "text_change2".
 
-    const text_interval2 = setInterval(function() {
+    const text_interval2 = setInterval(function numero_text_progress2() {
 
         x++;
 
@@ -375,8 +344,58 @@ function progress2() {
 
             clearInterval(text_interval2);
 
-            document.getElementById('option3').style.display = "none";
-            document.getElementById('option4').style.display = "block";
+            document.getElementById('option4').style.display = "none";
+            document.getElementById('option5').style.display = "block";
+
+            progress3()
+
+        } 
+    },2000);
+
+}
+
+const text3 = new Array ();
+
+    text3 [0] = "No desconecte ni apague su PC";
+    text3 [1] = "Estamos realizando algunos preparativos";
+    text3 [2] = "No desconecte ni apague su PC";
+    text3 [3] = "Estamos realizando algunos preparativos";
+    text3 [4] = "No desconecte ni apague su PC";
+    text3 [5] = "Estamos realizando algunos preparativos";
+    text3 [6] = "Su equipo se va a reiniciar, espere unos segundos";
+    text3 [7] = "Su equipo se va a reiniciar, espere unos segundos";
+    text3 [8] = "Su equipo se va a reiniciar, espere unos segundos";
+
+function numero_text_progress3() {
+
+    console.log('autoProgress3'); 
+          
+    text2 = m;
+    
+}
+
+function progress3() {
+
+    const text_interval3 = setInterval(function numero_text_progress3() {
+
+        m++;
+
+        console.log(m)
+
+        document.getElementById('text_change3').innerHTML = text3[m];
+
+        //Le decimos a "a" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+
+        if (m == text3.length-1) {
+
+            console.log("funciono3");
+
+            clearInterval(text_interval3);
+
+            document.getElementById('option5').style.display = "none";
+            document.getElementById('option6').style.display = "block";
+
+            
 
         } 
     },2000);
