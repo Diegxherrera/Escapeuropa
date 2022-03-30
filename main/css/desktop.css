@@ -211,12 +211,25 @@ div.lm-col01 {
     display: block;
     overflow: hidden;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 div.col-spc {
     background-color: #000000;
     width: cover;
-    height: 14.75em;
+    height: 37.5em;
+    width: 3.25em;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+div.ic-sp-end {
+    display: block;
+    width: cover;
+    height: auto;
+    justify-content: flex-end;
+    flex-direction: row;
 }
 
 div.pfp-ic-sp {
@@ -243,6 +256,8 @@ div.doc-ic-sp {
     height: 3em;
     background-color: #9b9b9b;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.img-ic-sp {
@@ -250,6 +265,8 @@ div.img-ic-sp {
     height: 3em;
     background-color: #818181;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.config-ic-sp {
@@ -257,6 +274,7 @@ div.config-ic-sp {
     height: 3em;
     background-color: #6e6e6e;
     display: flex;
+    justify-content: center;
 }
 
 div.shtd-ic-sp {
@@ -273,8 +291,23 @@ img.pfp-ic {
     width: cover;
 }
 
+img.doc-ic {
+    height: 2em;
+    width: cover;
+}
+
+img.img-ic {
+    height: 2.5em;
+    width: cover;
+}
+
 img.shtd-ic {
     height: 1.75em;
+    width: cover;
+}
+
+img.config-ic {
+    height: 2.75em;
     width: cover;
 }
 
