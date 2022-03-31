@@ -157,14 +157,30 @@ svg.search-icon {
     border-radius: 5em;
     width: 35%;
     height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: small;
+    gap: 2%;
 }
 
 .search_text:hover {
     color: white;
     background-color: #696969;
     border: #696969 1px solid;
+}
+
+#search_bar {
+    width: 90%;
+    background-color: transparent;
+    border: 0;
+    border-color: transparent;
+    height: 95%;
+    color: white;
+    font-size: medium;
+    text-decoration: solid;
+    outline: 0;
 }
 
 .contenedor2 {
@@ -177,8 +193,7 @@ svg.search-icon {
     gap: 3%;
 }
 
-.texto2,
-.texto3 {
+.texto2,.texto3 {
     text-decoration: none;
     color: #FFFFFF;
     text-align: center;
