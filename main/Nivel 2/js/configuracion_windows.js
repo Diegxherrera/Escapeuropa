@@ -3,6 +3,9 @@ let a = 0;
 let z = 0;
 let x = 0;
 let m = 0;
+let n = 0;
+let k = 0;
+let j = 0;
 
 //Le damos un valor a correct e incorrect
 
@@ -395,9 +398,144 @@ function progress3() {
             document.getElementById('option5').style.display = "none";
             document.getElementById('option6').style.display = "block";
 
-            
+            progress4()
 
         } 
+    },2000);
+
+}
+
+const numero3 = new Array()
+
+numero3 [0] = "0";
+numero3 [1] = "1";
+numero3 [2] = "2";
+numero3 [3] = "3";
+numero3 [4] = "4";
+
+function numero_text_progress4() {
+
+    console.log('autoProgress4'); 
+          
+    numero3 = n;
+
+}
+
+function progress4() {
+
+    const numero_interval3 = setInterval(function numero_text_progress4() {
+
+        n++;
+            
+        console.log(n)
+    
+        document.getElementById('autoProgress3').innerHTML = numero3[n];
+    
+        //Le decimos a "n" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+    
+        if (n == numero3.length-1) {
+                
+            console.log("funciono3");
+    
+            clearInterval(numero_interval3);
+
+            
+            document.getElementById('option6').style.display = "none";
+            document.getElementById('option7').style.display = "block";
+
+            progress5();
+
+        } 
+
+    },2000);
+
+}
+
+const numero4 = new Array()
+
+numero4 [0] = "0";
+numero4 [1] = "1";
+numero4 [2] = "2";
+numero4 [3] = "3";
+numero4 [4] = "4";
+
+function numero_text_progress5() {
+
+    console.log('autoProgress5'); 
+          
+    numero4 = k;
+
+}
+
+function progress5() {
+
+    const numero_interval4 = setInterval(function numero_text_progress4() {
+
+        k++;
+            
+        console.log(k)
+    
+        document.getElementById('autoProgress4').innerHTML = numero4[k];
+    
+        //Le decimos a "k" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+    
+        if (k == numero4.length-1) {
+                
+            console.log("funciono4");
+    
+            clearInterval(numero_interval4);
+
+            
+            document.getElementById('option7').style.display = "none";
+            document.getElementById('option8').style.display = "block";
+
+            progress6();
+
+        } 
+
+    },2000);
+
+}
+
+const numero5 = new Array()
+
+numero5 [0] = "0";
+numero5 [1] = "1";
+numero5 [2] = "2";
+numero5 [3] = "3";
+numero5 [4] = "4";
+
+function numero_text_progress6() {
+
+    console.log('autoProgress6'); 
+          
+    numero4 = j;
+
+}
+
+function progress6() {
+
+    const numero_interval5 = setInterval(function numero_text_progress6() {
+
+        j++;
+            
+        console.log(j)
+    
+        document.getElementById('autoProgress5').innerHTML = numero5[j];
+    
+        //Le decimos a "j" que cuando supere la longitud de su array correspondiente se limpie el intervalo.
+    
+        if (j == numero5.length-1) {
+                
+            console.log("funciono5");
+    
+            clearInterval(numero_interval5);
+
+            
+            document.getElementById('option8').style.display = "none";
+            document.getElementById('option9').style.display = "block";
+        } 
+
     },2000);
 
 }
