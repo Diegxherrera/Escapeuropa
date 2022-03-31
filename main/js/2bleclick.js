@@ -2,6 +2,7 @@
 document.getElementById("igoogle").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorer").style.cssText = "visibility: hidden"
 document.getElementById("inotepad").style.cssText = "visibility: hidden"
+document.getElementById("iadmintareas").style.cssText = "visibility: hidden"
 let index_value = 100
 
 //en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
@@ -10,7 +11,6 @@ function dblclick(id) {
     const element = document.getElementById(id)
     element.style.cssText = "visibility: visible"
     element.style.cssText = "z-index: 10"
-    $('#np-head').show();
     element.style.cssText = "z-index: " + index_value
     console.log(element + "funciono")
     index_value++

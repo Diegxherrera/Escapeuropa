@@ -27,6 +27,10 @@ footer {
     bottom: 0;
 }
 
+li {
+    list-style: none;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -195,19 +199,16 @@ div.leftmenu {
     position: sticky;
     display: inline-flex;
     bottom: 3em;
-    width: 25.5em;
+    width: 25.75em;
     height: 60%;
     border: 1px solid black;
-    background-color: #000000f6;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
-    border-radius: 5px;
+    background-color: transparent;
 }
 
 div.lm-col01 {
     width: 3.25em;
+    background-color: rgba(14, 14, 14, 0.98);
     height: 100%;
-    background-color: #FFFFFF;
     display: block;
     overflow: hidden;
     color: white;
@@ -215,13 +216,47 @@ div.lm-col01 {
     flex-direction: column;
 }
 
+p.group-title {
+    margin-top: 0.5em;
+    margin-left: 0.25em;
+}
+
+li.col2-containers {
+    display: inline-flex;
+    margin-bottom: 0.25em;
+}
+
+img.col2-img {
+    height: 1.10em;
+    width: auto;
+    margin-right: 0.25em;
+    margin-top: 0.25em;
+}
+
+p.card-title {
+    font-size: 0.7em;
+}
+
+div.min-card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 div.col-spc {
-    background-color: #000000;
     width: cover;
     height: 37.5em;
     width: 3.25em;
     justify-content: flex-start;
     flex-direction: row;
+    display: flex;
+    justify-content: center;
+}
+
+img.menu-ic-col {
+    height: 1.75em;
+    width: auto;
+    margin-top: 0.25em;
 }
 
 div.ic-sp-end {
@@ -235,14 +270,7 @@ div.ic-sp-end {
 div.pfp-ic-sp {
     width: cover;
     height: 3em;
-    background-color: #d4d4d4;
-}
-
-div.pfp-ic-sp {
-    width: cover;
-    height: 3em;
-    background-color: #d4d4d4;
-    display: flex;
+    background-color: rgba(14, 14, 14, 0.98);
 }
 
 div.pfp-ic-sp:hover {
@@ -254,7 +282,7 @@ div.pfp-ic-sp:hover {
 div.doc-ic-sp {
     width: cover;
     height: 3em;
-    background-color: #9b9b9b;
+    background-color: rgba(14, 14, 14, 0.98);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,7 +291,7 @@ div.doc-ic-sp {
 div.img-ic-sp {
     width: cover;
     height: 3em;
-    background-color: #818181;
+    background-color: rgba(14, 14, 14, 0.98);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +300,7 @@ div.img-ic-sp {
 div.config-ic-sp {
     width: cover;
     height: 3em;
-    background-color: #6e6e6e;
+    background-color: rgba(14, 14, 14, 0.98);
     display: flex;
     justify-content: center;
 }
@@ -281,7 +309,7 @@ div.shtd-ic-sp {
     display: flex;
     width: cover;
     height: 3em;
-    background-color: #5f5f5f;
+    background-color: rgba(14, 14, 14, 0.98);
     justify-content: center;
     align-items: center;
 }
@@ -292,12 +320,12 @@ img.pfp-ic {
 }
 
 img.doc-ic {
-    height: 2em;
+    height: 1.9em;
     width: cover;
 }
 
 img.img-ic {
-    height: 2.5em;
+    height: 2.4em;
     width: cover;
 }
 
@@ -307,22 +335,22 @@ img.shtd-ic {
 }
 
 img.config-ic {
-    height: 2.75em;
+    height: 2.4em;
     width: cover;
 }
 
 div.lm-col02 {
-    width: 8em;
-    background-color: #eeeeee;
+    width: 10em;
+    background-color: rgba(14, 14, 14, 0.98);
 }
 
 div.lm-col03 {
-    width: 15em;
-    background-color: #d4d4d4;
+    width: 13em;
+    background-color: rgba(14, 14, 14, 0.98);
 }
 
 div.bottombar {
-    background-color: #00000096;
+    background-color: rgba(14, 14, 14, 0.98);
     height: 3em;
     width: cover;
     position: sticky;
@@ -462,13 +490,10 @@ img.cortanalogo {
         cursor: help;
         color: black;
     }
-    .google {
+    iframe {
         visibility: hidden;
     }
-    .notepad {
-        visibility: hidden;
-    }
-    .filesexplorer {
+    div.leftmenu {
         visibility: hidden;
     }
 }
@@ -490,13 +515,10 @@ img.cortanalogo {
     .resolution a {
         cursor: help;
     }
-    .google {
+    iframe {
         visibility: hidden;
     }
-    .notepad {
-        visibility: hidden;
-    }
-    .filesexplorer {
+    div.leftmenu {
         visibility: hidden;
     }
 }

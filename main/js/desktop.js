@@ -17,7 +17,32 @@ function closemenu() {
     $('.windowslogo').attr("onclick", "openmenu()")
 }
 
-function hideIframe() {
+function hideNotepad() {
+    $('#inotepad').hide();
+    $('#np-head').hide();
+}
+
+function hideGoogle() {
+    $('#ichrome').hide();
+    $('#google-head').hide();
+}
+
+function hideFiles() {
+    $('#ifilesexplorer').hide();
+    $('#files-head').hide();
+}
+
+function hideNotepad() {
+    $('#inotepad').hide();
+    $('#np-head').hide();
+}
+
+function hideNotepad() {
+    $('#inotepad').hide();
+    $('#np-head').hide();
+}
+
+function hideNotepad() {
     $('#inotepad').hide();
     $('#np-head').hide();
 }

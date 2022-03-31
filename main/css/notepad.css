@@ -75,7 +75,7 @@ div.np-limits {
     border: 0;
 }
 
-input.np-body {
+p.np-body {
     position: absolute;
     width: 97vw;
     height: 88vh;
