@@ -1,6 +1,13 @@
 console.log("linked")
 $('.leftmenu').hide()
 $('#np-head').hide();
+if(!document.cookie.match(/^(.*;)?\s*Login\s*=\s*[^;]+(.*)?$/)){    // Comprueba si la cookie existe
+    document.location="uac.html"
+}else{
+    document.cookie = "Login" + '=Verificado;expires=Thu, 01 Jan 1970 00:00:01 GMT;';   // Elimina la cookie
+
+}
+
 
 
 function openmenu() {
