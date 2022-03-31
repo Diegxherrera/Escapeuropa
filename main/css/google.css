@@ -202,7 +202,7 @@ svg.search-icon {
 }
 
 .texto2 {
-    height: 52%;
+    height: 40%;
     width: 12.5%;
     background-color: #3b3b3b;
     border: #3b3b3b 1px solid;
@@ -213,7 +213,7 @@ svg.search-icon {
 }
 
 .texto3 {
-    height: 52%;
+    height: 40%;
     width: 12.5%;
     background-color: #3b3b3b;
     border: #3b3b3b 1px solid;
@@ -223,8 +223,7 @@ svg.search-icon {
     transition: all 0.2s ease-in;
 }
 
-.texto2:hover,
-.texto3:hover {
+.texto2:hover, .texto3:hover {
     border: #bebbbd 1px solid;
     transition: all 0.2s ease-out;
     color: #ffffff;
