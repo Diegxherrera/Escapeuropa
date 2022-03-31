@@ -146,7 +146,7 @@ function newLine(){
         break
     
 
-    case 'cd X4nn*':
+    case 'cd X4nn*' || 'cd x4nn*':
         if(dir != 'windows'){
             $('body').append('</br> El sistema no puede encontrar la ruta especificada.  </br>');
         }else{
@@ -159,7 +159,10 @@ function newLine(){
         break
     case 'help':
         $('body').append('</br> Los comandos disponibles son: </br> cd -> Muestra el directorio actual </br> cd (directorio) -> Accede al directorio actual </br> dir -> Muestra los archivos que hay dentro del directorio actual </br> cd.. / cd .. -> Retrocede un directorio en la ruta </br> cls -> Limpia la consola de comandos (borra todo lo escrito) </br>');
-        break
+        break;
+    case 'del X4nn*' || 'del x4nn*':
+        $('body').append('</br>3l d1rect0r1o 3st4 bl0qu3ad0');
+        break;
     default: 
     if(exist != -1){ // Si no es igual a -1 (es decir, si hay un 'cd ')
         $('body').append('</br> El sistema no puede encontrar la ruta especificada.  </br>');
@@ -169,6 +172,7 @@ function newLine(){
         break
     }
     //final del switch
+
 
     //newline
     value++
