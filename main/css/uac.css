@@ -19,16 +19,24 @@ div.container {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .user_icon {
     padding-top: 11%;
 }
 
+.user-icon {
+    border: 0px;
+    border-radius: 100%;
+}
+
 .user_text {
     font-family: 'Segoe UI';
     font-size: 50px;
     color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .email_text {
@@ -43,6 +51,7 @@ div.container {
     height: 35px;
     margin-top: 1.6%;
     font-family: 'Segoe UI';
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
 .password {
@@ -52,13 +61,20 @@ div.container {
 }
 
 .password_text {
-    width: 300px;
+    width: 303px;
     height: 35px;
     margin-top: 0.8%;
     border: 1px solid black;
     font-family: 'Segoe UI';
-    border-right: 0px;
     border: 2.5px solid rgb(33, 109, 196);
+    border-right: 0px;
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+.password_text:after {
+    border: 2.5px solid rgb(33, 109, 196);
+    border-right: 0px;
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
 #password_button {
@@ -67,11 +83,17 @@ div.container {
     border: 2.5px solid rgb(33, 109, 196);
     cursor: pointer;
     margin-top: 0.8%;
+    border-left: 0px;
+    background-color: rgba(255, 255, 255, 0.651)
 }
 
 #password_button:hover {
     color: white;
     background-color: rgb(33, 109, 196);
+}
+
+#password_button:focus {
+    background-color: rgba(255, 255, 255, 0.651)
 }
 
 .login_options a {
@@ -81,7 +103,9 @@ div.container {
 }
 
 .login_options {
-    margin-top: 1%;
+    height: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .login_pinkey {

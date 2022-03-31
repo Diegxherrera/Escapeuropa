@@ -15,6 +15,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow: hidden;
+    height: 100vh;
 }
 
 main {

@@ -12,7 +12,7 @@ function comprobar() {
         console.log(correcto);
 
         setTimeout(function() {
-            window.location.href = "cargainicio.html";
+            window.location.href = "desktop.html";
         }, 50);
     } else {
         document.getElementById("error").style.visibility = "visible";
@@ -21,17 +21,18 @@ function comprobar() {
     }
 }
 
-function close_alert(){
+function close_alert() {
     document.getElementById("error").style.visibility = "hidden";
 }
 
-function resetpass(){
+function resetpass() {
     window.location.href = 'uac_alt.html'
 }
 
-function next(tecla){
-    if(tecla.key == "Enter"){ 
+function next(tecla) {
+    if (tecla.key == "Enter") {
         console.log(tecla);
         comprobar();
-    
-    }}
+
+    }
+}
