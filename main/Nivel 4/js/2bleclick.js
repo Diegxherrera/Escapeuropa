@@ -3,7 +3,7 @@
 function dblclick(id) {
     const element = document.getElementById(id)
     element.style = "visibility: visible"
-    element.style = "z-index: 100"
+    element.style = "z-index: 10"
 }
 //este para el borón de cerrar funciona igual pero hace lo contrario
 function close(id) {

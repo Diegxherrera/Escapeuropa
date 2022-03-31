@@ -6,31 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador de tareas</title>
     <link rel="stylesheet" href="css/admindetareas.css">
-    <script>
-        var seleccion1 = 0;
-        var seleccion2 = 0;
-        function admin_cerrar(){
-            document.getElementById("admin_container_all").style.visibility = "hidden";
-        }
-
-        function admin_seleccionar(){
-            document.getElementById("admin_killer").style.backgroundColor = "lightblue";
-            var seleccion1 = 1;
-        }
-
-        function admin_seleccionar2(){
-            document.getElementById("admin_funny").style.backgroundColor = "lightblue";
-            var seleccion2 = 1;
-
-        function admin_finalizartarea(){
-            if(seleccion1=1,seleccion2=1){
-                document.getElementById("admin_killer").style.visibility = "hidden";
-                document.getElementById("admin_funny").style.visibility = "hidden";
-            }
-        }
-        }
-    </script>
+    <script src="js/admindetareas.js"></script>
+</head>
 <body>
+
 <span id="admin_container_all">
 <div class="admin_container">
     <div class="admin_container2">
@@ -52,6 +31,9 @@
         <span class="admin_control2" id="admin_control0" onclick="admin_cerrar()">X</span> 
     </div>
 </div>
+
+<span id="admin_errortext" style="display: none; font-size: xx-large;">ERROR</span>
+
     <div class="admin_container4">
         <div class="admin_opciones2">
             <span class="admin_control4">Procesos</span>
@@ -70,15 +52,15 @@
         <div class="admin_espacio"></div>
         <div class="admin_porcentajes" id="admin_porcentajes">
             <hr size="25%">
-                <div class="admin_porciento68">68%</div>
+                <div class="admin_porciento68" id="admin_porciento68">68%</div>
                 <hr size="25%">
-                <div class="admin_porciento85">85%</div>
+                <div class="admin_porciento85" id="admin_porciento85">85%</div>
                 <hr size="25%">
-                <div class="admin_porciento01">0%</div>
+                <div class="admin_porciento01" id="admin_porciento01">0%</div>
                 <hr size="25%">
-                <div class="admin_porciento02">0%</div>
+                <div class="admin_porciento02" id="admin_porciento02">0%</div>
                 <hr size="25%">
-                <div class="admin_porciento03">0%</div>
+                <div class="admin_porciento03" id="admin_porciento03">0%</div>
                 <hr size="25%">
         </div>
     </div>
@@ -111,21 +93,21 @@
             <div class="admin_espacioenblanco"></div>
             <div class="admin_aplicaciones">
 
-                <div class="admin_titulo1">Aplicaciones (3)</div>
+                <div class="admin_titulo1" id="admin_titulo1">Aplicaciones (3)</div>
 
                 <div class="admin_administradortareas">
                     <div class="admin_proceso1"><img src="img/admin_icon.jfif" width="2%">Administrador de tareas</div>
                         <div class="admin_datos_aplicaciones">
                             <hr size="25%">
-                            <div class="admin_cpu_app">3,5%</div>
+                            <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">3,5%</div>
                             <hr size="25%">
-                            <div class="admin_memoria_app">28,2 MB</div>
+                            <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">28,2 MB</div>
                             <hr size="25%">
-                            <div class="admin_disco_app">0 MB/s</div>
+                            <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                             <hr size="25%">
-                            <div class="admin_red_app">0 Mbps</div>
+                            <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                             <hr size="25%">
-                            <div class="admin_gpu_app">0%</div>
+                            <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                             <hr size="25%">
                         </div>    
                 </div>
@@ -134,15 +116,15 @@
                 <div class="admin_proceso1"><img src="img/killer.png"  width="2%">killer</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">25%</div>
+                    <div class="admin_cpu_app" id="admin_cpu_killer" style="background-color: rgb(248, 171, 70);">25%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">102,1 MB</div>
+                    <div class="admin_memoria_app" id="admin_memoria_killer" style="background-color: rgb(248, 171, 70);">102,1 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0,1 MB/s</div>
+                    <div class="admin_disco_app" id="admin_disco_killer" style="background-color: lightgoldenrodyellow;">0,1 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" id="admin_red_killer" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" id="admin_gpu_killer" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
@@ -152,15 +134,15 @@
                 <div class="admin_proceso1"><img src="img/funny.png"  width="2%">funny</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">18%</div>
+                    <div class="admin_cpu_app" id="admin_cpu_funny" style="background-color: rgb(248, 205, 110);">18%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">17,2 MB</div>
+                    <div class="admin_memoria_app" id="admin_memoria_funny" style="background-color: lightgoldenrodyellow;">17,2 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0 MB/s</div>
+                    <div class="admin_disco_app" id="admin_disco_funny" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" id="admin_red_funny" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" id="admin_gpu_funny" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
@@ -171,15 +153,15 @@
                 <div class="admin_proceso1"><img src="img/funny.png" width="2%">Antimalware Service Executable</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">1%</div>
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">1%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">530,4 MB</div>
+                    <div class="admin_memoria_app" style="background-color: rgb(248, 205, 110);">530,4 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0 MB/s</div>
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
@@ -188,15 +170,15 @@
                 <div class="admin_proceso1"><img src="img/busqueda.png"  width="2%">Búsqueda</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">0%</div>
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">0 MB</div>
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">0 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0 MB/s</div>
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
@@ -205,15 +187,15 @@
                 <div class="admin_proceso1"><img src="img/funny.png"  width="2%">COM Surrogate</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">0%</div>
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">2,4 MB</div>
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">2,4 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0 MB/s</div>
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
@@ -222,15 +204,15 @@
                 <div class="admin_proceso1"><img src="img/chrome.png" width="2%">Chrome</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">2%</div>
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">2%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">4,8 MB</div>
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">4,8 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0 MB/s</div>
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
@@ -239,15 +221,15 @@
                 <div class="admin_proceso1"><img src="img/funny.png" width="2%">Google Crash Handler</div>
                 <div class="admin_datos_aplicaciones">
                     <hr size="25%">
-                    <div class="admin_cpu_app">0%</div>
+                    <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
-                    <div class="admin_memoria_app">0,8 MB</div>
+                    <div class="admin_memoria_app" style="background-color: lightgoldenrodyellow;">0,8 MB</div>
                     <hr size="25%">
-                    <div class="admin_disco_app">0 MB/s</div>
+                    <div class="admin_disco_app" style="background-color: lightgoldenrodyellow;">0 MB/s</div>
                     <hr size="25%">
-                    <div class="admin_red_app">0 Mbps</div>
+                    <div class="admin_red_app" style="background-color: lightgoldenrodyellow;">0 Mbps</div>
                     <hr size="25%">
-                    <div class="admin_gpu_app">0%</div>
+                    <div class="admin_gpu_app" style="background-color: lightgoldenrodyellow;">0%</div>
                     <hr size="25%">
                 </div>
                 </div>
