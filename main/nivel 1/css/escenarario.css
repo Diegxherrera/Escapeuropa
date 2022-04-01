@@ -24,6 +24,7 @@ body{
     grid-template-columns: 33.3333% 33.3333% 33.3333%;
     grid-template-rows: 33.3333% 33.3333% 33.3333%;
     background-image: url(../img/background.jpg);
+    background-size: cover;
 }
 .estanteria-esc{
     grid-column: 3;
