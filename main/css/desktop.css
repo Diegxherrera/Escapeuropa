@@ -5,6 +5,10 @@
     font-weight: normal;
 }
 
+p {
+    cursor: default;
+}
+
 html {
     height: cover;
     overflow-y: none;
@@ -176,10 +180,6 @@ div.windows {
     height: 31%;
 }
 
-div.onnotepadactive {
-    visibility: visible;
-}
-
 iframe {
     margin-top: 0;
     padding-top: 0;
@@ -188,7 +188,7 @@ iframe {
     position: absolute;
     width: 70%;
     height: 75%;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
@@ -197,7 +197,7 @@ iframe {
 
 div.leftmenu {
     z-index: 1000;
-    position: sticky;
+    position: absolute;
     display: inline-flex;
     bottom: 3em;
     width: 25.75em;

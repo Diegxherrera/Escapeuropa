@@ -14,26 +14,50 @@ function dblclick(id) {
     element.style.cssText = "z-index: " + index_value
     console.log(element + "funciono")
     index_value++
-    if(id == "archivo"){
-    cambio('archivo','abrir-archivo')
+    if (id == "archivo") {
+        cambio('archivo', 'abrir-archivo')
+    }
+    if (id == "editar") {
+        cambio('editar', 'abrir-editar')
+    }
+    if (id == "formato") {
+        cambio('formato', 'abrir-formato')
+    }
+    if (id == "vista") {
+        cambio('vista', 'abrir-vista')
+    }
+    if (id == "ayuda") {
+        cambio('ayuda', 'abrir-ayuda')
     }
 }
 
-function cerrar(id){
+function cerrar(id) {
     const boton = document.getElementById(id)
     boton.style.cssText = "visibility: hidden";
-    if(id == "archivo"){
-    cambio('archivo','abrir-archivo')
+    if (id == "archivo") {
+        cambio('archivo', 'abrir-archivo')
+    }
+    if (id == "editar") {
+        cambio('editar', 'abrir-editar')
+    }
+    if (id == "formato") {
+        cambio('formato', 'abrir-formato')
+    }
+    if (id == "vista") {
+        cambio('vista', 'abrir-vista')
+    }
+    if (id == "ayuda") {
+        cambio('ayuda', 'abrir-ayuda')
     }
 }
-function cambio(id,target){
+
+function cambio(id, target) {
     const boton = document.getElementById(target)
-    if (cambiado == true){
-        boton.setAttribute("onclick","dblclick("+'"'+id+'"'+")")
+    if (cambiado == true) {
+        boton.setAttribute("onclick", "dblclick(" + '"' + id + '"' + ")")
         cambiado = false
-    }
-    else{
-        boton.setAttribute("onclick","cerrar("+'"'+id+'"'+")")
+    } else {
+        boton.setAttribute("onclick", "cerrar(" + '"' + id + '"' + ")")
         cambiado = true
     }
 }

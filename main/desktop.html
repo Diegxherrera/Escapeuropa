@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="img/windows-logo.png" />
-    <link rel="stylesheet" href="css/notepad.css">
     <script type="text/javascript" src="js/date.js">
     </script>
     <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/headers.css">
 </head>
 
 <body class="body" id="body">
@@ -109,7 +109,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">B</p>
-                    <li class="col2-containers" onclick="dblclick('inotepad')">
+                    <li class="col2-containers" onclick="dblclick('inotepad'); showNotepad()">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/notepad-icon.webp">
                         </div>
@@ -168,46 +168,39 @@
                 COLUMNA 3
             </div>
         </div>
-        <div class="windows" id="windows">
-            <div id="np-head" class="np-head">
-                <div id="np-head-col1" class="np-head-col1">
-                    <img class="np-icon" src="img/notepad-icon.webp">
-                </div>
-                <div id="np-head-col2" class="np-head-col2">
-                    <p class="np-title">Nota nueva - Bloc de Notas</p>
-                </div>
 
-
-                <div id="np-head-col3" class="np-head-col3">
-                    <img src="img/window-minimize-svgrepo-com.svg" class="np-minimizebtn" id="np-minimizebtn">
-                    <img src="img/window-maximize-svgrepo-com.svg" class="np-fullscreenbtn-disabled">
-                    <img src="img/close-svgrepo-com.svg" class="np-closebtn" id="np-closebtn" onclick="hideIframe()">
+        <div class="headers">
+            <div class="np-head" id="np-head">
+                <div class="np-head-left">
+                    <img class="np-head-icon" src="img/notepad-icon.webp">
                 </div>
-
-                <div id="google-head" class="google-head">
-                    <div id="google-head-col1" class="google-head-col1">
-                        <img class="google-icon" src="img/chrome.png">
+                <div class="np-head-center">
+                    Sin nombre - Bloc de Notas
+                </div>
+                <div class="np-head-right">
+                    <div class="np-head-m">
+                        <p>_</p>
                     </div>
-                    <div id="google-head-col2" class="google-head-col2">
-                        <p class="google-title">Nota nueva - Bloc de Notas</p>
+                    <div class="np-head-m">
+                        <span>▭</span>
                     </div>
-
-
-                    <div id="google-head-col3" class="google-head-col3">
-                        <img src="img/window-minimize-svgrepo-com.svg" class="np-minimizebtn" id="np-minimizebtn">
-                        <img src="img/window-maximize-svgrepo-com.svg" class="np-fullscreenbtn-disabled">
-                        <img src="img/close-svgrepo-com.svg" class="np-closebtn" id="np-closebtn" onclick="hideGoogleIframe()">
+                    <div class="np-head-close" onclick="hideNotepad()">
+                        <p>X</p>
                     </div>
                 </div>
             </div>
+            <div class="google-head">
 
-            <iframe class="google" id="igoogle" src="extra/google.html">
+            </div>
+        </div>
+
+        <iframe class="google" id="igoogle" src="extra/google.html">
             </iframe>
-            <iframe class="notepad" id="inotepad" src="extra/notepad.html">
+        <iframe class="notepad" id="inotepad" src="extra/notepad.html">
             </iframe>
-            <iframe class="filesexplorer" id="ifilesexplorer" src="extra/explorador.html">
+        <iframe class="filesexplorer" id="ifilesexplorer" src="extra/explorador.html">
             </iframe>
-            <iframe class="admintareas" id="iadmintareas" src="Nivel 4/admindetareas.html">
+        <iframe class="admintareas" id="iadmintareas" src="Nivel 4/admindetareas.html">
             </iframe>
     </main>
     <footer>
@@ -224,7 +217,7 @@
                 <div class="tskbr-ic-hv" onclick="dblclick('igoogle')">
                     <img class="taskbar-icon" src="img/chrome.png">
                 </div>
-                <div class="tskbr-ic-hv" onclick="dblclick('inotepad')">
+                <div class="tskbr-ic-hv" onclick="dblclick('inotepad'); showNotepad()">
                     <img class="taskbar-icon" src="img/notepad-icon.webp">
                 </div>
             </div>

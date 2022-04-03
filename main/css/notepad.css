@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 html {
@@ -12,64 +14,6 @@ li,
 ol,
 ul {
     list-style: none;
-}
-
-div.np-head {
-    position: absolute;
-    margin-left: 20%;
-    width: 70.25vw;
-    top: 6.5%;
-    display: grid;
-    grid-template-columns: 5% 70% 15%;
-    width: cover;
-    background-color: rgb(193, 236, 0);
-    border-top-color: 1px solid rgb(0, 95, 238);
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-img.np-icon {
-    height: 2em;
-    width: 2em;
-    padding-left: 15%;
-    padding-top: 3%;
-}
-
-p.np-title {
-    text-align: left;
-}
-
-img.np-minimizebtn {
-    height: 1.7em;
-    width: 1.7em;
-}
-
-img.np-fullscreenbtn-disabled {
-    height: 1.7em;
-    width: 1.7em;
-    margin-top: 4px;
-}
-
-img.np-closebtn {
-    height: 1.3em;
-    width: 1.3em;
-    margin-bottom: 3.5px;
-}
-
-div.np-head-col2 {
-    line-height: 2em;
-    font-size: 20px;
-    margin-left: 1em;
-}
-
-div.np-head-col3 {
-    position: absolute;
-    right: 0;
-}
-
-div.np-head-col3>img {
-    margin-right: 10px;
 }
 
 div.np-limits {
@@ -176,7 +120,7 @@ li:hover {
     background-color: #c5d7ed;
 }
 
-ol.archivo {
+ol {
     background-color: #F2F2F2;
     border: 1.5px solid #cbcbcc;
     padding-top: 0.75vw;
@@ -190,6 +134,26 @@ ol li {
     align-items: center;
 }
 
+ol.editar {
+    position: absolute;
+    left: 7vw;
+}
+
+ol.formato {
+    position: absolute;
+    left: 14vw;
+}
+
+ol.vista {
+    position: absolute;
+    left: 21vw;
+}
+
+ol.ayuda {
+    position: absolute;
+    left: 28vw;
+}
+
 li p {
     padding-left: 2.5vw;
 }
@@ -199,6 +163,10 @@ hr.divider {
     margin-top: 0.5vh;
     border: 0.75px solid #cbcbcc;
     width: 97.5%;
+}
+
+div.dropdown-menus {
+    display: flex;
 }
 
 @media screen and (min-width: 900px) {
@@ -293,5 +261,3 @@ hr.divider {
         width: 27vw;
     }
 }
-
-@media screen and (max-width:1182px) {}
