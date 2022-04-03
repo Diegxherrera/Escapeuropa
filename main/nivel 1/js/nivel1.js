@@ -237,12 +237,6 @@ function vaciarcarritototal(){
     ram = false
     cpu = false
 
-    disco = false
-    grafica = false
-    procesador = false
-    placa = false
-    memoria = false
-
     secuencia = ""
     correcto = false
     vecescorrecto = 0
