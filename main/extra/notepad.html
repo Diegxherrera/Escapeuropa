@@ -8,17 +8,86 @@
     <title>Bloc de Notas</title>
     <link rel="stylesheet" href="../css/notepad.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="../img/notepad-icon.webp">
 </head>
 
 <body>
-    <div id="np-limits" class="np-limits">
+    <header>
+        <div class="element" onclick="dblclick('archivo')">
+            <p>Archivo</p>
+        </div>
+        <div class="element">
+            <p>Editar</p>
+        </div>
+        <div class="element">
+            <p>Formato</p>
+        </div>
+        <div class="element">
+            <p>Vista</p>
+        </div>
+        <div class="element">
+            <p>Ayuda</p>
+        </div>
+    </header>
+    <div class="dropdown-menus">
+        <ol class="archivo" id="archivo">
+            <li>
+                <p>Nuevo</p>
+            </li>
+            <li>
+                <p>Ventana nueva</p>
+            </li>
+            <li>
+                <p>Abrir...</p>
+            </li>
+            <li>
+                <p>Guardar</p>
+            </li>
+            <li>
+                <p>Guardar como...</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Configuración página...</p>
+            </li>
+            <li>
+                <p>Imprimir...</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Salir</p>
+            </li>
+        </ol>
+    </div>
+    <div class="row-1">
         <p id="np-body" class="np-body">
-            La escritura no se reconoció correctamente. Si el problema persiste acuda a support.microsoft.com
+
         </p>
     </div>
+    <div class="row-2">
+        <div class="left-icon">
+
+        </div>
+        <div class="spacer">
+
+        </div>
+    </div>
+    <div class="row-3">
+        <div class="np-footer">
+            <div class="spacer"></div>
+            <div class="ft-1">
+                <p>Windows (CRLF)</p>
+            </div>
+            <div class="ft-2">
+                <p>Ln 1, Col 1</p>
+            </div>
+            <div class="ft-3">
+                <p>100%</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/headers.js"></script>
 </body>
 
 </html>
