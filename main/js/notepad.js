@@ -94,7 +94,7 @@ function dblclick(id) {
 function cerrar(id) {
     const boton = document.getElementById(id)
     boton.style.cssText = "visibility: hidden";
-    switch(boton){
+    switch(id){
         case "archivo":
             archivo2.setAttribute("onclick","dblclick('archivo')")
             break
