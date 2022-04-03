@@ -214,7 +214,7 @@ function comprobación() {
                     break
                 }
         }
-        alert("correcto") //animación de montaje del pc
+        location.href = "./animacion1/animacion.html"
     }
     else { alert("incorrecto") 
     console.log(correcto)
