@@ -20,6 +20,7 @@ body {
     scrollbar-width: none;
     overflow: hidden;
     height: 100vh;
+    width: 100vw;
 }
 
 main {
@@ -202,7 +203,7 @@ div.leftmenu {
     bottom: 3em;
     width: 25.75em;
     height: 60%;
-    border: 1px solid black;
+    border-bottom: 0;
     background-color: transparent;
 }
 
@@ -438,16 +439,22 @@ div.rght-col-0 {
 
 img.wifi-icon {
     width: auto;
-    height: 1em;
+    height: 1.2em;
+    padding: 0.85em;
 }
 
 img.bluetooth-icon {
     width: auto;
     height: 1.5em;
     margin-right: 0.5em;
+    padding: 0.8em;
 }
 
 img.bluetooth-icon:hover {
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+img.wifi-icon:hover {
     background-color: rgba(255, 255, 255, 0.199);
 }
 
@@ -456,6 +463,11 @@ div.rght-col-2 {
     justify-content: center;
     display: flex;
     margin-right: 1em;
+    width: 3em;
+}
+
+div.rght-col-2:hover {
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 img.notification-centre {
