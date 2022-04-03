@@ -14,64 +14,6 @@ ul {
     list-style: none;
 }
 
-div.np-head {
-    position: absolute;
-    margin-left: 20%;
-    width: 70.25vw;
-    top: 6.5%;
-    display: grid;
-    grid-template-columns: 5% 70% 15%;
-    width: cover;
-    background-color: rgb(193, 236, 0);
-    border-top-color: 1px solid rgb(0, 95, 238);
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-img.np-icon {
-    height: 2em;
-    width: 2em;
-    padding-left: 15%;
-    padding-top: 3%;
-}
-
-p.np-title {
-    text-align: left;
-}
-
-img.np-minimizebtn {
-    height: 1.7em;
-    width: 1.7em;
-}
-
-img.np-fullscreenbtn-disabled {
-    height: 1.7em;
-    width: 1.7em;
-    margin-top: 4px;
-}
-
-img.np-closebtn {
-    height: 1.3em;
-    width: 1.3em;
-    margin-bottom: 3.5px;
-}
-
-div.np-head-col2 {
-    line-height: 2em;
-    font-size: 20px;
-    margin-left: 1em;
-}
-
-div.np-head-col3 {
-    position: absolute;
-    right: 0;
-}
-
-div.np-head-col3>img {
-    margin-right: 10px;
-}
-
 div.np-limits {
     width: 100vw;
     position: relative;
@@ -176,7 +118,7 @@ li:hover {
     background-color: #c5d7ed;
 }
 
-ol.archivo {
+ol {
     background-color: #F2F2F2;
     border: 1.5px solid #cbcbcc;
     padding-top: 0.75vw;
@@ -190,6 +132,16 @@ ol li {
     align-items: center;
 }
 
+ol.editar {
+    position: absolute;
+    left: 7vw;
+}
+
+ol.formato {
+    position: absolute;
+    left: 20vw;
+}
+
 li p {
     padding-left: 2.5vw;
 }
@@ -201,9 +153,19 @@ hr.divider {
     width: 97.5%;
 }
 
+div.dropdown-menus {
+    display: flex;
+}
+
 @media screen and (min-width: 900px) {
     div.element {
         width: 5.5vw;
+    }
+    ol.editar {
+        left: 5.5vw;
+    }
+    ol.formato {
+        left: 11vw;
     }
 }
 
@@ -211,11 +173,23 @@ hr.divider {
     div.element {
         width: 7vw;
     }
+    ol.editar {
+        left: 7vw;
+    }
+    ol.editar {
+        left: 14vw;
+    }
 }
 
 @media screen and (max-width: 900px) {
     div.element {
         width: 8vw;
+    }
+    ol.editar {
+        left: 8vw;
+    }
+    ol.editar {
+        left: 16vw;
     }
 }
 
@@ -223,11 +197,23 @@ hr.divider {
     div.element {
         width: 9vw;
     }
+    ol.editar {
+        left: 9vw;
+    }
+    ol.formato {
+        left: 18vw;
+    }
 }
 
 @media screen and (max-width: 710px) {
     div.element {
         width: 10vw;
+    }
+    ol.editar {
+        left: 10vw;
+    }
+    ol.editar {
+        left: 20vw;
     }
 }
 
@@ -241,6 +227,12 @@ hr.divider {
     div.element {
         width: 12vw;
     }
+    ol.editar {
+        left: 12vw;
+    }
+    ol.editar {
+        left: 24vw;
+    }
 }
 
 @media screen and (max-width: 499px) {
@@ -250,11 +242,23 @@ hr.divider {
     div.spacer {
         width: 10vw;
     }
+    ol.editar {
+        left: 15vw;
+    }
+    ol.editar {
+        left: 30vw;
+    }
 }
 
 @media screen and (max-width: 495px) {
     div.element {
         width: 17vw;
+    }
+    ol.editar {
+        left: 17vw;
+    }
+    ol.editar {
+        left: 34vw;
     }
 }
 
@@ -293,5 +297,3 @@ hr.divider {
         width: 27vw;
     }
 }
-
-@media screen and (max-width:1182px) {}
