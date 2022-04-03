@@ -40,8 +40,6 @@ function dblclick(id) {
         vista2.setAttribute("onclick","dblclick('vista')")
         ayuda2.setAttribute("onclick","dblclick('ayuda')")
         formato2.setAttribute("onclick","dblclick('formato')")
-
-        cambio('archivo', 'abrir-archivo')
     }
     if (id == "editar") {
         archivo.style.cssText = "visibility: hidden"
@@ -54,8 +52,6 @@ function dblclick(id) {
         vista2.setAttribute("onclick","dblclick('vista')")
         ayuda2.setAttribute("onclick","dblclick('ayuda')")
         formato2.setAttribute("onclick","dblclick('formato')")
-
-        cambio('editar', 'abrir-editar')
     }
     if (id == "formato") {
         editar.style.cssText = "visibility: hidden"
@@ -68,8 +64,6 @@ function dblclick(id) {
         vista2.setAttribute("onclick","dblclick('vista')")
         ayuda2.setAttribute("onclick","dblclick('ayuda')")
         editar2.setAttribute("onclick","dblclick('editar')")
-
-        cambio('formato', 'abrir-formato')
     }
     if (id == "vista") {
         editar.style.cssText = "visibility: hidden"
@@ -82,8 +76,6 @@ function dblclick(id) {
         formato2.setAttribute("onclick","dblclick('formato')")
         ayuda2.setAttribute("onclick","dblclick('ayuda')")
         editar2.setAttribute("onclick","dblclick('editar')")
-
-        cambio('vista', 'abrir-vista')
     }
     if (id == "ayuda") {
         editar.style.cssText = "visibility: hidden"
@@ -96,8 +88,6 @@ function dblclick(id) {
         formato2.setAttribute("onclick","dblclick('formato')")
         vista2.setAttribute("onclick","dblclick('vista')")
         editar2.setAttribute("onclick","dblclick('editar')")
-
-        cambio('ayuda', 'abrir-ayuda')
     }
 }
 
