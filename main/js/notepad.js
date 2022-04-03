@@ -1,11 +1,3 @@
-//default
-let index_value = 100
-archivo.style.cssText = "visibility: hidden"
-editar.style.cssText = "visibility: hidden"
-formato.style.cssText = "visibility: hidden"
-vista.style.cssText = "visibility: hidden"
-ayuda.style.cssText = "visibility: hidden"
-
 //elements html
 const archivo = document.getElementById("archivo")
 const editar = document.getElementById("editar")
@@ -18,6 +10,14 @@ const editar2 = document.getElementById("abrir-editar")
 const formato2 = document.getElementById("abrir-formato")
 const vista2 = document.getElementById("abrir-vista")
 const ayuda2 = document.getElementById("abrir-ayuda") 
+
+//default
+let index_value = 100
+archivo.style.cssText = "visibility: hidden"
+editar.style.cssText = "visibility: hidden"
+formato.style.cssText = "visibility: hidden"
+vista.style.cssText = "visibility: hidden"
+ayuda.style.cssText = "visibility: hidden"
 
 //funciones
 function dblclick(id) {
