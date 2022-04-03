@@ -23,6 +23,12 @@ function dblclick(id) {
     if (id == "formato") {
         cambio('formato', 'abrir-formato')
     }
+    if (id == "vista") {
+        cambio('vista', 'abrir-vista')
+    }
+    if (id == "ayuda") {
+        cambio('ayuda', 'abrir-ayuda')
+    }
 }
 
 function cerrar(id) {
@@ -36,6 +42,12 @@ function cerrar(id) {
     }
     if (id == "formato") {
         cambio('formato', 'abrir-formato')
+    }
+    if (id == "vista") {
+        cambio('vista', 'abrir-vista')
+    }
+    if (id == "ayuda") {
+        cambio('ayuda', 'abrir-ayuda')
     }
 }
 

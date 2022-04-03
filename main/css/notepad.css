@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
 }
 
 html {
@@ -139,7 +141,17 @@ ol.editar {
 
 ol.formato {
     position: absolute;
-    left: 20vw;
+    left: 14vw;
+}
+
+ol.vista {
+    position: absolute;
+    left: 21vw;
+}
+
+ol.ayuda {
+    position: absolute;
+    left: 28vw;
 }
 
 li p {
@@ -161,23 +173,11 @@ div.dropdown-menus {
     div.element {
         width: 5.5vw;
     }
-    ol.editar {
-        left: 5.5vw;
-    }
-    ol.formato {
-        left: 11vw;
-    }
 }
 
 @media screen and (max-width: 1120px) {
     div.element {
         width: 7vw;
-    }
-    ol.editar {
-        left: 7vw;
-    }
-    ol.editar {
-        left: 14vw;
     }
 }
 
@@ -185,35 +185,17 @@ div.dropdown-menus {
     div.element {
         width: 8vw;
     }
-    ol.editar {
-        left: 8vw;
-    }
-    ol.editar {
-        left: 16vw;
-    }
 }
 
 @media screen and (max-width: 790px) {
     div.element {
         width: 9vw;
     }
-    ol.editar {
-        left: 9vw;
-    }
-    ol.formato {
-        left: 18vw;
-    }
 }
 
 @media screen and (max-width: 710px) {
     div.element {
         width: 10vw;
-    }
-    ol.editar {
-        left: 10vw;
-    }
-    ol.editar {
-        left: 20vw;
     }
 }
 
@@ -227,12 +209,6 @@ div.dropdown-menus {
     div.element {
         width: 12vw;
     }
-    ol.editar {
-        left: 12vw;
-    }
-    ol.editar {
-        left: 24vw;
-    }
 }
 
 @media screen and (max-width: 499px) {
@@ -242,23 +218,11 @@ div.dropdown-menus {
     div.spacer {
         width: 10vw;
     }
-    ol.editar {
-        left: 15vw;
-    }
-    ol.editar {
-        left: 30vw;
-    }
 }
 
 @media screen and (max-width: 495px) {
     div.element {
         width: 17vw;
-    }
-    ol.editar {
-        left: 17vw;
-    }
-    ol.editar {
-        left: 34vw;
     }
 }
 
