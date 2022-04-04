@@ -55,3 +55,23 @@ function cambiargallego() {
     Euskera.removeClass('Euskera_show');
     Español.removeClass('Español_show');
 };
+
+let sb = document.getElementById('search_bar')
+
+function comprobar(){
+    console.log(sb.value)
+    if (sb.value == "Kombat.es" || sb.value == "kombat.es" || sb.value == "KOMBAT.ES" || sb.value == "KOMBAT.es"){
+        document.location = "../KOMBAT.es/index.html"
+    }
+    else{
+        console.log("valor introducido no es correcto")
+    }
+}
+
+document.addEventListener("keyup", buscarkombat)
+
+function buscarkombat(tecla){
+if (tecla.key == "Enter"){
+    comprobar()
+}
+}

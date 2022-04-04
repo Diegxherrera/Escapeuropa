@@ -363,3 +363,6 @@ a:hover {
         cursor: help;
     }
 }
+.contenedor2 div{
+    cursor: pointer;
+}
