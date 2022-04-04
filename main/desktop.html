@@ -46,7 +46,7 @@
                     </td>
                     <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')" ondblclick="blockedapp('iblocked')">
                         <div class="appicon-1" id="appicon-1 blocked">
-                            <img src="img/blocked.png" id="appicon" class="appicon">
+                            <img src="img/iconos-windows10/imageres_98.ico" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
                     </td>
@@ -104,7 +104,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">A</p>
-                    <li class="col2-containers" onclick="dblclick('iadmintareas')">
+                    <li class="col2-containers" onclick="dblclick('iadmintareas'); showAdmin()">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/admin_icon.jfif">
                         </div>
@@ -126,7 +126,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">C</p>
-                    <li class="col2-containers" onclick="dblclick('iconfiguration')">
+                    <li class="col2-containers" onclick="dblclick('iconfiguration'); showConfiguration()">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/configuration-white.png">
                         </div>
@@ -137,7 +137,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">E</p>
-                    <li class="col2-containers" onclick="dblclick('ifilesexplorer')">
+                    <li class="col2-containers" onclick="dblclick('ifilesexplorer'); showFilesExplorer()">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/filesexplorer.png">
                         </div>
@@ -148,7 +148,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">G</p>
-                    <li class="col2-containers" onclick="dblclick('igoogle')">
+                    <li class="col2-containers" onclick="dblclick('igoogle'); showGoogle()">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/chrome.png">
                         </div>
@@ -159,9 +159,9 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">T</p>
-                    <li class="col2-containers" onclick="dblclick('iterminal')">
+                    <li class="col2-containers" onclick="dblclick('iterminal'); showTerminal()">
                         <div class="min-card-ic">
-                            <img class="col2-img" src="img/terminal.png">
+                            <img class="col2-img" src="img/iconos-windows10/imageres_5323.ico">
                         </div>
                         <div class="min-card-title">
                             <p class="card-title">Terminal</p>
@@ -219,10 +219,10 @@
                     <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
                 </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
-                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer')">
+                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer'); showFilesExplorer()">
                     <img class="taskbar-icon" src="img/filesexplorer.png">
                 </div>
-                <div class="tskbr-ic-hv" onclick="dblclick('igoogle')">
+                <div class="tskbr-ic-hv" onclick="dblclick('igoogle'); showGoogle()">
                     <img class="taskbar-icon" src="img/chrome.png">
                 </div>
                 <div class="tskbr-ic-hv" onclick="dblclick('inotepad'); showNotepad()">
