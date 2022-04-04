@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no" />
     <title>Escritorio - Windows 10</title>
-    <script type="text/javascript" src="js/block.js"></script>
     <link rel="stylesheet" href="css/desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +13,7 @@
     <link rel="icon" href="img/windows-logo.png" />
     <script type="text/javascript" src="js/date.js">
     </script>
+    <script src="js/desencriptar.js"></script>
     <script src="js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" type="text/css" href="css/headers.css">
 </head>
@@ -46,15 +46,15 @@
                     </td>
                     <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')" ondblclick="blockedapp('iblocked')">
                         <div class="appicon-1" id="appicon-1 blocked">
-                            <img src="img/blocked.png" id="appicon" class="appicon">
+                            <img src="img/blocked.png" id="appicon app-3-icon" class="appicon">
                         </div>
-                        <p id="apptitle" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
+                        <p id="apptitle app-3-title" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
                     </td>
-                    <td id="app-6 files-explorerdcr" onclick="unclick('app-6 files-explorerdcr')" ondblclick="dblclick('ifilesexplorer-filesdcr')">
+                    <td id="app-6 files-explorerdcr" onclick="unclick('app-6 files-explorerdcr')" ondblclick="dblclick('ifilesexplorer-filesdcr'), desencriptar()">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/folder-icon.png" id="appicon" class="appicon">
                         </div>
-                        <p id="apptitle" class="apptitle">Q2xhdmUgZGUgZGVzZW5jcmlwdGFjacOzbg==</p>
+                        <p id="apptitle app-4-title" class="apptitle">Q2xhdmUgZGUgZGVzZW5jcmlwdGFjacOzbg==</p>
                     </td>
                 </tr>
             </table>
