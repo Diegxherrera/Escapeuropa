@@ -21,6 +21,11 @@ ol {
     box-shadow: 10px 11px 24px 2px rgba(0, 0, 0, 0.72);
 }
 
+.ascii-text {
+    font-family: monospace;
+    white-space: pre;
+}
+
 div.np-limits {
     width: 100vw;
     position: relative;
@@ -44,6 +49,7 @@ p.np-body {
     border: 0;
     position: absolute;
     z-index: 1;
+    margin-left: -40px;
 }
 
 div.row-2 {
