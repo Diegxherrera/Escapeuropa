@@ -48,6 +48,6 @@ let texto_siguiente2 = setInterval("comprobar_escribir('ROBERTO: No me puedo cre
 let texto_siguiente3 = setInterval("comprobar_escribir('ROBERTO: Que sepas que tienes 4 puntos menos en el parcial',3,texto_siguiente3)", 100)
 let texto_siguiente4 = setInterval("comprobar_escribir('ROBERTO: Bien ponte a montarlo.',4,texto_siguiente4)", 100)
 let texto_siguiente5 = setInterval("comprobar_escribir('Estas trabajando, te impresiona lo facil que te esta resultando, encajas correctamente la cpu en su socket, levantas las pestañas y colocas la ram, rápidamente identificas el puerto SATA para colocar el disco, enseguida prosigues a conectar la gráfica a su puerto PCIE, notas lo mucho que has aprendido en estos meses.... ',5,texto_siguiente5)", 100)
-let texto_siguiente6 = setInterval("comprobar_escribir('Roberto: Bien, ¿has terminado ya verdad? no creas que has acabado, esto solamente ha sido el hardware ahora toca el software, quiero que le instales a este equipo un windows 10.',6,texto_siguiente6)", 100)
+let texto_siguiente6 = setInterval("comprobar_escribir('Roberto: Bien, ¿has terminado ya verdad? no creas que has acabado, esto solamente ha sido el hardware ahora toca el software, quiero que le instales a este equipo un windows 10. El usuario debe ser Roberto y la contraseña 1234',6,texto_siguiente6)", 100)
 
 
