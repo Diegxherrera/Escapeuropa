@@ -1,84 +1,128 @@
-*{
+* {
     padding: 0;
     border: 0;
 }
-body{
-    
+
+body {
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 div.container {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.user_icon{
+.user_icon {
     padding-top: 11%;
 }
-.user_text{
+
+.user-icon {
+    border: 0px;
+    border-radius: 100%;
+}
+
+.user_text {
     font-family: 'Segoe UI';
     font-size: 50px;
     color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.email_text input{
-    border: 1px solid black;
+
+.email_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email_text input {
+    border: 2.5px solid rgb(33, 109, 196);
     width: 339px;
     height: 35px;
     margin-top: 1.6%;
-    margin-left: 2.1%;
     font-family: 'Segoe UI';
-} 
+    background-color: rgba(255, 255, 255, 0.452);
+}
 
-.password_text{
-    width: 300px;
+.password {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password_text {
+    width: 303px;
     height: 35px;
-    margin-left: 2.1%;
     margin-top: 0.8%;
     border: 1px solid black;
     font-family: 'Segoe UI';
+    border: 2.5px solid rgb(33, 109, 196);
+    border-right: 0px;
+    background-color: rgba(255, 255, 255, 0.452);
 }
 
-#password_button{
-    width: 34px;
-    height: 35px;
-    margin-top: 1%;
-    border: 1px solid black;
+.password_text:after {
+    border: 2.5px solid rgb(33, 109, 196);
+    border-right: 0px;
+    background-color: rgba(255, 255, 255, 0.452);
+}
+
+#password_button {
+    width: 38px;
+    height: 40px;
+    border: 2.5px solid rgb(33, 109, 196);
     cursor: pointer;
+    margin-top: 0.8%;
+    border-left: 0px;
+    background-color: rgba(255, 255, 255, 0.651)
 }
 
-#password_button:hover{
+#password_button:hover {
     color: white;
     background-color: rgb(33, 109, 196);
 }
 
-.login_options a{
+#password_button:focus {
+    background-color: rgba(255, 255, 255, 0.651)
+}
+
+.login_options a {
     color: white;
     font-family: 'Segoe UI';
     text-decoration: none;
 }
 
-.login_options{
-    margin-top: 1%;
+.login_options {
+    height: 20px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
-.login_pinkey{
+.login_pinkey {
     display: inline;
 }
 
-#numeric_keyboard{
+#numeric_keyboard {
     padding-right: 1%;
     padding-top: 1%;
 }
 
-#key_icon{
+#key_icon {
     padding-left: 1%;
     padding-top: 1%;
 }
 
-p{
+p {
     color: white;
     font-family: 'Segoe UI';
     font-size: xx-large;
@@ -86,8 +130,10 @@ p{
     padding-top: 5%;
 }
 
+
 /* Incorrecto */
-.incorrecto{
+
+.incorrecto {
     background-color: white;
     height: 200px;
     width: 600px;
@@ -97,7 +143,8 @@ p{
     left: 35%;
     right: 50%;
 }
-.button_error{
+
+.button_error {
     width: 70px;
     height: 25px;
     z-index: 1;
@@ -107,22 +154,24 @@ p{
     background-color: lightgray;
     border: 2px solid gray;
 }
-.button_error:hover{
+
+.button_error:hover {
     border-color: #357EC7;
     cursor: pointer;
 }
-.button_error:active{
+
+.button_error:active {
     font-size: 13px;
 }
 
-.top_bar{
+.top_bar {
     z-index: 1;
     background-color: transparent;
     width: 600px;
     height: 30px;
 }
 
-.close{
+.close {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -130,16 +179,16 @@ p{
     top: 0.7vh;
 }
 
-.wrong{
+.wrong {
     z-index: 1;
     position: absolute;
     top: 4vh;
-    left:2vh;
+    left: 2vh;
     width: 55px;
     height: 55px;
 }
 
-.texto1{
+.texto1 {
     z-index: 1;
     position: absolute;
     top: 4.5vh;
@@ -148,7 +197,7 @@ p{
     text-align: left;
 }
 
-.button_error2{
+.button_error2 {
     width: 90px;
     height: 25px;
     z-index: 1;
@@ -158,15 +207,17 @@ p{
     background-color: lightgray;
     border: 2px solid gray;
 }
-.button_error2:hover{
+
+.button_error2:hover {
     border-color: #357EC7;
     cursor: pointer;
 }
-.button_error2  :active{
+
+.button_error2 :active {
     font-size: 13px;
 }
 
-.icon{
+.icon {
     position: absolute;
     width: 22px;
     height: 22px;
@@ -174,22 +225,22 @@ p{
     top: 0.4vh;
 }
 
-
-.texterror{
+.texterror {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
     left: 3.5vh;
     top: 0.33vh;
 }
 
-.closeicon{
+.closeicon {
     width: 50px;
     position: absolute;
     height: 30px;
     right: 0px;
     transition: ease-in all 0.1s;
 }
-.closeicon:hover{
+
+.closeicon:hover {
     position: absolute;
     right: 0px;
     background-color: red;

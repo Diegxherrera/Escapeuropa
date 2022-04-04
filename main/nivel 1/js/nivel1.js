@@ -182,7 +182,7 @@ function compra() {
     comprado = true
     vaciarcarritoparcial()
 }
-function comprobacion() {
+function comprobación() {
     if (secuencia == "" || comprado == false) {
         $('.warning').css('display', 'flex')
         setTimeout("$('.warning').css('display','none')", 2500)
@@ -191,51 +191,30 @@ function comprobacion() {
         switch(secuencia){
             case "CCC":
                 if(disco==true){
-<<<<<<< HEAD
                     createCookie("disk","SamsungSSD")
                     createCookie("tam","1TB")
                     console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
                     console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
-=======
-                    createCookie("disco","SamsungSSD")
-                    createCookie("tam","1TB")
-                    console.log(getCookie("disco"))
-                    console.log(getCookie("tam"))
->>>>>>> 3452ea517958008b2eb9aa8f423dcb7abe00e1da
                     break
                 }
             case "BBB":
                 if(disco==true){
-<<<<<<< HEAD
                     createCookie("disk","WesternDigital")
                     createCookie("tam","1TB")
                     console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
                     console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
-=======
-                    createCookie("disco","WesternDigital")
-                    createCookie("tam","1TB")
-                    console.log(getCookie("disco"))
-                    console.log(getCookie("tam"))
->>>>>>> 3452ea517958008b2eb9aa8f423dcb7abe00e1da
                     break
                 }
             case "AAA":
                 if(disco==true){
-<<<<<<< HEAD
                     createCookie("disk","WesternDigital")
                     createCookie("tam","500GB")
                     console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
                     console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
-=======
-                    createCookie("disco","WesternDigital")
-                    createCookie("tam","500GB")
-                    console.log(getCookie("disco"))
-                    console.log(getCookie("tam"))
->>>>>>> 3452ea517958008b2eb9aa8f423dcb7abe00e1da
                     break
                 }
         }
-        alert("correcto") //animación de montaje del pc
+        location.href = "./animacion1/animacion.html"
     }
     else { alert("incorrecto") 
     console.log(correcto)
@@ -257,12 +236,6 @@ function vaciarcarritototal(){
     gpu = false
     ram = false
     cpu = false
-
-    disco = false
-    grafica = false
-    procesador = false
-    placa = false
-    memoria = false
 
     secuencia = ""
     correcto = false

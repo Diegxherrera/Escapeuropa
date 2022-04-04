@@ -10,9 +10,9 @@ function comprobar() {
     if (usuario == 'Roberto' && pass == '1234') {
         var correcto = true;
         console.log(correcto);
-
+        document.cookie = "Login=Verificado;";  // Crea cookie de verificado
         setTimeout(function() {
-            window.location.href = "cargainicio.html";
+            window.location.href = "desktop.html";
         }, 50);
     } else {
         document.getElementById("error").style.visibility = "visible";
@@ -21,17 +21,18 @@ function comprobar() {
     }
 }
 
-function close_alert(){
+function close_alert() {
     document.getElementById("error").style.visibility = "hidden";
 }
 
-function resetpass(){
+function resetpass() {
     window.location.href = 'uac_alt.html'
 }
 
-function next(tecla){
-    if(tecla.key == "Enter"){ 
+function next(tecla) {
+    if (tecla.key == "Enter") {
         console.log(tecla);
         comprobar();
-    
-    }}
+
+    }
+}

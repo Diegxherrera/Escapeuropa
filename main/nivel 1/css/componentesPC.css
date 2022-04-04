@@ -64,9 +64,10 @@ header span{
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 60%;
-    padding-top: 100px;
-    gap: 20px
+    width: 950px;
+    padding-top: 50px;
+    gap: 20px;
+    height: 400px;
 }
 .componentes span{
     font-family: Arial, Helvetica, sans-serif ;
@@ -88,6 +89,7 @@ header span{
     align-items: center;
     font-family: Arial, Helvetica, sans-serif ;
     font-size: larger;
+    margin: auto auto 20px auto;
 }
 .comprar:hover{
     cursor: pointer;
@@ -95,7 +97,8 @@ header span{
 }
 .extra{
     height: 100px;
-    width: 50%;
+    width: 100%;
+    background-color: white;
 }
 .navclose{
     width: 100%;
@@ -242,8 +245,8 @@ header span{
         justify-content: center;
         align-items: center;
         background-color: white;
-        width: 500px
-        ;
+        width: 500px;
+        height: 750px;
         padding-top: 100px;
         gap: 20px
     }
@@ -251,12 +254,31 @@ header span{
 .info{
     display: flex;
     flex-direction: column;
+    width: 350px;
+    border: 1px solid black;
+    background-color: rgb(248, 247, 247);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 90%;
+}
+.info li{
+    margin: 0 0 0 10px;
+    list-style: disc;
+    font-weight: bold;
+    font-family: helvetica;
+}
+.info h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 .textofallo{
     color: red;
-    width: 300px;
-    margin-top: 30px;
-}
-.c2{
-    margin-left: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
 }

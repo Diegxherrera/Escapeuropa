@@ -5,6 +5,10 @@
     font-weight: normal;
 }
 
+p {
+    cursor: default;
+}
+
 html {
     height: cover;
     overflow-y: none;
@@ -15,6 +19,8 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 
 main {
@@ -175,10 +181,6 @@ div.windows {
     height: 31%;
 }
 
-div.onnotepadactive {
-    visibility: visible;
-}
-
 iframe {
     margin-top: 0;
     padding-top: 0;
@@ -187,7 +189,7 @@ iframe {
     position: absolute;
     width: 70%;
     height: 75%;
-    border: 1px solid black;
+    border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.979);
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
     box-shadow: 0px 10px 13px -7px #000000, 18px 25px 0px -30px rgba(0, 0, 0, 0);
@@ -196,12 +198,12 @@ iframe {
 
 div.leftmenu {
     z-index: 1000;
-    position: sticky;
+    position: absolute;
     display: inline-flex;
     bottom: 3em;
     width: 25.75em;
     height: 60%;
-    border: 1px solid black;
+    border-bottom: 0;
     background-color: transparent;
 }
 
@@ -437,16 +439,22 @@ div.rght-col-0 {
 
 img.wifi-icon {
     width: auto;
-    height: 1em;
+    height: 1.2em;
+    padding: 0.85em;
 }
 
 img.bluetooth-icon {
     width: auto;
     height: 1.5em;
     margin-right: 0.5em;
+    padding: 0.8em;
 }
 
 img.bluetooth-icon:hover {
+    background-color: rgba(255, 255, 255, 0.199);
+}
+
+img.wifi-icon:hover {
     background-color: rgba(255, 255, 255, 0.199);
 }
 
@@ -455,6 +463,11 @@ div.rght-col-2 {
     justify-content: center;
     display: flex;
     margin-right: 1em;
+    width: 3em;
+}
+
+div.rght-col-2:hover {
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 img.notification-centre {
