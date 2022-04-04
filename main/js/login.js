@@ -1,22 +1,23 @@
-var usuario;
-var pass;
-var clase = document.getElementById('error');
-document.addEventListener("keyup", next)
+let usuario;
+let pass;
+let clase = document.getElementById('error');
+let correcto;
 
+console.log(document.cookie)
+document.addEventListener("keyup", next)
 
 function comprobar() {
     var usuario = document.getElementById('email_text').value;
     var pass = document.getElementById('password_text').value;
     if (usuario == 'Roberto' && pass == '1234') {
-        var correcto = true;
+        correcto = true;
         console.log(correcto);
-        document.cookie = "Login=Verificado;"; // Crea cookie de verificado
-        setTimeout(function() {
-            window.location.href = "desktop.html";
-        }, 50);
+        create_short_cookie("Login","correcto")
+        getCookie("Login")
+        document.location = "/main/desktop.html"
     } else {
         document.getElementById("error").style.visibility = "visible";
-        var correcto = false;
+        correcto = false;
         console.log(correcto);
     }
 }

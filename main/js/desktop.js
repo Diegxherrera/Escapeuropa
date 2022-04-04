@@ -1,10 +1,12 @@
 console.log("linked")
 $('.leftmenu').hide()
 $('#np-head').hide();
-if (!document.cookie.match(/^(.*;)?\s*Login\s*=\s*[^;]+(.*)?$/)) { // Comprueba si la cookie existe
+if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
  document.location = "uac.html"
+ console.log("false")
 } else {
-    document.cookie = "Login" + '=Verificado;expires=Thu, 01 Jan 1970 00:00:01 GMT;'; // Elimina la cookie
+    console.log(document.cookie)
+    console.log("true")
 
 }
 
