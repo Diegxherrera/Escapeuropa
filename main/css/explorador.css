@@ -382,6 +382,8 @@ body {
     border: solid 1px rgb(100, 100, 100);
     border-top: 0;
     border-left: 0;
+    position: absolute;
+    left: 0;
 }
 
 .barra_lateral1 {
@@ -395,11 +397,13 @@ body {
 }
 
 .barra_izq {
-    width: 100%;
+    width: 90%;
     height: 20%;
     display: flex;
     align-items: center;
     margin-top: 5%;
+    padding-left: 10%;
+    gap: 6%;
 }
 
 .barra_izq:hover {
@@ -408,7 +412,7 @@ body {
 
 .barra_lateral2 {
     width: 100%;
-    height: 40%;
+    height: 45%;
     color: white;
     font-size: small;
     display: inline-flex;
@@ -428,4 +432,95 @@ body {
     width: 80%;
     height: 5%;
     border-top: solid 1px rgb(100, 100, 100);
+}
+
+.row-2 {
+    display: inline;
+}
+
+div.main {
+    width: 82vw;
+    height: 76vh;
+    background-color: rgb(44, 44, 44);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    right: 0;
+}
+
+div.mn-1 {
+    margin-left: 12px;
+}
+
+div.mn-2 {
+    margin-left: 12px;
+}
+
+div.belement-no {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(100, 100, 100);
+    margin-top: 7.5px;
+}
+
+div.mn-group-title {
+    display: flex;
+    margin-top: 14px;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 11px rgb(55, 55, 55);
+}
+
+div.mn-group-title p {
+    width: 200px;
+}
+
+img.arrow-down {
+    height: 2.2%;
+    width: 2.2%;
+    margin-right: 10px;
+}
+
+hr.mn-divider {
+    width: 500px;
+    border: 1px solid rgba(100, 100, 100, 0.552);
+}
+
+.mn-element {
+    display: inline-flex;
+    color: white;
+    gap: 1em;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 4%;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+.mn-element:hover {
+    background-color: rgb(100, 100, 100);
+    border: 1px dashed rgb(65, 65, 65);
+}
+
+div.element-title {
+    display: flex;
+    flex-direction: column;
+}
+
+span.element-title-1 {
+    margin-bottom: 3px;
+}
+
+img.element-explorer-icon {
+    height: 4.5em;
+    width: 4.5em;
+}
+
+img.pinned-icon {
+    height: 1.5em;
+    width: 1.5em;
 }

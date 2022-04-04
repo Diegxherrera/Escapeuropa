@@ -411,8 +411,8 @@ div.srch-br-support {
 
 input.srch-br {
     border: 0px;
-    height: 3em;
-    margin-top: 0;
+    height: 3.2em;
+    margin-top: -4px;
     margin-bottom: 0;
     padding-left: 1vh;
     text-align: left;
