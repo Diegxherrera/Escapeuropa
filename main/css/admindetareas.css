@@ -1,33 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     cursor: default;
 }
-.admin_container{
+
+.admin_container {
     box-shadow: inset 0px -1px rgb(116, 116, 116);
     width: 100%;
     display: flex;
     height: 50px;
     justify-content: space-between;
 }
-.admin_container2{
+
+.admin_container2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.admin_top{
+.admin_top {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: 'Calibri';
 }
 
-.admin_top2{
+.admin_top2 {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -35,27 +38,28 @@ body{
     font-family: 'Calibri';
 }
 
-.admin_control2{
+.admin_control2 {
     width: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.admin_control{
+
+.admin_control {
     width: 120px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.admin_opciones{
-   display: flex;
-   font-family: 'Calibri';
-   justify-content: space-around;
-   width: 200px;
+.admin_opciones {
+    display: flex;
+    font-family: 'Calibri';
+    justify-content: space-around;
+    width: 200px;
 }
 
-.admin_container4{
+.admin_container4 {
     border-left: 1px solid rgb(114, 114, 114);
     border-right: 1px solid rgb(114, 114, 114);
     border-bottom: 1px solid rgb(114, 114, 114);
@@ -66,34 +70,35 @@ body{
     font-family: 'Calibri';
 }
 
-#admin_control2:hover{
+#admin_control2:hover {
     background-color: lightgray;
 }
 
-#admin_control0:hover{
+#admin_control0:hover {
     background-color: red;
 }
-.admin_control:hover{
+
+.admin_control:hover {
     background-color: lightblue;
 }
 
-.admin_control3{
+.admin_control3 {
     border: 0.5px solid rgb(114, 114, 114);
     width: 80px;
     background-color: lightgray;
 }
 
-.admin_control3:hover{
+.admin_control3:hover {
     background-color: lightblue;
 }
 
-.admin_control4{
+.admin_control4 {
     border: 0.5px solid rgb(114, 114, 114);
     width: 80px;
     background-color: rgb(255, 255, 255);
 }
 
-.admin_porcentajestodo{
+.admin_porcentajestodo {
     width: 100%;
     height: 4%;
     display: inline-flex;
@@ -101,11 +106,11 @@ body{
     align-items: flex-end;
 }
 
-.admin_espacio{
+.admin_espacio {
     width: 70%;
 }
 
-.admin_porcentajes{
+.admin_porcentajes {
     width: 30%;
     height: 100%;
     display: inline-flex;
@@ -116,7 +121,8 @@ body{
     font-family: 'Calibri';
     font-size: x-large;
 }
-.admin_mismaaltura{
+
+.admin_mismaaltura {
     width: 100%;
     height: 4%;
     display: inline-flex;
@@ -124,7 +130,7 @@ body{
     align-items: center;
 }
 
-.admin_nombre{
+.admin_nombre {
     color: gray;
     font-family: 'Calibri';
     font-size: 14px;
@@ -135,7 +141,7 @@ body{
     justify-content: flex-start;
 }
 
-.admin_estado{
+.admin_estado {
     color: gray;
     font-family: 'Calibri';
     font-size: 14px;
@@ -146,7 +152,7 @@ body{
     align-items: center;
 }
 
-.admin_datos{
+.admin_datos {
     color: gray;
     font-family: 'Calibri';
     font-size: 14px;
@@ -161,82 +167,84 @@ body{
     gap: 3.36%;
 }
 
-.admin_hr{
+.admin_hr {
     width: 22%;
     display: flex;
     justify-content: flex-start;
 }
 
-.admin_cpu{
+.admin_cpu {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_memoria{
+.admin_memoria {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_disco{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-}
-.admin_red{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-}
-.admin_gpu{
+.admin_disco {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_porciento68{
+.admin_red {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_porciento85{
+.admin_gpu {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_porciento01{
+.admin_porciento68 {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_porciento02{
+.admin_porciento85 {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_porciento03{
+.admin_porciento01 {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_aplicacionestodo{
+.admin_porciento02 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_porciento03 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_aplicacionestodo {
     width: 100%;
     height: 70%;
     display: flex;
 }
 
-.admin_espacioenblanco{
+.admin_espacioenblanco {
     width: 2.5%;
     height: 100%;
 }
 
-.admin_aplicaciones{
+.admin_aplicaciones {
     width: 97.5%;
     height: auto;
     display: inline-flex;
@@ -244,24 +252,25 @@ body{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4%;
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans', sans-serif';
 
 }
 
-.admin_titulo1{
+.admin_titulo1 {
     font-size: x-large;
-    font-family: 'Segoe UI';
-    color: rgb(41, 104, 223);
+    font-family: 'Open Sans', sans-serif';
+ color: rgb(41, 104, 223);
 }
 
-.admin_proceso1{
+.admin_proceso1 {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     width: 70%;
 }
-.admin_controlesabajo{
+
+.admin_controlesabajo {
     display: inline-flex;
     flex-direction: row;
     width: 100%;
@@ -270,7 +279,8 @@ body{
     align-items: center;
     gap: 48%;
 }
-.admin_controlabajo1{
+
+.admin_controlabajo1 {
     font-size: large;
     font-family: 'Calibri';
     background-color: lightgray;
@@ -279,7 +289,7 @@ body{
     display: flex;
 }
 
-.admin_menosdetalles{
+.admin_menosdetalles {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -290,8 +300,7 @@ body{
     font-family: 'Calibri';
 }
 
-
-.admin_controlabajo3{
+.admin_controlabajo3 {
     font-size: large;
     font-family: 'Calibri';
     background-color: lightgray;
@@ -301,7 +310,7 @@ body{
     text-align: right;
 }
 
-.admin_finalizartarea{
+.admin_finalizartarea {
     border: 1px solid black;
     background-color: lightgray;
     display: flex;
@@ -310,11 +319,11 @@ body{
     font-family: 'Calibri';
 }
 
-.admin_finalizartarea:hover{
+.admin_finalizartarea:hover {
     background-color: rgb(146, 146, 146);
 }
 
-.admin_datos_aplicaciones{
+.admin_datos_aplicaciones {
     color: gray;
     font-family: 'Calibri';
     font-size: small;
@@ -329,115 +338,106 @@ body{
     gap: 3.36%;
 }
 
-.admin_cpu_app{
+.admin_cpu_app {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_memoria_app{
+.admin_memoria_app {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_disco_app{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-}
-.admin_red_app{
-    width: 10%;
-    display: flex;
-    justify-content: center;
-}
-.admin_gpu_app{
+.admin_disco_app {
     width: 10%;
     display: flex;
     justify-content: center;
 }
 
-.admin_administradortareas{
+.admin_red_app {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_gpu_app {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.admin_administradortareas {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_killer{
+.admin_killer {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_funny{
+.admin_funny {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_antimalware{
+.admin_antimalware {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_busqueda{
+.admin_busqueda {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_comsurrogate{
+.admin_comsurrogate {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_chrome{
+.admin_chrome {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_googlecrash{
+.admin_googlecrash {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-.admin_hostprocess{
+.admin_hostprocess {
     width: 99%;
     display: inline-flex;
     flex-direction: row;
 }
 
-#admin_container_all{
+#admin_container_all {
     animation: glitch 2000ms infinite;
     animation-play-state: paused;
 }
 
-@keyframes glitch{
-    1%{
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-    -0.05em -0.030em 0 rgba(0, 255, 0, 0.75),
-    -0.030em 0.05em 0 rgba(0, 0, 255, 0.75);
+@keyframes glitch {
+    1% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.030em 0 rgba(0, 255, 0, 0.75), -0.030em 0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    
-    25%{
-    text-shadow: -0.05em -0.030em 0 rgba(255, 0, 0, 0.75),
-    0.030em 0.030em 0 rgba(0, 255, 0, 0.75),
-    -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    25% {
+        text-shadow: -0.05em -0.030em 0 rgba(255, 0, 0, 0.75), 0.030em 0.030em 0 rgba(0, 255, 0, 0.75), -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    
-    50%{
-    text-shadow: 0.030em 0.05em 0 rgba(255, 0, 0, 0.75),
-    0.05em 0 0 rgba(0, 255, 0, 0.75), 
-    0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    50% {
+        text-shadow: 0.030em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
     }
-    
-    100%{
-    text-shadow: -0.030em 0 0 rgba(255, 0, 0, 0.75),
-    -0.030em -0.030em 0 rgba(0, 255, 0, 0.75),
-    -0.030em -0.05em 0 rgba(0, 0, 255, 0.75);
+    100% {
+        text-shadow: -0.030em 0 0 rgba(255, 0, 0, 0.75), -0.030em -0.030em 0 rgba(0, 255, 0, 0.75), -0.030em -0.05em 0 rgba(0, 0, 255, 0.75);
     }
 }

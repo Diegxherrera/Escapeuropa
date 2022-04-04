@@ -10,7 +10,7 @@ function comprobar() {
     if (usuario == 'Roberto' && pass == '1234') {
         var correcto = true;
         console.log(correcto);
-        document.cookie = "Login=Verificado;";  // Crea cookie de verificado
+        document.cookie = "Login=Verificado;"; // Crea cookie de verificado
         setTimeout(function() {
             window.location.href = "desktop.html";
         }, 50);

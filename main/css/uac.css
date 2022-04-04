@@ -1,6 +1,7 @@
 * {
     padding: 0;
     border: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -19,7 +20,7 @@ div.container {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .user_icon {
@@ -32,7 +33,7 @@ div.container {
 }
 
 .user_text {
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     color: white;
     margin-bottom: 20px;
@@ -50,7 +51,7 @@ div.container {
     width: 339px;
     height: 35px;
     margin-top: 1.6%;
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans', sans-serif;
     background-color: rgba(255, 255, 255, 0.452);
 }
 
@@ -65,7 +66,7 @@ div.container {
     height: 35px;
     margin-top: 0.8%;
     border: 1px solid black;
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans', sans-serif;
     border: 2.5px solid rgb(33, 109, 196);
     border-right: 0px;
     background-color: rgba(255, 255, 255, 0.452);
@@ -98,7 +99,7 @@ div.container {
 
 .login_options a {
     color: white;
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
 
@@ -124,7 +125,7 @@ div.container {
 
 p {
     color: white;
-    font-family: 'Segoe UI';
+    font-family: 'Open Sans', sans-serif;
     font-size: xx-large;
     text-align: center;
     padding-top: 5%;
@@ -193,7 +194,7 @@ p {
     position: absolute;
     top: 4.5vh;
     left: 9vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: left;
 }
 
@@ -226,7 +227,7 @@ p {
 }
 
 .texterror {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     left: 3.5vh;
     top: 0.33vh;
