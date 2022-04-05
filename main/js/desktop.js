@@ -86,3 +86,7 @@ function showTrash() {
     $('#iifilesexplorertrash').show();
     $('#fetr-head').show();
 }
+
+setInterval(() => {
+    
+}, 1000);
