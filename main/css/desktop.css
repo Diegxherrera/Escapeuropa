@@ -201,15 +201,16 @@ div.leftmenu {
     position: absolute;
     display: inline-flex;
     bottom: 3em;
-    width: 25.75em;
+    width: 40vw;
     height: 60%;
     border-bottom: 0;
     background-color: transparent;
+    background-color: rgba(14, 14, 14, 0.98);
+
 }
 
 div.lm-col01 {
     width: 3.25em;
-    background-color: rgba(14, 14, 14, 0.98);
     height: 100%;
     display: block;
     overflow: hidden;
@@ -272,13 +273,6 @@ div.ic-sp-end {
 div.pfp-ic-sp {
     width: cover;
     height: 3em;
-    background-color: rgba(14, 14, 14, 0.98);
-}
-
-div.pfp-ic-sp:hover {
-    border-right: 1px solid black;
-    border-top: 1px solid black;
-    border: 1px solid black;
 }
 
 div.doc-ic-sp {
@@ -342,7 +336,7 @@ img.config-ic {
 }
 
 div.lm-col02 {
-    width: 10em;
+    width: 11vw;
     background-color: rgba(14, 14, 14, 0.98);
 }
 
@@ -488,6 +482,22 @@ img.cortanalogo {
 
 .resolution {
     display: none;
+}
+
+.left-container {
+    width: 19vw;
+    height: 10%;
+    margin: 10px 10px 10px 30px;
+    display: inline-flex;
+    gap: 1em;
+    row-gap: 1em;
+    justify-content: space-evenly;
+}
+
+.suggested-card {
+    width: 300px;
+    height: 6em;
+    background-color: rgba(255, 255, 255);
 }
 
 @media screen and (max-width:500px) {
