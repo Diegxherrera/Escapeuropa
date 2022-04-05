@@ -1,0 +1,27 @@
+*{
+    cursor: default;
+    font-weight: bold;
+	font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace; 
+}
+
+body{
+    background: black;
+    color: white;
+    
+}
+.typing{
+    cursor:default;
+    margin-left: 0.6vh;
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    outline: none;
+    text-decoration: none;
+    width: 500px;
+}
+.typing:active{
+    background-color: transparent;
+    color: white;
+    background-color: black;
+    border: 0px black;
+}
