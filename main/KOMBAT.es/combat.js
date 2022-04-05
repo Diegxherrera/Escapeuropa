@@ -4,6 +4,8 @@ let vida1 = 150
 let vida2 = 120
 let veces_perdidas = 0
 
+let desarrollador_mode = true
+
 let uso1 = document.getElementById("uso1")
 let uso2 = document.getElementById("uso2")
 
@@ -126,8 +128,9 @@ function combat(yourselect) {
         document.getElementById("button_b").removeAttribute("onclick")
         document.getElementById("button_c").removeAttribute("onclick")
         veces_perdidas++
-        if(veces_perdidas == 3){
-            location.href = "../game_over.html"
+        if(veces_perdidas == 3 || desarrollador_mode == true){
+            createCookie("Kombat","Derrota")
+            getCookie("kombat")
         }
         setTimeout("restart()",1200)
         

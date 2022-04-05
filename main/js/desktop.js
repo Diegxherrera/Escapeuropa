@@ -88,14 +88,19 @@ function showTrash() {
 }
 
 setInterval(function() {
+    console.log(getCookie('Kombat'))
     if (weakGetCookie('descarga') == 'realizada') {
         document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
         console.log('mostrado');
     }
-    if(getCookie('decrypt') == 'si'){
+    if(weakGetCookie('decrypt') == 'si'){
         desencriptar();
         console.log('desencriptar \n');
         document.cookie = "decrypt=si; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+    if(weakGetCookie('Kombat') == 'Derrota'){
 
+        document.cookie = "Kombat=Derrota; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+        location.href = "./game_over.html"
+    }
     }
 }, 1000);
