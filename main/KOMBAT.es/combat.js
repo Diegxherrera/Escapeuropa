@@ -26,6 +26,7 @@ function restart() {
     document.getElementById("button_a").setAttribute("onclick","combat(0)")
     document.getElementById("button_b").setAttribute("onclick","combat(1)")
     document.getElementById("button_c").setAttribute("onclick","combat(2)")
+    console.log(veces_perdidas)
 
 }
 function random(){
@@ -124,10 +125,10 @@ function combat(yourselect) {
         document.getElementById("button_a").removeAttribute("onclick")
         document.getElementById("button_b").removeAttribute("onclick")
         document.getElementById("button_c").removeAttribute("onclick")
+        veces_perdidas++
         if(veces_perdidas == 3){
             location.href = "../game_over.html"
         }
-        veces_perdidas++
         setTimeout("restart()",1200)
         
     }
