@@ -14,7 +14,7 @@ function comprobar() {
         console.log(correcto);
         create_short_cookie("Login","correcto")
         getCookie("Login")
-        document.location = "/main/desktop.html"
+        document.location = "desktop.html"
     } else {
         document.getElementById("error").style.visibility = "visible";
         correcto = false;
