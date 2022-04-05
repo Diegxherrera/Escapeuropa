@@ -5,6 +5,15 @@ $('#fe-head').hide();
 $('#gg-head').hide();
 $('#fedcr-head').hide();
 $('#fetr-head').hide();
+$('#np-head-a').hide();
+$('#np-head-b').hide();
+$('#np-head-c').hide();
+$('#np-head-d').hide();
+$('#np-head-e').hide();
+$('#np-head-f').hide();
+$('#np-head-g').hide();
+$('#np-head-h').hide();
+
 
 if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
     document.location = "uac.html"

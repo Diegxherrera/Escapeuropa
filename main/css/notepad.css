@@ -38,13 +38,17 @@ div.np-limits {
 div.row-1 {
     display: block;
     width: 100vw;
-    height: 93vh;
+    height: 95vh;
+    padding-left: 10px;
+    padding-top: 12.5px;
+    word-wrap: break-word;
+    font-size: 14px;
 }
 
 p.np-body {
     display: flex;
     width: 100vw;
-    height: 93vh;
+    height: 100vh;
     background-color: white;
     border: 0;
     position: absolute;
@@ -52,10 +56,9 @@ p.np-body {
     margin-left: -40px;
 }
 
-div.row-2 {
-    display: flex;
-    width: 100vw;
-    height: auto;
+div.row-3 {
+    position: fixed;
+    bottom: -5px;
 }
 
 div.np-footer {
