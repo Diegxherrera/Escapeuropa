@@ -87,14 +87,9 @@ function showTrash() {
     $('#fetr-head').show();
 }
 
-<<<<<<< Updated upstream
-setInterval(function (){
-    if(weakGetCookie('descarga') == 'realizada'){
-=======
 setInterval(function() {
     console.log('mostrada' + getCookie('descarga'));
     if (getCookie('descarga') == 'realizada') {
->>>>>>> Stashed changes
         document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
         console.log('mostrado');
     }
