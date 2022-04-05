@@ -15,14 +15,14 @@ $('#np-head-g').hide();
 $('#np-head-h').hide();
 
 
-if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
+/*if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
     document.location = "uac.html"
     console.log("false")
 } else {
     console.log(document.cookie)
     console.log("true")
 
-}
+}*/
 
 function openmenu() {
     $('.leftmenu').show()
@@ -87,8 +87,14 @@ function showTrash() {
     $('#fetr-head').show();
 }
 
+<<<<<<< Updated upstream
 setInterval(function (){
     if(weakGetCookie('descarga') == 'realizada'){
+=======
+setInterval(function() {
+    console.log('mostrada' + getCookie('descarga'));
+    if (getCookie('descarga') == 'realizada') {
+>>>>>>> Stashed changes
         document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
         console.log('mostrado');
     }
