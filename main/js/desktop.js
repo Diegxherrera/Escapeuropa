@@ -13,6 +13,8 @@ $('#np-head-e').hide();
 $('#np-head-f').hide();
 $('#np-head-g').hide();
 $('#np-head-h').hide();
+$('#km-head').hide();
+
 
 
 /*if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
@@ -46,6 +48,11 @@ function hideNotepad() {
 function hideGoogle() {
     $('#igoogle').hide();
     $('#gg-head').hide();
+}
+
+function hideKombat() {
+    $('#km').hide();
+    $('#km-head').hide();
 }
 
 function hideFiles() {
