@@ -54,6 +54,7 @@ function desencriptar() {
                                                                         setTimeout(function() {
                                                                             document.getElementById('apptitle app-3-title').innerHTML = 'James Decrypter';
                                                                             document.getElementById('appicon app-3-icon').src = 'img/James Decrypter.png';
+                                                                            interscript()
                                                                         }, 1500)
                                                                     }, 400)
                                                                 }, 500)
@@ -75,3 +76,4 @@ function desencriptar() {
 
 
 }
+

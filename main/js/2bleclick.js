@@ -6,6 +6,7 @@ document.getElementById("iadmintareas").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorer-filesdcr").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorertrash").style.cssText = "visibility: hidden"
 let index_value = 100
+let desencriptarllamado = false
 
 const af = document.getElementById("archivos-funcionalidad")
 af.style.cssText = "visibility: hidden"
@@ -33,14 +34,21 @@ function cerrar(id) {
 //en html debe ser llamado en el elemento appicon como onclick="unclick"
 function unclick(id) {
     const elemento = document.getElementById(id)
-    if (elemento != document.getElementById('app-4 blocked')) {
+    if(desencriptarllamado == true){
+        elemento.style.cssText = "background-color: rgba(255, 255, 255, 0.199); border: 1px dotted white;"
+    }
+    else if(elemento != document.getElementById('app-4 blocked')) {
         elemento.style.cssText = "background-color: rgba(255, 255, 255, 0.199); border: 1px dotted white;"
     } else {
         elemento.style.cssText = "background-color: rgba(255, 0, 0, 0.199); border: 1px dotted red;"
     }
     setTimeout("reset()", 100)
 }
-
+function interscript(){
+    console.log("Hola")
+    desencriptarllamado = true
+    document.getElementById('app-4 blocked').classList.remove("blocked")
+}
 function reset() {
     const body = document
     body.onclick = function() {
