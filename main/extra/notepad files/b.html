@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b.txt - Bloc de Notas</title>
+    <link rel="stylesheet" href="../../css/notepad.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../img/notepad-icon.webp">
+</head>
+
+<body>
+    <header>
+        <div class="element" id="abrir-archivo" onclick="dblclick('archivo')">
+            <p>Archivo</p>
+        </div>
+        <div class="element" id="abrir-editar" onclick="dblclick('editar')">
+            <p>Editar</p>
+        </div>
+        <div class="element" id="abrir-formato" onclick="dblclick('formato')">
+            <p>Formato</p>
+        </div>
+        <div class="element" id="abrir-vista" onclick="dblclick('vista')">
+            <p>Vista</p>
+        </div>
+        <div class="element" id="abrir-ayuda" onclick="dblclick('ayuda')">
+            <p>Ayuda</p>
+        </div>
+    </header>
+    <div class="dropdown-menus">
+        <ol class="archivo" id="archivo">
+            <li>
+                <p>Nuevo</p>
+            </li>
+            <li>
+                <p>Ventana nueva</p>
+            </li>
+            <li>
+                <p>Abrir...</p>
+            </li>
+            <li>
+                <p>Guardar</p>
+            </li>
+            <li>
+                <p>Guardar como...</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Configuración página...</p>
+            </li>
+            <li>
+                <p>Imprimir...</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Salir</p>
+            </li>
+        </ol>
+        <ol class="editar" id="editar">
+            <li>
+                <p>Deshacer</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Cortar</p>
+            </li>
+            <li>
+                <p>Copiar</p>
+            </li>
+            <li>
+                <p>Pegar</p>
+            </li>
+            <li>
+                <p>Eliminar</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Encontrar</p>
+            </li>
+            <li>
+                <p>Encontrar siguiente</p>
+            </li>
+            <li>
+                <p>Encontrar anterior</p>
+            </li>
+            <li>
+                <p>Reemplazar</p>
+            </li>
+            <li>
+                <p>Ir a...</p>
+            </li>
+            <hr class="divider">
+            <li>
+                <p>Seleccionar todo</p>
+            </li>
+            <li>
+                <p>Fecha/Hora</p>
+            </li>
+        </ol>
+        <ol class="formato" id="formato">
+            <li>
+                <p>Ajuste de línea</p>
+            </li>
+            <li>
+                <p>Fuente...</p>
+            </li>
+
+        </ol>
+        <ol class="vista" id="vista">
+            <li>
+                <p>Zoom...</p>
+            </li>
+            <li>
+                <p>Barra de estado</p>
+            </li>
+        </ol>
+        <ol class="ayuda" id="ayuda">
+            <li class="special-1">
+                <p>Ver ayuda</p>
+            </li>
+            <hr class="divider">
+            <li id="about-np">
+                <p>Sobre Notas</p>
+            </li>
+        </ol>
+    </div>
+    <div class="row-1" style="height: 91vh;">
+        01000100 01101001 01100101 01100111 01101111 00100000 01101101 01100001 01101110 01100100 01100001 00100000 01110110 01100001 01101100 01100101 00111111
+    </div>
+    <div class="row-3">
+        <div class="np-footer">
+            <div class="spacer"></div>
+            <div class="ft-1">
+                <p>Windows (CRLF)</p>
+            </div>
+            <div class="ft-2">
+                <p>Ln 1, Col 1</p>
+            </div>
+            <div class="ft-3">
+                <p>100%</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/notepad.js"></script>
+</body>
+
+</html>
