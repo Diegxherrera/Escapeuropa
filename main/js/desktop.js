@@ -87,6 +87,10 @@ function showTrash() {
     $('#fetr-head').show();
 }
 
-setInterval(() => {
-    
+setInterval(function (){
+    console.log('mostrada' + getCookie('descarga'));
+    if(getCookie('descarga') == 'realizada'){
+        document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
+        console.log('mostrado');
+    }
 }, 1000);
