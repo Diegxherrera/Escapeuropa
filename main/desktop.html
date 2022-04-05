@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/explorador2.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/windows-logo.png" />
-    <script src="js/desencriptar.js"></script>
+    <link rel="icon" href="img/windows-logo.png">
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/desencriptar.js"></script>
     <link rel="stylesheet" type="text/css" href="css/headers.css">
 </head>
 
@@ -25,19 +25,19 @@
         <div class="reticuleindex" id="reticuleindex">
             <table class="appsreticule" id="appsreticule">
                 <tr>
-                    <td id="app-1 trash" onclick="unclick('app-1 ifiles-explorertrash')" ondblclick="dblclick('ifilesexplorertrash'); showTrash()">
+                    <td id="app-1 trash" onclick="unclick('app-1 ifiles-explorertrash')" ondblclick="dblclick('ifilesexplorertrash'); dblclick('fetr-head')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/trash.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Papelera</p>
                     </td>
-                    <td id="app-2 chrome" onclick="unclick('app-2 chrome')" ondblclick="dblclick('igoogle'); showGoogle()">
+                    <td id="app-2 chrome" onclick="unclick('app-2 chrome')" ondblclick="dblclick('igoogle'); dblclick('gg-head')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/chrome.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Google Chrome</p>
                     </td>
-                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('ifilesexplorer');showFiles()">
+                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('ifilesexplorer');dblclick('fe-head')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/iconos-windows10/imageres_1023.ico" id="appicon" class="appicon">
                         </div>
@@ -49,7 +49,7 @@
                         </div>
                         <p id="apptitle app-3-title" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
                     </td>
-                    <td id="app-6 files-explorerdcr" onclick="unclick('app-6 files-explorerdcr')" ondblclick="dblclick('ifilesexplorer-filesdcr');dblclick('archivos-funcionalidad'); desencriptar(); showFilesdcr()">
+                    <td id="app-6 files-explorerdcr" onclick="unclick('app-6 files-explorerdcr')" ondblclick="dblclick('ifilesexplorer-filesdcr');dblclick('archivos-funcionalidad'); desencriptar(); dblclick('fedcr-head')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/folder-icon.png" id="appicon" class="appicon">
                         </div>
@@ -310,13 +310,13 @@
                     <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
                 </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
-                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer'); showFiles()">
+                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer');dblclick('fe-head')">
                     <img class="taskbar-icon" src="img/iconos-windows10/imageres_1023.ico">
                 </div>
-                <div class="tskbr-ic-hv" onclick="dblclick('igoogle'); showGoogle()">
+                <div class="tskbr-ic-hv" onclick="dblclick('igoogle');dblclick('gg-head')">
                     <img class="taskbar-icon" src="img/chrome.png">
                 </div>
-                <div class="tskbr-ic-hv" onclick="dblclick('inotepad'); showNotepad()">
+                <div class="tskbr-ic-hv" onclick="dblclick('inotepad'); dblclick('np-head')">
                     <img class="taskbar-icon" src="img/notepad-icon.webp">
                 </div>
             </div>

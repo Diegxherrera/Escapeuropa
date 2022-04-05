@@ -1,4 +1,8 @@
 function desencriptar() {
+
+    document.getElementById("app-6 files-explorerdcr").removeAttribute("ondblclick")
+    document.getElementById("app-6 files-explorerdcr").setAttribute("ondblclick","dblclick('ifilesexplorer-filesdcr');dblclick('archivos-funcionalidad');dblclick('fedcr-head')")
+
     setTimeout(function() {
         document.getElementById('apptitle app-3-title').innerHTML = 'Finding...';
         document.getElementById('appicon app-3-icon').src = 'img/iconos-windows10/imageres_104.ico';
