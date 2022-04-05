@@ -1,0 +1,126 @@
+div.main {
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 57.3%;
+    height: 57%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    right: 0;
+}
+
+div.mn-1 {
+    margin-left: 12px;
+}
+
+div.mn-2 {
+    margin-left: 12px;
+}
+
+div.mn-1-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.belement-no {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(100, 100, 100);
+    margin-top: 7.5px;
+}
+
+div.mn-group-title {
+    display: flex;
+    margin-top: 14px;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 11px rgb(55, 55, 55);
+}
+
+div.mn-group-title p {
+    width: 200px;
+}
+
+span.arrow-down {
+    height: 2.2%;
+    width: 2.2%;
+    margin-right: 10px;
+}
+
+hr.mn-divider {
+    width: 500px;
+    border: 1px solid rgba(100, 100, 100, 0.552);
+}
+
+.mn-element {
+    display: inline-flex;
+    color: white;
+    gap: 1em;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 4%;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+.mn-element-row {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 0.5em;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 4%;
+    padding-right: 10px;
+    padding-top: 8px;
+    width: 5em;
+    justify-content: center;
+}
+
+.mn-element-row * {
+    display: flex;
+    justify-content: center;
+}
+
+.mn-element:hover {
+    background-color: rgb(100, 100, 100);
+    border: 1px dashed rgb(65, 65, 65);
+}
+
+div.element-title {
+    display: flex;
+    flex-direction: column;
+}
+
+span.element-title-1 {
+    margin-bottom: 3px;
+    color: rgba(240, 248, 255, 0);
+}
+
+span.element-explorer-icon {
+    height: 4.5em;
+    width: 4.5em;
+}
+
+img.pinned-icon {
+    height: 1.5em;
+    width: 1.5em;
+}
+.sobreposicion{
+    position: absolute;
+    display: flex;
+    top: 30%;
+    left: 33%;
+}
+.mwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mwrap span{
+    background-color: rgba(0, 128, 0, 0.507);
+    width: 50px;
+    height: 60px;
+}

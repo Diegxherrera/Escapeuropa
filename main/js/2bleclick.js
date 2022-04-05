@@ -4,32 +4,32 @@ document.getElementById("ifilesexplorer").style.cssText = "visibility: hidden"
 document.getElementById("inotepad").style.cssText = "visibility: hidden"
 document.getElementById("iadmintareas").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorer-filesdcr").style.cssText = "visibility: hidden"
-<<<<<<< Updated upstream
 document.getElementById("ifilesexplorertrash").style.cssText = "visibility: hidden"
-=======
-document.getElementById("archivos-funcionalidad").style.cssText = "visibility: hidden"
->>>>>>> Stashed changes
 let index_value = 100
 
 const af = document.getElementById("archivos-funcionalidad")
+af.style.cssText = "visibility: hidden"
 //en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
 //IMPORTANTE LE DEBES AÑADIR EL ID DENTRO DE LA FUNCIÓN DE LO QUE QUIERES QUE SE MUESETRE AL HACER DOBLE CLICK 
 function dblclick(id) {
     const element = document.getElementById(id)
-    element.style.cssText = "visibility: visible"
-    element.style.cssText = "z-index: 10"
 
-    
-
+    if (element == document.getElementById("archivos-funcionalidad")){
+        let index_value2 = index_value + 1
+        af.style.cssText = "z-index: " + index_value2+"; visibility: visible;"
+        console.log(element + "funciono")
+    }
+    else{
     element.style.cssText = "z-index: " + index_value
     console.log(element + "funciono")
+    }
     index_value++
 }
 //este para el borón de cerrar funciona igual pero hace lo contrario
-function close(id) {
+function cerrar(id) {
     const element = document.getElementById(id)
-    element.style = "visibility: hidden"
-    element.style = "z-index: -100"
+    element.style.cssText = "display: none; z-index: -100"
+    console.log(element + "funciono")
 }
 //en html debe ser llamado en el elemento appicon como onclick="unclick"
 function unclick(id) {
@@ -51,7 +51,7 @@ function reset() {
         const app3 = document.getElementById("app-3 files-explorer")
         const app4 = document.getElementById("app-4 blocked")
         const app5 = document.getElementById("app-5 notepad")
-        const app6 = document.getElementById("app-6 ifiles-explorerdcr")
+        const app6 = document.getElementById("app-6 files-explorerdcr")
 
         app1.style.cssText = ""
         app2.style.cssText = ""
