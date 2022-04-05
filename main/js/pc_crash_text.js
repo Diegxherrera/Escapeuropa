@@ -40,7 +40,7 @@ function comprobar_escribir(text, indice, titulo) {
     if (x == indice) {
         escribir(text)
         clearInterval(titulo)
-        setTimeout("location.href = './intro'")
+        setTimeout("location.href = './intro/intro.html'",5000)
     }
 }
 //funcion 1 vale para añadir solo 1 texto no mas solo usar 1 vez o no usar
