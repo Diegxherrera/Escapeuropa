@@ -75,7 +75,7 @@ function reset() {
         app2.style.cssText = ""
         app3.style.cssText = ""
         app4.style.cssText = ""
-        app6.style.cssText = ""
+
 
 
         //fin del espacio de añadir apps
