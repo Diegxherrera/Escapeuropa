@@ -5,23 +5,23 @@ document.getElementById("inotepad").style.cssText = "visibility: hidden"
 document.getElementById("iadmintareas").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorer-filesdcr").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorertrash").style.cssText = "visibility: hidden"
+document.getElementById("inp-a").style.cssText = "visibility: hidden"
 let index_value = 100
 let desencriptarllamado = false
 
 const af = document.getElementById("archivos-funcionalidad")
 af.style.cssText = "visibility: hidden"
-//en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
-//IMPORTANTE LE DEBES AÑADIR EL ID DENTRO DE LA FUNCIÓN DE LO QUE QUIERES QUE SE MUESETRE AL HACER DOBLE CLICK 
+    //en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
+    //IMPORTANTE LE DEBES AÑADIR EL ID DENTRO DE LA FUNCIÓN DE LO QUE QUIERES QUE SE MUESETRE AL HACER DOBLE CLICK 
 function dblclick(id) {
     const element = document.getElementById(id)
-    if (element == document.getElementById("archivos-funcionalidad")){
+    if (element == document.getElementById("archivos-funcionalidad")) {
         let index_value2 = index_value + 1
-        af.style.cssText = "z-index: " + index_value2+"; visibility: visible;"
+        af.style.cssText = "z-index: " + index_value2 + "; visibility: visible;"
         console.log(element + "funciono")
-    }
-    else{
-    element.style.cssText = "z-index: " + index_value
-    console.log(element + "funciono")
+    } else {
+        element.style.cssText = "z-index: " + index_value
+        console.log(element + "funciono")
     }
     index_value++
 }
