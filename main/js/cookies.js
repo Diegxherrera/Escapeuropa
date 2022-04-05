@@ -30,6 +30,7 @@ function getCookie(cookie) {
     if (busca == 1 || dc[i].length > 2){
       x = i;
       comprobacion = true;
+      console.log(x)
     }
   }
   if(comprobacion==true){
