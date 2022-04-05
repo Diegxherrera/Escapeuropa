@@ -395,10 +395,14 @@ div.tskbr-ic-hv:hover {
 
 img.windowslogo {
     width: auto;
-    height: 2.3em;
-    margin-left: 7.5px;
-    margin-top: 5px;
-    margin-right: 7.5px;
+    height: 2.625em;
+    padding-left: 7.5px;
+    padding-top: 4.25px;
+    padding-right: 7.5px;
+}
+
+img.windowslogo:hover {
+    background-color: rgba(255, 255, 255, 0.199);
 }
 
 div.srch-br-support {
@@ -535,3 +539,15 @@ img.cortanalogo {
         visibility: hidden;
     }
 }
+<<<<<<< Updated upstream
+=======
+
+.sobreposicion {
+    background-color: blue;
+    width: 57.3%;
+    height: 75.8%;
+    position: absolute;
+    top: 11.6%;
+    left: 33%;
+}
+>>>>>>> Stashed changes
