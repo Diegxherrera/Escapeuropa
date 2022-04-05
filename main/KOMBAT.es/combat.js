@@ -104,7 +104,7 @@ function combat(yourselect) {
 
     if (vida2 == 0) {
         
-        setTimeout('location.href = "../carganivel4.html"',1000)
+        setTimeout('location.href = "./animacion3/intro.html"',1000)
     }
     if (vida1 == 0) {
         setTimeout("restart()",1000)

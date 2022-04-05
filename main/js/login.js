@@ -12,7 +12,7 @@ function comprobar() {
     if (usuario == 'Roberto' && pass == '1234') {
         correcto = true;
         console.log(correcto);
-        create_short_cookie("Login","correcto")
+        createCookie("Login","correcto")
         getCookie("Login")
         document.location = "desktop.html"
     } else {
