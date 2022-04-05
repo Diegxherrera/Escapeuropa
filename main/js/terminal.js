@@ -52,6 +52,10 @@ function newLine(){
     case 'cd':
         $('body').append('</br>'+directoryw+'</br>');
         break
+    
+    // caso decrypt
+    case 'decrypt RDNzM25jUjFwVDRkMFIg':
+        desencriptar();
     //caso cd ..
     case 'cd ..':
     case 'cd..':
