@@ -2,6 +2,7 @@
 let vida1 = 150
     //vida enemigo
 let vida2 = 120
+let veces_perdidas = 0
 
 let uso1 = document.getElementById("uso1")
 let uso2 = document.getElementById("uso2")
@@ -10,6 +11,8 @@ let vidan1 = document.getElementById("vidan1")
 vidan1.innerHTML = vida1
 let vidan2 = document.getElementById("vidan2")
 vidan2.innerHTML = vida2
+let selector;
+let attacktype;
 
 function restart() {
     vida1 = 150
@@ -20,10 +23,18 @@ function restart() {
     let vidan2 = document.getElementById("vidan2")
     vidan2.innerHTML = vida2
 
-}
+    document.getElementById("button_a").setAttribute("onclick","combat(0)")
+    document.getElementById("button_b").setAttribute("onclick","combat(1)")
+    document.getElementById("button_c").setAttribute("onclick","combat(2)")
 
+}
+function random(){
+    selector = parseInt(Math.random() * 3)
+    attacktype = ["que use fuerza bruta","un contraataque","una finta"]
+    uso2.innerHTML = "Prevees "+ attacktype[selector]
+}
+random()
 function combat(yourselect) {
-    const selector = parseInt(Math.random() * 3)
     const attack = ["rojo", "azul", "verde"]
     console.log("p1" + attack[yourselect] + " p2 " + attack[selector])
 
@@ -103,10 +114,22 @@ function combat(yourselect) {
     console.log(vida1 + "/" + vida2)
 
     if (vida2 == 0) {
-        
-        setTimeout('location.href = "../Nivel 4/descargavirus.html"',1000)
+
+        document.getElementById("button_a").removeAttribute("onclick")
+        document.getElementById("button_b").removeAttribute("onclick")
+        document.getElementById("button_c").removeAttribute("onclick")
+        setTimeout('location.href = "../Nivel 4/descargavirus.html"',1200)
     }
     if (vida1 == 0) {
-        setTimeout("restart()",1000)
+        document.getElementById("button_a").removeAttribute("onclick")
+        document.getElementById("button_b").removeAttribute("onclick")
+        document.getElementById("button_c").removeAttribute("onclick")
+        if(veces_perdidas == 3){
+            location.href = "../game_over.html"
+        }
+        veces_perdidas++
+        setTimeout("restart()",1200)
+        
     }
+    random()
 }
