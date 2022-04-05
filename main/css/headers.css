@@ -9,6 +9,9 @@ div.headers {
     z-index: 1;
 }
 
+
+/*Bloc de notas*/
+
 iframe.notepad {
     border-top: 0;
 }
@@ -21,14 +24,16 @@ div.np-head {
     color: black;
     top: 5%;
     position: absolute;
-    z-index: 10000;
     border: 2px solid black;
     border-bottom: 30px solid white;
 }
 
-div.headers img {
-    height: 2em;
+img.np-head-icon {
+    height: 1.75em;
     margin-left: 10px;
+}
+
+div.headers img {
     margin-right: 10px;
 }
 
@@ -73,5 +78,188 @@ div.np-head-m:hover {
 }
 
 div.np-head-m span {
+    font-size: 1.6em;
+}
+
+
+/*Explorador de archivos*/
+
+iframe.f {
+    border-top: 0;
+}
+
+div.fe-head {
+    display: inline-flex;
+    width: 70vw;
+    height: 36px;
+    background-color: black;
+    color: white;
+    top: 5%;
+    position: absolute;
+    border: 2px solid black;
+    border-bottom: 30px solid black;
+}
+
+img.fe-head-icon {
+    height: 1.75em;
+    margin-left: 10px;
+}
+
+img.fe-head-mini-icon {
+    height: 1.25em;
+    margin-left: 10px;
+}
+
+img.fe-head-mini-icon:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+img.fe-head-mini-icon-r {
+    transform: rotate(180deg);
+    height: 1em;
+    margin-left: -10px;
+}
+
+div.fe-head span {
+    display: flex;
+    padding: 2.5px;
+    align-items: center;
+    width: 50px;
+    margin-right: 10px;
+}
+
+div.fe-head span:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+div.fe-head-left {
+    display: flex;
+    align-items: center;
+}
+
+div.fe-head-center {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+div.fe-head-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+div.fe-head-right p {
+    font-size: 1.5em;
+}
+
+div.fe-head-m {
+    width: 4em;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.fe-head-close {
+    width: 4em;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+div.fe-head-close:hover {
+    background-color: rgb(178, 72, 72);
+}
+
+div.fe-head-m:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+div.fe-head-m spin.s {
+    font-size: 1.6em;
+}
+
+
+/*Google Chrome*/
+
+div.gg-head {
+    display: inline-flex;
+    width: 70vw;
+    height: 36px;
+    background-color: black;
+    color: white;
+    top: 4%;
+    position: absolute;
+    border: 2px solid black;
+    border-bottom: 30px solid black;
+}
+
+div.tab {
+    border: 1px solid #212121;
+    background-color: #212121;
+    margin-left: 3px;
+    margin-top: 10%;
+    padding: 2px;
+    width: 8em;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+div.new-tab {
+    font-size: 30px;
+    padding: 5px;
+    height: 30px;
+    width: auto;
+}
+
+div.gg-head-left p:hover {
+    background-color: rgb(100, 100, 100);
+    border-radius: 30px;
+}
+
+div.gg-head-left {
+    display: flex;
+    align-items: center;
+}
+
+div.gg-head-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+div.gg-head-right p {
+    font-size: 1.5em;
+}
+
+div.gg-head-m {
+    width: 4em;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div.gg-head-close {
+    width: 4em;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+div.gg-head-close:hover {
+    background-color: rgb(178, 72, 72);
+}
+
+div.gg-head-m:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+div.gg-head-m spin.s {
     font-size: 1.6em;
 }

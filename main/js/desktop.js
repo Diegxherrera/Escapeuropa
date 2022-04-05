@@ -1,9 +1,14 @@
 console.log("linked")
 $('.leftmenu').hide()
 $('#np-head').hide();
+$('#fe-head').hide();
+$('#gg-head').hide();
+$('#fedcr-head').hide();
+$('#fetr-head').hide();
+
 if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
- document.location = "uac.html"
- console.log("false")
+    document.location = "uac.html"
+    console.log("false")
 } else {
     console.log(document.cookie)
     console.log("true")
@@ -30,25 +35,45 @@ function hideNotepad() {
 }
 
 function hideGoogle() {
-    $('#ichrome').hide();
-    $('#google-head').hide();
+    $('#igoogle').hide();
+    $('#gg-head').hide();
 }
 
 function hideFiles() {
     $('#ifilesexplorer').hide();
-    $('#files-head').hide();
+    $('#fe-head').hide();
+}
+
+function hideFilesdcr() {
+    $('#ifilesexplorer-filesdcr').hide();
+    $('#fedcr-head').hide();
+}
+
+function hideTrash() {
+    $('#ifilesexplorertrash').hide();
+    $('#fetr-head').hide();
 }
 
 function showNotepad() {
     $('#np-head').show();
 }
 
-function hideNotepad() {
-    $('#inotepad').hide();
-    $('#np-head').hide();
+function showFiles() {
+    $('#ifilesexplorer').show();
+    $('#fe-head').show();
 }
 
-function hideNotepad() {
-    $('#inotepad').hide();
-    $('#np-head').hide();
+function showGoogle() {
+    $('#igoogle').show();
+    $('#gg-head').show();
+}
+
+function showFilesdcr() {
+    $('#iifilesexplorer-filesdcr').show();
+    $('#fedcr-head').show();
+}
+
+function showTrash() {
+    $('#iifilesexplorertrash').show();
+    $('#fetr-head').show();
 }

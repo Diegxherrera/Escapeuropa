@@ -4,6 +4,7 @@ document.getElementById("ifilesexplorer").style.cssText = "visibility: hidden"
 document.getElementById("inotepad").style.cssText = "visibility: hidden"
 document.getElementById("iadmintareas").style.cssText = "visibility: hidden"
 document.getElementById("ifilesexplorer-filesdcr").style.cssText = "visibility: hidden"
+document.getElementById("ifilesexplorertrash").style.cssText = "visibility: hidden"
 let index_value = 100
 
 //en html debe ser llamado en el elemento appicon como ondblclick="dblclick" 
@@ -42,7 +43,7 @@ function reset() {
         const app3 = document.getElementById("app-3 files-explorer")
         const app4 = document.getElementById("app-4 blocked")
         const app5 = document.getElementById("app-5 notepad")
-        const app6 = document.getElementById("app-6 files-explorerdcr")
+        const app6 = document.getElementById("app-6 ifiles-explorerdcr")
 
         app1.style.cssText = ""
         app2.style.cssText = ""

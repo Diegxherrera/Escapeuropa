@@ -24,21 +24,21 @@
         <div class="reticuleindex" id="reticuleindex">
             <table class="appsreticule" id="appsreticule">
                 <tr>
-                    <td id="app-1 trash" onclick="unclick('app-1 files-explorer')" ondblclick="dblclick('ifilesexplorer')">
+                    <td id="app-1 trash" onclick="unclick('app-1 ifiles-explorertrash')" ondblclick="dblclick('ifilesexplorertrash'); showTrash()">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/trash.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Papelera</p>
                     </td>
-                    <td id="app-2 chrome" onclick="unclick('app-2 chrome')" ondblclick="dblclick('igoogle')">
+                    <td id="app-2 chrome" onclick="unclick('app-2 chrome')" ondblclick="dblclick('igoogle'); showGoogle()">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/chrome.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Google Chrome</p>
                     </td>
-                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('ifilesexplorer')">
+                    <td id="app-3 files-explorer" onclick="unclick('app-3 files-explorer')" ondblclick="dblclick('ifilesexplorer');showFiles()">
                         <div class="appicon-1" id="appicon-1">
-                            <img src="img/filesexplorer.png" id="appicon" class="appicon">
+                            <img src="img/iconos-windows10/imageres_1023.ico" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Explorador de Archivos</p>
                     </td>
@@ -48,7 +48,7 @@
                         </div>
                         <p id="apptitle app-3-title" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
                     </td>
-                    <td id="app-6 files-explorerdcr" onclick="unclick('app-6 files-explorerdcr')" ondblclick="dblclick('ifilesexplorer-filesdcr'), desencriptar()">
+                    <td id="app-6 files-explorerdcr" onclick="unclick('app-6 ifiles-explorerdcr')" ondblclick="dblclick('ifilesexplorer-filesdcr'), desencriptar(), showFilesdcr()">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/folder-icon.png" id="appicon" class="appicon">
                         </div>
@@ -193,8 +193,98 @@
                     </div>
                 </div>
             </div>
-            <div class="google-head">
-
+            <div class="fe-head" id="fe-head">
+                <div class="fe-head-left">
+                    <img class="fe-head-icon" src="img/iconos-windows10/imageres_1023.ico">
+                    <img class="fe-head-mini-icon" src="img/iconos-windows10/imageres_5367.ico">
+                    <span>
+                        <img class="fe-head-mini-icon" src="img/iconos-windows10/shell32_264.ico">
+                        <img class="fe-head-mini-icon-r" src="img/iconos-windows10/imageres_5328.ico">
+                    </span>
+                </div>
+                <div class="fe-head-center">
+                    Explorador de Archivos
+                </div>
+                <div class="fe-head-right">
+                    <div class="fe-head-m">
+                        <p>_</p>
+                    </div>
+                    <div class="fe-head-m">
+                        <spin class="s">▭</spin>
+                    </div>
+                    <div class="fe-head-close" onclick="hideFiles()">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fe-head" id="fedcr-head">
+                <div class="fe-head-left">
+                    <img class="fe-head-icon" src="img/iconos-windows10/imageres_1023.ico">
+                    <img class="fe-head-mini-icon" src="img/iconos-windows10/imageres_5367.ico">
+                    <span>
+                        <img class="fe-head-mini-icon" src="img/iconos-windows10/shell32_264.ico">
+                        <img class="fe-head-mini-icon-r" src="img/iconos-windows10/imageres_5328.ico">
+                    </span>
+                </div>
+                <div class="fe-head-center">
+                    Explorador de Archivos
+                </div>
+                <div class="fe-head-right">
+                    <div class="fe-head-m">
+                        <p>_</p>
+                    </div>
+                    <div class="fe-head-m">
+                        <spin class="s">▭</spin>
+                    </div>
+                    <div class="fe-head-close" onclick="hideFilesdcr()">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gg-head" id="gg-head">
+                <div class="gg-head-left">
+                    <div class="tab">
+                        Nueva pestaña
+                    </div>
+                    <div class="new-tab">
+                        <p>+</p>
+                    </div>
+                </div>
+                <div class="gg-head-right">
+                    <div class="fe-head-m">
+                        <p>_</p>
+                    </div>
+                    <div class="gg-head-m">
+                        <spin class="s">▭</spin>
+                    </div>
+                    <div class="gg-head-close" onclick="hideGoogle()">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fe-head" id="fetr-head">
+                <div class="fe-head-left">
+                    <img class="fe-head-icon" src="img/iconos-windows10/imageres_1023.ico">
+                    <img class="fe-head-mini-icon" src="img/iconos-windows10/imageres_5367.ico">
+                    <span>
+                        <img class="fe-head-mini-icon" src="img/iconos-windows10/shell32_264.ico">
+                        <img class="fe-head-mini-icon-r" src="img/iconos-windows10/imageres_5328.ico">
+                    </span>
+                </div>
+                <div class="fe-head-center">
+                    Explorador de Archivos
+                </div>
+                <div class="fe-head-right">
+                    <div class="fe-head-m">
+                        <p>_</p>
+                    </div>
+                    <div class="fe-head-m">
+                        <spin class="s">▭</spin>
+                    </div>
+                    <div class="fe-head-close" onclick="hideTrash()">
+                        <p>X</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -203,6 +293,8 @@
         <iframe class="notepad" id="inotepad" src="extra/notepad.html">
             </iframe>
         <iframe class="filesexplorer" id="ifilesexplorer" src="extra/explorador.html">
+            </iframe>
+        <iframe class="filesexplorer" id="ifilesexplorertrash" src="extra/exploradortrash.html">
             </iframe>
         <iframe class="filesexplorer" id="ifilesexplorer-filesdcr" src="extra/exploradordcr.html">
             </iframe>
@@ -217,8 +309,8 @@
                     <input type="text" class="srch-br" id="srch-br" placeholder=" 🔎 Escribe aquí para buscar.">
                 </div>
                 <img class="cortanalogo" src="img/cortana-white-icon.png">
-                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer'); showFilesExplorer()">
-                    <img class="taskbar-icon" src="img/filesexplorer.png">
+                <div class="tskbr-ic-hv" id="app-3 files-explorer" onclick="dblclick('ifilesexplorer'); showFiles()">
+                    <img class="taskbar-icon" src="img/iconos-windows10/imageres_1023.ico">
                 </div>
                 <div class="tskbr-ic-hv" onclick="dblclick('igoogle'); showGoogle()">
                     <img class="taskbar-icon" src="img/chrome.png">
