@@ -95,5 +95,7 @@ setInterval(function() {
     if(getCookie('decrypt') == 'si'){
         desencriptar();
         console.log('desencriptar \n');
+        document.cookie = "decrypt=si; expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+
     }
 }, 1000);

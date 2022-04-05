@@ -5,7 +5,7 @@
 }
 
 body{
-    background: black;
+    background: rgba(0, 0, 0, 0.932);
     color: white;
     
 }
@@ -22,6 +22,6 @@ body{
 .typing:active{
     background-color: transparent;
     color: white;
-    background-color: black;
-    border: 0px black;
+    background-color: rgba(0, 0, 0, 0.932);
+    border: 0px rgba(0, 0, 0, 0.932);
 }

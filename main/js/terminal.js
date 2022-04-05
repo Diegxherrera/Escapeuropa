@@ -60,7 +60,53 @@ function newLine(){
     // caso decrypt
     case 'decrypt RDNzM25jUjFwVDRkMFIg':
         if(dir === 'desktop'){
-        createCookie('decrypt', 'si')
+        createCookie('decrypt', 'si');
+    setTimeout(function() {
+        $('body').append('9@]v(AWbT/hUX8g!qG7{QD9yUT!u;V</br>');
+        setTimeout(function() {
+            $('body').append('AVbG@KN6[m-5$5S/M.}%T2khBnj#_</br>');
+            setTimeout(function() {
+                $('body').append('XHqru@rDmeUn@z8LHPUU#{-tyrc{+L</br>');
+                    setTimeout(function() {
+                        $('body').append('SXw[JPmpZ#[6G{@$LbQDCUd,QLue5:</br>');
+                        setTimeout(function() {
+                            $('body').append('fcpQ?tC,g!5R5{wcA*KXh.{R5f@3Pw</br>');
+                            setTimeout(function() {
+                                $('body').append('r2f3H[@bjG_F23_&+Cq*uJe_g]dFay</br>');
+                                setTimeout(function() {
+                                    $('body').append('Jr*fLqh(REDADEcRe$)AW!b@</br>');
+                                    setTimeout(function() {
+                                        $('body').append('J3%9fes D043kr6Pt0?4r</br>');
+                                        setTimeout(function() {
+                                            $('body').append('J%mfes D3kryPt)=r</br>');
+                                            setTimeout(function() {
+                                                $('body').append('J(3mes D3kryPt(r</br>');
+                                                setTimeout(function() {
+                                                    $('body').append('J)ames D33crypt33r</br>');
+                                                    setTimeout(function() {
+                                                        $('body').append('James D3crypt3R</br>');
+                                                        setTimeout(function() {
+                                                            $('body').append('James D3crypt3R</br>');
+                                                            setTimeout(function() {
+                                                                $('body').append('James D3crypter</br>');
+                                                                setTimeout(function() {
+                                                                    $('body').append('James Decrypter</br>');
+                                                                    }, 400)
+                                                                }, 500)
+                                                            }, 500)
+                                                        }, 500)
+                                                    }, 400)
+                                                }, 400)
+                                            }, 400)
+                                        }, 400)
+                                    }, 600)
+                                }, 600)
+                            }, 600)
+                        }, 600)
+                    },
+                    600)
+            }, 600)
+        }, 600)
         }else{
             $('body').append('</br> El sistema no puede encontrar la ruta especificada.  </br>');
         }
@@ -175,7 +221,7 @@ function newLine(){
         
         break
     case 'help':
-        $('body').append('</br> Los comandos disponibles son: </br> cd -> Muestra el directorio actual </br> cd (directorio) -> Accede al directorio actual </br> dir -> Muestra los archivos que hay dentro del directorio actual </br> cd.. / cd .. -> Retrocede un directorio en la ruta </br> cls -> Limpia la consola de comandos (borra todo lo escrito) </br>');
+        $('body').append('</br> Los comandos disponibles son: </br> cd -> Muestra el directorio actual</br>decrypt -> Desencripta el directorio/documento especificado </br> cd (directorio) -> Accede al directorio actual </br> dir -> Muestra los archivos que hay dentro del directorio actual </br> cd.. / cd .. -> Retrocede un directorio en la ruta </br> cls -> Limpia la consola de comandos (borra todo lo escrito) </br>');
         break;
     default: 
     if(exist != -1){ // Si no es igual a -1 (es decir, si hay un 'cd ')
