@@ -13,6 +13,8 @@ document.getElementById("inp-e").style.cssText = "visibility: hidden"
 document.getElementById("inp-f").style.cssText = "visibility: hidden"
 document.getElementById("inp-g").style.cssText = "visibility: hidden"
 document.getElementById("inp-h").style.cssText = "visibility: hidden"
+document.getElementById("app-7 virus").style.cssText = "visibility: hidden"
+
 
 let index_value = 100
 let desencriptarllamado = false
