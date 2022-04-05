@@ -15,7 +15,7 @@ $('#np-head-g').hide();
 $('#np-head-h').hide();
 
 
-if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
+/*if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
     document.location = "uac.html"
     console.log("false")
 } else {
@@ -23,7 +23,7 @@ if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe
     console.log("true")
 
 }
-
+*/
 function openmenu() {
     $('.leftmenu').show()
     $('#left-menu1').slideUp("slow")
@@ -92,5 +92,9 @@ setInterval(function (){
     if(getCookie('descarga') == 'realizada'){
         document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
         console.log('mostrado');
+    }
+    if(getCookie('decrypt') == 'si'){
+        desencriptar();
+        console.log('desencriptar \n');
     }
 }, 1000);
