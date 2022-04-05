@@ -40,10 +40,8 @@ function comprobar_escribir(text, indice, titulo) {
     if (x == indice) {
         escribir(text)
         clearInterval(titulo)
+        setTimeout("location.href = './intro/intro.html'",5000)
     }
 }
 //funcion 1 vale para añadir solo 1 texto no mas solo usar 1 vez o no usar
-let texto_siguiente = setInterval("comprobar_escribir('Your PC ran into a major problem. You failed and made your PC crash while playing the Escape Room.',1,texto_siguiente)", 100)
-let texto_siguiente2 = setInterval("comprobar_escribir('X',2,texto_siguiente2)", 100)
-let texto_siguiente3 = setInterval("comprobar_escribir('Verás, últimamente no vas bien en clase y sé que no me estás demostrando todo tu potencial, así que hoy me centraré en tí...',3,texto_siguiente3)", 100)
-let texto_siguiente4 = setInterval("comprobar_escribir('Los demás tendrán clase con Juan de Dios.',4,texto_siguiente4)", 100)
+let texto_siguiente = setInterval("comprobar_escribir('Tu Pc encontró un error fatal. Fallaste e hiciste que tu Pc crasheara mientras jugabas a escaperoom Puenteuropa.',1,texto_siguiente)", 100)
