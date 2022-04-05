@@ -88,7 +88,8 @@ function showTrash() {
 }
 
 setInterval(function (){
-    if(weakGetCookie('descarga') == 'realizada'){
+    console.log('mostrada' + getCookie('descarga'));
+    if(getCookie('descarga') == 'realizada'){
         document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
         console.log('mostrado');
     }
