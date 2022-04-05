@@ -13,7 +13,6 @@ af.style.cssText = "visibility: hidden"
 //IMPORTANTE LE DEBES AÑADIR EL ID DENTRO DE LA FUNCIÓN DE LO QUE QUIERES QUE SE MUESETRE AL HACER DOBLE CLICK 
 function dblclick(id) {
     const element = document.getElementById(id)
-
     if (element == document.getElementById("archivos-funcionalidad")){
         let index_value2 = index_value + 1
         af.style.cssText = "z-index: " + index_value2+"; visibility: visible;"
