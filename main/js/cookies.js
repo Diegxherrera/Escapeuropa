@@ -27,7 +27,7 @@ function getCookie(cookie) {
   for (i=0;i<dc.length;i++){
     busca = dc[i].indexOf(name);
     console.log("busqueda indice :"+i+ " " + busca+" "+dc[i]);
-    if (busca == 1 || dc[i].length > 2){
+    if (dc[i] == cookie){
       x = i;
       comprobacion = true;
       console.log(x)
