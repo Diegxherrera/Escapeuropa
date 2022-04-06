@@ -95,10 +95,11 @@ function showTrash() {
     $('#fetr-head').show();
 }
 
+
+
 setInterval(function() {
-    console.log(getCookie('Kombat'))
     if (weakGetCookie('descarga') == 'realizada') {
-        document.getElementById('app-7 virus').style.cssText = 'visibility = visible'
+        document.getElementById('app-7').style.cssText = 'visibility = visible'
         console.log('mostrado');
     }
     if(weakGetCookie('decrypt') == 'si'){
