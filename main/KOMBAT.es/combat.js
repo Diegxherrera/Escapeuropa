@@ -129,7 +129,7 @@ function combat(yourselect) {
         document.getElementById("button_c").removeAttribute("onclick")
         veces_perdidas++
         if(veces_perdidas == 3 || desarrollador_mode == true){
-            createCookie("Kombat","Derrota")
+            create_short_cookie("Kombat","Derrota")
             getCookie("kombat")
         }
         setTimeout("restart()",1200)

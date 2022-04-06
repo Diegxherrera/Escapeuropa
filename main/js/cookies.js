@@ -62,4 +62,8 @@ function weakGetCookie(cookie) {
     return undefined;
   }
 }
+
+function borrarCookie(cookie,valor){
+  document.cookie = cookie+"="+valor+";expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/"
+}
 console.log("linked")

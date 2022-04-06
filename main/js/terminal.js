@@ -60,7 +60,7 @@ function newLine(){
     // caso decrypt
     case 'decrypt RDNzM25jUjFwVDRkMFIg':
         if(dir === 'desktop'){
-        createCookie('decrypt', 'si');
+        create_short_cookie('decrypt', 'si');
     setTimeout(function() {
         $('body').append('<br>9@]v(AWbT/hUX8g!qG7{QD9yUT!u;V</br>');
         setTimeout(function() {

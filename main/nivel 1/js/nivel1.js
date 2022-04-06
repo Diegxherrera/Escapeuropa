@@ -200,57 +200,57 @@ function comprobación() {
     else if (comprobador == secuencia && vecescorrecto == 3 && correcto == true && comprado == true) {
         switch(secuencia){
             case "AAA":
-                    createCookie("disk","WD 500GB")
-                    createCookie("tam","500 TB")
+                create_short_cookie("disk","WD 500GB")
+                create_short_cookie("tam","500 TB")
                     console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
                     console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
 
-                    createCookie("gpu","GT 710")
+                    create_short_cookie("gpu","GT 710")
                     console.log("---------------"+"\n"+getCookie("gpu")+"\n"+"---------------")
 
-                    createCookie("cpu","I3")
+                    create_short_cookie("cpu","I3")
                     console.log("---------------"+"\n"+getCookie("cpu")+"\n"+"---------------")
 
-                    createCookie("ram","4 GB")
+                    create_short_cookie("ram","4 GB")
                     console.log("---------------"+"\n"+getCookie("ram")+"\n"+"---------------")
 
-                    createCookie("placa","Pro Z690-A")
+                    create_short_cookie("placa","Pro Z690-A")
                     console.log("---------------"+"\n"+getCookie("placa")+"\n"+"---------------")
                     break;
             case "BBB":
-                    createCookie("disk","WD 1TB")
-                    createCookie("tam","1TB")
+                create_short_cookie("disk","WD 1TB")
+                create_short_cookie("tam","1TB")
                     console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
                     console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
 
-                    createCookie("gpu","RX 550")
+                    create_short_cookie("gpu","RX 550")
                     console.log("---------------"+"\n"+getCookie("gpu")+"\n"+"---------------")
 
-                    createCookie("cpu","I3")
+                    create_short_cookie("cpu","I3")
                     console.log("---------------"+"\n"+getCookie("cpu")+"\n"+"---------------")
 
-                    createCookie("ram","4 GB")
+                    create_short_cookie("ram","4 GB")
                     console.log("---------------"+"\n"+getCookie("ram")+"\n"+"---------------")
 
-                    createCookie("placa","B550M -A PRO")
+                    create_short_cookie("placa","B550M -A PRO")
                     console.log("---------------"+"\n"+getCookie("placa")+"\n"+"---------------")
                     break;
             case "CCC":
-                createCookie("disk","Samsung SSD 1TB")
-                createCookie("tam","1TB")
+                create_short_cookie("disk","Samsung SSD 1TB")
+                create_short_cookie("tam","1TB")
                 console.log("---------------"+"\n"+getCookie("disk")+"\n"+"---------------")
                 console.log("---------------"+"\n"+getCookie("tam")+"\n"+"---------------")
 
-                createCookie("gpu","Nvidia RTX 3060 ti")
+                create_short_cookie("gpu","Nvidia RTX 3060 ti")
                 console.log("---------------"+"\n"+getCookie("gpu")+"\n"+"---------------")
 
-                createCookie("cpu","Ryzen 9")
+                create_short_cookie("cpu","Ryzen 9")
                 console.log("---------------"+"\n"+getCookie("cpu")+"\n"+"---------------")
 
-                createCookie("ram","16 GB")
+                create_short_cookie("ram","16 GB")
                 console.log("---------------"+"\n"+getCookie("ram")+"\n"+"---------------")
 
-                createCookie("placa","B150 PLUS II")
+                create_short_cookie("placa","B150 PLUS II")
                 console.log("---------------"+"\n"+getCookie("placa")+"\n"+"---------------")
                 break;
         }
