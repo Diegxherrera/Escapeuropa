@@ -62,7 +62,7 @@ function newLine(){
         if(dir === 'desktop'){
         createCookie('decrypt', 'si');
     setTimeout(function() {
-        $('body').append('9@]v(AWbT/hUX8g!qG7{QD9yUT!u;V</br>');
+        $('body').append('<br>9@]v(AWbT/hUX8g!qG7{QD9yUT!u;V</br>');
         setTimeout(function() {
             $('body').append('AVbG@KN6[m-5$5S/M.}%T2khBnj#_</br>');
             setTimeout(function() {
@@ -90,7 +90,7 @@ function newLine(){
                                                             setTimeout(function() {
                                                                 $('body').append('James D3crypter</br>');
                                                                 setTimeout(function() {
-                                                                    $('body').append('James Decrypter</br>');
+                                                                    $('body').append('James Decrypter</br>Decryption succesfully completed! <br>');
                                                                     }, 400)
                                                                 }, 500)
                                                             }, 500)
