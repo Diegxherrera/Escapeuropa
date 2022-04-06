@@ -17,11 +17,8 @@ document.getElementById("inp-h").style.cssText = "visibility: hidden"
 document.getElementById("app-7").style.cssText = "visibility: hidden"
 document.getElementById("app-6 files-explorerdcr").style.cssText = "visibility: hidden"
 document.getElementById("km").style.cssText = "visibility: hidden"
-<<<<<<< Updated upstream
 document.getElementById("app-4 blocked").style.cssText = "visibility: hidden"
-=======
 document.getElementById("iterminal").style.cssText = "visibility: hidden"
->>>>>>> Stashed changes
 
 
 
