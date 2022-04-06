@@ -8,7 +8,7 @@ const ilumination = $('.ilumination')
 let contador = 1
 
 function nextws(){
-    location.href = '../nivel 1/nivel1.html'
+    location.href = '../Final.html';
 }
 function cerrar() {
     textbox.css({ "border": "2px solid white" })
