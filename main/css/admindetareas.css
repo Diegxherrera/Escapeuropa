@@ -252,14 +252,14 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4%;
-    font-family: 'Open Sans', sans-serif';
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 .admin_titulo1 {
     font-size: x-large;
-    font-family: 'Open Sans', sans-serif';
- color: rgb(41, 104, 223);
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(41, 104, 223);
 }
 
 .admin_proceso1 {
@@ -315,8 +315,12 @@ body {
     background-color: lightgray;
     display: flex;
     text-align: center;
-    width: 8%;
+    width: 6em;
     font-family: 'Calibri';
+    margin-top: 2em;
+    margin-right: 2em;
+    position: absolute;
+    right: 0;
 }
 
 .admin_finalizartarea:hover {

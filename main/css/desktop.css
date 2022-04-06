@@ -196,6 +196,10 @@ iframe {
     margin-left: 20%;
 }
 
+iframe.admintareas{
+    border-top: 0;
+}
+
 div.leftmenu {
     z-index: 1000;
     position: absolute;

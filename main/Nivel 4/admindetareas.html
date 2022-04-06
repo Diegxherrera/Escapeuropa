@@ -5,32 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrador de tareas</title>
-    <link rel="stylesheet" href="css/admindetareas.css">
+    <link rel="stylesheet" href="../css/admindetareas.css">
     <script src="js/admindetareas.js"></script>
 </head>
 <body>
 
 <span id="admin_container_all">
-<div class="admin_container">
-    <div class="admin_container2">
-        <div class="admin_top">
-            <img src="img/admin_icon.png" width="20px" height="20px"> 
-            <span class="Admin_text">Administrador de tareas</span>
-        </div>
-        <div class="admin_opciones">
-            <span class="admin_control">Archivo</span>
-            <span class="admin_control">Opciones</span>
-            <span class="admin_control">Vista</span>
-        </div>
-    </div>
-
-    
-    <div class="admin_top2">
-        <span class="admin_control2" id="admin_control2">—</span>
-        <span class="admin_control2" id="admin_control2">▭</span>
-        <span class="admin_control2" id="admin_control0" onclick="admin_cerrar()">X</span> 
-    </div>
-</div>
 
 <span id="admin_errortext" style="display: none; font-size: xx-large;"></span>
 
@@ -96,7 +76,7 @@
                 <div class="admin_titulo1" id="admin_titulo1">Aplicaciones (3)</div>
 
                 <div class="admin_administradortareas">
-                    <div class="admin_proceso1"><img src="img/admin_icon.png" width="2%">Administrador de tareas</div>
+                    <div class="admin_proceso1"><img src="../img/admin_icon.png" width="2.5%">Administrador de tareas</div>
                         <div class="admin_datos_aplicaciones">
                             <hr size="25%">
                             <div class="admin_cpu_app" style="background-color: lightgoldenrodyellow;">3,5%</div>
@@ -242,8 +222,6 @@
             <div class="admin_controlabajo3">></div>
         </div>
         <div class="admin_menosdetalles">
-            <div class="admin_menosdetalles_boton"><input type="checkbox">Menos detalles</div>
             <div class="admin_finalizartarea" onclick="admin_finalizartarea()"><input type="button" class="admin_finalizartarea_boton" onclick="admin_finalizartarea()">Finalizar tarea</div>
         </div>
-    </span>
 </html>

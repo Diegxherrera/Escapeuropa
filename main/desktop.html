@@ -115,7 +115,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">A</p>
-                    <li class="col2-containers" onclick="dblclick('iadmintareas'); showAdmin()">
+                    <li class="col2-containers" onclick="dblclick('iadmintareas'); dblclick('adm-head')">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/admin_icon.png">
                         </div>
@@ -498,6 +498,25 @@
                     </div>
                 </div>
             </div>
+            <div class="np-head" id="adm-head">
+                <div class="np-head-left">
+                    <img class="np-head-icon" src="img/admin_icon.png">
+                </div>
+                <div class="np-head-center">
+                    Administrador de tareas
+                </div>
+                <div class="np-head-right">
+                    <div class="np-head-m">
+                        <p>_</p>
+                    </div>
+                    <div class="np-head-m">
+                        <span>▭</span>
+                    </div>
+                    <div class="np-head-close" onclick="cerrar('adm-head'); cerrar('iadmintareas')">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <iframe class="google" id="igoogle" src="extra/google.html">
@@ -510,7 +529,7 @@
         </iframe>
         <iframe class="filesexplorer" id="ifilesexplorer-filesdcr" src="extra/exploradordcr.html">
         </iframe>
-        <iframe class="admintareas" id="iadmintareas" src="Nivel 4/admindetareas.html">
+        <iframe class="admintareas" id="iadmintareas" src="Nivel 4/admindetareas.html" style="border-top: 0;">
         </iframe>
         <iframe class="notepad" id="inp-a" src="extra/notepad files/a.html">
         </iframe>
