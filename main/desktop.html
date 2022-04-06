@@ -45,12 +45,18 @@
                         </div>
                         <p id="apptitle" class="apptitle">Explorador de Archivos</p>
                     </td>
+<<<<<<< Updated upstream
                     <td id="app-7" ondblclick="showBlock()">
+=======
+                    <td id="app-7 virus" onclick="unclick('app-7 virus')"
+                        ondblclick="dblclick('app-6 files-explorerdcr')">
+>>>>>>> Stashed changes
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/virus_icon.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle" class="apptitle">Escape Room Hack</p>
                     </td>
+<<<<<<< Updated upstream
                     <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')"
                         ondblclick="blockedapp('iblocked')">
                         <div class="appicon-1" id="appicon-1 blocked">
@@ -58,12 +64,23 @@
                         </div>
                         <p id="apptitle app-3-title" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
                     </td>
+=======
+>>>>>>> Stashed changes
                     <td id="app-6 files-explorerdcr" onclick="unclick('app-6 files-explorerdcr')"
                         ondblclick="dblclick('ifilesexplorer-filesdcr');dblclick('archivos-funcionalidad'); desencriptar(); dblclick('fedcr-head')">
                         <div class="appicon-1" id="appicon-1">
                             <img src="img/folder-icon.png" id="appicon" class="appicon">
                         </div>
                         <p id="apptitle app-4-title" class="apptitle">Q2xhdmUgZGUgZGVzZW5jcmlwdGFjacOzbg==</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="blocked" id="app-4 blocked" onclick="unclick('app-4 blocked')"
+                        ondblclick="blockedapp('iblocked')">
+                        <div class="appicon-1" id="appicon-1 blocked">
+                            <img src="img/iconos-windows10/imageres_98.ico" id="appicon app-3-icon" class="appicon">
+                        </div>
+                        <p id="apptitle app-3-title" class="apptitle">RDNzM25jUjFwVDRkMFIg</p>
                     </td>
                 </tr>
             </table>
@@ -125,7 +142,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">B</p>
-                    <li class="col2-containers" onclick="dblclick('inotepad'); showNotepad()">
+                    <li class="col2-containers" onclick="dblclick('inotepad'); dblclick('np-head')">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/notepad-icon.webp">
                         </div>
@@ -158,7 +175,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">G</p>
-                    <li class="col2-containers" onclick="dblclick('igoogle'); showGoogle()">
+                    <li class="col2-containers" onclick="dblclick('igoogle'); dbclick('gg-head')">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/chrome.png">
                         </div>
@@ -169,7 +186,7 @@
                 </ol>
                 <ol class="group">
                     <p class="group-title">T</p>
-                    <li class="col2-containers" onclick="dblclick('iterminal'); showTerminal()">
+                    <li class="col2-containers" onclick="dblclick('iterminal'); dblclick('tm-head')">
                         <div class="min-card-ic">
                             <img class="col2-img" src="img/iconos-windows10/imageres_5323.ico">
                         </div>
@@ -407,6 +424,25 @@
                     </div>
                 </div>
             </div>
+            <div class="fe-head" id="tm-head">
+                <div class="fe-head-left">
+                    <img class="fe-head-icon" src="img/iconos-windows10/imageres_1023.ico">
+                </div>
+                <div class="fe-head-center">
+                    Símbolo del sistema
+                </div>
+                <div class="fe-head-right">
+                    <div class="fe-head-m">
+                        <p>_</p>
+                    </div>
+                    <div class="fe-head-m">
+                        <spin class="s">▭</spin>
+                    </div>
+                    <div class="fe-head-close" onclick="hideTerminal()">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
             <div class="fe-head" id="fedcr-head">
                 <div class="fe-head-left">
                     <img class="fe-head-icon" src="img/iconos-windows10/imageres_1023.ico">
@@ -546,7 +582,10 @@
         </iframe>
         <iframe class="notepad" id="inp-h" src="extra/notepad files/h.html">
         </iframe>
-        <iframe class="google" id="km" src="KOMBAT.es/index.html"></iframe>
+        <iframe class="google" id="km" src="KOMBAT.es/index.html">
+        </iframe>
+        <iframe class="terminal" id="iterminal" src="terminal.html">
+        </iframe>
     </main>
     <footer>
         <div class="bottombar" id="bottombar">

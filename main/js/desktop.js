@@ -15,6 +15,8 @@ $('#np-head-g').hide();
 $('#np-head-h').hide();
 $('#km-head').hide();
 $('#adm-head').hide();
+$('#tm-head').hide();
+
 
 
 
