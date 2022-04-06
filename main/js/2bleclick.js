@@ -66,6 +66,15 @@ function interscript() {
     document.getElementById('app-4 blocked').classList.remove("blocked")
 }
 
+function blockedApp(){
+    if(weakGetCookie('decrypted') == 'si'){
+        $('#app-4').show();
+        console.log('decrypted')
+    }else{
+        console.log('undecrypted')
+    }
+}
+
 function reset() {
     const body = document
     body.onclick = function() {
