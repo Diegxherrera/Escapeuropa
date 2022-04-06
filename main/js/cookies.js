@@ -12,10 +12,6 @@ function create_short_cookie(name,value){
   return "creada";
 }
 
-let x;  
-let i;  
-let comprobacion;
-
 function getCookie(cookie) {
   let x;
   let i;

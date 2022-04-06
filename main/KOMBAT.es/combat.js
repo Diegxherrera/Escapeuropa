@@ -4,7 +4,7 @@ let vida1 = 150
 let vida2 = 120
 let veces_perdidas = 0
 
-let desarrollador_mode = true
+let desarrollador_mode = false
 
 let uso1 = document.getElementById("uso1")
 let uso2 = document.getElementById("uso2")

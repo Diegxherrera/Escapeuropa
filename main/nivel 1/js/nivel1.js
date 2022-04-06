@@ -22,6 +22,14 @@ let correcto = false
 let vecescorrecto = 0
 let comprado = false
 
+let vecesfallado = 0
+
+function nivel1(){
+if(vecesfallado == 3){
+    location.href = "../game_over.html"
+}
+vecesfallado++
+
 //declaración de secuencia
 const quality = parseInt(Math.random() * 10) + 1
 let componente1 = parseInt(Math.random() * 5 + 1)
@@ -90,6 +98,8 @@ if (placa == true) {
     componentes.innerHTML += "placa <br>"
 }
 
+}
+nivel1()
 function cpuclick(id) {
     if (cpu == false) {
         const argid = document.getElementById(id)
@@ -246,7 +256,10 @@ function comprobación() {
         }
         location.href = "./animacion1/animacion.html"
     }
-    else { alert("incorrecto") 
+    else {
+    alert('incorrecto intentalo de nuevo')
+    reseteo()
+    nivel1()
     console.log(correcto)
     console.log(vecescorrecto)
     console.log(comprado)
@@ -270,6 +283,29 @@ function vaciarcarritototal(){
     secuencia = ""
     correcto = false
     vecescorrecto = 0
+
+    console.log('variables playerside seteadas a default')
+}
+function reseteo(){
+    const ctext = document.getElementById("ctext")
+    ctext.innerHTML = ""
+
+    mot = false
+    dis = false
+    gpu = false
+    ram = false
+    cpu = false
+
+    disco = false
+    grafica = false
+    procesador = false
+    placa = false
+    memoria = false
+
+    secuencia = ""
+    correcto = false
+    vecescorrecto = 0
+    comprado = false
 
     console.log('variables playerside seteadas a default')
 }
