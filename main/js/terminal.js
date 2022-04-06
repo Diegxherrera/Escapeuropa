@@ -90,6 +90,7 @@ function newLine(){
                                                             setTimeout(function() {
                                                                 $('body').append('James D3crypter</br>');
                                                                 setTimeout(function() {
+                                                                    createCookie('decrypted','si');
                                                                     $('body').append('James Decrypter</br>Decryption succesfully completed! <br>');
                                                                     }, 400)
                                                                 }, 500)

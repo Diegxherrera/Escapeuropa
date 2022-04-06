@@ -8,10 +8,14 @@ setInterval(function() {
         segundos = 1
         comprobador_minuto = comprobador_minuto + 1
         comprobador_segundo = 1
-        document.getElementById("contador").innerHTML = minuto + ":" + segundos
+        if(segundo < 10){
+            document.getElementById("time").innerHTML = minuto +  ":" + '0' + segundos
+        }
     } else {
         segundos++
-        document.getElementById("contador").innerHTML = minuto + ":" + segundos
+        if(segundos < 10){
+            document.getElementById("time").innerHTML = minuto +  ":" + '0' + segundos
+        }
         comprobador_segundo++
     }
 }, 1000)
