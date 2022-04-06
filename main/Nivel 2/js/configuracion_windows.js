@@ -532,8 +532,7 @@ function progress6() {
             clearInterval(numero_interval5);
 
             
-            document.getElementById('option8').style.display = "none";
-            document.getElementById('option9').style.display = "block";
+            location.href = "../uac.html"
         } 
 
     },2000);
