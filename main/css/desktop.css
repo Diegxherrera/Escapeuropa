@@ -70,6 +70,7 @@ table.appsreticule {
 tr {
     display: flex;
     padding-bottom: 10px;
+    flex-direction: column;
 }
 
 td {
