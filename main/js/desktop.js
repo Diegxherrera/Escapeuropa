@@ -82,6 +82,11 @@ function showFiles() {
     $('#fe-head').show();
 }
 
+function hideTerminal() {
+    $('#iterminal').hide();
+    $('#tm-head').hide();
+}
+
 function showGoogle() {
     $('#igoogle').show();
     $('#gg-head').show();
@@ -96,8 +101,6 @@ function showTrash() {
     $('#iifilesexplorertrash').show();
     $('#fetr-head').show();
 }
-
-
 
 setInterval(function() {
     if (weakGetCookie('descarga') == 'realizada') {
