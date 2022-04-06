@@ -440,7 +440,7 @@ p#date,
 p#time {
     text-align: center;
     margin-right: 1em;
-    margin-top: 1vw;
+    margin-top: 0.5vw;
 }
 
 div.rght-col-0 {
