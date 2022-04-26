@@ -7,7 +7,7 @@ setInterval(function() {
         document.getElementById('time').innerHTML = '0' + minuto + ':' + segundos
         segundos = 0;
         minuto++
-        if(minuto == 10){
+        if(minuto == 8){
             document.location = "game_over.html"
         }
     }else{
