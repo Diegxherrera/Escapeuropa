@@ -19,6 +19,8 @@ document.getElementById("app-6 files-explorerdcr").style.cssText = "visibility: 
 document.getElementById("km").style.cssText = "visibility: hidden"
 document.getElementById("app-4 blocked").style.cssText = "visibility: hidden"
 document.getElementById("iterminal").style.cssText = "visibility: hidden"
+document.getElementById("notifi").style.cssText = "visibility: hidden"
+
 
 
 
