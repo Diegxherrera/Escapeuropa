@@ -17,6 +17,9 @@ $('#km-head').hide();
 $('#adm-head').hide();
 $('#tm-head').hide();
 
+
+
+
 /*if (getCookie("Login") != "correcto") { // Comprueba si la cookie existe  
     document.location = "uac.html"
     console.log("false")
