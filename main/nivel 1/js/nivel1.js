@@ -65,37 +65,37 @@ else if (componente3 == 5) { memoria = true; console.log("memoria") }
 if (quality <= 6) {
     console.log("baja calidad")
     comprobador = "AAA"
-    textquality = "bajos recursos"
+    textquality = "Bajos recursos"
 }
 else if (quality <= 9) {
     console.log("media calidad")
     comprobador = "BBB"
-    textquality = "medios recursos"
+    textquality = "Medios recursos"
 }
 else if (quality <= 10) {
     console.log("alta calidad")
     comprobador = "CCC"
-    textquality = "altos recursos"
+    textquality = "Altos recursos"
 }
 
 $('#listacontenido').text(textquality)
-$('#texto_lista').text("Algunos componentes son ireparables, encuentra su reemplazo que sepas que los componentes deben ser de " + textquality)
+$('#texto_lista').text("Algunos componentes son irreparables, encuentra su reemplazo que sepas que los componentes deben ser de " + textquality)
 
 const componentes = document.getElementById('componentes')
 if (procesador == true) {
-    componentes.innerHTML += "procesador <br>"
+    componentes.innerHTML += "Procesador <br>"
 }
 if (disco == true) {
-    componentes.innerHTML += "disco <br>"
+    componentes.innerHTML += "Disco Duro <br>"
 }
 if (grafica == true) {
-    componentes.innerHTML += "gráfica <br>"
+    componentes.innerHTML += "Gráfica <br>"
 }
 if (memoria == true) {
-    componentes.innerHTML += "memoria <br>"
+    componentes.innerHTML += "Memoria RAM <br>"
 }
 if (placa == true) {
-    componentes.innerHTML += "placa <br>"
+    componentes.innerHTML += "Placa Base <br>"
 }
 
 }
